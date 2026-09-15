@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-15 04:28 ｜ 共 1134 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-15 08:41 ｜ 共 1134 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 60 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 84 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 309 篇
-- [Other（其他触觉相关）](#other) — 716 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 305 篇
+- [Other（其他触觉相关）](#other) — 720 篇
 
 ## Sim
 
@@ -276,7 +276,7 @@
 | 2026-04-22 | ⭐🖐 **ETac: A Lightweight and Efficient Tactile Simulation Framework for Learning Dexterous Manipulation** | Zhe Xu et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2604.20295) |
 | 2026-04-22 |  **VTouch++: A Multimodal Dataset with Vision-Based Tactile Enhancement for Bimanual Manipulation** | Qianxi Hua et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2604.20444) |
 | 2026-04-22 |  **Visual-Tactile Peg-in-Hole Assembly Learning from Peg-out-of-Hole Disassembly** | Yongqiang Zhao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2604.20712) · [Page](https://sites.google.com/view/pooh2pih) |
-| 2026-04-19 | 🖐 **On the Importance of Tactile Sensing for Imitation Learning: A Case Study on Robotic Match Lighting** | Niklas Funk et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2504.13618) · [Page](https://sites.google.com/view/) |
+| 2026-04-19 | 🖐 **On the Importance of Tactile Sensing for Imitation Learning: A Case Study on Robotic Match Lighting** | Niklas Funk et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2504.13618) · [Page](https://sites.google.com/view/tactile-il) |
 | 2026-04-14 | 🖐 **FastGrasp: Learning-based Whole-body Control method for Fast Dexterous Grasping with Mobile Manipulators** | Heng Tao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2604.12879) |
 | 2026-04-09 | 🖐 **A-SLIP: Acoustic Sensing for Continuous In-hand Slip Estimation** | Uksang Yoo et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2604.08528) · [Page](https://a-slip.github.io) |
 | 2026-03-30 |  **Active Stereo-Camera Outperforms Multi-Sensor Setup in ACT Imitation Learning for Humanoid Manipulation** | Robin Kühn et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2603.28422) |
@@ -363,7 +363,7 @@
 | 2025-07-21 | ⭐🖐 **Adaptive Visuo-Tactile Fusion with Predictive Force Attention for Dexterous Manipulation** | Jinzhou Li et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2505.13982) · [Page](https://adaptac-dex.github.io/) |
 | 2025-07-17 |  **Few-shot transfer of tool-use skills using human demonstrations with proximity and tactile sensing** | Marina Y. Aoyama et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2507.13200) |
 | 2025-07-11 | 🖐 **Towards Human-level Dexterity via Robot Learning** | Gagan Khandate | ❔ 未知 | [arXiv](https://arxiv.org/abs/2507.09117) |
-| 2025-07-08 | 🖐 **Learning thin deformable object manipulation with a multi-sensory integrated soft hand** | Chao Zhao et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2411.13952) |
+| 2025-07-08 | 🖐 **Learning thin deformable object manipulation with a multi-sensory integrated soft hand** | Chao Zhao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2411.13952) |
 | 2025-07-02 |  **Benchmarking Generalizable Bimanual Manipulation: RoboTwin Dual-Arm Collaboration Challenge at CVPR 2025 MEIS Workshop** | Tianxing Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2506.23351) · [Page](https://robotwin-benchmark.github.io/cvpr-2025-challenge/) |
 | 2025-06-18 | ⭐🖐 **PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands** | Pei Lin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2504.16649) · [Page](https://peilin-666.github.io/projects/PP-Tac/) |
 | 2025-06-18 |  **TACT: Humanoid Whole-body Contact Manipulation through Deep Imitation Learning with Tactile Modality** | Masaki Murooka et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2506.15146) |
@@ -431,7 +431,6 @@
 | 2024-07-13 | 🖐 **Curriculum Is More Influential Than Haptic Information During Reinforcement Learning of Object Manipulation Against Gravity** | Pegah Ojaghi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2407.09986) |
 | 2024-06-19 |  **M2CURL: Sample-Efficient Multimodal Reinforcement Learning via Self-Supervised Representation Learning for Robotic Manipulation** | Fotios Lygerakis et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2401.17032) · [Page](https://sites.google.com/view/M2CURL/home) |
 | 2024-06-11 | 🖐 **Autonomous Robotic Assembly: From Part Singulation to Precise Assembly** | Kei Ota et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2406.05331) · [Page](https://www.youtube.com/watch?v=cZ9M1DQ23OI) |
-| 2024-05-28 | 🖐 **Development of a Novel Impedance-Controlled Quasi-Direct-Drive Robotic Hand** | Jay Best et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.18730) |
 | 2024-05-24 |  **Transformer-XL for Long Sequence Tasks in Robotic Learning from Demonstration** | Gao Tianci | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.15562) |
 | 2024-05-23 | 🖐 **Privileged Sensing Scaffolds Reinforcement Learning** | Edward S. Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.14853) · [Page](https://penn-pal-lab.github.io/scaffolder/) |
 | 2024-05-22 | ⭐🖐 **Learning Visuotactile Skills with Two Multifingered Hands** | Toru Lin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2404.16823) · [Page](https://toruowo.github.io/hato/) |
@@ -468,13 +467,11 @@
 | 2023-09-13 | 🖐 **Curriculum-based Sensing Reduction in Simulation to Real-World Transfer for In-hand Manipulation** | Lingfeng Tao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2309.07350) |
 | 2023-09-11 | 🖐 **ViHOPE: Visuotactile In-Hand Object 6D Pose Estimation with Shape Completion** | Hongyu Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2309.05662) |
 | 2023-08-31 | 🖐 **Inter-finger Small Object Manipulation with DenseTact Optical Tactile Sensor** | Won Kyung Do et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2308.16480) |
-| 2023-08-20 | 🖐 **Development of a Novel Impedance-Controlled Quasi-Direct-Drive Robot Hand** | Jay Best | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.10409) |
 | 2023-08-02 |  **Attention for Robot Touch: Tactile Saliency Prediction for Robust Sim-to-Real Tactile Control** | Yijiong Lin et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2307.14510) · [Page](https://sites.google.com/view/) |
 | 2023-08-02 |  **Grasp Stability Assessment Through Attention-Guided Cross-Modality Fusion and Transfer Learning** | Zhuangzhuang Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.00980) |
 | 2023-07-26 |  **Sim-to-Real Model-Based and Model-Free Deep Reinforcement Learning for Tactile Pushing** | Max Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2307.14272) · [Page](https://sites.google.com/view/) |
 | 2023-07-12 | ⭐ **Bi-Touch: Bimanual Tactile Manipulation with Sim-to-Real Deep Reinforcement Learning** | Yijiong Lin et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2307.06423) · [Page](https://sites.google.com/view/bi-touch/) |
 | 2023-06-27 | 🖐 **Hierarchical Graph Neural Networks for Proprioceptive 6D Pose Estimation of In-hand Objects** | Alireza Rezazadeh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2306.15858) |
-| 2023-06-16 | 🖐 **Tactile-Reactive Roller Grasper** | Shenli Yuan et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2306.09946) |
 | 2023-05-23 | 🖐 **MultiSCOPE: Disambiguating In-Hand Object Poses with Proprioception and Tactile Feedback** | Andrea Sipos et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2305.14204) |
 | 2023-05-22 | ⭐ **Crossing the Reality Gap in Tactile-Based Learning** | Ya-Yen Tsai et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2305.09870) |
 | 2023-05-21 |  **Beyond Flat GelSight Sensors: Simulation of Optical Tactile Sensors of Complex Morphologies for Sim2Real Learning** | Daniel Fernandes Gomes et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2305.12605) · [Page](https://danfergo.github.io/geltip-sim) |
@@ -485,7 +482,6 @@
 | 2023-03-21 | ⭐🖐 **Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play** | Irmak Guzey et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2303.12076) · [Page](https://tactile-dexterity.github.io/) |
 | 2023-03-10 | 🖐 **In-Hand Manipulation of Unknown Objects with Tactile Sensing for Insertion** | Chaoyi Pan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2210.13403) |
 | 2023-03-05 |  **Seq2Seq Imitation Learning for Tactile Feedback-based Manipulation** | Wenyan Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2303.02646) |
-| 2023-02-27 | 🖐 **Visuo-Tactile-Based Slip Detection Using A Multi-Scale Temporal Convolution Network** | Junli Gao et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2302.13564) |
 
 ## Other
 
@@ -1033,6 +1029,7 @@
 | 2024-05-29 |  **You've Got to Feel It To Believe It: Multi-Modal Bayesian Inference for Semantic and Property Prediction** | Parker Ewen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2402.05872) · [Page](https://roahmlab.github.io/multimodal_mapping/) |
 | 2024-05-28 | 🖐 **Tactile-Driven Non-Prehensile Object Manipulation via Extrinsic Contact Mode Control** | Miquel Oller et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.18214) |
 | 2024-05-28 | ⭐ **Automatic Calibration for an Open-source Magnetic Tactile Sensor** | Lowiek Van den Stockt et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2405.18582) · [Code](https://github.com/LowiekVDS/Open-source-Magnetic-) |
+| 2024-05-28 | 🖐 **Development of a Novel Impedance-Controlled Quasi-Direct-Drive Robotic Hand** | Jay Best et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.18730) |
 | 2024-05-23 |  **Visuo-Tactile based Predictive Cross Modal Perception for Object Exploration in Robotics** | Anirvan Dutta et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.12634) |
 | 2024-05-23 |  **Visuo-Tactile Keypoint Correspondences for Object Manipulation** | Jeong-Jung Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.14515) |
 | 2024-05-21 |  **Transformer in Touch: A Survey** | Jing Gao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2405.12779) |
@@ -1132,6 +1129,7 @@
 | 2023-09-07 |  **Machine Learning for Tangible Effects: Natural Language Processing for Uncovering the Illicit Massage Industry & Computer Vision for Tactile Sensing** | Rui Ouyang | 🔀 混合 | [arXiv](https://arxiv.org/abs/2309.03470) |
 | 2023-09-06 | 🖐 **REBOOT: Reuse Data for Bootstrapping Efficient Real-World Dexterous Manipulation** | Zheyuan Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2309.03322) · [Page](https://sites.google.com/view/reboot-) |
 | 2023-08-21 |  **Embedded Object Detection and Mapping in Soft Materials Using Optical Tactile Sensing** | Jose A. Solano-Castellanos et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2308.11087) |
+| 2023-08-20 | 🖐 **Development of a Novel Impedance-Controlled Quasi-Direct-Drive Robot Hand** | Jay Best | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.10409) |
 | 2023-08-16 |  **Autoencoding a Soft Touch to Learn Grasping from On-land to Underwater** | Ning Guo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.08510) |
 | 2023-08-13 |  **Viia-hand: a Reach-and-grasp Restoration System Integrating Voice interaction, Computer vision and Auditory feedback for Blind Amputees** | Chunhao Peng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.06891) |
 | 2023-08-10 |  **A novel tactile palm for robotic object manipulation** | Fuqiang Zhao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2308.05386) |
@@ -1155,6 +1153,7 @@
 | 2023-06-29 |  **TacMMs: Tactile Mobile Manipulators for Warehouse Automation** | Zhuochao He et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2306.16783) · [Page](https://sites.google.com/view/tacmms) |
 | 2023-06-26 |  **A pose and shear-based tactile robotic system for object tracking, surface following and object pushing** | John Lloyd et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2306.08560) · [Page](https://www.youtube.com/watch?v=xVs4hd34ek0) |
 | 2023-06-22 |  **Multimodal Zero-Shot Learning for Tactile Texture Recognition** | Guanqun Cao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2306.12705) · [Page](https://sites.google.com/view/multimodalzsl) |
+| 2023-06-16 | 🖐 **Tactile-Reactive Roller Grasper** | Shenli Yuan et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2306.09946) |
 | 2023-06-10 | 🖐 **Bayesian and Neural Inference on LSTM-based Object Recognition from Tactile and Kinesthetic Information** | Francisco Pastor et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2306.06423) |
 | 2023-06-09 |  **Enabling Robot Manipulation of Soft and Rigid Objects with Vision-based Tactile Sensors** | Michael C. Welle et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2306.05791) |
 | 2023-06-09 |  **Augmenting Off-the-Shelf Grippers with Tactile Sensing** | Remko Proesmans et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2306.05902) · [Code](https://github.com/RemkoPr/icra-2023-workshop-tactile-fingertips) |
@@ -1202,6 +1201,7 @@
 | 2023-03-02 |  **Active Mass Distribution Estimation from Tactile Feedback** | Jiacheng Yuan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2303.01010) |
 | 2023-03-01 |  **Polymer-Based Self-Calibrated Optical Fiber Tactile Sensor** | Wentao Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2303.00619) |
 | 2023-02-28 | 🖐 **TANDEM3D: Active Tactile Exploration for 3D Object Recognition** | Jingxi Xu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2209.08772) · [Page](https://jxu.ai/tandem3d) |
+| 2023-02-27 | 🖐 **Visuo-Tactile-Based Slip Detection Using A Multi-Scale Temporal Convolution Network** | Junli Gao et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2302.13564) |
 | 2023-02-20 |  **Foundations and Trends in Multimodal Machine Learning: Principles, Challenges, and Open Questions** | Paul Pu Liang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2209.03430) |
 | 2023-02-06 |  **Learning to Predict Grip Quality from Simulation: Establishing a Digital Twin to Generate Simulated Data for a Grip Stability Metric** | Stefanie Wucherer et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2302.03504) |
 | 2023-01-31 | 🖐 **Collision-aware In-hand 6D Object Pose Estimation using Multiple Vision-based Tactile Sensors** | Gabriele M. Caddeo et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2301.13667) |
