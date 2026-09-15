@@ -1,0 +1,50 @@
+name: Tactile arXiv Daily
+
+on:
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "回溯历史文献（--backfill）"
+        type: boolean
+        default: false
+  schedule:
+    # arXiv 每个工作日约 00:00 UTC（美东 20:00）发布新论文
+    - cron: "30 1 * * *"
+    - cron: "30 13 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tactile-arxiv-daily
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch and classify papers
+        run: python tactile_arxiv.py ${{ github.event.inputs.backfill == 'true' && '--backfill' || '' }}
+
+      - name: Commit updates
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/papers.json docs/papers.js PAPERS.md
+          if git diff --cached --quiet; then
+            echo "No changes"
+          else
+            git commit -m "chore: daily paper update $(date -u +%Y-%m-%d)"
+            git pull --rebase
+            git push
+          fi

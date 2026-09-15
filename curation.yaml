@@ -1,0 +1,13 @@
+# 人工修正（优先级最高）。修改后运行 `python tactile_arxiv.py --reclassify` 立即生效。
+#
+# papers:
+#   "2409.17549":
+#     categories: ["VTLA", "Tactile Representation"]   # 完全覆盖自动分类
+#     modality: numeric            # numeric / vision / mixed / unknown
+#     pinned: true                 # 置顶
+#     note: "用帕西尼三轴力 taxel 的 LEAP Hand，重点精读"
+#   "2401.18084":
+#     hidden: true                 # 隐藏（不在页面与 PAPERS.md 中显示）
+#
+# 写在这里的 arXiv ID 如果库里没有，会自动按 ID 拉取并加入。
+papers: {}

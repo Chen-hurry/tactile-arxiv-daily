@@ -1,0 +1,116 @@
+# =====================================================================
+#  Tactile arXiv Daily —— 灵巧手 × 触觉 文献追踪配置
+#  修改本文件后重新运行 `python tactile_arxiv.py --reclassify` 即可按新规则重新分类全部已存文献
+# =====================================================================
+
+title: "Tactile Dexterous arXiv Daily"
+subtitle: "灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪"
+
+# ---------------- 存储与输出 ----------------
+paths:
+  db: "data/papers.json"          # 全量文献库（唯一数据源）
+  seeds: "seeds.yaml"             # 人工整理的参考文献（启动/补充用）
+  curation: "curation.yaml"       # 人工修正：隐藏 / 置顶 / 强制分类 / 笔记
+  readme: "PAPERS.md"             # Markdown 汇总（按类别，自动生成）
+  web_data: "docs/papers.js"      # 网页数据（index.html 直接读取，可 file:// 打开）
+
+# ---------------- 收录时间范围 ----------------
+# 早于该日期发表的论文不收录（seeds 同样适用；想保留个别经典旧论文，写进 curation.yaml 即可）
+min_date: "2023-01-01"
+
+# ---------------- 拉取设置 ----------------
+fetch:
+  # arXiv 官方 API（按提交时间倒序，增量翻页，遇到已有且早于上次更新的论文即停止）
+  api_url: "https://export.arxiv.org/api/query"
+  page_size: 100
+  max_pages_per_query: 3          # 日常增量；--backfill 时使用 backfill_pages
+  backfill_pages: 20
+  delay_seconds: 4                # arXiv 要求请求间隔 >= 3s
+  max_retries: 4                  # 429/5xx 指数退避重试；耗尽后本轮熔断，改用网页/RSS 兜底
+  timeout: 60
+  # 限定 arXiv 学科，减少噪声
+  arxiv_categories: ["cs.RO", "cs.LG", "cs.CV", "cs.AI", "eess.SY", "cs.HC", "physics.app-ph", "eess.SP"]
+  # 检索式（arXiv API 语法）。宽召回，细分类在本地规则中完成
+  queries:
+    - 'abs:tactile OR abs:taxel OR abs:taxels OR abs:visuotactile OR abs:"visuo-tactile" OR abs:"visual-tactile" OR abs:"vision-tactile"'
+    - 'abs:"electronic skin" OR abs:"e-skin" OR abs:"robot skin" OR ti:touch'
+    - '(abs:dexterous OR abs:"multi-fingered" OR abs:"robotic hand") AND (abs:force OR abs:haptic OR abs:contact)'
+    - '(abs:"vision-language-action" OR abs:VLA) AND (abs:force OR abs:haptic OR abs:contact)'
+  # API 不可用时的兜底 1：arxiv.org 网页搜索（摘要检索，多个词为 AND）
+  html_queries: ["tactile", "taxel", "visuotactile", "electronic skin robot", "dexterous hand force", "vision-language-action force"]
+  # API 不可用时的兜底 2：arXiv 每日 RSS（只含当天新论文，本地规则过滤）
+  rss_fallback: true
+  rss_feeds: ["cs.RO", "cs.LG", "cs.CV", "cs.AI", "eess.SY"]
+
+# ---------------- 相关性门槛 ----------------
+# 标题+摘要必须命中下面任一组（组内全部命中），否则丢弃（seeds / curation 中的论文不受限）
+relevance_gate:
+  - ['tactile|taxels?|visuo-?tactile|visual-tactile|vision-tactile|\btouch\b|touch sensing|e-skin|electronic skin|robot(ic)? skin|haptic', 'robot|manipulat|grasp|gripper|dexter|finger|in-hand|end-effector|\bpolic(y|ies)\b|\bVLAs?\b']
+  - ['dexterous|multi-?fingered|robot(ic)? hands?|anthropomorphic hand', '\bforce\b|contact-rich|\bcontact\b']
+  - ['vision-language-action|\bVLAs?\b', '\bforce\b|torque|haptic|contact|tactile']
+exclude_gate:
+  - 'touchscreen|touch screen|braille|virtual reality|\bVR\b|mixed reality|affective|social touch|emotional|stress relief|vibrotactile (display|feedback for (users|people))|haptic display|aircraft|\bUAVs?\b|drone|autonomous driving|mouse model|neuro-?musculoskeletal'
+
+# ---------------- 类别 ----------------
+# match: 列表中每一项是“组”，组内为正则（忽略大小写），全部组命中才归入该类
+# boost: 额外加分关键词（仅影响排序得分）
+# 一篇论文可以属于多个类别；都不命中则进入 "Other"
+categories:
+  Sim:
+    zh: "触觉仿真环境"
+    desc: "触觉/力觉仿真器、可微触觉仿真、带触觉的仿真基准与环境（MuJoCo / Isaac / SAPIEN / Genesis 等）"
+    match:
+      - ['simulator|simulation (platform|framework|environment|library|pipeline)|(tactile|touch|taxel|visuo-?tactile|sensor|contact|elastomer) simulation|simulat\w* (of |for )?(the )?(tactile|touch|taxel|visuo-?tactile|elastomer|soft contact)|isaac ?(gym|lab|sim)|mujoco|sapien|maniskill|genesis|pybullet|differentiable (physics|simulat)|physics engine|benchmark\w* in simulation|simulated benchmark']
+      - ['tactile|taxel|visuo-?tactile|touch sensing|tactile sensor']
+    boost: ['tactile simulat', 'simulator', 'differentiable', 'penalty-based', 'simulation (platform|framework|library)', 'GPU']
+
+  VTLA:
+    zh: "视觉-触觉-语言-动作模型"
+    desc: "将触觉/力觉引入 VLA 的多模态大模型：VTLA、Tactile-VLA、Force-VLA、触觉世界模型 + VLA 等"
+    match:
+      - ['vision-language-action|\bVLAs?\b|\bVTLA\b|language-action|vision-language model|\bVLMs?\b|\bMLLMs?\b|large language model|\bLLMs?\b|multimodal large|foundation (policy|model)']
+      - ['tactile|taxel|touch|\bforce\b|haptic|torque']
+      - ['robot|manipulat|grasp|gripper|dexter|\bpolic(y|ies)\b|\bVLAs?\b|embodied']
+    boost: ['\bVTLA\b', 'tactile-language', 'touch-language', 'force-aware', 'vision-tactile-language']
+
+  VTA:
+    zh: "视觉-触觉-动作策略"
+    desc: "不含语言条件，以触觉（可融合视觉/本体）为输入输出动作的策略：模仿学习、扩散策略、强化学习、Sim2Real"
+    match:
+      - ['imitation|diffusion policy|policy learning|behaviou?r cloning|flow matching|visuomotor|action chunk|demonstrations?|\bpolic(y|ies)\b|reinforcement learning|\bRL\b|sim-to-real|sim2real|teacher-student|in-hand (manipulation|rotation|reorientation)']
+      - ['visuo-?tactile|visual-tactile|vision-tactile|tactile|taxel|touch']
+    exclude: ['vision-language-action|\bVLAs?\b|\bVTLA\b']
+    boost: ['visuo-?tactile policy', 'tactile policy', 'diffusion policy', 'sim-to-real', 'in-hand', 'reactive']
+
+# 多标签筛选：得分 >= max(min_score, keep_ratio × 最高分) 的类别保留，最多 max_topics 个
+classify:
+  min_score: 4
+  keep_ratio: 0.5
+  max_topics: 3
+
+other_category:
+  enabled: true      # false：不属于以上三类的论文直接不收录
+  name: "Other"
+  zh: "其他触觉相关"
+  desc: "传感器硬件、数据集/遥操作、触觉表征、抓取力控等未归入 Sim / VTLA / VTA 的触觉工作"
+
+# ---------------- 触觉模态识别 ----------------
+# 用于区分 “数值型”（taxel/力阵列，帕西尼一类）与 “视觉型”（GelSight/DIGIT 等图像触觉）
+modality:
+  numeric:
+    - 'taxels?|piezoresistive|capacitive tactile|capacitive sens|piezoelectric|hall.effect|magnetic tactile|magnetometer|tactile array|sensor array|pressure array|force array|pressure distribution'
+    - 'paxini|帕西尼|uskin|xela|reskin|anyskin|biotac|numatac|e-skin|electronic skin|force.sensitive resistor|\bFSRs?\b|barometric'
+    - 'tri-?axial|three-axis force|3-?axis force|3d force|multi-axis force|6-?axis|six-axis|force/torque|\bF/T\b|fingertip force'
+    - 'tactile glove|pressure glove|joint torque'
+  vision:
+    - 'gelsight|gelslim|(?-i:\bDIGIT\b)|tactip|vitactip|9dtact|dtact|evetac|tac3d|densetact|gelstereo|soft bubble|insight sensor'
+    - 'vision-based tactile|optical tactile|camera-based tactile|image-based tactile|tactile images?|marker displacement|elastomer.{0,20}camera'
+  # 网页默认是否隐藏 “纯视觉型触觉” 论文（可在页面上切换）
+  hide_vision_only_by_default: false
+
+# 灵巧手相关标记
+hand_regex: 'dexterous|multi-?fingered|anthropomorphic|robot(ic)? hands?|five-fingered|allegro|leap hand|shadow hand|inspire hand|ability hand|paxini|帕西尼|in-hand'
+paxini_regex: 'paxini|帕西尼'
+
+# 可选：每次更新后自动 git commit（本地仓库，不 push）
+git_auto_commit: false

@@ -1,0 +1,26 @@
+Tactile arXiv Daily (VTLA)
+
+This project is a derivative work of:
+
+  * cv-arxiv-daily
+    https://github.com/Vincentqyw/cv-arxiv-daily
+    Copyright (c) 2021 Vincentqyw (Realcat)
+    Licensed under the Apache License, Version 2.0
+
+  * robotics_arXiv_daily (a fork of cv-arxiv-daily)
+    https://github.com/jiangranlv/robotics_arXiv_daily
+    Licensed under the Apache License, Version 2.0
+
+Summary of modifications (2026-09) relative to robotics_arXiv_daily/daily_arxiv.py:
+  * Rewritten fetching: direct arXiv API (Atom) parsing without the `arxiv`
+    package, with rate-limit backoff, a circuit breaker, and fallbacks to the
+    arxiv.org search page, arxiv.org/abs pages and the arXiv daily RSS feeds.
+  * Replaced one-query-per-keyword grouping with broad retrieval plus local,
+    configurable rule-based multi-label classification (Sim / VTLA / VTA / Other).
+  * Added tactile-modality detection (numeric taxel/force vs. vision-based).
+  * Added curated seed references (seeds.yaml) and manual curation (curation.yaml).
+  * Replaced the Markdown/Jekyll output with a JSON database, a generated
+    PAPERS.md, and a standalone searchable web page (docs/index.html).
+  * Removed automatic git push; added cron/daemon scheduling scripts.
+
+The original LICENSE (Apache License 2.0) is included in this repository.

@@ -1,0 +1,587 @@
+# 人工整理的参考文献（⭐ 精选）。由文献检索整理，arXiv ID 均已核对。
+# 字段：id（必填）、title、category（Sim / VTLA / VTA，缺省则自动分类）、extra_categories、modality（taxel/force/vision-based/mixed，缺省则按摘要自动识别）、note
+# 新增论文只需添加 id（和可选的 category / note），下次运行会自动补全元数据。
+
+# ======== Sim ========
+- id: '2012.08456'
+  title: 'TACTO: A Fast, Flexible, and Open-source Simulator for High-Resolution Vision-based Tactile Sensors'
+  category: Sim
+  modality: vision-based
+  note: 经典视觉触觉仿真器基线（光学触觉，非阵列力），作为领域里程碑参考。
+- id: '2109.04027'
+  title: 'Taxim: An Example-based Simulation Model for GelSight Tactile Sensors'
+  category: Sim
+  modality: vision-based
+  note: 基于样例的GelSight仿真模型，视觉触觉仿真的代表作。
+- id: '2207.10763'
+  title: 'Tactile Gym 2.0: Sim-to-real Deep Reinforcement Learning for Comparing Low-cost High-Resolution Robot Touch'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: vision-based
+  note: 开源触觉强化学习仿真环境，横向比较多种低成本光学触觉传感器。
+- id: '2301.08343'
+  title: 'Tacchi: A Pluggable and Low Computational Cost Elastomer Deformation Simulator for Optical Tactile Sensors'
+  category: Sim
+  modality: vision-based
+  note: 用MPM模拟弹性体形变的光学触觉仿真器，计算开销低。
+- id: '2305.09870'
+  title: Crossing the Reality Gap in Tactile-Based Learning
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: taxel
+  note: 把压力阵列的每个taxel建模为质量-弹簧-阻尼并辨识参数，是阵列触觉sim2real的方法参考。
+- id: '2311.05843'
+  title: 'TacIPC: Intersection- and Inversion-free FEM-based Elastomer Simulation For Optical Tactile Sensors'
+  category: Sim
+  modality: vision-based
+  note: 基于IPC的FEM弹性体仿真，高保真接触建模思路可迁移到阵列传感器。
+- id: '2403.08716'
+  title: 'DIFFTACTILE: A Physics-based Differentiable Tactile Simulator for Contact-rich Robotic Manipulation'
+  category: Sim
+  modality: vision-based
+  note: 基于物理的可微触觉仿真器，适合做系统辨识和基于梯度的策略优化。
+- id: '2408.06506'
+  title: 'TacSL: A Library for Visuotactile Sensor Simulation and Learning'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: vision-based
+  note: Isaac Gym中GPU并行的触觉图像与接触力场仿真库，其力场部分可借鉴到阵列力仿真。
+- id: '2409.12735'
+  title: 'Fine Manipulation Using a Tactile Skin: Learning in Simulation and Sim-to-Real Transfer'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: taxel
+  note: 可配合刚体仿真器的触觉皮肤taxel模型，带参数标定，并完成多指手的仿真到真机迁移。
+- id: '2411.04776'
+  title: 'TacEx: GelSight Tactile Simulation in Isaac Sim -- Combining Soft-Body and Visuotactile Simulators'
+  category: Sim
+  modality: vision-based
+  note: 在Isaac Sim/Isaac Lab中集成触觉仿真，是IsaacLab触觉扩展的参考实现。
+- id: '2411.12503'
+  title: 'ManiSkill-ViTac 2025: Challenge on Manipulation Skill Learning With Vision and Tactile Sensing'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: vision-based
+  note: 视触觉操作挑战赛与仿真基准，可用于评测视触融合策略。
+- id: '2501.08077'
+  title: 'HydroelasticTouch: Simulation of Tactile Sensors with Hydroelastic Contact Surfaces'
+  category: Sim
+  modality: taxel
+  note: 用水弹性接触模型在MuJoCo框架中仿真压力型触觉阵列。
+- id: '2503.09100'
+  title: 'Tacchi 2.0: A Low Computational Cost and Comprehensive Dynamic Contact Simulator for Vision-based Tactile Sensors'
+  category: Sim
+  modality: vision-based
+  note: Tacchi升级版，支持按压、滑移、旋转等动态接触仿真。
+- id: '2504.12908'
+  title: 'Taccel: Scaling Up Vision-based Tactile Robotics via High-performance GPU Simulation'
+  category: Sim
+  modality: vision-based
+  note: 结合IPC与ABD的高性能GPU触觉仿真平台，可大规模并行。
+- id: '2602.10093'
+  title: 'UniVTAC: A Unified Simulation Platform for Visuo-Tactile Manipulation Data Generation, Learning, and Benchmarking'
+  category: Sim
+  extra_categories:
+  - VTLA
+  modality: vision-based
+  note: 统一的视触觉数据合成与评测平台，面向VLA类策略的触觉数据生成。
+- id: '2603.28475'
+  title: 'Tac2Real: Reliable and GPU Visuotactile Simulation for Online Reinforcement Learning and Zero-Shot Real-World Deployment'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: vision-based
+  note: 多GPU并行的视触觉仿真，支持在线强化学习并零样本迁移到真机。
+- id: '2604.20295'
+  title: 'ETac: A Lightweight and Efficient Tactile Simulation Framework for Learning Dexterous Manipulation'
+  category: Sim
+  extra_categories:
+  - VTA
+  modality: taxel
+  note: Isaac Gym中轻量的MEMS压力阵列触觉仿真，支持4096个并行环境训练灵巧手，和PaXini阵列最接近。
+
+# ======== VTLA ========
+- id: '2505.09577'
+  title: 'VTLA: Vision-Tactile-Language-Action Model with Preference Learning for Insertion Manipulation'
+  category: VTLA
+  modality: vision-based
+  note: 首批VTLA模型之一，用仿真视触觉数据加DPO偏好学习完成插孔任务。
+- id: '2505.22159'
+  title: 'ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation'
+  category: VTLA
+  modality: force
+  note: 用力感知的MoE把六维力信号接入VLA，是数值力输入进VLA的范例。
+- id: '2507.09160'
+  title: 'Tactile-VLA: Unlocking Vision-Language-Action Model''s Physical Knowledge for Tactile Generalization'
+  category: VTLA
+  note: 把触觉深度融入VLA，并用位置-力混合控制器执行，实现接触力层面的泛化。
+- id: '2507.17294'
+  title: 'VLA-Touch: Enhancing Vision-Language-Action Models with Dual-Level Tactile Feedback'
+  category: VTLA
+  modality: vision-based
+  note: 不微调VLA，在规划层和控制层两级引入触觉反馈。
+- id: '2508.08706'
+  title: 'OmniVTLA: Vision-Tactile-Language-Action Models with Semantic-Aligned Tactile Sensing'
+  category: VTLA
+  modality: mixed
+  note: 双路触觉编码器同时兼容视觉触觉和力型触觉，直接适用于异构传感器（含阵列力）。
+- id: '2601.20321'
+  title: 'TaF-VLA: Tactile-Force Alignment in Vision-Language-Action Models for Force-aware Manipulation'
+  category: VTLA
+  note: 把触觉与力做对齐而非与视觉对齐，强调力感知的VLA范式。
+- id: '2603.12665'
+  title: 'TacVLA: Contact-Aware Tactile Fusion for Robust Vision-Language-Action Manipulation'
+  category: VTLA
+  note: 用接触感知门控只在发生接触时激活触觉token，实现自适应融合。
+- id: '2605.07308'
+  title: 'AT-VLA: Adaptive Tactile Injection for Enhanced Feedback Reaction in Vision-Language-Action Models'
+  category: VTLA
+  note: 自适应注入触觉，缓解VLA预训练能力被破坏和推理慢导致反应不及时的问题。
+- id: '2606.08737'
+  title: 'Dream-Tac: A Unified Tactile World Action Model for Contact-Rich Robot Manipulation'
+  category: VTLA
+  extra_categories:
+  - VTA
+  note: 联合预测动作、未来视觉和触觉动态的触觉世界动作模型。
+- id: '2606.29089'
+  title: 'TAP-VLA: Tactile Annotation Prompting for Vision Language Action Models'
+  category: VTLA
+  note: 把触觉以标注提示的形式交给VLA，避免新增模态带来的分布偏移。
+- id: '2606.31723'
+  title: 'UniTacVLA: Unified Tactile Understanding and Prediction in Vision Language Action Models'
+  category: VTLA
+  note: 在VLA中统一建模触觉理解与未来触觉预测，面向灵巧接触操作。
+- id: '2607.01067'
+  title: Human-Centric Transferable Tactile Pre-Training for Dexterous Robotic Manipulation
+  category: VTLA
+  note: 在160小时人类触觉-动作数据（H-Tac）上预训练，并迁移到带压阻或3D触觉的灵巧手。
+- id: '2607.02840'
+  title: 'TACO: TActile World Model as a Self-COrrector forScalable VLA Post-Training'
+  category: VTLA
+  note: 用触觉世界模型生成纠错数据，对VLA做接触感知的后训练。
+- id: '2607.07287'
+  title: 'TouchWorld: A Predictive and Reactive Tactile Foundation Model for Dexterous Manipulation'
+  category: VTLA
+  extra_categories:
+  - VTA
+  note: 以人类手掌压力图数据预训练的预测式触觉基础模型，面向灵巧手操作。
+- id: '2607.23782'
+  title: '$N_0$-VTLA: Scaling Vision-Tactile-Language-Action Model with Latent Tactile Tokens'
+  category: VTLA
+  note: 自称首个在大规模视触觉数据上预训练的VTLA基础模型。
+- id: '2607.24485'
+  title: 'τ: Learning Touch-Augmented Vision-Language-Action Models from Future Visual Supervision'
+  category: VTLA
+  note: 用未来视觉作监督，为VLA学习动作条件的时空高维触觉表征。
+
+# ======== VTA ========
+- id: '2303.12076'
+  title: 'Dexterity from Touch: Self-Supervised Pre-Training of Tactile Representations with Robotic Play'
+  category: VTA
+  modality: taxel
+  note: T-Dex：Allegro手加XELA阵列，自监督预训练触觉编码器后做视触融合。
+- id: '2309.12300'
+  title: 'See to Touch: Learning Tactile Dexterity through Visual Incentives'
+  category: VTA
+  modality: taxel
+  note: 用视觉奖励引导基于阵列触觉的多指灵巧策略优化。
+- id: '2404.16823'
+  title: Learning Visuotactile Skills with Two Multifingered Hands
+  category: VTA
+  modality: taxel
+  note: HATO：带触觉的双多指手遥操作系统，配视触觉模仿学习。
+- id: '2409.17549'
+  title: Canonical Representation and Force-Based Pretraining of 3D Tactile for Dexterous Visuo-Tactile Policy Learning
+  category: VTA
+  modality: taxel
+  note: LEAP手搭配PaXini 3x5阵列触觉，做3D触觉规范表征、力预训练和扩散策略，与用户硬件高度一致。
+- id: '2410.24091'
+  title: '3D-ViTac: Learning Fine-Grained Manipulation with Visuo-Tactile Sensing'
+  category: VTA
+  modality: taxel
+  note: 低成本压阻触觉阵列与点云融合，用于遥操作数据采集和策略学习。
+- id: '2411.15753'
+  title: 'FoAR: Force-Aware Reactive Policy for Contact-Rich Robotic Manipulation'
+  category: VTA
+  modality: force
+  note: 由接触预测器门控的视觉加力/力矩融合策略。
+- id: '2503.02881'
+  title: 'Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for Contact-Rich Manipulation'
+  category: VTA
+  note: 快慢双层视触觉扩散策略，能在动作块执行过程中实时响应触觉。
+- id: '2504.06156'
+  title: 'ViTaMIn: Learning Contact-Rich Tasks Through Robot-Free Visuo-Tactile Manipulation Interface'
+  category: VTA
+  modality: vision-based
+  note: 不需要机器人的手持视触觉数据采集接口，用于接触丰富任务的模仿学习。
+- id: '2505.13982'
+  title: Adaptive Visuo-Tactile Fusion with Predictive Force Attention for Dexterous Manipulation
+  category: VTA
+  modality: mixed
+  note: 以力信号为query做自适应视触融合，并加入未来力预测辅助任务。
+- id: '2506.15953'
+  title: 'ViTacFormer: Learning Cross-Modal Representation for Visuo-Tactile Dexterous Manipulation'
+  category: VTA
+  note: 交叉注意力融合视触觉，并用自回归头预测未来触觉，面向多指灵巧操作。
+- id: '2507.15062'
+  title: 'Touch in the Wild: Learning Fine-Grained Manipulation with a Portable Visuo-Tactile Gripper'
+  category: VTA
+  note: 便携视触觉夹爪用于野外数据采集和精细操作策略学习（模态为推断，待核实）。
+- id: '2508.14441'
+  title: 'FBI: Learning Dexterous In-hand Manipulation with Dynamic Visuotactile Shortcut Policy'
+  category: VTA
+  note: 通过运动动力学把触觉与物体运动因果关联，做灵巧手内操作的模仿学习。
+- id: '2510.14647'
+  title: Spatially anchored Tactile Awareness for Robust Dexterous Manipulation
+  category: VTA
+  note: 把触觉测量锚定到手部运动学参考系中，追求亚毫米级精度的灵巧操作。
+- id: '2510.14930'
+  title: 'VT-Refine: Learning Bimanual Assembly with Visuo-Tactile Feedback via Simulation Fine-Tuning'
+  category: VTA
+  extra_categories:
+  - Sim
+  modality: taxel
+  note: 先用真机示教训练视触觉扩散策略，再在带触觉仿真的数字孪生中用RL微调。
+- id: '2511.05858'
+  title: 'ViTaMIn-B: A Reliable and Efficient Visuo-Tactile Bimanual Manipulation Interface'
+  category: VTA
+  modality: vision-based
+  note: ViTaMIn的双臂扩展，配新型DuoTact传感器和点云表征。
+- id: '2603.05687'
+  title: 'Contact-Grounded Policy: Dexterous Visuotactile Policy with Generative Contact Grounding'
+  category: VTA
+  note: 联合预测机器人状态与触觉轨迹，为多指手的多点接触做落地建模。
+- id: '2604.13015'
+  title: Learning Versatile Humanoid Manipulation with Touch Dreaming
+  category: VTA
+  note: 人形机器人配灵巧手触觉的数据采集，加上带触觉预测的Transformer策略。
+- id: '2303.10880'
+  title: 'Rotating without Seeing: Towards In-hand Dexterity through Touch'
+  category: VTA
+  modality: taxel
+  note: Allegro手上仅用密集二值触觉完成手内旋转，是taxel触觉灵巧操作的里程碑。
+- id: '2304.00736'
+  title: TacGNN:Learning Tactile-based In-hand Manipulation with a Blind Robot
+  category: VTA
+  modality: taxel
+  note: 用图神经网络编码阵列触觉，做盲操作的手内操作RL。
+- id: '2307.06423'
+  title: 'Bi-Touch: Bimanual Tactile Manipulation with Sim-to-Real Deep Reinforcement Learning'
+  category: VTA
+  modality: vision-based
+  note: 双臂触觉RL的sim2real，基于Tactile Gym 2.0。
+- id: '2309.09979'
+  title: General In-Hand Object Rotation with Vision and Touch
+  category: VTA
+  note: RotateIt：用视触觉Transformer在线推断物体形状和物理属性后蒸馏部署。
+- id: '2312.01853'
+  title: 'Robot Synesthesia: In-Hand Manipulation with Visuotactile Sensing'
+  category: VTA
+  modality: taxel
+  note: 把触觉转成点云与视觉统一表征，用于RL手内操作和sim2real。
+- id: '2401.12496'
+  title: 'DexTouch: Learning to Seek and Manipulate Objects with Tactile Dexterity'
+  category: VTA
+  modality: taxel
+  note: 多指手在无视觉条件下靠触觉搜索并操作物体，仿真RL后迁移真机。
+- id: '2403.12170'
+  title: Sim2Real Manipulation on Unknown Objects with Tactile-based Reinforcement Learning
+  category: VTA
+  note: 基于触觉的多指手强化学习，并完成sim-to-real迁移。
+- id: '2405.07391'
+  title: 'AnyRotate: Gravity-Invariant In-Hand Object Rotation with Sim-to-Real Touch'
+  category: VTA
+  modality: vision-based
+  note: 借助sim-to-real触觉实现与重力方向无关的手内旋转（光学触觉）。
+- id: '2407.07885'
+  title: Learning In-Hand Translation Using Tactile Skin With Shear and Normal Force Sensing
+  category: VTA
+  modality: taxel
+  note: 三轴剪切力和法向力触觉皮肤的传感器模型，零样本sim2real，和3D力taxel直接相关。
+- id: '2501.03606'
+  title: 'VTAO-BiManip: Masked Visual-Tactile-Action Pre-training with Object Understanding for Bimanual Dexterous Manipulation'
+  category: VTA
+  note: 视触觉-动作掩码预训练，给双手灵巧课程RL提供先验。
+- id: '2509.07445'
+  title: 'Text2Touch: Tactile In-Hand Manipulation with LLM-Designed Reward Functions'
+  category: VTA
+  modality: vision-based
+  note: 用LLM设计奖励函数训练多轴触觉手内旋转，再蒸馏迁移到真机。
+- id: '2509.17812'
+  title: 'Tac2Motion: Contact-Aware Reinforcement Learning with Tactile Feedback for Robotic Hand Manipulation'
+  category: VTA
+  note: 基于触觉的奖励塑形加触觉嵌入观测，完成拧盖类手内操作。
+- id: '2509.23075'
+  title: In-Hand Manipulation of Articulated Tools with Dexterous Robot Hands with Sim-to-Real Transfer
+  category: VTA
+  modality: taxel
+  note: IsaacLab训练，融合全手36x44 taxel触觉与力矩反馈，操作剪刀、钳子等铰接工具。
+- id: '2509.25746'
+  title: 'TacRefineNet: Goal-Conditioned Tactile Grasp Refinement for Edge-Prominent Objects'
+  category: VTA
+  extra_categories:
+  - Sim
+  note: 11x9压阻阵列灵巧手的纯触觉抓取修正，用MuJoCo触觉仿真生成数据。
+- id: '2601.02778'
+  title: 'Closing the Reality Gap: Zero-Shot Sim-to-Real Deployment for Dexterous Force-Based Grasping and Manipulation'
+  category: VTA
+  extra_categories:
+  - Sim
+  modality: taxel
+  note: 快速的密集虚拟触觉单元仿真加关节力矩感知，实现力控抓取与重定向的零样本迁移。
+- id: '2603.04531'
+  title: 'PTLD: Sim-to-real Privileged Tactile Latent Distillation for Dexterous Manipulation'
+  category: VTA
+  modality: taxel
+  note: Allegro手加Xela皮肤，不仿真触觉，改用特权潜变量蒸馏学习触觉策略。
+- id: '2605.28812'
+  title: 'Beyond Binary: Sim-to-Real Dexterous Manipulation with Physics-Grounded Contact Representation'
+  category: VTA
+  modality: taxel
+  note: 用压力中心表示稠密taxel接触并标定taxel朝向，在多指手上实现零样本sim-to-real。
+- id: '2606.11767'
+  title: Blind Dexterous Grasping via Real2Sim2Real Tactile Policy Learning
+  category: VTA
+  note: 对稀疏触觉做Real2Sim标定，并用布局感知编码实现多指手纯触觉盲抓。
+
+# ======== 未指定类别（传感器/数据集/表征/力控等，按规则自动分类） ========
+- id: '2401.18084'
+  title: 'Binding Touch to Everything: Learning Unified Multimodal Tactile Representations'
+  modality: vision-based
+  note: UniTouch把触觉对齐到视觉、语言和音频的里程碑工作（视觉触觉）。
+- id: '2402.13232'
+  title: A Touch, Vision, and Language Dataset for Multimodal Alignment
+  modality: vision-based
+  note: TVL触觉-视觉-语言对齐数据集和模型，属于视觉触觉的里程碑工作。
+- id: '2406.13640'
+  title: Transferable Tactile Transformers for Representation Learning Across Diverse Sensors and Tasks
+  modality: vision-based
+  note: T3跨传感器共享编码器的代表作（以视觉触觉为主），可借鉴其传感器专用头加共享主干的结构。
+- id: '2408.06481'
+  title: 'UniT: Data Efficient Tactile Representation with Generalization to Unseen Objects'
+  modality: vision-based
+  note: 数据高效的触觉表征，可泛化到未见物体（基于GelSight类传感器）。
+- id: '2408.08312'
+  title: 'HyperTaxel: Hyper-Resolution for Taxel-Based Tactile Signals Through Contrastive Learning'
+  modality: taxel
+  note: 用图结构和对比学习从低分辨率taxel信号重建高分辨率接触面，可泛化到不同taxel布局。
+- id: '2410.24090'
+  title: 'Sparsh: Self-supervised touch representations for vision-based tactile sensing'
+  modality: vision-based
+  note: Meta的视觉触觉自监督预训练里程碑，是触觉基础模型的重要基线。
+- id: '2502.12191'
+  title: 'AnyTouch: Learning Unified Static-Dynamic Representation across Multiple Visuo-tactile Sensors'
+  modality: vision-based
+  note: 多种视觉触觉传感器的统一静态和动态表征，属于视觉触觉路线的代表。
+- id: '2502.19638'
+  title: Sensor-Invariant Tactile Representation
+  modality: vision-based
+  note: 利用仿真多样化传感器实现零样本跨传感器迁移，其思路可借鉴到taxel阵列。
+- id: '2503.01058'
+  title: Training Tactile Sensors to Learn Force Sensing from Each Other
+  modality: vision-based
+  note: 在异构触觉传感器之间迁移力感知模型，对统一力标定有参考价值。
+- id: '2505.11420'
+  title: Self-supervised perception for tactile skin covered dexterous hands
+  modality: taxel
+  note: Sparsh-skin针对全手磁性皮肤的taxel信号做自监督预训练，与帕西尼阵列数据形式最接近。
+- id: '2505.16289'
+  title: 'TacCompress: A Benchmark for Multi-Point Tactile Data Compression in Dexterous Hand'
+  modality: taxel
+  note: 基于帕西尼灵巧手（1140个三维taxel）构建的多点触觉数据压缩基准，数据格式与本项目一致。
+- id: '2506.14754'
+  title: 'Tactile Beyond Pixels: Multisensory Touch Representations for Robot Manipulation'
+  modality: mixed
+  note: Sparsh-X融合图像、音频、运动和压力等多种触觉模态，说明非图像触觉信号也有表征价值。
+- id: '2602.09617'
+  title: 'AnyTouch 2: General Optical Tactile Representation Learning For Dynamic Tactile Perception'
+  modality: vision-based
+  note: AnyTouch的后续工作，侧重动态触觉感知，属于光学触觉路线。
+- id: '2606.13102'
+  title: 'FTP-1: A Generalist Foundation Tactile Policy Across Tactile Sensors for Contact-Rich Manipulation'
+  note: 跨传感器的通用触觉策略基础模型，关注其是否兼容阵列式力触觉。
+- id: '2606.31236'
+  title: 'TactX: Learning Shared Tactile Representations Across Diverse Sensors'
+  note: 2026年跨异构触觉传感器共享表征的新工作，可评估能否接入帕西尼数据。
+- id: '2310.16917'
+  title: 'MimicTouch: Leveraging Multi-modal Human Tactile Demonstrations for Contact-rich Manipulation'
+  modality: vision-based
+  note: 利用人类多模态触觉演示学习接触丰富的操作。
+- id: '2406.03813'
+  title: 'Touch100k: A Large-Scale Touch-Language-Vision Dataset for Touch-Centric Multimodal Representation'
+  modality: vision-based
+  note: 大规模触觉-语言-视觉数据集（视觉触觉）。
+- id: '2407.03162'
+  title: 'Bunny-VisionPro: Real-Time Bimanual Dexterous Teleoperation for Imitation Learning'
+  modality: force
+  note: 基于Vision Pro的双手灵巧遥操作，带触觉反馈。
+- id: '2409.02224'
+  title: 'EgoPressure: A Dataset for Hand Pressure and Pose Estimation in Egocentric Vision'
+  modality: mixed
+  note: 第一视角手部压力与姿态数据集，可用于从视频推断接触压力。
+- id: '2410.07554'
+  title: 'ForceMimic: Force-Centric Imitation Learning with Force-Motion Capture System for Contact-Rich Manipulation'
+  modality: force
+  note: 力与运动同步捕捉系统，用于以力为中心的模仿学习。
+- id: '2502.07730'
+  title: 'DOGlove: Dexterous Manipulation with a Low-Cost Open-Source Haptic Force Feedback Glove'
+  modality: force
+  note: 低成本开源力反馈加触觉反馈手套，用于灵巧手遥操作。
+- id: '2505.21864'
+  title: 'DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous Manipulation'
+  modality: mixed
+  note: 用人手加外骨骼采集灵巧手数据并带触觉，是无机器人数据采集的代表方案。
+- id: '2506.01941'
+  title: 'FreeTacMan: Robot-free Visuo-Tactile Data Collection System for Contact-rich Manipulation'
+  modality: vision-based
+  note: 穿戴式无机器人视触觉数据采集系统（视觉触觉）。
+- id: '2506.01944'
+  title: 'Feel the Force: Contact-Driven Learning from Humans'
+  modality: mixed
+  note: 用人手触觉手套采集接触力，训练力感知的机器人策略。
+- id: '2510.09229'
+  title: 'Glovity: Learning Dexterous Contact-Rich Manipulation via Spatial Wrench Feedback Teleoperation System'
+  modality: force
+  note: 带空间力旋量反馈和指尖霍尔标定的灵巧遥操作系统。
+- id: '2510.25725'
+  title: A Humanoid Visual-Tactile-Action Dataset for Contact-Rich Manipulation
+  note: 人形机器人视觉-触觉-动作数据集，面向接触丰富的操作。
+- id: '2511.20887'
+  title: 'ACE-F: A Cross Embodiment Foldable System with Force Feedback for Dexterous Teleoperation'
+  modality: force
+  note: 跨本体、带力反馈的可折叠灵巧遥操作系统。
+- id: '2512.08920'
+  title: 'OSMO: Open-Source Tactile Glove for Human-to-Robot Skill Transfer'
+  modality: taxel
+  note: 开源三轴触觉手套，人和机器人手戴同一手套采集剪切力和法向力，实现无机器人数据的技能迁移。
+- id: '2512.16842'
+  title: 'OPENTOUCH: Bringing Full-Hand Touch to Real-World Interaction'
+  modality: taxel
+  note: 在真实场景中采集全手触觉的手物交互数据。
+- id: '2602.13579'
+  title: 'TactAlign: Human-to-Robot Policy Transfer via Tactile Alignment'
+  note: 通过对齐人和机器人的触觉空间，把人类演示迁移为机器人策略。
+- id: '2603.05804'
+  title: 'CDF-Glove: A Cable-Driven Force Feedback Glove for Dexterous Teleoperation'
+  modality: force
+  note: 绳驱力反馈手套，已在多种灵巧手上验证。
+- id: '2603.20850'
+  title: 'Glove2Hand: Synthesizing Natural Hand-Object Interaction from Multi-Modal Sensing Gloves'
+  modality: mixed
+  note: IMU加电容指尖触觉手套，并发布同步触觉的手物交互数据集HandSense。
+- id: '2603.28542'
+  title: 'Feel Robot Feels: Tactile Feedback Array Glove for Dexterous Manipulation'
+  modality: taxel
+  note: TAG手套把机器人触觉阵列实时回传给操作者，实现触觉闭环遥操作。
+- id: '2606.09243'
+  title: 'EgoTactile: Learning Grasp Pressure for Everyday Objects from Egocentric Video'
+  modality: mixed
+  note: 用全手触觉手套的分布式力做监督，从第一视角视频学习抓握压力。
+- id: '2606.16370'
+  title: 'ART-Glove: Articulated Tactile Glove for Contact-Grounded Dexterous Interaction Capture'
+  modality: taxel
+  note: 2048个压阻taxel的全手触觉手套，用于捕捉带接触信息的灵巧交互。
+- id: '2607.09190'
+  title: 'TactiDex: A Real-World Tactile-Guided Benchmark for Human-Like Dexterous Manipulation'
+  note: 真实世界的触觉引导灵巧操作基准。
+- id: '2005.14679'
+  title: 'DIGIT: A Novel Design for a Low-Cost Compact High-Resolution Tactile Sensor with Application to In-Hand Manipulation'
+  modality: vision-based
+  note: 低成本视觉触觉传感器的里程碑（视觉触觉）。
+- id: '2111.00071'
+  title: 'ReSkin: versatile, replaceable, lasting tactile skins'
+  modality: taxel
+  note: 可替换的磁性霍尔触觉皮肤，是磁性taxel路线的里程碑。
+- id: '2405.18582'
+  title: Automatic Calibration for an Open-source Magnetic Tactile Sensor
+  modality: taxel
+  note: 开源三轴磁性触觉指尖的自动标定方法，可参考taxel力标定流程。
+- id: '2409.08276'
+  title: 'AnySkin: Plug-and-play Skin Sensing for Robotic Touch'
+  modality: taxel
+  note: 即插即用的磁性皮肤，可跨实例复用，适合装在灵巧手指尖。
+- id: '2411.02479'
+  title: Digitizing Touch with an Artificial Multimodal Fingertip
+  modality: vision-based
+  note: Digit 360多模态指尖传感器（视觉触觉加压力、振动等）。
+- id: '2412.14482'
+  title: Embedding high-resolution touch across robotic hands enables adaptive human-like grasping
+  modality: vision-based
+  note: F-TAC Hand全手大面积高分辨率触觉，实现自适应抓取（基于相机的触觉）。
+- id: '2506.09994'
+  title: 'eFlesh: Highly customizable Magnetic Touch Sensing using Cut-Cell Microstructures'
+  modality: taxel
+  note: 可定制外形的磁性触觉传感器，可做成机器人手指垫。
+- id: '2506.18960'
+  title: 'FORTE: Tactile Force and Slip Sensing on Compliant Fingers for Delicate Manipulation'
+  modality: force
+  note: 柔顺手指上集成力与滑移感知，用于易碎物体操作。
+- id: '2509.14984'
+  title: 'The Role of Touch: Towards Optimal Tactile Sensing Distribution in Anthropomorphic Hands for Dexterous In-Hand Manipulation'
+  modality: taxel
+  note: 研究拟人手上触觉传感器的最优布局，对帕西尼传感器的布置和取舍有参考价值。
+- id: '2604.20689'
+  title: 'FingerEye: Learning Dexterous Manipulation with Continuous Vision-Tactile Sensing'
+  modality: vision-based
+  note: 指尖连续视触觉感知的灵巧操作硬件方案。
+- id: '2604.28156'
+  title: 'FlexiTac: A Low-Cost, Open-Source, Scalable Tactile Sensing Solution for Robotic Systems'
+  modality: taxel
+  note: 开源柔性压阻触觉阵列加多通道读出板，与阵列式数据格式一致。
+- id: '2605.21976'
+  title: 'TacO: Benchmarking Tactile Sensors for Object Manipulation'
+  modality: mixed
+  note: 横向对比多种触觉传感器在物体操作中表现的基准。
+- id: '2607.29231'
+  title: 'TacPrint: A Wearable Fingertip Tactile Sensor for Human-to-Robot Contact Reproduction'
+  note: 可穿戴指尖触觉传感器，用于把人手接触复现到机器人上。
+- id: '2010.01928'
+  title: Slip detection for grasp stabilisation with a multi-fingered tactile robot hand
+  modality: vision-based
+  note: 多指触觉手上的滑移检测与抓取稳定化（TacTip光学触觉）。
+- id: '2202.09549'
+  title: Learning to Detect Slip with Barometric Tactile Sensors and a Temporal Convolutional Neural Network
+  modality: taxel
+  note: 用气压式触觉阵列加TCN做滑移检测，方法可直接迁移到力阵列时序数据。
+- id: '2210.00121'
+  title: Visuo-Tactile Transformers for Manipulation
+  modality: vision-based
+  note: 视触觉Transformer融合用于操作，是早期里程碑（视觉触觉）。
+- id: '2411.13335'
+  title: Tactile-based force estimation for interaction control with robot fingers
+  modality: taxel
+  note: 从触觉阵列估计交互力并用于手指力控制，与taxel力信号直接相关。
+- id: '2501.10356'
+  title: 'DexForce: Extracting Force-informed Actions from Kinesthetic Demonstrations for Dexterous Manipulation'
+  modality: force
+  note: 从示教中提取带力信息的动作，用于灵巧手接触丰富的操作。
+- id: '2503.17501'
+  title: Shear-based Grasp Control for Multi-fingered Underactuated Tactile Robotic Hands
+  modality: vision-based
+  note: 基于剪切力的多指欠驱动手抓握力调节（光学触觉）。
+- id: '2504.16649'
+  title: 'PP-Tac: Paper Picking Using Tactile Feedback in Dexterous Robotic Hands'
+  note: 灵巧手依靠触觉反馈抓取薄纸，属于精细力控抓取案例。
+- id: '2512.21043'
+  title: 'Tracing Energy Flow: Learning Tactile-based Grasping Force Control to Reduce Slippage in Dynamic Object Interaction'
+  note: 基于触觉学习抓握力控制，减少动态交互中的滑移。
+- id: '2603.07040'
+  title: 'TacDexGrasp: Compliant and Robust Dexterous Grasping with Tactile Feedback'
+  modality: taxel
+  note: 基于触觉反馈加SOCP控制器的多指柔顺抓取力控制，与本项目抓取任务直接相关。
+- id: '2603.08142'
+  title: Multifingered force-aware control for humanoid robots
+  modality: force
+  note: 人形机器人多指手的力感知控制。
+- id: '2603.18370'
+  title: Contact Status Recognition and Slip Detection with a Bio-inspired Tactile Hand
+  modality: taxel
+  note: 在五指仿生手的24通道触觉上做接触状态识别和滑移检测。
+- id: '2608.01824'
+  title: 'ReTouch: Empowering Contact-Rich Dexterous Manipulation with Online-Refined Tactile Prediction'
+  note: 在线修正触觉预测，辅助判断接触和抓取稳定性。

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tactile arXiv Daily</title>
+<style>
+:root{
+  --bg:#f6f5f2; --panel:#ffffff; --ink:#1d1f23; --muted:#6b6f76; --line:#e4e2dc;
+  --accent:#b4532a; --accent-soft:#f6e6dd;
+  --num:#1f7a5a; --num-soft:#dff1e9; --vis:#6d4fb3; --vis-soft:#ebe5f7;
+  --mix:#9a6b00; --mix-soft:#f6ecd2; --unk:#6b6f76; --unk-soft:#ecebe7;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#141518; --panel:#1c1e22; --ink:#e7e6e3; --muted:#9a9ca1; --line:#2c2f35;
+  --accent:#e08a5e; --accent-soft:#3a2a22;
+  --num:#5fcca2; --num-soft:#1d3a30; --vis:#b39bf0; --vis-soft:#2d2640;
+  --mix:#e0b45a; --mix-soft:#3a3120; --unk:#9a9ca1; --unk-soft:#2a2c30;
+}}
+:root[data-theme="dark"]{
+  --bg:#141518; --panel:#1c1e22; --ink:#e7e6e3; --muted:#9a9ca1; --line:#2c2f35;
+  --accent:#e08a5e; --accent-soft:#3a2a22;
+  --num:#5fcca2; --num-soft:#1d3a30; --vis:#b39bf0; --vis-soft:#2d2640;
+  --mix:#e0b45a; --mix-soft:#3a3120; --unk:#9a9ca1; --unk-soft:#2a2c30;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+header{padding:28px 24px 18px;border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:22px;letter-spacing:.2px}
+header p{margin:4px 0 0;color:var(--muted)}
+.layout{display:grid;grid-template-columns:260px 1fr;gap:24px;padding:20px 24px 60px;max-width:1360px;margin:0 auto}
+aside{position:sticky;top:12px;align-self:start;max-height:calc(100vh - 24px);overflow:auto}
+.topic{display:block;width:100%;text-align:left;border:0;background:none;color:var(--ink);padding:8px 10px;border-radius:8px;cursor:pointer;font:inherit}
+.topic:hover{background:var(--panel)}
+.topic.on{background:var(--accent-soft);color:var(--accent);font-weight:600}
+.topic .n{float:right;color:var(--muted);font-weight:400;font-variant-numeric:tabular-nums}
+.topic small{display:block;color:var(--muted);font-weight:400;font-size:12px}
+.side-h{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px;margin:18px 10px 6px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px}
+.toolbar input[type=search]{flex:1 1 260px;min-width:0;padding:9px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:6px 10px;border-radius:999px;cursor:pointer;font:inherit;font-size:13px;user-select:none}
+.chip.on{border-color:var(--accent);color:var(--accent);background:var(--accent-soft)}
+select{padding:7px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}
+.topic-desc{color:var(--muted);margin:4px 0 14px}
+.stats{color:var(--muted);font-size:13px;margin-bottom:8px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+.card h3{margin:0 0 4px;font-size:15px;line-height:1.4}
+.meta{color:var(--muted);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 0}
+.tag{font-size:12px;padding:1px 8px;border-radius:999px;background:var(--unk-soft);color:var(--unk);white-space:nowrap}
+.tag.numeric{background:var(--num-soft);color:var(--num)} .tag.vision{background:var(--vis-soft);color:var(--vis)}
+.tag.mixed{background:var(--mix-soft);color:var(--mix)} .tag.topic-t{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.tag.star{background:var(--accent-soft);color:var(--accent)}
+.note{margin-top:8px;padding:6px 10px;border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:4px;font-size:13px}
+details{margin-top:8px} summary{cursor:pointer;color:var(--muted);font-size:13px}
+details p{margin:6px 0 0;text-align:justify}
+.kw{color:var(--muted);font-size:12px;margin-top:6px}
+.actions{display:flex;gap:12px;align-items:center;margin-top:8px;font-size:13px;flex-wrap:wrap}
+.actions label{color:var(--muted);cursor:pointer}
+.card.read{opacity:.62}
+.new{color:#fff;background:var(--accent);font-size:11px;padding:0 6px;border-radius:4px;margin-left:6px;vertical-align:2px}
+.empty{color:var(--muted);padding:40px 0;text-align:center}
+.more{display:block;margin:14px auto;padding:8px 18px}
+@media (max-width:820px){
+  .layout{grid-template-columns:1fr;padding:14px 16px 40px}
+  aside{position:static;max-height:none;display:flex;overflow-x:auto;gap:4px}
+  .side-h{display:none} .topic{white-space:nowrap;width:auto} .topic small{display:none} .topic .n{float:none;margin-left:6px}
+  header{padding:20px 16px 14px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Tactile arXiv Daily</h1>
+  <p id="subtitle"></p>
+  <p style="font-size:12px">基于 <a href="https://github.com/jiangranlv/robotics_arXiv_daily" target="_blank" rel="noopener">robotics_arXiv_daily</a> / <a href="https://github.com/Vincentqyw/cv-arxiv-daily" target="_blank" rel="noopener">cv-arxiv-daily</a> 改写（Apache-2.0） · 数据来自 arXiv</p>
+</header>
+<div class="layout">
+  <aside id="topics"></aside>
+  <main>
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="搜索标题 / 摘要 / 作者 / arXiv ID…">
+      <select id="sort">
+        <option value="date">按日期</option>
+        <option value="score">按类别相关度</option>
+        <option value="added">按入库时间</option>
+      </select>
+    </div>
+    <div class="toolbar" id="mods"></div>
+    <div class="toolbar">
+      <span class="chip" id="f-hand">🖐 仅灵巧手</span>
+      <span class="chip" id="f-seed">⭐ 仅人工精选</span>
+      <span class="chip" id="f-new">🆕 近 7 天</span>
+      <span class="chip" id="f-unread">未读</span>
+      <span class="chip" id="f-fav">♥ 收藏</span>
+    </div>
+    <div class="topic-desc" id="topic-desc"></div>
+    <div class="stats" id="stats"></div>
+    <div id="list"></div>
+    <button class="chip more" id="more" hidden>加载更多</button>
+  </main>
+</div>
+<script src="papers.js"></script>
+<script>
+(function(){
+  const D = window.TACTILE_DATA;
+  if (!D) { document.getElementById('list').innerHTML = '<div class="empty">未找到 papers.js，请先运行 python tactile_arxiv.py</div>'; return; }
+  const MOD = {numeric:'🔢 数值型', mixed:'🔀 混合', vision:'📷 视觉型', unknown:'❔ 未识别'};
+  const store = {
+    get(k, d){ try { const v = localStorage.getItem('tactile:'+k); return v ? JSON.parse(v) : d; } catch(e){ return d; } },
+    set(k, v){ try { localStorage.setItem('tactile:'+k, JSON.stringify(v)); } catch(e){} }
+  };
+  const marks = store.get('marks', {});           // {id: {read:bool, fav:bool}}
+  const st = Object.assign({
+    topic: 'ALL', q: '', sort: 'date', hand: false, seed: false, recent: false, unread: false, fav: false,
+    mods: {numeric:true, mixed:true, vision:!D.hide_vision_default, unknown:true}
+  }, store.get('state', {}));
+  st.q = '';
+  let limit = 60;
+
+  document.getElementById('title').textContent = D.title || 'Tactile arXiv Daily';
+  document.getElementById('subtitle').textContent = `${D.subtitle || ''} · 更新于 ${D.last_update} · 共 ${D.papers.length} 篇`;
+  const today = new Date(); const cutoff = new Date(today - 7*864e5).toISOString().slice(0,10); const cutoff30 = new Date(today - 30*864e5).toISOString().slice(0,10);
+  const isRecent = p => p.published >= cutoff || ((p.added_at||'').slice(0,10) >= cutoff && p.published >= cutoff30);
+  const esc = s => (s||'').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  function filtered(ignoreTopic){
+    const q = st.q.trim().toLowerCase();
+    return D.papers.filter(p => {
+      if (!ignoreTopic && st.topic !== 'ALL' && !p.topics.includes(st.topic)) return false;
+      if (!st.mods[p.modality]) return false;
+      if (st.hand && !p.hand) return false;
+      if (st.seed && !p.seed) return false;
+      if (st.recent && !isRecent(p)) return false;
+      if (st.unread && (marks[p.id]||{}).read) return false;
+      if (st.fav && !(marks[p.id]||{}).fav) return false;
+      if (q && !(p.title+' '+p.abstract+' '+p.authors.join(' ')+' '+p.id+' '+(p.note||'')).toLowerCase().includes(q)) return false;
+      return true;
+    });
+  }
+
+  function renderTopics(){
+    const base = filtered(true);
+    const el = document.getElementById('topics');
+    const btn = (name, zh, n) => `<button class="topic ${st.topic===name?'on':''}" data-t="${esc(name)}">${esc(name)}<span class="n">${n}</span><small>${esc(zh)}</small></button>`;
+    el.innerHTML = '<div class="side-h">类别</div>' + btn('ALL', '全部', base.length) +
+      D.topics.map(t => btn(t.name, t.zh, base.filter(p => p.topics.includes(t.name)).length)).join('');
+    el.querySelectorAll('.topic').forEach(b => b.onclick = () => { st.topic = b.dataset.t; limit = 60; render(); });
+  }
+
+  function renderMods(){
+    const el = document.getElementById('mods');
+    el.innerHTML = '<span style="color:var(--muted);font-size:13px">触觉模态：</span>' +
+      Object.entries(MOD).map(([k,v]) => `<span class="chip ${st.mods[k]?'on':''}" data-m="${k}">${v}</span>`).join('');
+    el.querySelectorAll('[data-m]').forEach(c => c.onclick = () => { st.mods[c.dataset.m] = !st.mods[c.dataset.m]; limit = 60; render(); });
+  }
+
+  function card(p){
+    const m = marks[p.id] || {};
+    const isNew = isRecent(p);
+    const authors = p.authors.length > 4 ? p.authors.slice(0,3).join(', ') + ' … ' + p.authors[p.authors.length-1] : p.authors.join(', ');
+    const kw = [...(p.modality_keywords?.numeric||[]), ...(p.modality_keywords?.vision||[])];
+    const links = [`<a href="https://arxiv.org/abs/${p.id}" target="_blank" rel="noopener">arXiv</a>`,
+      `<a href="https://arxiv.org/pdf/${p.id}" target="_blank" rel="noopener">PDF</a>`,
+      p.code_url ? `<a href="${esc(p.code_url)}" target="_blank" rel="noopener">Code</a>` : '',
+      p.project_url ? `<a href="${esc(p.project_url)}" target="_blank" rel="noopener">Page</a>` : ''].filter(Boolean).join(' · ');
+    return `<div class="card ${m.read?'read':''}" data-id="${p.id}">
+      <h3>${p.pinned?'📌 ':''}${esc(p.title)}${isNew?'<span class="new">NEW</span>':''}</h3>
+      <div class="meta"><span>${p.published || '—'}</span><span>${esc(authors)}</span><span>${p.id}${p.primary_category?' · '+p.primary_category:''}</span><span>${links}</span></div>
+      <div class="tags">
+        <span class="tag ${p.modality}">${MOD[p.modality]}</span>
+        ${p.hand?'<span class="tag">🖐 灵巧手</span>':''}
+        ${p.paxini?'<span class="tag star">PaXini</span>':''}
+        ${p.seed?'<span class="tag star">⭐ 精选</span>':''}
+        ${p.topics.map(t => `<span class="tag topic-t">${esc(t)}</span>`).join('')}
+      </div>
+      ${p.note?`<div class="note">${esc(p.note)}</div>`:''}
+      ${p.abstract?`<details><summary>摘要</summary><p>${esc(p.abstract)}</p>${p.comment?`<p class="kw">Comment: ${esc(p.comment)}</p>`:''}</details>`:'<div class="kw">元数据待下次更新时补全</div>'}
+      ${kw.length?`<div class="kw">模态关键词：${esc(kw.join(', '))}</div>`:''}
+      <div class="actions">
+        <label><input type="checkbox" data-k="read" ${m.read?'checked':''}> 已读</label>
+        <label><input type="checkbox" data-k="fav" ${m.fav?'checked':''}> 收藏</label>
+      </div>
+    </div>`;
+  }
+
+  function render(){
+    store.set('state', {...st, q: ''});
+    renderTopics(); renderMods();
+    ['hand','seed','recent','unread','fav'].forEach(k => document.getElementById({hand:'f-hand',seed:'f-seed',recent:'f-new',unread:'f-unread',fav:'f-fav'}[k]).classList.toggle('on', st[k]));
+    const t = D.topics.find(x => x.name === st.topic);
+    document.getElementById('topic-desc').textContent = t ? `${t.zh}：${t.desc}` : '全部类别';
+    let list = filtered(false);
+    if (st.sort === 'score') list.sort((a,b) => ((b.scores||{})[st.topic]||Math.max(0,...Object.values(b.scores||{}))) - ((a.scores||{})[st.topic]||Math.max(0,...Object.values(a.scores||{}))));
+    else if (st.sort === 'added') list.sort((a,b) => (b.added_at||'').localeCompare(a.added_at||''));
+    else list.sort((a,b) => (b.pinned - a.pinned) || b.published.localeCompare(a.published));
+    const counts = {}; list.forEach(p => counts[p.modality] = (counts[p.modality]||0)+1);
+    document.getElementById('stats').textContent = `${list.length} 篇 · ` + Object.entries(MOD).map(([k,v]) => `${v} ${counts[k]||0}`).join(' · ');
+    document.getElementById('list').innerHTML = list.length ? list.slice(0, limit).map(card).join('') : '<div class="empty">没有符合条件的论文</div>';
+    document.getElementById('more').hidden = list.length <= limit;
+  }
+
+  document.getElementById('list').addEventListener('change', e => {
+    const k = e.target.dataset.k; if (!k) return;
+    const id = e.target.closest('.card').dataset.id;
+    marks[id] = {...(marks[id]||{}), [k]: e.target.checked}; store.set('marks', marks);
+    if (k === 'read') e.target.closest('.card').classList.toggle('read', e.target.checked);
+  });
+  let timer; document.getElementById('q').addEventListener('input', e => { clearTimeout(timer); timer = setTimeout(() => { st.q = e.target.value; limit = 60; render(); }, 150); });
+  document.getElementById('sort').value = st.sort;
+  document.getElementById('sort').onchange = e => { st.sort = e.target.value; render(); };
+  document.getElementById('more').onclick = () => { limit += 60; render(); };
+  [['f-hand','hand'],['f-seed','seed'],['f-new','recent'],['f-unread','unread'],['f-fav','fav']].forEach(([id,k]) =>
+    document.getElementById(id).onclick = () => { st[k] = !st[k]; limit = 60; render(); });
+  render();
+})();
+</script>
+</body>
+</html>
