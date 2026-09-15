@@ -14,6 +14,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 concurrency:
   group: tactile-arxiv-daily
@@ -48,3 +50,8 @@ jobs:
             git pull --rebase
             git push
           fi
+
+  # GITHUB_TOKEN 的提交不会触发其他工作流，所以在这里直接调用部署
+  deploy:
+    needs: update
+    uses: ./.github/workflows/pages.yml
