@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-15 17:42",
+ "last_update": "2026-09-16 06:36",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -58196,6 +58196,281 @@
     "VTA"
    ],
    "updated": "2026-09-14",
+   "version": "v1"
+  },
+  "2609.16319": {
+   "abstract": "Dexterous grasping is usually conducted for specific tasks, leading to heterogeneous constraints such as specific approach directions, desired contact regions, specified wrist trajectories, and functional hand poses. Our previous work, GraspXL, achieves scalable grasping motion synthesis for diverse objects and hand morphologies, while lacking controllability for synthesis under such various task-driven constraints. In this paper, we propose ConGraspXL, which extends GraspXL with controllable constraint-conditioned grasp motion synthesis that accommodates diverse task-driven constraints and their combinations. We introduce a hierarchical constraint formulation, enable flexible constraint composition with a masked residual interface, and improve control precision with dynamic hand centers and feed-forward wrist guidance. Without losing the strong generalization capabilities of GraspXL, ConGraspXL enables precise and flexible controllability for various individual constraints and their combinations, providing a plug-and-play low-level grasp controller for downstream applications such as whole-body grasp completion, functional grasping, and human-motion imitation.",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Hui Zhang",
+    "Mirko Meboldt",
+    "Jie Song"
+   ],
+   "code_url": null,
+   "comment": "This work has been submitted to the IEEE for possible publication. Copyright may be transferred without notice, after which this version may no longer be accessible",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.16319",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-14",
+   "scores": {},
+   "seed": false,
+   "title": "ConGraspXL: Controllable Constraint-Conditioned Dexterous Grasping Motion Synthesis",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-14",
+   "version": "v1"
+  },
+  "2609.16432": {
+   "abstract": "Conversations with large language models (LLMs) can substantially shift beliefs and attitudes, raising concerns about manipulation using AI persuasion. Here we test whether a light-touch AI literacy intervention - a brief warning that LLMs can be prompted to persuade and may present information selectively - helps protect users. Across two experiments (total N = 3,208 Americans) in which participants conversed with an LLM instructed to shift their views about different political topics, the presence of a warning reduced belief change by roughly one-half (-48.1%, 95% CI [-59.5%, -36.8%]) relative to the control. Importantly, the warning did not significantly reduce trust in generative AI more broadly. Light-touch literacy interventions can help protect users against AI political persuasion.",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.HC"
+   ],
+   "authors": [
+    "Reed Orchinik",
+    "David Rand"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.16432",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.HC",
+   "project_url": null,
+   "published": "2026-09-14",
+   "scores": {
+    "VTLA": 8.0
+   },
+   "seed": false,
+   "title": "A light-touch AI literacy intervention helps protect against AI political persuasion",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-14",
+   "version": "v1"
+  },
+  "2609.16437": {
+   "abstract": "Collecting high-quality robot data for contact-rich manipulation tasks is essential for enabling robots to acquire real-world skills. However, existing data collection solutions often lack the capability to obtain stable and high-frequency tactile feedback, limiting their effectiveness in contact-rich manipulation scenarios. In this work, we propose a versatile teleoperation system with tactile-driven assistance to enable high-frequency and stable contact-rich manipulation. The proposed XRoboToolKit-T teleoperation system incorporates a tactile-informed force control architecture, designed to ensure both stable and precise force control in contact-rich manipulation during teleoperation. The stabilizer haptic module rapidly analyzes the normal force distribution and infers pseudo shear force, enabling real-time tactile-based assistance during manipulation. The refiner haptic module integrates a vision-language-action model to predict and refine manipulation actions based on tactile sensing data and task descriptions. We apply the proposed teleoperation system to challenging contact-rich manipulation tasks, including grasping a deformable rubber pipette for liquid transfer and inserting a medical syringe into a vascular training pad, to demonstrate the effectiveness of tactile-informed force control. Furthermore, the system achieves higher data collection efficiency and improved manipulation stability compared to state-of-the-art teleoperation without tactile assistance.",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.HC"
+   ],
+   "authors": [
+    "Xiwen Dengxiong",
+    "Xueting Wang",
+    "Ke Jing",
+    "Rui Li",
+    "Yunbo Zhang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.16437",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-14",
+   "scores": {
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "XRoboToolKit-T: Teleoperation with High Stability and Precision with Tactile Sensing for Contact-rich Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-14",
+   "version": "v1"
+  },
+  "2609.16504": {
+   "abstract": "Human videos provide demonstrations of dexterous manipulation but lack robot-executable actions and tactile measurements. We present UniDex-ViTac, a framework that uses human-video-guided simulation to generate robot demonstrations paired with fingertip contact observations for training a deployable visuo-tactile policy. Object-specific residual reinforcement learning specialists adapt annotated human-object interaction references to a robotic arm-hand system. Their successful rollouts pair final robot action targets with robot-side fingertip contact observations. From 50 human demonstrations across ten objects, we collect 10,000 simulated trajectories to train a single Action Chunking with Transformers (ACT) based generalist. The policy combines point clouds, proprioception, and four binary contact signals encoded through fingertip labels and a separate token, without requiring human references or privileged object identity and pose at deployment. The contact-augmented configuration achieves 68.3% macro-average success in simulation, compared with 55.5% for the point-cloud-only baseline. Without real-robot demonstrations or policy fine-tuning, it succeeds in 73/110 physical trials (66.4%) across six seen and five unseen objects, compared with 60/110 (54.5%) for the baseline, an increase of 11.8 percentage points. These results support the feasibility of learning a unified visuo-tactile dexterous manipulation policy from video-guided simulated interactions. Project page: https://unidex-vitac.github.io/",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Hyesung Lee",
+    "Si-Hwan Heo",
+    "Sungwook Yang"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 7 figures, 2 tables. Project page: https://unidex-vitac.github.io/",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.16504",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://unidex-vitac.github.io/",
+   "published": "2026-09-15",
+   "scores": {
+    "VTA": 21.5
+   },
+   "seed": false,
+   "title": "UniDex-ViTac: Learning Unified Visuo-Tactile Dexterous Manipulation Policy from Human Video Data",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-15",
+   "version": "v1"
+  },
+  "2609.16683": {
+   "abstract": "Learning humanoid-object interaction requires coordinating whole-body balance, locomotion, and dexterous hand contact to control both robot and object motion. Human demonstrations provide examples of coordinated interaction, but transferring these behaviors to humanoid robots requires learning how to establish and maintain effective contacts under different embodiments and dynamics. We present Weave, a unified framework for learning whole-body dexterous humanoid-object interaction from captured human demonstrations. Weave first converts captured human-object interactions into executable robot-object references through contact-aware retargeting and approach-motion completion. At its core is a contact- and geometry-aware policy that jointly commands 29 body joints and 12 actuated finger joints across multiple objects and interaction sequences. Evaluation across nine objects yields a 92.5% success rate on trained interactions and, without any additional training, 65.0% on sequences never seen during training. We additionally release ~9,000 physically executed rollouts spanning ~23 hours, providing robot-object trajectories with contact annotations for downstream interaction-policy learning and physically consistent HOI motion generation. Project website: https://xiaohu-art.github.io/Weave/",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "authors": [
+    "Liu Cao",
+    "Xingze Wu",
+    "Jingzhi Cui",
+    "Botian Xu",
+    "Mingzhi Pei",
+    "Ruoqu Chen",
+    "Mengdi Xu"
+   ],
+   "code_url": null,
+   "comment": "10 pages, 5 figures. Project website: https://xiaohu-art.github.io/Weave/",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.16683",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://xiaohu-art.github.io/Weave/",
+   "published": "2026-09-15",
+   "scores": {},
+   "seed": false,
+   "title": "Weave: Learning Whole-Body Dexterous Loco-Manipulation from Human-Object Interactions",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-15",
+   "version": "v1"
+  },
+  "2609.17035": {
+   "abstract": "Soft and continuum robots enable manipulation through distributed body deformation and contact, yet translating language and visual context into executable whole-body actuation remains a fundamental challenge. We present SWIM, a framework that maps an initial RGB observation and a language instruction to a complete actuation-command sequence. Its vision-language-action (VLA) policy, SWIM-VLA, combines a diffusion action head with Visual Soft Proprioception (VSP) through a shared representation of RGB observations, language instructions, and tendon states. The diffusion head models conditional distributions of expert command chunks, while VSP supervises ordered body-anchor predictions using simulation ground truth, encouraging the representation to retain body geometry when learning from limited demonstrations. Embodied mechanical intelligence supports physical execution of command sequences generated through iterative virtual rollout from evolving simulated observations, with intrinsic compliance providing local contact adaptation without online policy queries. We evaluate SWIM on packing, reaching, and grasping on a planar tendon-driven soft robot, with grasping targets anchored. In simulation, SWIM-VLA achieves success rates of 100\\%, 96\\%, and 88\\%, respectively, outperforming an adapted OpenVLA-OFT baseline and controlled ablations. On hardware, SWIM achieves success rates of 100\\%, 80\\%, and 75\\%, compared with 75\\%, 40\\%, and 25\\% for direct online deployment of the same policy checkpoint.",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Tingcong Liu",
+    "Aye Phyu Phyu Aung",
+    "Junjie Xiong",
+    "Siyi Ma",
+    "Bo An",
+    "Ke Wu",
+    "Senthilnath Jayavelu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.17035",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-15",
+   "scores": {},
+   "seed": false,
+   "title": "SWIM: Vision-Language-Grounded Soft Whole-Body Interactive Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-15",
+   "version": "v1"
+  },
+  "2609.17404": {
+   "abstract": "Dexterous in-hand manipulation requires coordinated control of multiple actuated joints, and a runtime joint fault can abruptly disrupt the contact configuration required for successful manipulation. In this work, we propose residual fault adaptation (RFA), a teacher-anchored framework for compensating for hidden command-channel faults. RFA retains a frozen healthy teacher to provide nominal behavior and trains a recurrent residual policy to infer corrective actions from proprioceptive and command-response history. During training, fault-injection domain randomization (FIDR) varies the fault mode, affected joint, severity, and onset time, while adaptive sampling increases the frequency of fault modes associated with lower recent performance. A frozen Direct FIDR policy provides a distributional reference only on fault-active training samples and is absent from deployment. The deployed controller receives neither fault labels nor controller-switching signals. Simulation experiments on the dexterous hand indicate that RFA can improve manipulation performance relative to the healthy policy under a fixed mixed-fault protocol. Real-robot experiments with software-injected faults further demonstrate zero-shot deployment of the learned adaptation policy.",
+   "added_at": "2026-09-16 06:36",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Linan Deng",
+    "Xing Liu",
+    "Lin Hong",
+    "Feng Hua",
+    "Guijun Ma",
+    "Zuogong Yue",
+    "Fumin Zhang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.17404",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-15",
+   "scores": {},
+   "seed": false,
+   "title": "Residual Fault Adaptation for Dexterous In-Hand Manipulation Under Runtime Joint Faults",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-15",
    "version": "v1"
   }
  }
