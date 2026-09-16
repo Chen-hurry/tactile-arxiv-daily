@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-16 06:36",
+ "last_update": "2026-09-16 17:40",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -35171,6 +35171,51 @@
    ],
    "updated": "2026-03-28",
    "version": "v3"
+  },
+  "2602.08776": {
+   "abstract": "Contact-rich teleoperation logs expose a policy I/O design choice: demonstrations may contain the robot execution (E), leader command (C), or both. These signals are not interchangeable: E2E may discard contact-generating command offsets, whereas E2C preserves these offsets but omits the robot's execution response. We propose Dual-State Conditioning (EC2C), which conditions on both E and C while predicting future C, exposing command-execution mismatch as a cue for contact, latency, payload, and operator compensation; in quasi-static contact, this cue is often force-correlated. On a low-cost setup without force, tactile , or motor-current policy input, EC2C outperforms E2E and a strong E2C baseline across several real-world contact-rich, force-sensitive, and dynamic tasks. These results support EC2C as a practical default I/O setting for contact-rich imitation learning. We further formulate latency-adaptive inpainting as a temporal extension of this I/O choice for action-chunking policies, and discuss when long histories help dynamic inference or introduce causal confounding.",
+   "added_at": "2026-09-16 17:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Cuijie Xu",
+    "Shurui Zheng",
+    "Zihao Su",
+    "Zhongchen Jian",
+    "Yuanfan Xu",
+    "Tinghao Yi",
+    "Xudong Zhang",
+    "Jian Wang",
+    "Yu Wang",
+    "Jinchen Yu"
+   ],
+   "code_url": null,
+   "comment": "16 pages, 9 figures, 6 tables. Substantially revised from v1. Accepted to CoRL 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2602.08776",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-15",
+   "scores": {
+    "VTA": 18.0
+   },
+   "seed": false,
+   "title": "Mind the Gap: Rethinking I/O Design for Contact-Rich Visuomotor Policy Learning",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-15",
+   "version": ""
   },
   "2602.09013": {
    "abstract": "Multi-finger robotic hand manipulation and grasping are challenging due to the high-dimensional action space and the difficulty of acquiring large-scale training data. Existing approaches largely rely on human teleoperation with wearable devices or specialized sensing equipment to capture hand-object interactions, which limits scalability. In this work, we propose VIDEOMANIP, a device-free framework that learns dexterous manipulation directly from RGB human videos. Leveraging recent advances in computer vision, VIDEOMANIP reconstructs explicit 3D robot-object trajectories from monocular videos by estimating human hand poses, object meshes, and retargets the reconstructed human motions to robotic hands for manipulation learning. To make the reconstructed robot data suitable for dexterous manipulation training, we introduce hand-object contact optimization with interaction-centric grasp modeling, as well as a demonstration synthesis strategy that generates diverse training trajectories from a single video, enabling generalizable policy learning without additional robot demonstrations. In simulation, the learned grasping model achieves a 70.25% success rate across 20 diverse objects using the Inspire Hand. In the real world, manipulation policies trained from RGB videos achieve an average 62.86% success rate across seven tasks using the LEAP Hand, outperforming retargeting-based methods by 15.87%. Project videos are available at videomanip.github.io.",
