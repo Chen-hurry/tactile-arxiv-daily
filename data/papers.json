@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-16 17:40",
+ "last_update": "2026-09-17 06:34",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -58517,6 +58517,298 @@
    ],
    "updated": "2026-09-15",
    "version": "v1"
+  },
+  "2609.17540": {
+   "abstract": "We propose a framework that transfers tacit human subjective criteria to robotic systems for the appropriate grasping of deformable objects. Achieving such behavior is challenging because a semantic gap exists between qualitative human expectations and quantitative robotic measurements. Conventional deep learning approaches for bridging this gap also require prohibitive amounts of manually annotated data for each newly encountered object. To address these challenges, our framework integrates a Vision-Language Model (VLM)-based semi-automated supervisor generator with a lightweight grasp state predictor, using a minimal set of human-annotated trials as contextual anchors to propagate subjective criteria to unannotated data. The prediction model then enables rapid online adaptation by sequentially estimating the grasp state from time-series tactile and grasping force measurements. Through experiments on three representative deformable objects and a human evaluation study with 25 participants, we demonstrate the feasibility of the proposed framework for adjusting grasping force according to human-perceived grasp appropriateness in the evaluated task setting.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ryohei Kobayashi",
+    "Kosei Isomoto",
+    "Yuga Yano",
+    "Yuichiro Tanaka",
+    "Hakaru Tamukoh"
+   ],
+   "code_url": null,
+   "comment": "8 pages, accepted as a conference paper for IEEE International Conference on Development and Learning (ICDL2026)",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.17540",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-07-14",
+   "scores": {
+    "VTLA": 5.0
+   },
+   "seed": false,
+   "title": "Human-Centric Grasp State Assessment: Toward Transferring Subjective Evaluation to Robots",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-07-14",
+   "version": ""
+  },
+  "2609.18174": {
+   "abstract": "Dexterous in-hand manipulation requires policies that coordinate high-DoF hand joints through intermittent, contact-rich interaction. Beyond target-orientation tracking, such policies must discover finger gaits that preserve object stability while adapting to geometry, anisotropy, pose, contact, and sensing changes. We propose \\method, a tactile -conditioned behavior prior model for dexterous reorientation. \\method distills multi-scale sphere specialists into a latent controller and lets downstream policies reuse the fixed tactile prior through residual latent actions, reducing renewed exploration from raw joint commands. The prior conditions on tactile -proprioceptive history so latent behavior reflects the current hand-object interaction. We evaluate arbitrary-pose transfer across anisotropic objects, commanded-axis rotation, and an arm-hand Grasp-to-AnyPose task in which the robot must grasp, lift, transport, and reach goal poses for novel tool geometries and generalized placements. Extensive experiments demonstrate that the proposed method accelerates training and enables stable policies where matched raw-action PPO remains near failure, with successful sim-to-real transfer in in-hand and arm-hand tasks.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jie Yin",
+    "Wanli Xing",
+    "Zeyuan Zhao",
+    "Xuezhou Zhu",
+    "Zhijie Deng",
+    "Kaifeng Zhang"
+   ],
+   "code_url": null,
+   "comment": "Corresponding to: Jie Yin (jie.yin@sharpa.com)",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.18174",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-16",
+   "scores": {
+    "VTA": 16.2
+   },
+   "seed": false,
+   "title": "TacBPM: A Tactile-conditioned Behavior Prior Model for Dexterous Reorientation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-16",
+   "version": ""
+  },
+  "2609.18213": {
+   "abstract": "Robotic piano playing has emerged as a standard benchmark for dexterous bimanual manipulation, yet progress on it has been measured almost entirely by note accuracy -- which keys are pressed (pitch) and when (onset) -- leaving the musical dynamics essential for expressive performance neither rewarded nor evaluated. We propose CANTABILE, a dynamics-aware framework for robotic piano performance that (i) closes the score-to-contact loop by conditioning the policy on upcoming velocity goals and mapping each key's angular velocity at onset back to MIDI velocity, (ii) couples a velocity-fidelity reward with an onset-coverage reward, so that dynamics cannot be improved by omitting difficult notes, and (iii) refines a frozen dynamics-aware base policy with an alpha-scaled, finger-only residual that localizes strike-intensity adaptation away from nominal note execution. On EXPRESSIVE-51, a dynamics-rich 51-song subset of RoboPianist, CANTABILE raises Velocity F1 -- jointly measuring pitch, onset, and intensity within a +/-8 MIDI-velocity tolerance -- from 0.06 to 0.34 over the RoboPianist baseline, improves all 51 songs, more than halves matched-note velocity error, and reduces log-mel distance to reference audio by 8%. Intensity-randomized training further enables runtime control of performance intensity without retraining.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Woosik Kim",
+    "Wonhyeok Choi",
+    "Sunghoon Im"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.18213",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-17",
+   "scores": {},
+   "seed": false,
+   "title": "CANTABILE: Learning Expressive Dynamics for Robotic Piano Performance",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.18242": {
+   "abstract": "Force -aware Vision - Language - Action (VLA) policies improve contact-rich manipulation, but typically combine task-level motion and contact-dependent adjustment in a single action prediction. Demonstrations provide no explicit labels for decomposing that prediction into a reusable reference action and a correction. We present ForceDelta-VLA, a correction-distillation framework that constructs an explicit force -correction target using paired predictions from a frozen teacher's force -conditioned and learned force -agnostic modes. A separate delay-correction target accounts for reference- action mismatch and the change in reference state. Training uses asynchronous schedule replay with the cached task context available during execution. The resulting lightweight policy adjusts the reference actions using recent force history and robot state, responding to contact changes between reference- action updates without regenerating complete action chunks. Across nine single-arm and bimanual contact-rich tasks, ForceDelta-VLA achieves an 82.2% mean success rate, compared with 54.4% for the original ForceVLA baseline. Direct execution of our Stage-1 Temporal Teacher achieves 70.6%. Relative to ForceVLA, the complete system reduces mean peak contact force over successful trials by approximately 26% on both platforms.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ju Dong",
+    "Yu Fu",
+    "Jian Chen",
+    "Yimeng Liu",
+    "Haocheng Zhao",
+    "Lei Zhang",
+    "Kaixin Bai",
+    "Liding Zhang",
+    "Diwen Zheng",
+    "Alois Christian Knoll",
+    "Angela P. Schoellig",
+    "Jianwei Zhang"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 8 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.18242",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-16",
+   "scores": {
+    "VTLA": 8.0
+   },
+   "seed": false,
+   "title": "ForceDelta-VLA: Distilling Force-Conditioned ActionCorrections for Contact-Rich Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-16",
+   "version": ""
+  },
+  "2609.18497": {
+   "abstract": "Vision - Language - Action (VLA) models have demonstrated strong performance across diverse robotic manipulation tasks, yet their predominantly vision -centric perception and position-controlled execution remain insufficient for contact-rich manipulation. Visual observations alone often provide limited evidence of contact onset and interaction magnitude, while position-control policies cannot respond compliantly to rapidly changing contact dynamics. To bridge both the perception and control gaps, we propose TAO- Force , a force -conditioned VLA framework that combines force -aware policy learning with contact-regulated execution. For force -aware perception, TAO- Force introduces Force -conditioned Feature-wise Linear Modulation (F-FiLM) to inject encoded force feedback into the representations of a frozen pretrained visual- language backbone while preserving its semantic priors. For responsive control, it employs a contact-gated fast-slow architecture, with a slow position-control branch tracking nominal trajectories during non-contact phases and a fast admittance-control branch regulating physical interaction during contact phases. Detailed analyses on a force -perception task and real-world evaluations across four contact-rich manipulation tasks validate the effectiveness and robustness of TAO- Force .",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Bohan Gan",
+    "Xuanzhang Wen",
+    "Yongsheng Zhao",
+    "Baoping Cheng",
+    "Wenhe Jia",
+    "Ye Wang",
+    "Gongxin Yao",
+    "Han Gao",
+    "Jingyao Tang",
+    "Lei Zhao",
+    "Ji Ge"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.18497",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-16",
+   "scores": {
+    "VTLA": 12.8
+   },
+   "seed": false,
+   "title": "TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-16",
+   "version": ""
+  },
+  "2609.18504": {
+   "abstract": "Grasp synthesis aims to generate stable and physically plausible hand--object interactions, and has become a fundamental problem in both human hand modeling and robotic manipulation. However, a unified representation across human and robotic hands is still lacking, mainly due to differences in hand morphology and surface modeling. Prior methods typically rely on either contact maps or dense implicit descriptors to represent interaction, but these representations are often incomplete or computationally expensive and redundant. We propose InterMASH, a unified geometric representation that establishes cross-embodiment correspondence using sphere-fixed anchors. At each anchor, low-degree spherical harmonics compactly encode local hand geometry, object geometry, and contact, forming an explicit and interpretable token sequence. Building on this natively tokenized structure, we introduce a conditional Diffusion Transformer that operates directly in the proposed InterMASH representation space and jointly generates hand geometry and contact, improving consistency and physical plausibility. Our method achieves competitive performance with state-of-the-art methods on key physical feasibility metrics in a large-scale ShadowHand benchmark, supports joint training across multiple hands, and shows that cross-embodiment fine-tuning with human grasp data can improve robotic grasp success and diversity. Project page is available at https://inter-mash.github.io/.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.GR"
+   ],
+   "authors": [
+    "Xuanze Yang",
+    "Yumeng Liu",
+    "Haiyang Xin",
+    "Changhao Li",
+    "Haowei Shen",
+    "Kai Xu",
+    "Ligang Liu",
+    "Ruizhen Hu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.18504",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://inter-mash.github.io/",
+   "published": "2026-09-17",
+   "scores": {},
+   "seed": false,
+   "title": "InterMASH: A Unified Geometric Representation for Grasp Synthesis",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.18763": {
+   "abstract": "Whole-body humanoid teleoperation commonly combines a motion-tracking policy with a separate dexterous-hand retargeter. However, independently generated commands do not explicitly preserve body-hand geometric relations, leading to mismatches in relative wrist poses and fingertip positions during bimanual interaction. We present a gated residual coordination framework that keeps both modules frozen and applies bounded corrections to their outputs. A motion-conditioned action gate allocates correction authority across joint groups, while reference-geometry-dependent reward gates emphasize relevant interaction objectives during training. To establish the nominal body controller on Agile One, we introduce multi-pose morphology calibration that jointly estimates triaxial scales and effector-local offsets, together with staged motion dataset curation for training a SONIC-based tracker. The residual policy uses human motion references, initial commands, and robot proprioception without explicit object or contact observations. In simulation, it reduces wrist and fingertip geometry errors by 39.2-56.3% over direct composition on held-out GRAB motions, while preserving whole-body tracking on AMASS, with success rates of 89.03% without residual coordination and 89.29% with it. Ablations characterize the contributions of reward gating, adaptive correction authority, and separate body and hand correction heads.",
+   "added_at": "2026-09-17 06:34",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruiming Wu",
+    "Shuang Li",
+    "Liding Zhang",
+    "Alois Knoll",
+    "Zhaopeng Chen"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.18763",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "triaxial"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-17",
+   "scores": {},
+   "seed": false,
+   "title": "Gated Residual Body-Hand Coordination for Whole-Body Humanoid Teleoperation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
   }
  }
 }
