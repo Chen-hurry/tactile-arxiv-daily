@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-17 06:34 ｜ 共 1421 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-17 17:40 ｜ 共 1421 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -87,8 +87,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-09-16 |  **TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation** | Bohan Gan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.18497) |
 | 2026-09-16 |  **ForceDelta-VLA: Distilling Force-Conditioned ActionCorrections for Contact-Rich Manipulation** | Ju Dong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.18242) |
+| 2026-09-16 |  **TAO-Force: Unifying Force-Aware Perception and Fast-Slow Control for Contact-Rich Manipulation** | Bohan Gan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.18497) |
 | 2026-09-14 |  **A light-touch AI literacy intervention helps protect against AI political persuasion** | Reed Orchinik et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.16432) |
 | 2026-09-12 |  **Visible Touch: Rendering Contact for Visuomotor Policies** | Metin Alp Dogan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.14156) · [Page](https://visibletouch.github.io/) |
 | 2026-09-11 | 🖐 **STAR: Sparse Tactile Representation Learning in Vision-Tactile-Language-Action Models for Dexterous Manipulation** | Xiangcheng Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.12549) |
