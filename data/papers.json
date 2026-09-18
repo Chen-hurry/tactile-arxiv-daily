@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-17 17:40",
+ "last_update": "2026-09-18 06:30",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -58808,6 +58808,497 @@
     "Other"
    ],
    "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.19196": {
+   "abstract": "Collecting data for manipulation with high-DOF hands is challenging, as interfaces must capture rich hand motion while rendering the contact interactions essential for precise manipulation. Existing data collection approaches face a trade-off: teleoperation ensures deployment consistency but lacks force feedback, while handheld (in-the-wild) systems provide natural force transparency but introduce a visual embodiment gap at deployment. We present DITTO, a Dexterous Interface for Transparent TeleOperation, which resolves this through the anatomically informed co-design of a dexterous 7-DOF robotic hand and a kinematically equivalent motorized exoskeleton. A 1-to-1 actuator mapping between the exoskeleton and robotic hand enables handheld (in-the-wild) data collection and bilateral teleoperation with joint-level force feedback unified in a single platform. We demonstrate that the DITTO exoskeleton spans the operator's natural index-to-thumb workspace, and showcase DITTO's dexterous capabilities via learned policies on contact-rich tasks.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Joaquin Palacios",
+    "Katelyn Lee",
+    "Cheng Zhang",
+    "Zhanpeng He",
+    "Matei Ciocarlie"
+   ],
+   "code_url": null,
+   "comment": "8 Pages, 6 Figures, 4 Tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.19196",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-15",
+   "scores": {},
+   "seed": false,
+   "title": "DITTO: Dexterous Interface for Transparent TeleOperation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-15",
+   "version": ""
+  },
+  "2609.19228": {
+   "abstract": "Dexterous robot hands must often grasp objects whose shape, size, and pose are known only approximately. Grasp planners typically require accurate object models or correct errors with feedback, but how much inaccuracy a closing motion can tolerate on its own remains unclear. To address this question, we designed a motion planner based on four principles: a coarse template of the object, human grasp types, an object-centric interaction, and compliant, sliding contacts instead of prescribed contact points. This paper presents the planner, implemented through virtual model control, and its evaluation on a Shadow Dexterous Hand. Without feedback, the planned closing motions tolerated size errors of about 1cm and pose errors of several centimeters and tens of degrees, a wider range than a state-of-the-art data-driven planner in 25 of 27 tested conditions. They also grasped 82.5% of 80 everyday objects and succeeded within an autonomous pipeline. Robustness can thus be designed into the closing motion itself, rather than left only to feedback. This planner opens a path toward reliable manipulation in uncertain settings, which we will pursue by combining it with adaptive feedback control on the physical hand.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Julien Vanderheyden",
+    "Guillaume Drion",
+    "Fulvio Forni",
+    "Pierre Sacre"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.19228",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "Grasping by interconnection: robust closing motions from coarse object templates",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.19375": {
+   "abstract": "Safety and comfort in human-robot physical in-teractions are essential aspects in the development of social technologies, where natural gestures, such as handshakes, represent a challenge due to their direct physical contact. The implementation of series elastic actuators (SEA) to absorb impacts is proposed as a design strategy that favors safer interactions. This paper presents an experimental study aimed at evaluating how the incorporation of SEAs in robotic arms influences perceived safety and the interaction experience dur-ing handshaking. The design allows a direct comparison of the effect of rigidity versus the incorporation of elastic elements, in order to identify the advantages of SEAs in improving the physical safety and social acceptance of robotic systems in everyday contexts. The experiment was carried out with 10 volunteers (6 men and 4 women), who performed two interactions with each robotic arm: one with rigid joints and the other with flexible joints using SEA. During testing, objective data on end-effector trajectories were collected, as well as subjective information through a perception survey focused on safety, naturalness, and confidence during the handshake. The survey results show increased perceptions of safety and comfort with the SEA-equipped arm, supporting its potential to facilitate safer and more socially accepted human-robot interactions.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Joel Hidalgo",
+    "Dennys Paillacho",
+    "Melissa Cobos",
+    "Luigi Miranda"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.19375",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "Enhancing the Perception of Safety and Comfort during Physical Human-Robot Handshake Interactions by Integrating Flexible Elements into a Robotic Arm",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.19475": {
+   "abstract": "Diffusion-based Vision - Language - Action (VLA) models achieve strong performance in embodied tasks, but their iterative sampling imposes heavy computational and memory-access cost, blocking real-time deployment on edge platforms. Existing acceleration methods either require expensive training (e.g., distillation, flow matching) or degrade perception via statically scheduled pruning and caching, ignoring the dynamic workload variance of robotic interactions. This paper presents FASA (Feedback-Aware Sampling Adaptation), a training-free runtime framework that treats real-time multimodal feedback as a control signal for the denoising pipeline: an interaction-driven range adaptor modulates the global sampling-step budget based on visual and gripper- force feedback, and a proprioception-aware step adaptor pinpoints the optimized step within the adapted range. This co-designed framework allows the underlying hardware architecture to adaptively match the workload demands of different execution phases. Comparative evaluations across several benchmarks show that the inference speed can be increased by up to 1.45$\\times$ while maintaining competitive success rates, providing a novel dynamic runtime architecture paradigm for deploying heavy generative embodied AI workloads onto resource-constrained computing platforms.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yuchen Han",
+    "Jianhan Wu",
+    "Xiaoyang Qu",
+    "Lingwei Kong",
+    "Shiyi Li",
+    "Jianzong Wang"
+   ],
+   "code_url": null,
+   "comment": "Accepted by the 18th International Conference on Networking, Architecture, and Storage (NAS 2026)",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.19475",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-16",
+   "scores": {
+    "VTLA": 7.0
+   },
+   "seed": false,
+   "title": "FASA: Feedback-Aware Sampling Adaptation for Efficient Diffusion-Based VLA Models",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-16",
+   "version": ""
+  },
+  "2609.19600": {
+   "abstract": "Adapting robots to new objects and tasks requires interaction experience that can be costly to obtain. We present WorldContact, a contact-centric world model for deformable-object manipulation, constructed from a limited set of high-quality trajectories to generate additional training data efficiently. It predicts object dynamics using larger time steps than the source numerical simulator, which requires small integration steps to resolve rapid motion and prevent interpenetration. We evaluate WorldContact across 16 shopping-bag manipulation tasks. State-rollout measurements on a single H100 GPU show a $10\\times$ speedup over the source simulator, excluding rendering and disk I/O. We use the generated data to fine-tune an existing vision-language-action policy and deploy it directly on a real robot. In bag lifting, the same policy achieves 65% single-attempt success when fine-tuned on source simulation data alone, compared with 95% when fine-tuned on the dataset expanded with WorldContact. These results support efficient data generation with WorldContact for robot policy adaptation.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Caoliwen Wang",
+    "Mengdi Wang",
+    "Heng Zhang",
+    "Shixun Huang",
+    "Siyuan Chen",
+    "Chao Liu",
+    "Anpei Chen",
+    "Zhendong Wang",
+    "Peter Yichen Chen",
+    "Huamin Wang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.19600",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "WorldContact: A Contact-Centric World Model for Scalable Robot Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.19613": {
+   "abstract": "Dexterous food manipulation requires control under deformation, occlusion, and uncertain contact. We present TacSushi, a tactile -grounded, Cosmos3-based world-action policy that learns from recorded future consequences while acting on current observations. The backbone encodes current RGB, language, and hand state, and feature-wise gated fusion incorporates fingertip tactile features into the action representation. During training, a decoder conditioned on demonstrated action chunks predicts logged future visual observations, task progress, relative contact risk, and tactile summaries; this decoder is removed at deployment. Failed trials provide consequence supervision, but their actions are excluded from imitation. We train TacSushi on 340 successful and 50 failed real-robot trials and compare six methods in 600 separate rollouts across three in-distribution tasks and two out-of-distribution ingredient variants. To assess food quality beyond a single geometric threshold, we score terminal outcomes using an anchored visual-quality protocol that equally weights five human ratings and three vision-language-model ratings per rollout. Full TacSushi achieves 68.3% average in-distribution success and 37.5% out-of-distribution success, compared with 36.7%/10.0% without future-consequence supervision and 25.0%/17.5% with direct tactile concatenation in place of gated fusion. These comparisons support complementary benefits of feature-wise gated tactile fusion and training-only predictive supervision.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "authors": [
+    "Haodi Hu",
+    "Kaen Kogashi",
+    "Toshiaki Koike-Akino"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 5 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.19613",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-16",
+   "scores": {
+    "VTA": 7.5
+   },
+   "seed": false,
+   "title": "TacSushi: Tactile-Grounded World-Action Modeling for Dexterous Sushi Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-16",
+   "version": ""
+  },
+  "2609.20330": {
+   "abstract": "Blind and low-vision users often need to locate a specific personal object rather than an arbitrary instance of the same category. The task calls for a robot that can move through the space and reach viewpoints the user cannot, and for an accessible interface where the user says which object is meant and learns whether the right one was found. We present RoboFind, a multi-agent framework in which a smartphone teaches the target and a quadruped robot carries out the search. A Target Teaching Agent converts guided smartphone recordings into a semantic target profile and a reusable multi-view reference bank through an accessible capture flow with AR guidance, speech and haptic feedback, and screen-reader support, so later missions refer to a stored object without repeating the teaching process. At runtime, a Navigation Agent explores the environment and proposes candidate targets, a Verification Agent checks each candidate against the stored references, and a Coordination and Recovery Agent completes the mission or triggers recovery and continued search. Across 32 real-robot missions, RoboFind reaches 85.0% success against 25.0% for a reconstructed sequential first-stop baseline over 20 trials with ten targets, and reduces false success from 75.0% to 5.0%. On six shared targets it succeeds in 10/12 trials, against 5/12 for 12 independently executed GPT-6 Astra-only trials. These results show that the multi-agent design fits the demands of personalized object search, where verifying object identity before declaring completion is what makes the outcome something a user can rely on.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruiping Liu",
+    "Shaofang Quan",
+    "Qian Yin",
+    "Jingqi Zhang",
+    "Junwei Zheng",
+    "Yufan Chen",
+    "Di Wen",
+    "Weijia Fan",
+    "Kailun Yang",
+    "M. Saquib Sarfraz",
+    "Tamim Asfour",
+    "Kunyu Peng",
+    "Rainer Stiefelhagen"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.20330",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "RoboFind: Multi-Agent Personalized Object Search for People Who Are Blind or Have Low Vision",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.20414": {
+   "abstract": "Tactile signals provide direct contact and force measurements that are essential for understanding physical interactions and enabling dexterous robotic manipulation. However, tactile sensing requires direct measurement at contact interfaces, making large-scale data collection reliant on intrusive, costly, and restrictive instrumentation. We present TouchSight, a monocular egocentric vision framework for dense full-hand contact force prediction that leverages 500 hours of pressure-glove recordings and extensive hand-object interaction (HOI) data. To address the appearance gap between gloved training data and bare-hand real-world scenarios, we construct TwinTouch-20H: 20 hours of paired visual data in which generative video models re-render gloved recordings as bare-hand observations against new backgrounds while preserving the original measured tactile labels. TouchSight predicts dense force from both gloved and generated bare-hand videos, outperforms prior contact prediction methods on OakInk2, qualitatively generalizes to natural bare-hand egocentric videos from unseen datasets, and improves consistently as glove supervision scales. These results demonstrate that dense tactile signals can be recovered from egocentric vision alone, without tactile instrumentation at capture time.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.AI"
+   ],
+   "authors": [
+    "Danyan Zhou",
+    "Jinxuan Lu",
+    "Jiawei Lin",
+    "Tianxing Chen",
+    "Chuqiao Lyu",
+    "Wenbo Ding"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.20414",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-09-17",
+   "scores": {},
+   "seed": false,
+   "title": "TouchSight: Bare-Handed Tactile Prediction from Egocentric Video via Generative Visual Augmentation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.20648": {
+   "abstract": "Vision-Language-Action (VLA) models are a class of generalist robot policies that map camera images and language instructions directly to robot actions. While promising, these models remain slow at test time, particularly for long-horizon tasks that require many queries to the policy. Recent efforts reduce VLA latency by distilling smaller models, overlapping asynchronous action chunks, or pairing the VLA with a fast low-level policy, but still run a learned policy for the entire task. In contrast to VLA, classical motion planners quickly find collision-free motions, but require an explicit goal and have no semantic understanding of the task. In this work, we present SkipVLA, a hybrid policy that combines a pretrained VLA with a classical motion planner, using the planner for free-space motion and querying the VLA only for contact-rich skills such as grasping and placing. SkipVLA reuses the frozen vision-language backbone of the VLA to predict a target pose for each planned motion, and learns this predictor without additional demonstrations introduced into the system by using what was already learnt by the large VLA. We evaluate SkipVLA with three VLAs on 13 LIBERO tasks in simulation and three pick-and-place tasks on a physical 6-DoF YAM arm, demonstrating up to 2.5x faster task completion and significantly lower energy consumption while achieving the same task success rate.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kaivalya Agrawal",
+    "Md Ashiqur Rahman",
+    "Raymond A. Yeh",
+    "Zachary Kingston"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.20648",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "SkipVLA: Skipping VLA Steps with Classical Planning for Fast Robot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.20649": {
+   "abstract": "Learning predictive models of contact-rich dexterous manipulation requires dense tactile interaction, but such data are costly to scale on real robots and remain tied to embodiment-specific sensors. We introduce DexTouch-WM, an action-conditioned world model that learns from scalable human touch to jointly predict future RGB observations and bilateral tactile dynamics. Our insight is that human and robot manipulation share transferable contact dynamics when their tactile observations and action spaces are made compatible. We deploy flexible piezoresistive arrays with a shared sensing layout on both human and dexterous robot hands, and retarget human motion into the robot action space so that human interaction can supervise the same dynamics model used for real-robot prediction. DexTouch-WM couples a pretrained video expert with a lightweight tactile expert using anatomy-aware tactile tokens and aligned action conditioning. In human-to-robot scaling experiments, we keep five hours of real-robot supervision fixed while increasing human interaction from 0 to 100 hours, and observe substantial improvements in held-out robot-domain visual, geometric, and contact prediction despite disjoint human and robot task sets. Beyond prediction, we evaluate the world models as surrogate environments for policy evaluation and as generators of synthetic trajectories for real-robot policy learning, showing that scalable human interaction provides a complementary data axis for learning dexterous robot world models.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Yan Qin",
+    "Yue Chen",
+    "Wenwei Lin",
+    "Shujia Liu",
+    "Chuqiao Lyu",
+    "Kailun Su",
+    "Chenze Yu",
+    "Ping Luo",
+    "Wenbo Ding",
+    "Tianxing Chen",
+    "Renjing Xu"
+   ],
+   "code_url": null,
+   "comment": "Accept to IROS 2026 Workshop RoBoWoMo (Lightning Talk)",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.20649",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "piezoresistive"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-17",
+   "scores": {
+    "VTA": 5.0
+   },
+   "seed": false,
+   "title": "DexTouch-WM: Learning Action-Conditioned Tactile World Models from Human Touch for Dexterous Robot Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.20761": {
+   "abstract": "World Action Models (WAMs) advance beyond conventional visuomotor policies by jointly predicting future world states and robot actions, enabling the policy to learn physical dynamics that support effective control. However, recent tactile WAMs often rely on large-scale pretrained generative backbones to capture contact-rich physical dynamics, which limit their inference efficiency and flexible deployment. In this paper, we present \\ABBR{}, an agile tactile World Action Model for contact-rich robot control. \\ABBR{} encodes visual and tactile observations into a shared latent that serves as the source of a direct vision- tactile -to-action flow-matching process, which can jointly generate latent representations of action chunks and future visual/ tactile latents. A key observation is that vision and tactile signals evolve at inherently different timescales: adjacent visual frames are often highly similar, whereas tactile signals can change abruptly upon contact. We therefore introduce multi-horizon multimodal prediction in \\ABBR{}, which provides supervision for visual latent at a larger temporal offset while predicting the tactile latent in the next frame to capture fine-grained contact dynamics. Across nine simulated and five real-world contact-rich manipulation tasks, \\ABBR{} demonstrates strong and robust performance, outperforming the strongest baseline in success rate while maintaining low inference latency. In particular, in five real-world experiments, \\ABBR{} yields a relative gain of $\\textbf{29.4\\%}$ in overall success rates while achieving inference latency of $\\textbf{11.9 ms}$. These results demonstrate that multimodal WAM can be achieved with an agile architecture suitable for precise and high-frequency robot control. More details are available on our project page: https://hanchuzhou.github.io/TARO_project_page/.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "Hanchu Zhou",
+    "Brendan Lynch",
+    "Raman Goyal",
+    "Dechen Gao",
+    "Begum Kasap",
+    "Boqi Zhao",
+    "Junshan Zhang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.20761",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://hanchuzhou.github.io/TARO_project_page/",
+   "published": "2026-09-17",
+   "scores": {
+    "VTA": 10.0
+   },
+   "seed": false,
+   "title": "Agile-WAM: An Agile Tactile World Action Model for Contact-Rich Robot Control",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.20822": {
+   "abstract": "Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller as a program, and agents built in this way now operate robots without robot-specific training.Whether this paradigm is also safe, however, has not been asked. We evaluate coding agent under a safety constraint, where each task pairs a manipulation goal with an obstacle the robot must not touch. The agent pursues the goal but collides with the obstacle in most cases, treating task completion as its sole objective while neglecting safety. The agent reasons about the obstacle in its traces, and the prompt already forbids touching it, so neither perception nor instruction is at fault; the fault lies in the planning, where the stated constraint never becomes a priority. By decomposing manipulation into a route phase and a contact-rich moment, we locate the source of the failure. Along the route, the model cannot prioritize the safety constraint, having no notion of a clearing route and none of replanning once a chosen route becomes infeasible. At the contact, it is unaware that contact execution is bounded by the same constraint. To close this gap, we present SafeHarness, which equips the model with two obstacle-aware harnesses that enable it to prioritize the safety constraint. Obstacle-aware route planning grounds the objects as bounding boxes and draws candidate routes over them as sequences of waypoints. The agent then plans a route in advance, verifies it, replans when necessary, and only then executes it. Obstacle-aware contact execution instead selects the contact position so that the contact itself avoids the obstacle. SafeHarness attains 71.9% task success and 87.5% collision avoidance, surpassing the previous SOTA by 6.5% and 27.0%, respectively. These results are $2.3\\times$ and $1.5\\times$ those of the same agent without harnesses.",
+   "added_at": "2026-09-18 06:30",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CL",
+    "cs.CV"
+   ],
+   "authors": [
+    "Bingxin Xu",
+    "Yuzhang Shang",
+    "Zhen Dong",
+    "Emilio Ferrara"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.20822",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
    "version": ""
   }
  }
