@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-20 16:54",
+ "last_update": "2026-09-21 06:57",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -59183,6 +59183,7 @@
     "Shujia Liu",
     "Chuqiao Lyu",
     "Kailun Su",
+    "Weiyang Jin",
     "Chenze Yu",
     "Ping Luo",
     "Wenbo Ding",
@@ -59206,7 +59207,7 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": null,
-   "published": "2026-09-17",
+   "published": "2026-09-18",
    "scores": {
     "VTA": 5.0
    },
@@ -59215,7 +59216,7 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-17",
+   "updated": "2026-09-18",
    "version": ""
   },
   "2609.20761": {
@@ -59297,6 +59298,294 @@
    "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
    "topics": [
     "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.20980": {
+   "abstract": "Vision-language-action (VLA) models have demonstrated strong capabilities in robotic manipulation, yet their reliance on visual perception limits robustness in contact-rich environments, where critical physical interaction states may not be visually observable. Existing tactile -enhanced VLA methods improve physical grounding using observed tactile feedback, but most remain largely reactive rather than explicitly modeling how contact may evolve. Therefore, we propose ForeTac-VLA, a forecasting-based tactile -vision-language fusion model that predicts future tactile states to guide action generation. Specifically, ForeTac-VLA encodes recent tactile observations into temporal representations and integrates them with vision-language features through bidirectional cross-attention. Further, a transformer-based forecasting module predicts multi-step future tactile states, enabling the model to reason jointly over observed and anticipated contact. Finally, the fused multimodal representations and predicted future tactile states are fed into the VLA backbone to condition action generation. To stabilize training, a ground-truth-to-prediction curriculum is employed when early forecasts are unreliable. Across four real-world contact-rich manipulation tasks, ForeTac-VLA achieves an average success rate of 95%, outperforming the fine-tuned VLA model by 36.25 percentage points and state-of-the-art tactile -enhanced VLA baselines by over 22 percentage points. ForeTac-VLA also maintains strong performance under low-illumination and visually cluttered conditions. Video demonstrations can be found on https://foretac-vla.github.io/",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zhengyu Tao",
+    "Xin Li",
+    "Xin Wang"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 7 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.20980",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://foretac-vla.github.io/",
+   "published": "2026-09-17",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "ForeTac-VLA: A Forecasting-Based Tactile-Vision-Language-Action Model for Contact-Rich Robotic Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-17",
+   "version": ""
+  },
+  "2609.21022": {
+   "abstract": "Vision-Language-Action (VLA) models have shown strong generalization in robotic manipulation by combining semantic knowledge from pretrained vision-language models with expressive action-generation policies. Diffusion-based action generators are particularly effective for modeling temporally coherent action chunks, but these chunks are typically executed open-loop after inference. This limits responsiveness when objects move, contacts change, or the scene evolves during execution. We propose VLA-Feedback, a two-timescale architecture that combines low-frequency diffusion planning with high-frequency visual feedback. Rather than fully denoising an action chunk before execution, VLA-Feedback retains its final denoising step as a lightweight feedback interface, allowing each action to be corrected using the latest observation before it is executed. This design preserves the expressiveness of the diffusion planner while enabling real-time action correction without rerunning the full vision-language diffusion model. VLA-Feedback matched GR00T on static LIBERO tasks while improving average success on dynamic simulation tasks from 27.5% to 85.0%. On real-robot tasks, it improved average success from 51% to 73%. Additional materials can be found on our project page: https://vla-feedback.github.io.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yiheng Ji",
+    "Xingru Zhou",
+    "Luis Sentis",
+    "Mingyo Seo"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.21022",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://vla-feedback.github.io",
+   "published": "2026-09-21",
+   "scores": {},
+   "seed": false,
+   "title": "Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.21223": {
+   "abstract": "Vision-language-conditioned robot policies integrate perception, language understanding, and control for general-purpose manipulation. However, existing evaluations often focus on task success, isolated physical constraints, semantic refusal, or realized physical damage, providing limited insight into where safety fails during closed-loop manipulation. We introduce SafeStage, a lifecycle-structured benchmark for evaluating manipulation safety before, during, and after task execution. SafeStage contains 97 purpose-built risk scenarios organized into three stages. Initial-State Hazards captures safety-relevant relations that must be resolved before manipulating the target. Execution-Time Safety evaluates unsafe contacts, trajectories, region entries, and object interactions during execution. Final-State Hazards capture unstable or otherwise unsafe conditions remaining after nominal task completion. The benchmark evaluates realized interactions using event-based and state-based checks and reports native task success independently from stage-specific safety outcomes. We evaluate representative direct-action Vision-Language-Action (VLA) policies and policies with world-model-based policies under a common closed-loop protocol. Our results demonstrate that nominal task completion frequently coexists with safety violations and that different policies exhibit distinct failure profiles across the three stages. By separating task success from safety and localizing when violations occur, SafeStage provides a unified diagnostic testbed for evaluating and improving vision-language-conditioned robot manipulation policies.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jinzhu Luo",
+    "Qi Zhang",
+    "Wei Wang",
+    "Wei Jiang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.21223",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-21",
+   "scores": {},
+   "seed": false,
+   "title": "SafeStage: Evaluating Safety Before, During, and After Vision-Language-Conditioned Robot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.21377": {
+   "abstract": "Robotic fabric comparison needs to actively combine visual appearance and tactile cues. Here, we present AVT-Fabric, an RGB-first framework that allocates tactile evidence according to the difficulty of each comparison. A dual-scale gate evaluates answer-token confidence and raw logit separation to determine whether another force-tagged GelSight observation is needed. Compact textual memory preserves the executed history, and majority voting consolidates the selected predictions. On 400 held-out comparisons, AVT-Fabric achieves 98.0% accuracy with a compact 7B Multimodal Large Language Model (MLLM), surpassing the 94.0% reported by the 90B MLLM-Fabric baseline by 4.0 percentage points while processing only 1.60 of five available stages on average. It improves on matched passive inference by 9.25 percentage points and reduces model-side latency by 61.8%, while also improving on RGB-only accuracy. Four additional MLLM backbones support the generalizability, accuracy, and efficiency of the framework. This framework is also deployed on a real robotic system, achieving 78.1% pairwise ranking accuracy and correct fabric selection in seven of eight application scenarios. AVT-Fabric demonstrates that adaptive evidence selection can improve both the accuracy and efficiency of robotic visuo- tactile reasoning.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Chang Gao",
+    "Zhuo Chen",
+    "Suhang Xia",
+    "Jihong Zhu",
+    "Jiankang Deng",
+    "Shan Luo"
+   ],
+   "code_url": null,
+   "comment": "Project website: https://zhuochenn.github.io/AVT-project/",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.21377",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "gelsight"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://zhuochenn.github.io/AVT-project/",
+   "published": "2026-09-18",
+   "scores": {
+    "VTLA": 6.0
+   },
+   "seed": false,
+   "title": "AVT-Fabric: Active Visuo-Tactile Perception via Adaptive Evidence Selection for Efficient Robotic Fabric Comparison",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.21449": {
+   "abstract": "World Action Models bring the predictive capabilities of video models into robot action generation, providing a rich foundation for modeling future visual states. Tactile sensing complements this foundation with direct measurements of physical interaction. Some existing methods use tactile features as conditioning inputs without jointly predicting future tactile states, visual observations, and actions. Our key insight is that tactile signals, like video, provide observations of the evolving world state and should be modeled as future observations alongside video. We present ME-Dex-1.0 (MachEmbodied-Dex-1.0), a unified World Action Tactile Model for joint visual, tactile , and action learning. ME-Dex-1.0 adopts a Mixture-of-Transformers architecture comprising a Video Expert, a Tactile Expert, and an Action Expert, all trained with flow matching. We use shared attention connects the experts in intermediate layers, allowing action generation to draw on learned representations of visual and tactile dynamics during joint denoising. To support multi-source heterogeneous tactile inputs, a Canonical Hand Model and a Unified Tactile Autoencoder map tactile observations from different embodiments and sensing layouts into shared spatial and latent spaces. To address the limited availability of paired visual, tactile , and action data, we develop the Agentic Tactile Data Engine, an agent-based data production platform. It supplements RoboTwin and DexJoCo with tactile data recorded directly from force sensors during trajectory replay in simulation. Experiments on the RoboTwin, DexJoCo, and ManiFeel simulation platforms, together with real robot evaluations, demonstrate improved manipulation performance using both grippers and dexterous hands equipped with tactile sensing.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.CV"
+   ],
+   "authors": [
+    "Xuancheng Zhang",
+    "Xuetao Liu",
+    "Qianying Tang",
+    "Jizhe Wang",
+    "Zhijing Cheng",
+    "Bochen Lin",
+    "Haoran Wen",
+    "Ming Li",
+    "Kun Zhan",
+    "Yu Liu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.21449",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {
+    "Sim": 6.2,
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.21726": {
+   "abstract": "Reliable robotic grasping benefits from estimating the evolving physical interaction and selecting a grasp-dependent compression target. Tactile sensors provide direct interaction measurements but require dedicated hardware at deployment. We introduce ZeroTouch, a tactile -supervised framework that predicts dense contact deformation, the instantaneous six-axis wrench, and a grasp-dependent desired compression target from wrist RGB observations, gripper state, and local gravity direction. Tactile measurements are used only as privileged supervision during training and are not required at deployment. On the full validation set, the complete architecture reduces normal-force MAE from 2.017 N for a state-only baseline to 0.531 N. In physical evaluation with 20 trials per condition, ZeroTouch achieves 95% success on an unseen object, 80% in a seen-object/unseen-grasp condition, and 90% under a content/load shift. Under the same evaluation protocol, OpenVLA achieves 25%, 40%, and 55%, while SmolVLA achieves 10%, 25%, and 35%, respectively.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Dmitriy Kosenkov",
+    "Daniia Zinniatullina",
+    "Miguel Altamirano Cabrera",
+    "Iana Zhura",
+    "Mikhail Derevianchenko",
+    "Dzmitry Tsetserukou"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.21726",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "six-axis"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-18",
+   "scores": {},
+   "seed": false,
+   "title": "ZeroTouch: Tactile-Supervised Visual Contact Estimation for Contact-Rich Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-18",
+   "version": ""
+  },
+  "2609.21753": {
+   "abstract": "Contact-rich manipulation requires policies to generate precise actions by reasoning over contact forces , robot configurations, and interaction histories beyond visual observations. Existing methods passively condition on force feedback rather than actively predicting future contact dynamics, limiting their ability to generate high-precision actions . To address this problem, we introduce Predictive Sensorimotor Representation (PSR) learning, a framework that learns a hierarchy of predictive representations from multimodal sensorimotor signals and integrates them into the action stream of a visuomotor policy. Specifically, during a pretraining stage, a multimodal Transformer is trained to learn a hierarchy of predictive representations by jointly forecasting future interaction dynamics. The learned hierarchy subsequently augments the action stream, enabling the resulting policy to exploit contact-relevant cues at multiple depths. We further instantiate PSR within a Vision - Language - Action (VLA) model, resulting in PSR-VLA, and evaluate it on six real-world contact-rich manipulation tasks. Experimental results show that PSR-VLA achieves 91.7% overall success, improving over $π_{0.5}$, ForceVLA-$π_{0.5}$, and ForceVLA2-$π_{0.5}$ by 30.0, 22.5, and 19.2 percentage points, respectively. These results demonstrate the effectiveness of the proposed PSR for force -aware, contact-rich manipulation. Videos of the tasks and stability tests are available at https://psr-vla.pages.dev/.",
+   "added_at": "2026-09-21 06:57",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Shengbao Li",
+    "Peng Xu",
+    "Chao Tang",
+    "Hao Wei",
+    "Jiaheng Wang",
+    "Hong Yin",
+    "Jiangtao Chen",
+    "Jinxuan Zhu",
+    "Zhong Zhou",
+    "Mengfan Wang",
+    "Tingguang Li"
+   ],
+   "code_url": null,
+   "comment": "7 pages, 5 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.21753",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://psr-vla.pages.dev/",
+   "published": "2026-09-18",
+   "scores": {
+    "VTLA": 4.0
+   },
+   "seed": false,
+   "title": "PSR: Predictive Sensorimotor Representation Learning for Contact-Rich Manipulation",
+   "topics": [
+    "VTLA"
    ],
    "updated": "2026-09-18",
    "version": ""
