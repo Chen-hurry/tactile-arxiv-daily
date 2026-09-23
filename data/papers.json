@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-22 17:41",
+ "last_update": "2026-09-23 06:33",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -60329,7 +60329,7 @@
    "version": ""
   },
   "2609.24660": {
-   "abstract": "Human demonstrations offer a scalable way to collect manipulation data, but their contacts may be unstable or infeasible when transferred to a robot hand. Collecting demonstrations directly on the target robot avoids this mismatch, but substantially increases the cost of data collection. To address this trade-off, we present \\textbf{Touch2Robot}, a framework that lets humans collect demonstrations while seeing how the target robot hand would contact the object. We capture human hand motion, tactile -glove measurements, and object motion during human manipulation. These recordings guide object-specific RL policies to reproduce the demonstrated object motion while favoring contacts consistent with the recorded human touch. We distill the learned behaviors into a unified real-time retargeter that maps incoming human observations and object geometry to robot hand configurations. During collection, the predicted robot configuration is synchronized with the tracked object pose in simulation to reconstruct robot-object contacts, which are visualized to help the demonstrator adapt subsequent interactions to the target hand. Across four real-world tasks, Touch2Robot improves average real-robot replay completion from 37.9\\% to 72.1\\% over visual-only feedback, while reducing the collection time per replay-successful demonstration from 58.6~s to 18.2~s. Reconstructed target-hand contacts achieve 44.2\\% F1 against real-robot tactile measurements, and policies trained on Touch2Robot demonstrations improve downstream Diffusion Policy performance by 29.1 percentage points over visual-only feedback. These results show that bringing robot touch into the human demonstration loop improves both the quality and efficiency of scalable dexterous data collection. \\textit{Project webpage: \\href{https://Touch2Robot.github.io/}{https://Touch2Robot.github.io/}.}",
+   "abstract": "Human demonstrations offer a scalable way to collect manipulation data, but their contacts may be unstable or infeasible when transferred to a robot hand. Collecting demonstrations directly on the target robot avoids this mismatch but substantially increases the cost of data collection. To address this trade-off, we present Touch2Robot, a framework that lets humans collect demonstrations while seeing how the target robot hand would contact the object. We capture human hand motion, tactile -glove measurements, and object motion during human manipulation. These recordings guide object-specific RL policies to reproduce the demonstrated object motion while favoring contacts consistent with the recorded human touch. We distill the learned behaviors into a unified real-time retargeter that maps incoming human observations and object geometry to robot hand configurations. During collection, the predicted robot configuration is synchronized with the tracked object pose in simulation to reconstruct robot-object contacts, which are visualized to help the demonstrator adapt subsequent interactions to the target hand. Across four real-world tasks, Touch2Robot improves average real-robot replay completion from 37.9% to 72.1% over visual-only feedback, while reducing the collection time per replay-successful demonstration from 58.6s to 18.2s. Reconstructed target-hand contacts achieve 44.2% F1 against real-robot tactile measurements, and policies trained on Touch2Robot demonstrations improve downstream Diffusion Policy performance by 29.1 percentage points over visual-only feedback. These results show that bringing robot touch into the human demonstration loop improves both the quality and efficiency of scalable dexterous data collection. Project webpage: https://Touch2Robot.github.io/.",
    "added_at": "2026-09-22 06:42",
    "arxiv_categories": [
     "cs.RO",
@@ -60361,7 +60361,7 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": "https://Touch2Robot.github.io/",
-   "published": "2026-09-21",
+   "published": "2026-09-22",
    "scores": {
     "VTA": 19.8
    },
@@ -60370,7 +60370,7 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-21",
+   "updated": "2026-09-22",
    "version": ""
   },
   "2609.24896": {
@@ -60451,6 +60451,329 @@
     "Other"
    ],
    "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.25398": {
+   "abstract": "Large-scale datasets are essential for training generalist robot control policies. Collecting real-world tactile data is costly and time-consuming, motivating the use of tactile simulations. However, current tactile simulators capture only overall contact geometry and miss fine details like texture. This results in a significant domain shift between simulated and real tactile data. To address this gap, we introduce Norm2Tex, a plug-in method that augments simulations of vision-based tactile sensors with high-frequency surface details from normal map textures. By modifying the target object's depth map before a tactile simulator's rendering pipeline, Norm2Tex seamlessly integrates into different tactile simulators. We also evaluate sim-to-real transfer using material classification and a reinforcement learning task. Our results show that Norm2Tex preserves material-dependent tactile information across domains, improving texture recognition and producing material-dependent control behavior in the real world.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Seongjin Bien",
+    "Débora Oliveira Makowski",
+    "Roberto Calandra",
+    "Florian Walter",
+    "Wolfram Burgard"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.25398",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "vision-based tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-21",
+   "scores": {
+    "Sim": 29.2,
+    "VTA": 11.2
+   },
+   "seed": false,
+   "title": "Norm2Tex: Augmenting Visuo-Tactile Simulations with Texture",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.25606": {
+   "abstract": "Cable routing requires coordinated control of global cable topology and changing local contacts. We present CableVLA, an end-to-end multimodal vision-language-action framework that converts simulation-privileged supervision into deployable cable-topology and tactile representations. TopoHead distills node-level physics and current and future cable-topology information into causal visual context for the action expert. TacSense uses complementary frame and taxel branches to learn contact dynamics from resistive arrays, with simulator-derived kinematics and contact events providing supervision beyond the measured force map. A contact gate activates force- tactile residuals that refine the next 8 arm-and-gripper actions of a frozen topology-conditioned policy. Across 345 MuJoCo evaluations, CableVLA improves success from 62.6% for the $π_{0.5}$-V visual baseline to 84.9%. TacSense achieves pronounced gains in slip-transition recognition over a CNN-LSTM baseline with a similar parameter count, and this advantage persists under frozen-encoder probes. Topology prediction and 57-task tactile evaluations assess representation quality, while policy adaptation studies evaluate downstream control performance. Cross-simulator and real-robot comparisons further examine zero-shot policy transfer under changes in dynamics and sensing.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zhifei Teng",
+    "Bo Feng",
+    "Xiang Zou",
+    "Jinpeng Xiao",
+    "Min Li",
+    "Zhouping Yin",
+    "Yiqun Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.25606",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "taxel"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-21",
+   "scores": {
+    "Sim": 10.0,
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "CableVLA: Simulation-Privileged Global-Local Representation Learning for Cable Routing",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.25619": {
+   "abstract": "This work investigates how to enable general multi-finger robotic hands to perform the complete tool manipulation process, which entails picking up a tool, loading it into a suitable pose, and then wielding it. Inspired by human tool manipulation and mechanical design principles, we model the hand and the tool as a unified hand -object mechanism (HOM) composed of sub-assemblies. Specifically, we define a HOM as consisting of the hand , the object, and the generalized contact frames, allowing the HOM's motions to be expressed with the same set of Cartesian-space relative contact velocities, irrespective of the hand's kinematics and geometry. Then, we define a HOM's sub-assemblies as relative contact velocity and contact force constraints between fingers. Building on these definitions, we developed a lightweight and physically interpretable motion planning and contact estimation framework using least squares and a complementary filter. We evaluated our framework in simulation by teleoperating five different robotic hands . The results show that our framework enabled all five hands to execute the complete tool manipulation process, achieving dexterous behaviors even from identical, simple reference trajectories. Furthermore, the results showcase our framework's adaptability to different hands , tools, and tasks, enabled by its kinematic and geometric foundation.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Sunyu Wang",
+    "Jean Oh",
+    "Nancy S. Pollard"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.25619",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-21",
+   "scores": {},
+   "seed": false,
+   "title": "Relative Contact Velocity-Controlled Hand-Object Mechanism for Dexterous Tool Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-21",
+   "version": ""
+  },
+  "2609.25654": {
+   "abstract": "Robots operating safely in cluttered everyday environments often need to infer scene geometry from partial observations. Methods that detect objects in 2D and reconstruct them independently struggle in such scenes: a missed object is never reconstructed, a merged detection can fuse two objects, and separately reconstructed meshes may overlap or fail to touch their supporting surfaces. We introduce CODA (Complete Once, Decompose Afterward), a generative model that instead reconstructs the complete scene geometry from a single unsegmented RGB-D image, then separates the surface into the surrounding environment and movable objects. Still, generated scene geometry can drift from the observed partial point cloud. To reduce this drift, CODA uses two explicit 3D grounding mechanisms to keep reconstructed geometry consistent with observed surfaces while completing unseen regions. Experiments on HomebrewedDB and our custom cluttered-scene dataset show more accurate reconstructions and a higher fraction of objects remaining in place under simulated gravity than both object-first and scene-first baselines.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "authors": [
+    "Dongwon Son",
+    "Junhyek Han",
+    "Yoontae Cho",
+    "Minseok Lee",
+    "Hong-seok Choi",
+    "Jiwook Choi",
+    "Hyungjin Kim",
+    "Beomjoon Kim"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.25654",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-23",
+   "scores": {},
+   "seed": false,
+   "title": "CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-23",
+   "version": ""
+  },
+  "2609.25785": {
+   "abstract": "Vision-Language-Action (VLA) models have emerged as general-purpose robotic manipulation policies. However, in dexterous hand manipulation, contact forces are typically provided as separate states or force -specific representations, making it difficult to explicitly represent the spatial correspondence between force and their corresponding visual locations. In this work, we propose VisForce, which visually grounds the current and desired forces at their corresponding fingertip locations. VisForce renders current and desired visual force cues on the current wrist image and a task-specific goal image, and combines the two representations through goal-conditioned cross-attention to generate force -aware actions. We evaluate VisForce using a real UR10 robot equipped with an RH56F1 dexterous hand through force -conditioned grasping and three multi-stage manipulation tasks. In force -conditioned grasping experiments, VisForce exhibited a consistent grip- force response as the desired force increased, and achieved grasp-and-lift success rates of 70% and 80% for an egg and a toothpaste tube, respectively. It further achieved final success rates of 70%, 55%, and 40% on cup insertion/bottle pouring, tong-assisted bread transfer, and slip-modulated peg-in-hole, respectively. These results show that fingertip-aligned visual force representations can be effectively used for force -aware conditioning in VLA-based dexterous hand manipulation.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jung-Woo Lee",
+    "Soo-Chul Lim"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.25785",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-22",
+   "scores": {
+    "VTLA": 5.5
+   },
+   "seed": false,
+   "title": "VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-22",
+   "version": ""
+  },
+  "2609.25887": {
+   "abstract": "How should a robot learn to manipulate objects so fragile that sub-Newton contact forces can cause irreversible damage? Existing visuo- tactile policy learning typically treats tactile sensing as an additional policy input. In direct-contact force-sensitive manipulation, however, the bottleneck can arise earlier, during data collection: manual gripper control is too delayed and coarse-grained to reliably maintain the narrow force range required for stable grasping. We therefore use a deterministic 25 Hz tactile reflex controller as a collection-time teacher, producing demonstrations with controller-shaped grasping behavior for tactile -free policy learning. On Action Chunking with Transformers (ACT), policies trained from reflex-shaped demonstrations recover the teacher's grasping profile and achieve 95% stable grasps on the nominal plastic-cup task, substantially outperforming visually screened manual demonstrations. The same intervention improves in-distribution stability on $π_{0.5}$ and shows a favorable exploratory trend on an unseen paper-cup variant. Under randomized external disturbance, however, the reflex-data $π_{0.5}$ policy still fails in 45% of policy-only trials, whereas a deployment-time reflex arbiter retains all grasps. These results reveal a new role for tactile feedback in force-sensitive manipulation: rather than integrating tactile into the policy, we use it as a collection-time teacher that shapes grasping behavior in demonstrations for policy learning, while disturbance rejection remains controller-dependent, revealing the boundary of tactile -free policy.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ziyan Feng",
+    "Zizhao Yuan",
+    "Yulong Fu",
+    "Yuxin He",
+    "Zhiyuan Zhang",
+    "Zhengjie Zhang",
+    "Jinni Zhou",
+    "Renjing Xu",
+    "Qiang Nie"
+   ],
+   "code_url": null,
+   "comment": "22 pages, 6 figures. Project page: https://shayfeng.github.io/better-curriculum/",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.25887",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://shayfeng.github.io/better-curriculum/",
+   "published": "2026-09-22",
+   "scores": {
+    "VTA": 15.8
+   },
+   "seed": false,
+   "title": "What is the Better Curriculum: Controller-Shaped Grasping Behavior for Contact Force-Sensitive Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-22",
+   "version": ""
+  },
+  "2609.26256": {
+   "abstract": "High-fidelity tactile feedback is essential for robotic teleoperation, enabling precise manipulation and critical decision-making. While biomimetic fingertip sensors can capture surface-texture features, how their design shapes the tactile transparency of rendered feedback remains poorly understood. This paper presents a biomimetic fingertip replicating the human finger's multilayer mechanical gradient and fingerprint morphology, with an embedded high-sensitivity inertial measurement unit capturing texture-induced vibrations for remote vibrotactile rendering. Three variants are compared with the human fingertip through temporal and spectral analyses and a user study spanning three perceptual dimensions, establishing a transmission chain from fingertip design through signal characteristics to tactile transparency. The multilayer mechanical gradient yields the clearest improvements in signal intensity and texture-feature representation, whereas a stiffer skin layer amplifies vibration intensity at the expense of feature representation. The perceptual dimensions draw on distinct signal attributes: roughness on energy scaling, granularity on spectral shape, and repetitivity on characteristic-peak representation. These findings offer design principles for application-specific fingertips in robotic teleoperation.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Shuang Yang",
+    "Fuyuan Liu",
+    "Yitian Shao"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.26256",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-08-13",
+   "scores": {},
+   "seed": false,
+   "title": "High-Bandwidth Biomimetic Finger for Tactile-Transparent Remote Texture Sensing",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-08-13",
+   "version": ""
+  },
+  "2609.26467": {
+   "abstract": "Vision-language-action (VLA) models provide broad manipulation competence, but often struggle during the precision-critical stages that dominate contact-rich industrial tasks such as connector insertion and cable management. A common remedy is to refine a pretrained VLA with reinforcement learning (RL), enabling task-specific improvement beyond behavior cloning. However, how to preserve its generalist behavior while deciding when RL refinement is needed and which specialized policy should act remains an open question. In this work, we present RouteRLT, a routing framework that learns when and which RL specialist, an RL policy trained for a single precision-critical phase, should take control from a generalist VLA. A phase selector identifies the active controller, a stabilizer suppresses transient switches, and an action-boundary manager handles transitions between chunked policy outputs. We evaluate RouteRLT on multi-object pick-and-place tasks in LIBERO, as well as on a real-world cable pickup and port-insertion task with multiple precision-critical stages. In simulation, the learned routing improves over the base VLA and matches routing with privileged phase boundaries, without accessing those boundaries at deployment. The real-robot evaluation validates automatic routing to both the pickup and insertion specialists under an operator-aligned handoff protocol. Altogether, these results show that learned routing applies RL specialist control where precise adaptation is most valuable while preserving generalist VLA behavior, including recovery from failed execution attempts.",
+   "added_at": "2026-09-23 06:33",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Chongyu Zhu",
+    "Jaden Hinds",
+    "Hyegang Kim",
+    "Juan Sebastian Rojas",
+    "Ramy Elmallah",
+    "Chi-Guhn Lee"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.26467",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-23",
+   "scores": {},
+   "seed": false,
+   "title": "RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-23",
    "version": ""
   }
  }

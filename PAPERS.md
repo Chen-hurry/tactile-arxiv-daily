@@ -2,16 +2,16 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-22 17:41 ｜ 共 1461 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-23 06:33 ｜ 共 1469 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
 ## 目录
 
-- [Sim（触觉仿真环境）](#sim) — 62 篇
-- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 103 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 324 篇
-- [Other（其他触觉相关）](#other) — 1009 篇
+- [Sim（触觉仿真环境）](#sim) — 64 篇
+- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 104 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 325 篇
+- [Other（其他触觉相关）](#other) — 1013 篇
 
 ## Sim
 
@@ -20,6 +20,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-21 | 🖐 **ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling** | Xuancheng Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.21449) |
+| 2026-09-21 |  **CableVLA: Simulation-Privileged Global-Local Representation Learning for Cable Routing** | Zhifei Teng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.25606) |
+| 2026-09-21 |  **Norm2Tex: Augmenting Visuo-Tactile Simulations with Texture** | Seongjin Bien et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.25398) |
 | 2026-08-31 | 🖐 **Motus2: A Self-Evolving General World Model for Dexterous Manipulation** | Hongzhe Bi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.30237) |
 | 2026-08-16 |  **Vision-Based Tactile Intelligence for Robotics: Sensing, Learning, and Embodied Manipulation** | Peng Zhou et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.15490) |
 | 2026-08-16 |  **Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction** | Fan Yang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.15897) |
@@ -89,6 +91,7 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-22 |  **Imagine-RL: Residual-Confidence-Guided Cross-Attention for World-Model-Augmented VLA Reinforcement Learning** | Kejia Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24033) |
+| 2026-09-22 | 🖐 **VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation** | Jung-Woo Lee et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25785) |
 | 2026-09-20 |  **Opt2VLA: Force-Aware Vision-Language-Action for Contact-Rich Humanoid Whole-Body Manipulation** | Fukang Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.23968) |
 | 2026-09-19 |  **ForceRFT: Refining VLA Actions through Force-Guided Residual Reinforcement Learning** | Yichen Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.22840) |
 | 2026-09-18 |  **AVT-Fabric: Active Visuo-Tactile Perception via Adaptive Evidence Selection for Efficient Robotic Fabric Comparison** | Chang Gao et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.21377) · [Page](https://zhuochenn.github.io/AVT-project/) |
@@ -198,10 +201,11 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-22 | 🖐 **Touch2Robot: Robot Touch in the Human Demonstration Loop** | Shengcheng Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24660) · [Page](https://Touch2Robot.github.io/) |
+| 2026-09-22 |  **What is the Better Curriculum: Controller-Shaped Grasping Behavior for Contact Force-Sensitive Manipulation** | Ziyan Feng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25887) · [Page](https://shayfeng.github.io/better-curriculum/) |
 | 2026-09-21 | 🖐 **Dexterous Robot Manipulation from Human Demonstrations via Contact-Anchored Retargeting and Residual Policy Learning** | Zihao Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24093) · [Code](https://github.com/DexGEM-Lab/real2sim2real) |
 | 2026-09-21 | 🖐 **Tactile-JEPA: Topology-Aware Self-Supervised Representation Learning for Distributed Tactile Sensors** | Elizaveta Kovtun et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2609.24385) · [Code](https://github.com/E-Kovtun/) |
 | 2026-09-21 | 🖐 **TACIT: Tactile Contact Supervision for Spatial Attention in Dexterous Manipulation** | Yanhou Lai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24507) |
-| 2026-09-21 | 🖐 **Touch2Robot: Robot Touch in the Human Demonstration Loop** | Shengcheng Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24660) · [Page](https://Touch2Robot.github.io/) |
 | 2026-09-20 |  **ContactDP: Contact-Guided Diffusion Policy for Tight Insertion Tasks** | Chengyi Xing et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.23800) |
 | 2026-09-20 |  **HapticWAM: Distilling Imagined Touch into a World-Action Model without Inference-Time Tactile Sensing** | Mikhail Sannikov et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.23888) |
 | 2026-09-20 | 🖐 **When Does Touch Matter? Charting the Vision-Interaction Gap in Cluttered Dexterous Grasping** | Hao Jiang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.24068) · [Page](https://interaction-dex-grasp.github.io/) |
@@ -529,6 +533,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-23 |  **CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image** | Dongwon Son et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25654) |
+| 2026-09-23 |  **RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy** | Chongyu Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26467) |
 | 2026-09-22 |  **Layered e-skin for Shear Sensing** | Qingzheng Cong et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22493) |
 | 2026-09-22 |  **Physical-Touch Observability from Wrist Wrench in Granular Scooping** | Hongyi Lin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22852) |
 | 2026-09-22 |  **Robotic Valve Turning: Axial Misalignment Correction Using Reaction Torque Feedback** | Amit Kumar et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24413) |
@@ -539,6 +545,7 @@
 | 2026-09-21 |  **GraspTune: Tactile-Driven Execution Refinement for Robust Grasping** | Juntao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24180) · [Page](https://youtu.be/kcq7fSLNtzU) |
 | 2026-09-21 | 🖐 **Learning tactile perception from high-bandwidth single-point sensing** | Joseph Rigal et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24621) |
 | 2026-09-21 | 🖐 **DexTacWAM: A Visuo-Tactile World-Action Model for Dexterous Manipulation** | Haoran Yuan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24976) · [Page](https://dextacwam.github.io/) |
+| 2026-09-21 | 🖐 **Relative Contact Velocity-Controlled Hand-Object Mechanism for Dexterous Tool Manipulation** | Sunyu Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25619) |
 | 2026-09-20 |  **CompVLA: A Variable Compliance Vision-Language-Action Model for Contact-rich Manipulation** | Jongmin Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.23614) |
 | 2026-09-18 | 🖐 **Grasping by interconnection: robust closing motions from coarse object templates** | Julien Vanderheyden et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.19228) |
 | 2026-09-18 | 🖐 **Enhancing the Perception of Safety and Comfort during Physical Human-Robot Handshake Interactions by Integrating Flexible Elements into a Robotic Arm** | Joel Hidalgo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.19375) |
@@ -623,6 +630,7 @@
 | 2026-08-14 |  **Effect of Twisted-Yarn Architecture on Pressure and Proximity Sensing Characteristics of Textile Capacitive Sensors for Robotic Skin** | Ishtia Zahir et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2608.14406) |
 | 2026-08-14 |  **MISTac: A Vision-Based Tactile Sensor for Minimally Invasive Surgery** | Robin Koch et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.14772) · [Code](https://github.com/lasr-lab/mistac) |
 | 2026-08-13 | 🖐 **NestDex: Nested Policy Learning with Copilot Assisted Teleoperation for Dexterous Manipulation** | James Zhao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.13362) · [Page](https://aus.bot/research/nestdex) |
+| 2026-08-13 |  **High-Bandwidth Biomimetic Finger for Tactile-Transparent Remote Texture Sensing** | Shuang Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26256) |
 | 2026-08-11 | 🖐 **Real-World Cooperative Bimanual Dexterous Grasp of Large Objects from Single-View Observations** | Ziming Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.10383) |
 | 2026-08-11 |  **TCAM for Autonomous Deformable Manipulation: The RMC2 Champion System for WBCD 2026 Track 4** | Guangrui Shen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.10718) |
 | 2026-08-11 | 🖐 **Enabling Scalable Kinesthetic Teaching via Observer-based Hand-guiding with Active Support** | Anna Tuma et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2608.10847) |
