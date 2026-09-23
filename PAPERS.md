@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-23 06:33 ｜ 共 1469 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-23 17:53 ｜ 共 1469 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -20,8 +20,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-21 | 🖐 **ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling** | Xuancheng Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.21449) |
-| 2026-09-21 |  **CableVLA: Simulation-Privileged Global-Local Representation Learning for Cable Routing** | Zhifei Teng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.25606) |
 | 2026-09-21 |  **Norm2Tex: Augmenting Visuo-Tactile Simulations with Texture** | Seongjin Bien et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.25398) |
+| 2026-09-21 |  **CableVLA: Simulation-Privileged Global-Local Representation Learning for Cable Routing** | Zhifei Teng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.25606) |
 | 2026-08-31 | 🖐 **Motus2: A Self-Evolving General World Model for Dexterous Manipulation** | Hongzhe Bi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.30237) |
 | 2026-08-16 |  **Vision-Based Tactile Intelligence for Robotics: Sensing, Learning, and Embodied Manipulation** | Peng Zhou et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.15490) |
 | 2026-08-16 |  **Tactile Sim2Real without Tactile Simulation via Bottlenecked Latent Reconstruction** | Fan Yang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.15897) |
