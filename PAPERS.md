@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-24 06:39 ｜ 共 1473 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-24 17:53 ｜ 共 1473 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -535,8 +535,8 @@
 |:---|:---|:---|:---|:---|
 | 2026-09-24 |  **CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image** | Dongwon Son et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25654) |
 | 2026-09-24 |  **RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy** | Chongyu Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26467) |
-| 2026-09-23 | 🖐 **InternW0: A Foundational Physical World Model for Efficient Real-World Interactions** | Jisong Cai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27656) |
 | 2026-09-23 |  **CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms** | Yuxiao Zhu et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.27381) · [Page](https://copre-arm.github.io) |
+| 2026-09-23 | 🖐 **InternW0: A Foundational Physical World Model for Efficient Real-World Interactions** | Jisong Cai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27656) |
 | 2026-09-23 |  **GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision** | Zonglin Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27695) |
 | 2026-09-22 |  **Layered e-skin for Shear Sensing** | Qingzheng Cong et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22493) |
 | 2026-09-22 |  **Physical-Touch Observability from Wrist Wrench in Granular Scooping** | Hongyi Lin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22852) |
