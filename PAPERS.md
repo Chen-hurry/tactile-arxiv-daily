@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-23 17:53 ｜ 共 1469 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-24 06:39 ｜ 共 1473 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 64 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 104 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 325 篇
-- [Other（其他触觉相关）](#other) — 1013 篇
+- [Other（其他触觉相关）](#other) — 1017 篇
 
 ## Sim
 
@@ -533,12 +533,16 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-09-23 |  **CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image** | Dongwon Son et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25654) |
-| 2026-09-23 |  **RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy** | Chongyu Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26467) |
+| 2026-09-24 |  **CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image** | Dongwon Son et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25654) |
+| 2026-09-24 |  **RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy** | Chongyu Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26467) |
+| 2026-09-23 | 🖐 **InternW0: A Foundational Physical World Model for Efficient Real-World Interactions** | Jisong Cai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27656) |
+| 2026-09-23 |  **CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms** | Yuxiao Zhu et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.27381) · [Page](https://copre-arm.github.io) |
+| 2026-09-23 |  **GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision** | Zonglin Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27695) |
 | 2026-09-22 |  **Layered e-skin for Shear Sensing** | Qingzheng Cong et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22493) |
 | 2026-09-22 |  **Physical-Touch Observability from Wrist Wrench in Granular Scooping** | Hongyi Lin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.22852) |
 | 2026-09-22 |  **Robotic Valve Turning: Axial Misalignment Correction Using Reaction Torque Feedback** | Amit Kumar et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24413) |
 | 2026-09-22 | 🖐 **Steerable and Reactive Grasping Through Modular Design with a Three-Point Interface** | Andrew Nguyen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24896) |
+| 2026-09-22 | 🖐 **A Quasi-Direct-Drive Underactuated Asymmetric Hand for Dexterous and Efficient Grasping and Manipulation** | Benjamin Davis et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27240) · [Page](https://benudavis.github.io/berkeley-quadhand/) |
 | 2026-09-21 |  **Catch Me If You Can: Real-Time Feedback Denoising for Responsive VLAs** | Yiheng Ji et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.21022) · [Page](https://vla-feedback.github.io) |
 | 2026-09-21 |  **SafeStage: Evaluating Safety Before, During, and After Vision-Language-Conditioned Robot Manipulation** | Jinzhu Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.21223) |
 | 2026-09-21 |  **Phrase-Level Robotic Guqin Performance: Bimanual Motion Planning and Audio-Tactile Interaction Monitoring** | Zhen Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24133) |

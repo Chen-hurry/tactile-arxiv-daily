@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-23 17:53",
+ "last_update": "2026-09-24 06:39",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -60610,14 +60610,14 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": null,
-   "published": "2026-09-23",
+   "published": "2026-09-24",
    "scores": {},
    "seed": false,
    "title": "CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image",
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-23",
+   "updated": "2026-09-24",
    "version": ""
   },
   "2609.25785": {
@@ -60766,10 +60766,190 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": null,
-   "published": "2026-09-23",
+   "published": "2026-09-24",
    "scores": {},
    "seed": false,
    "title": "RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-24",
+   "version": ""
+  },
+  "2609.27240": {
+   "abstract": "In this paper, we present the Berkeley QUAD (Quasi-direct-drive, Underactuated, Asymmetric Design) Hand , a four-finger anthropomorphic robotic hand with 11 degrees of freedom and 8 degrees of actuation. The design utilizes QDD actuation at the base of each finger, enabling high force transparency for dexterous , adaptive performance. However, the low torque density of these actuators traditionally presents major issues with size, weight, and thermal limits. We overcome this by applying bio-inspired asymmetry, delegating dexterity to the radial fingers through individual QDD actuation, and strength to the ulnar finger through an underactuated, compliantly coupled transmission driven by a larger QDD motor. A novel preloaded, linkage-based transmission permits this ulnar coupling in a way that preserves human-like workspace reachability. Under light loads, the ulnar motor drives the third (middle) finger directly for dexterity while the fourth (ring) finger mirrors its motion. However, under larger loads, the middle finger complies while the motor drives the ring finger further downwards and inwards toward the center of the grasp to apply better closure forces . Hardware evaluations validate this architecture, demonstrating that the hand achieves 29 out of 33 Feix taxonomy grasps and exhibits backdrive forces as low as 50 g for delicate interactions. Additionally, the underactuated fourth finger improves grasp closure and provides the spatial efficiency necessary for larger actuation, yielding up to a 96-fold reduction in heat generation during sustained loading. Webpage: https://benudavis.github.io/berkeley-quadhand/",
+   "added_at": "2026-09-24 06:39",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Benjamin Davis",
+    "Chase Kidder",
+    "Hannah S. Stuart"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.27240",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://benudavis.github.io/berkeley-quadhand/",
+   "published": "2026-09-22",
+   "scores": {},
+   "seed": false,
+   "title": "A Quasi-Direct-Drive Underactuated Asymmetric Hand for Dexterous and Efficient Grasping and Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-22",
+   "version": ""
+  },
+  "2609.27381": {
+   "abstract": "Contact detection during robotic manipulation allows robots to recognize unexpected contact and adapt their motion accordingly. However, in low-cost robot arms without dedicated force or tactile sensors, detecting weak contacts from proprioception is challenging because the resulting changes in joint-level proprioceptive signals can be small compared to normal variation and noise caused by robot motion itself. We introduce Contact-free Proprioceptive Response Estimation (CoPRE), improving proprioceptive contact detection sensitivity using only contact-free motion, without additional force sensors, contact labels, or analytical dynamics models. CoPRE estimate the expected joint torques under contact-free motion from proprioceptive state history and commanded motion, while removing recent observations that may already reflect contact. It then computes the residual between the expected and observed joint torque estimates, and maps this residual to a contact score using a noise-weighted Jacobian. Real-robot experiments on ARX Arm and Unitree G1 show that CoPRE achieves 74.1% and 82.2% recall on the tested contact trials, compared with 0%/0% on ARX and 16.3%/42.2% on G1 for the learned torque-prediction and inverse-dynamics baselines. CoPRE also reaches 90% detection rate for pushing force at 3.5 N on ARX and 5.5 N on G1. To demonstrate the downstream utility of our method, we implement belief-space manipulation planning for obstacle-aware object placement and book insertion where detected contacts update the spatial belief and enable the robot to retreat from blocked motions, adjust its pose, and retry. Project website at https://copre-arm.github.io",
+   "added_at": "2026-09-24 06:39",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yuxiao Zhu",
+    "Jinzhou Li",
+    "Yifei Dong",
+    "Muhammad Suhail",
+    "Chunyuan Yang",
+    "Xinyuan Luo",
+    "Haoyu Li",
+    "Boyuan Chen",
+    "Xianyi Cheng"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.27381",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "joint torque"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://copre-arm.github.io",
+   "published": "2026-09-23",
+   "scores": {},
+   "seed": false,
+   "title": "CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-23",
+   "version": ""
+  },
+  "2609.27656": {
+   "abstract": "Physical intelligence requires more than predicting how the world may evolve: predictions must remain actionable as the world continues to change. We introduce InternW0, the first instantiation of the InternW physical world model series from Shanghai AI Laboratory, built around omnimodal interfaces, asynchronous multi-frequency processing, and local physical modeling under partial observations and external influences. InternW0 jointly learns future visual dynamics and continuous robot control through an asymmetric video--action architecture with flow matching. A high-capacity video expert provides longer-horizon predictive context, while a lightweight action expert operates at a faster timescale. Instead of regenerating the future for every action update, InternW0 reuses layerwise K/V and adapts it to newly observed states through observation-conditioned context routing. Domain-specific interfaces and soft prompts support heterogeneous embodiments, while contact-aware post-training incorporates force and tactile signals for contact-rich manipulation. We train InternW0 on approximately 7,200 hours of heterogeneous robot and egocentric data, including EgoLab, a 275-hour real-laboratory egocentric dataset. Evaluation spans simulation benchmarks and real-world scientific tasks, including a 15-stage metal--organic framework synthesis workflow and 5-stage contact- and force-aware dexterous manipulation for general-purpose quantitative pipetting. These results advance scalable, asynchronous, and science-native physical world models for universal and efficient real-world interactions.",
+   "added_at": "2026-09-24 06:39",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Jisong Cai",
+    "Yao Mu",
+    "Ganlin Yang",
+    "Zhe Cao",
+    "Zhangzheng Tu",
+    "Xing Gao",
+    "Kailin Li",
+    "Xinyu Zhan",
+    "Lixin Yang",
+    "Yangkun Zhu",
+    "Haoxiang Ma",
+    "Ming Zhou",
+    "Qiaojun Yu",
+    "Yufei Xue",
+    "Liqun He",
+    "Yifei Yao",
+    "Yifan Zhu",
+    "Long Ling",
+    "Bingqi Jiang",
+    "Haoyu Guo",
+    "Xueyue Zhu",
+    "Bowen Zhou",
+    "Bin Zhao",
+    "Tianfan Xue",
+    "Chunhua Shen"
+   ],
+   "code_url": null,
+   "comment": "A technical report of world models, 24 pages, 8 figures, and 7 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.27656",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-23",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "InternW0: A Foundational Physical World Model for Efficient Real-World Interactions",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-23",
+   "version": ""
+  },
+  "2609.27695": {
+   "abstract": "Perceiving objects in the environment is a fundamental capability of autonomous robots. In dark or low-light environments, external cameras often fail to reliably perceive object positions and geometry; when visual sensing is unavailable, completing target search, recognition, and grasping through touch alone becomes a key robot manipulation capability. This task must simultaneously address container-scale spatial exploration and object-scale fine-grained geometric perception, which is particularly challenging for low-degree-of-freedom parallel grippers. However, a unified framework remains lacking for connecting container-scale spatial exploration with object-scale fine-grained geometric perception and grasping. To address this challenge, we present \\textbf{GLoTouch}, a global-to-local haptic perception and manipulation framework built on a parallel gripper. In the global stage, the gripper holds a passive long-reach probe, combining force measurements with known tool geometry to localize contacts and actively estimate candidate-object positions, coarse contours, and heights. In the local stage, the robot sets down the probe and uses the bilateral visuotactile sensors on the same gripper to directly acquire local haptic observations, which are matched against a given target 3-D model without object-specific training. We evaluate the framework in both simulation and real-robot experiments. Source code will be open-sourced.",
+   "added_at": "2026-09-24 06:39",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zonglin Li",
+    "Wanruo Zhang",
+    "Yiming Wang",
+    "Kun Song",
+    "Xinyi Zhou",
+    "Daolin Ma"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.27695",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-23",
+   "scores": {},
+   "seed": false,
+   "title": "GLoTouch: Global-to-Local Haptic Perception Using a Parallel Gripper for Object Search, Recognition, and Grasping Without External Vision",
    "topics": [
     "Other"
    ],
