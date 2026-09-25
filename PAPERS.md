@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-25 06:31 ｜ 共 1483 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-25 18:00 ｜ 共 1483 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -203,8 +203,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-24 | 🖐 **TacSushi: Tactile-Grounded World-Action Modeling for Dexterous Sushi Manipulation** | Haodi Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.19613) |
-| 2026-09-24 |  **Self-Supervised Anchoring of Fingertip Sensing to Proprioception and Proactive Actions for Robot Imitation Learning** | Tomohiro Motoda et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.29822) · [Page](https://tomohiromotoda.github.io/nia.propra/) |
 | 2026-09-24 |  **PolyUMI: Accessible Visual-Tactile-Audio Data Collection for Object Inference and Manipulation** | Conor W. Hayes et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.29760) · [Page](https://polyumi-vista.github.io) |
+| 2026-09-24 |  **Self-Supervised Anchoring of Fingertip Sensing to Proprioception and Proactive Actions for Robot Imitation Learning** | Tomohiro Motoda et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.29822) · [Page](https://tomohiromotoda.github.io/nia.propra/) |
 | 2026-09-23 |  **TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion** | Zizhuo Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.28959) |
 | 2026-09-22 | 🖐 **Touch2Robot: Robot Touch in the Human Demonstration Loop** | Shengcheng Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24660) · [Page](https://Touch2Robot.github.io/) |
 | 2026-09-22 |  **What is the Better Curriculum: Controller-Shaped Grasping Behavior for Contact Force-Sensitive Manipulation** | Ziyan Feng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25887) · [Page](https://shayfeng.github.io/better-curriculum/) |
@@ -544,8 +544,8 @@
 | 2026-09-25 | 🖐 **Res-HIL: Human-Guided Residual Reinforcement Learning for Sample-Efficient Dexterous Manipulation** | Mariia Iavorskaia et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30023) |
 | 2026-09-24 |  **CODA: Depth-Aligned Scene Completion and Object Decomposition from a Single RGB-D Image** | Dongwon Son et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25654) |
 | 2026-09-24 |  **RouteRLT: Learning When and Which RL Specialist Should Control a Vision-Language-Action Policy** | Chongyu Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.26467) |
-| 2026-09-24 | 🖐 **Real-Time Force Regulation for Whole-Hand Dexterous Grasping** | Sang Min Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30082) · [Page](https://sangminkim-99.github.io/reactive-grasp-whole-hand/) |
 | 2026-09-24 |  **DA-GRD: Decision-Aware Grasp-Relevant Disambiguation for tactile recovery under perception-to-execution mismatches** | Haoran Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.29065) |
+| 2026-09-24 | 🖐 **Real-Time Force Regulation for Whole-Hand Dexterous Grasping** | Sang Min Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30082) · [Page](https://sangminkim-99.github.io/reactive-grasp-whole-hand/) |
 | 2026-09-23 | 🖐 **Learning tactile perception from high-bandwidth single-point sensing** | Joseph Rigal et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.24621) |
 | 2026-09-23 |  **CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms** | Yuxiao Zhu et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.27381) · [Page](https://copre-arm.github.io) |
 | 2026-09-23 | 🖐 **InternW0: A Foundational Physical World Model for Efficient Real-World Interactions** | Jisong Cai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.27656) |
