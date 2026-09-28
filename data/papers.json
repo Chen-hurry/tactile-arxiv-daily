@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-27 17:52",
+ "last_update": "2026-09-28 07:29",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -61379,6 +61379,371 @@
     "Other"
    ],
    "updated": "2026-09-24",
+   "version": ""
+  },
+  "2609.30506": {
+   "abstract": "Humanoid hands require tactile feedback across the whole finger, not just the fingertip, to grasp and manipulate objects properly. Vision and proprioception alone cannot reliably provide this information, particularly when the hand's own fingers occlude the camera's view of the grasp. We present a low-cost tactile array for a humanoid finger, made from Velostat and conductive tape. The fingertip carries seven contact points including a 2x3 matrix wrapped across its front, left, and right faces, and a separate contact point at the tip. The proximal and middle phalanges each carry a single front-facing contact line. We measure the sensor's hysteresis and recovery time after release, through repeated loading and press-release tests. We also test a compliant, 3D-printed contact structure with a gap and a bump, inspired by similar designs in prior work, and show it cuts recovery time by 74% compared to a flush-contact baseline. We then show the sensor can produce distinct activation patterns for different contact geometries (flat, edge, corner) at the fingertip, and that it registers contact across all three phalanges during a grip. Finally, we discuss the limits of our fabrication changes and point to software-based compensation as a promising way to more directly fix the remaining hysteresis in the future.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.ET"
+   ],
+   "authors": [
+    "Neel Adwani",
+    "Muhaiminul Islam Akash",
+    "Rituja Bhattacharya",
+    "Cong Wang"
+   ],
+   "code_url": null,
+   "comment": "Accepted to be presented at IROS Workshop Touch2Action",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.30506",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "tactile array"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-24",
+   "scores": {},
+   "seed": false,
+   "title": "Tactile Sensing Array for Multi-Phalanx Sensing in Humanoid Hands",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-24",
+   "version": ""
+  },
+  "2609.30608": {
+   "abstract": "A robot that probes a few times before one irreversible action, such as tapping a surface before inserting a peg, must decide when the evidence is enough to commit. We argue that this decision rests on two conditions that existing methods do not separate: the belief must still cover the truth in the coordinate that decides the action, and the failure model that scores actions must track realized failure. We audit both conditions separately, offline and with ground truth, on a deployed probe-then-commit pipeline: a particle belief, a scenario failure score, and one commit. On simulated insertion, more taps sharpen the belief while the truth leaves its support on 16.9% of episodes and the failure score turns optimistic by 0.31. Conformal calibration restores coverage but not the decision: confidently wrong instances still pass a confidence gate. The audit's signatures instead point at the observation model, where a hand scan finds a 2.1 mm error in the tap boundary. Correcting that one number cuts failure from 0.354 to 0.112 on untouched instances and transfers unrefitted to a second engine, while in a third engine the same audit suggests an execution-model mismatch instead. Across seven task families in three engines, a few probes at a fixed executor reduce miss or failure. On a physical arm inserting a tool into a rigid pocket by touch, the gain and the audit's two conditions reproduce, and replaying the recorded taps under an injected model error shows the audit's signature on real data. Additional materials are available at https://sites.google.com/view/auditbeforeyoucommit.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Mohamed Abouagour",
+    "Byung-Cheol Min"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.30608",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://sites.google.com/view/auditbeforeyoucommit",
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": ""
+  },
+  "2609.30735": {
+   "abstract": "Mobile humanoid manipulation requires both reaching a usable workspace and preserving precise hand-object interactions as object poses and contact conditions change. Learning these behaviors from limited task-specific data remains challenging. To bridge this gap, we introduce Praxis, a whole-body manipulation framework that combines physical interaction priors from one-shot egocentric video demonstrations with closed-loop posture calibration and online perception. The framework coordinates three stages: vision-language-guided navigation toward target objects, closed-loop posture calibration to align the arm-hand workspace, and dexterous manipulation with synchronized upper- and lower-body control. Online visual feedback re-grounds demonstrated interaction geometry under new object poses and scene configurations, while tactile feedback adapts hand motions to actual contact conditions. Each manipulation skill is specified by one human demonstration, without task-specific manipulation-policy retraining. Experiments across five long-horizon manipulation tasks demonstrate spatial, visual, and cross-object generalization, as well as recovery from external physical disturbances across all three stages.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Shuliang He",
+    "Ruiyan Xu",
+    "Bo Yue",
+    "Hengming Zhang",
+    "Huayi Zhou",
+    "Shuai Wang",
+    "Wei-Shi Zheng",
+    "Guiliang Liu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.30735",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-24",
+   "scores": {
+    "VTA": 7.5
+   },
+   "seed": false,
+   "title": "Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-24",
+   "version": ""
+  },
+  "2609.30759": {
+   "abstract": "The utility of flexible continuum mechanisms for dexterous navigation is often impaired by their low stiffness, making them ineffective at manipulation in high-force scenarios. To address this challenge, we propose a novel continuum mechanism that achieves both flexible and rigid behavior by antagonistic extension and contraction of a rod-driven continuum helical structure. The helical design combines variable-length capacity with force locking for workspace and stiffness enhancement. In this article, we present the detailed design of the proposed mechanism and characterize its performance through experiments that quantify bending and stiffness. The results demonstrate 180 degree bending range of motion with an average distal positioning error of <10%. Further tests demonstrate that force locking directly improves axial stiffness and thus indirectly increases bending stiffness anisotropically, with maximum bending stiffness along load paths with a large axial component. Tensioning the driving rods provides additional stiffness tunability in the force-locked state, where increasing rod tension proportionally increases bending stiffness with a dimensionless gain of 0.56.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Katelyn King",
+    "Veronica Fish",
+    "Allison M. Okamura"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.30759",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Design and Characterization of a Variable-Length Continuum Mechanism with Force Locking",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": ""
+  },
+  "2609.30868": {
+   "abstract": "Vision-language-action (VLA) models provide broad, instruction-conditioned manipulation behaviors, but their physical execution can remain imprecise during contact-rich interaction. Residual reinforcement learning (RL) can correct such errors while keeping the VLA frozen, but real-robot RL is costly and safety-critical. We propose VLA Latent-Conditioned RL (VLaRL), which enables residual RL for frozen VLAs to be trained in simulation and deployed on real robots without real-world RL or online adaptation. The key challenge is transferring the learned residual policy despite the visual gap between simulation and reality. Rather than requiring pixel-level visual correspondence, VLaRL uses the VLA's internal vision-language latent representation to condition residual control and as the sim-to-real transfer interface, and learns a lightweight mapper that transforms simulation-derived latents toward the real latent distribution. Across four contact-rich manipulation tasks and two VLA backbones, VLaRL improves real-world success in all task-backbone combinations, while controlled ablations demonstrate the importance of both latent conditioning and latent alignment for transferring simulation-trained residual control.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Namiko Saito",
+    "Kinam Kim",
+    "Heecheol Kim",
+    "Katsushi Ikeuchi",
+    "Yasuyuki Matsushita"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.30868",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "VLaRL: Augmenting Vision-Language-Action Models with Simulation-Trained Latent-Conditioned Residual RL",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": ""
+  },
+  "2609.30889": {
+   "abstract": "Contact-rich assembly tasks such as peg-in-hole insertion remain difficult to learn from limited demonstrations. While retrieval-augmented imitation learning, which augments target demonstrations with relevant prior data, offers a promising direction, its applicability to contact-rich manipulation remains largely unexplored. Contact-rich insertion unfolds over multiple phases from search to insert, and retrieving phase-specific experience from prior data in principled ways remains an open question. Our key insight is that a compliant wrist enables the robot to sustain contact throughout execution, producing rich tactile and force signals that naturally reveal the phase structure of insertion and inform what should be retrieved. Based on this insight, we present PHASE (PHase-Aware Segmentation and REtrieval), a framework for compliance-enabled tactile phase retrieval that integrates multimodal contact-aware representation learning, variable-length phase segmentation from tactile signals, and phase-consistent retrieval for policy learning. We evaluate PHASE on real-world peg-in-hole insertion across five peg geometries, comparing against retrieval strategies drawn from state-of-the-art methods under a shared policy architecture. PHASE improves the overall success rate by 13 percentage points over the strongest non-phase-aware baseline, and improves performance under unseen initial positions by 30 percentage points. These results demonstrate that aligning retrieval with interaction-defined contact phases substantially improves robustness in few-shot insertion learning.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jeremy Siburian",
+    "Cristian C. Beltran-Hernandez",
+    "Tatsuya Matsushima",
+    "Yusuke Iwasawa",
+    "Masashi Hamaya",
+    "Mai Nishimura"
+   ],
+   "code_url": null,
+   "comment": "Accepted ro IROS 2026. Project page: https://omron-sinicx.github.io/phase/",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.30889",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://omron-sinicx.github.io/phase/",
+   "published": "2026-09-25",
+   "scores": {
+    "VTA": 10.0
+   },
+   "seed": false,
+   "title": "PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-25",
+   "version": ""
+  },
+  "2609.30959": {
+   "abstract": "Human demonstrations are a cheap source of data for dexterous manipulation, but co-training a robot policy on them requires closing the human--robot gap in every modality the policy consumes. We present VisTacAlign, a framework for co-training 3D-visual- tactile dexterous policies on human and robot demonstrations. Glove-tracked human hand motion is retargeted to a 17-DoF tactile robot hand with a one-time fingertip correction. The human hand is then erased from both stereo views and replaced by a posed robot-hand mesh painted with pixels from robot recordings, and a real-time stereo foundation model is re-run on the composite, so the human point clouds carry the same stereo errors and visibility as the robot ones. Finally, a capacitive tactile glove is aligned to the robot's fingertip sensors in its signal space, giving one interpretable per-finger force representation. A diffusion transformer consumes point-cloud, proprioceptive, and per-finger tactile tokens. On three real-world tasks requiring precise force -- Lego assembly, plucking strawberries of varying size, and activating and lifting a power drill -- adding aligned human demonstrations to existing robot data improves over robot-only policies, and ablations show that both tactile input and visual alignment are necessary. Project page: https://vis-tac-align.github.io",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Julien Poffet",
+    "Matthew Strong",
+    "Ankush Dhawan",
+    "Baiyu Shi",
+    "Shalika Neelaveni",
+    "Yujia Yuan",
+    "Zhenan Bao",
+    "Monroe Kennedy III"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.30959",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "capacitive tactile",
+     "tactile glove"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://vis-tac-align.github.io",
+   "published": "2026-09-25",
+   "scores": {
+    "VTA": 12.0,
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "VisTacAlign: Co-Training Dexterous Policies on Tactile Human and Robot Demonstrations",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-25",
+   "version": ""
+  },
+  "2609.30969": {
+   "abstract": "Tactile information is essential for contact-rich manipulation tasks in robotics. Vision-based tactile sensors make it particularly easy to design end-to-end manipulation policies with tactile sensing, as they enable the use of existing encoders from computer vision. However, this has led to a huge variety of architectures, training datasets, and evaluation protocols, making it difficult to determine which design choices best encode touch. In this work, we address this gap and present a comprehensive study of tactile encoders and fusion strategies across various contact-rich manipulation tasks in real-world experiments. To enable a controlled comparison, we train and evaluate all models under the same pipeline and experimental setup, comprising more than 2000 real-world rollouts. Our results go beyond other studies that only compare simulation performance, which does not necessarily translate to real-world settings, where large-scale evaluations are needed to obtain reliable statistics. Our key finding is that there is no universally optimal representation or fusion strategy for encoding visual- tactile . Instead, the best encoder backbone and fusion scheme depend strongly on the task.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Seongjin Bien",
+    "Débora Oliveira Makowski",
+    "Carlo Kneissl",
+    "Reihaneh Mirjalili",
+    "Pankhuri Vanjani",
+    "Rudolf Lioutikov",
+    "Gitta Kutyniok",
+    "Florian Walter",
+    "Wolfram Burgard"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.30969",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "vision-based tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-25",
+   "scores": {
+    "VTA": 7.0
+   },
+   "seed": false,
+   "title": "TACTIC: Understanding Tactile Encoders and Conditioning for Contact-rich Robot Manipulation Policies",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-25",
+   "version": ""
+  },
+  "2609.31323": {
+   "abstract": "In this work we study if a robotic hand using proprioception alone can grasp diverse objects with no visual observation. We present a modular dexterous grasping architecture that separates global arm motion from local contact control. An independently controlled arm guides the hand toward the object, while a reinforcement learning policy grasps and stabilizes it using only hand proprioceptive feedback. We call this \\textit{a blind grasp reflex}: grasping without images, object poses, or geometric observations. A learned stable-grasp score determines when the object is securely held, allowing the arm to begin post-grasp manipulation. This separation makes grasping a reusable hand-level skill that can be combined with independently designed arm controllers for various manipulation tasks. Experiments in simulation and on hardware demonstrate robust blind grasping across diverse objects and seamless composition with a range of arm controllers. Moreover, despite never observing contact geometry, the learned grasp score closely aligns with an independent physics-based measure of grasp stability. The resulting approach follows a simple principle: see to reach, feel to grasp. Project page: https://blindgraspreflex.github.io.",
+   "added_at": "2026-09-28 07:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Alexander Alexiev",
+    "Tzu-Yuan Lin",
+    "Sang Min Kim",
+    "Ho Jae Lee",
+    "Yonghyeon Lee",
+    "Sangbae Kim"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.31323",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://blindgraspreflex.github.io",
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "See to Reach, Feel to Grasp: Learning A Blind Grasp Reflex for Anthropomorphic Robotic Hands",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
    "version": ""
   }
  }
