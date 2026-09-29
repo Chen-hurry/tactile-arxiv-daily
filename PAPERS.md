@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-29 07:25 ｜ 共 1508 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-29 18:46 ｜ 共 1508 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -205,8 +205,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-28 | 🖐 **Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation** | Wenqiao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34182) · [Page](https://uni-vta.github.io/) |
-| 2026-09-27 |  **TacGooseBumps (TacGB): Retrofitting Normal-Only Tactile Sensors with Shear Encoding for Learning Contact-Rich Manipulation** | Wenjie Li et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.34006) |
 | 2026-09-27 | 🖐 **DexTaG: Tactile-as-Guidance in Reinforcement Learning for Dexterous Manipulation** | Han Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33882) |
+| 2026-09-27 |  **TacGooseBumps (TacGB): Retrofitting Normal-Only Tactile Sensors with Shear Encoding for Learning Contact-Rich Manipulation** | Wenjie Li et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.34006) |
 | 2026-09-25 | 🖐 **Praxis: Distilling Physical Interaction Priors from Egocentric Videos for Generalizable Whole-Body Manipulation** | Shuliang He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30735) |
 | 2026-09-25 |  **PHASE: Compliance-Enabled Tactile Phase Retrieval for Few-Shot Insertion Learning** | Jeremy Siburian et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30889) · [Page](https://omron-sinicx.github.io/phase/) |
 | 2026-09-25 | 🖐 **VisTacAlign: Co-Training Dexterous Policies on Tactile Human and Robot Demonstrations** | Julien Poffet et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.30959) · [Page](https://vis-tac-align.github.io) |
@@ -547,12 +547,12 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-09-28 |  **Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation** | Mohamed Abouagour et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30608) · [Page](https://sites.google.com/view/auditbeforeyoucommit) |
-| 2026-09-28 |  **Shaping Persistent Representations from Independent Interactions** | Ji Dai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34604) · [Page](https://persistent-learning-review.netlify.app/interactive.html) |
-| 2026-09-28 | 🖐 **Dexterous Tactile World Model** | Ziyao Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34286) · [Page](https://adonis-galaxy.github.io/dtwm-project-page/) |
 | 2026-09-28 |  **UMR: Universal Manipulation Representation** | Song Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34256) · [Page](https://umr-wepvla.github.io/) |
+| 2026-09-28 | 🖐 **Dexterous Tactile World Model** | Ziyao Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34286) · [Page](https://adonis-galaxy.github.io/dtwm-project-page/) |
+| 2026-09-28 |  **Shaping Persistent Representations from Independent Interactions** | Ji Dai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34604) · [Page](https://persistent-learning-review.netlify.app/interactive.html) |
 | 2026-09-27 |  **Learning with Object-centric Representations of Tactile Interactive Perception for Robot Manipulation** | Xinyi Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33235) · [Page](https://xinyiyxyx.github.io/tactile-object-centric/) |
-| 2026-09-27 | 🖐 **FINGR: Learning Dexterous Hand Control for Real-World Rubik's Cube Solving** | Yutong Liang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33973) · [Page](https://www.lyt0112.com/projects/FINGR) |
 | 2026-09-27 | 🖐 **FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation** | Haowei Shen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33551) · [Page](https://gghgghgghgg.github.io/FoLD-project-page/) |
+| 2026-09-27 | 🖐 **FINGR: Learning Dexterous Hand Control for Real-World Rubik's Cube Solving** | Yutong Liang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33973) · [Page](https://www.lyt0112.com/projects/FINGR) |
 | 2026-09-26 |  **GlowTact: Simple and Compact Vision-Based Tactile Sensing with High Sensitivity and Spatial Resolution** | Yuxiang Ma et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2609.32471) |
 | 2026-09-25 | 🖐 **Outcome-Sensitive Motion Search for Impact-Aware Dexterous Catching** | Guorui Pei et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.29020) |
 | 2026-09-25 | 🖐 **Res-HIL: Human-Guided Residual Reinforcement Learning for Sample-Efficient Dexterous Manipulation** | Mariia Iavorskaia et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30023) |
