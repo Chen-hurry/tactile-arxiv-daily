@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-28 20:10",
+ "last_update": "2026-09-29 07:25",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -41341,7 +41341,7 @@
    "version": "v1"
   },
   "2604.12879": {
-   "abstract": "Fast grasping is critical for mobile robots in logistics, manufacturing, and service applications. Existing methods face fundamental challenges in impact stabilization under high-speed motion, real-time whole-body coordination, and generalization across diverse objects and scenarios, limited by fixed bases, simple grippers, or slow tactile response capabilities. We propose \\textbf{FastGrasp}, a learning-based framework that integrates grasp guidance, whole-body control, and tactile feedback for mobile fast grasping. Our two-stage reinforcement learning strategy first generates diverse grasp candidates via conditional variational autoencoder conditioned on object point clouds, then executes coordinated movements of mobile base, arm, and hand guided by optimal grasp selection. Tactile sensing enables real-time grasp adjustments to handle impact effects and object variations. Extensive experiments demonstrate superior grasping performance in both simulation and real-world scenarios, achieving robust manipulation across diverse object geometries through effective sim-to-real transfer.",
+   "abstract": "Fast dexterous grasping while a mobile base remains in motion requires coordinated whole-body control and rapid adaptation to physical contact. We propose FastGrasp, a two-stage learning framework that integrates grasp guidance, whole-body control, and tactile feedback. First, a pretrained conditional variational autoencoder generates diverse grasp candidates from object point clouds. Candidates are filtered by approach direction and supporting-surface constraints, then ranked using an envelopment-based criterion combining grasp width and depth coverage measures. Second, a reinforcement learning policy jointly controls the mobile base, arm, and dexterous hand, using the selected grasp as guidance and tactile observations for online grasp adjustment. The policy is trained with domain randomization and deployed with command filtering and tactile-triggered grasp tightening. Simulation experiments show higher grasp success rates than the evaluated baselines under full and partial point-cloud observations, while real-world experiments demonstrate sim-to-real transfer across diverse object geometries.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO",
@@ -41370,15 +41370,15 @@
    "project_url": null,
    "published": "2026-04-14",
    "scores": {
-    "VTA": 8.8
+    "VTA": 11.8
    },
    "seed": false,
-   "title": "FastGrasp: Learning-based Whole-body Control method for Fast Dexterous Grasping with Mobile Manipulators",
+   "title": "FastGrasp: Learning-based Whole-Body Control Method for Fast Dexterous Grasping with Mobile Manipulators",
    "topics": [
     "VTA"
    ],
-   "updated": "2026-04-14",
-   "version": "v1"
+   "updated": "2026-09-27",
+   "version": "v2"
   },
   "2604.13015": {
    "abstract": "Humanoid robots promise general-purpose assistance, yet real-world humanoid loco-manipulation remains challenging because it requires whole-body stability, end-effector dexterity, and contact-aware interaction under frequent contact changes. In this work, we study dexterous, contact-rich humanoid loco-manipulation. We first develop an RL-based lower-body controller that serves as the stability backbone for whole-body execution during complex manipulation. Building on this controller, we develop a VR-based whole-body humanoid data collection system that integrates dexterous hands and tactile sensing for contact-rich manipulation. We then propose Humanoid Transformer with Touch Dreaming (HTD), a multimodal encoder-decoder Transformer that models touch as a core modality alongside multi-view vision and proprioception. HTD is trained in a single stage with behavioral cloning augmented by touch dreaming: in addition to predicting action chunks, the policy predicts future hand-joint forces and future tactile latents, with tactile-latent targets provided by an exponential moving average target encoder without requiring a separate tactile pretraining stage. This encourages the policy to learn contact-aware representations for dexterous manipulation. Across five real-world contact-rich tasks, HTD achieves a 90.9% relative improvement in average success rate over the stronger baseline for each task. Ablation results further show that latent-space tactile prediction is more effective than raw tactile prediction, yielding a 30% relative gain in success rate. These results demonstrate that our touch-dreaming-enhanced learning system enables versatile, high-dexterity humanoid manipulation in the real world. More information and open-source materials are available at humanoid-touch-dream.github.io.",
@@ -45801,7 +45801,7 @@
    "version": "v1"
   },
   "2606.08765": {
-   "abstract": "Effective visuo-tactile integration is critical for robotic dexterous manipulation, especially when visual observations are unreliable or occluded. However, robustly aligning sparse, heterogeneous tactile measurements with dense visual representations remains a fundamental challenge. Most existing approaches require policies to learn cross-modal correspondences implicitly from limited demonstrations, without leveraging geometric priors. As a result, they are often data-inefficient and generalize poorly when visual observations are degraded. To address this limitation, we propose a framework that explicitly grounds physical contacts in the image domain. Using robot forward kinematics and camera calibration, we project tactile sensor locations directly onto the RGB image plane. We then render force-modulated Gaussian saliency maps to model spatial uncertainty arising from kinematic and calibration errors. By integrating these 2D spatial anchors through a zero-initialized conditioning architecture, our method injects physical contact priors into standard visual backbones while preserving pre-trained visual representations. We evaluate our method on six dexterous manipulation tasks in both simulation and the real world under severe visual occlusions. Real-world experiments show that explicit RGB-S grounding in the image domain improves real-world occluded manipulation success rates by $26.7$ percentage points over the strongest implicit visuo-tactile baseline, suggesting its improved spatial reasoning and robustness to occlusion. Project page: touch-as-saliency.github.io",
+   "abstract": "Vision and touch are naturally complementary for dexterous manipulation. Yet they are represented in fundamentally different forms: visual observations are dense and spatially structured, whereas tactile measurements are sparse, heterogeneous, and robot-centric. This mismatch makes it challenging to establish explicit spatial correspondence between the two modalities, particularly when they are fused in latent space. However, each tactile measurement is associated with a known location on the robot's kinematic chain, offering a localization prior that could bridge this representational gap. This raises a natural question: can this localization prior be used to construct a shared representation that explicitly aligns touch with vision? We introduce Tac2Pix, an image-space visuo-tactile fusion framework that projects sparse tactile measurements onto the RGB image plane using forward kinematics and camera calibration, then renders them as force-aware saliency maps. By expressing touch in the same pixel space as vision, Tac2Pix directly leverages pretrained 2D visual representations. We further employ zero-initialized input adaptation to preserve the original visual pathway at the start of policy learning. To assess whether this geometry-based interface yields consistent policy gains, we evaluate Tac2Pix on three simulated and three real-world dexterous manipulation tasks. In simulation, Tac2Pix consistently improves visuo-tactile policy learning across tasks, policy architectures, and visual backbones. In real-world experiments, it improves average success under visual occlusion by 26.7 percentage points over the strongest latent visuo-tactile fusion baseline, with gains persisting under both random and physical occlusions. Together, these results support image space as an effective interface for fusing sparse touch with pretrained visual representations.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO",
@@ -45816,7 +45816,7 @@
     "Chenxi Xiao"
    ],
    "code_url": null,
-   "comment": "20 pages, 7 figures",
+   "comment": "23 pages",
    "hand": true,
    "hidden": false,
    "id": "2606.08765",
@@ -45832,15 +45832,15 @@
    "project_url": null,
    "published": "2026-06-07",
    "scores": {
-    "VTA": 7.5
+    "VTA": 13.5
    },
    "seed": false,
-   "title": "RGB-S: Image-Aligned Tactile Saliency for Robust Dexterous Manipulation",
+   "title": "Tac2Pix: Image-Space Visuo-Tactile Fusion for Dexterous Manipulation",
    "topics": [
     "VTA"
    ],
-   "updated": "2026-06-11",
-   "version": "v2"
+   "updated": "2026-09-27",
+   "version": "v3"
   },
   "2606.09243": {
    "abstract": "Estimating full-hand grasp pressure from egocentric video is critical for immersive VR and robotic manipulation, yet dense tactile sensing often relies on intrusive hardware. Existing vision-based methods predominantly rely on planar surfaces or fingertip contacts, failing to generalize to complex 3D object interactions. Therefore, we introduce EgoTactile, a benchmark pairing egocentric video with full-hand pressure supervision for diverse everyday objects, incorporating a bare-hand transfer subset to enable generalization to natural scenarios. Leveraging this benchmark, we first establish EgoPressureFormer as a discriminative baseline. Beyond this, to explicitly address the uncertainty in partial observations, we propose EgoPressureDiff, a conditional diffusion framework that adapts a large-scale pre-trained video diffusion backbone. By combining rich world knowledge priors with a Physically-Informed Feature Rectification layer to inject semantic constraints, our approach effectively infers plausible contact patterns and resolves visual-physical ambiguities. Extensive experiments demonstrate that our method achieves superior performance on the benchmark and robust transferability to in-the-wild scenarios. Our project page is available at https://egotactile.github.io/.",
@@ -48203,8 +48203,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-06-22",
-   "version": "v1"
+   "updated": "2026-09-26",
+   "version": "v2"
   },
   "2606.23431": {
    "abstract": "Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection efficiency for high-precision tasks remains prohibitively low. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoperation pipelines. Instantiated within our bimanual dexterous framework, DexTeleop-0, this strategy introduces a real-time optimization loop that bridges the embodiment gap by translating coarse human tracking intents into precise, force-compliant robotic commands with tactile sensing. By estimating accurate contact points and leveraging a tactile-enabled fingertip force-sensing profile, the system dynamically computes localized corrections using the operational space Jacobian with respect to joint angle updates. We rigorously evaluate this tactile-driven adaptation strategy across both simulated environments and real-world hardware. Compared with representative baselines, the proposed method consistently achieves higher task success rates and improved execution efficiency in robust grasping, disturbance-resilient manipulation, and complex dexterous tasks.",
@@ -52475,15 +52475,16 @@
    "authors": [
     "Yunao Huang",
     "Shiyu Sang",
-    "Haotao Lu",
     "Suting Ni",
+    "Haotao Lu",
     "Shijie Wu",
+    "Rui Lv",
     "Ziyang Guo",
     "Ye Shi",
     "Jingya Wang"
    ],
    "code_url": null,
-   "comment": "18 pages, 6 figures, 5 tables. Project page: https://vitacworld.github.io/",
+   "comment": "9 pages, 6 figures, 2 tables. Updated experiments and author list. Project page: https://vitacworld.github.io/",
    "hand": false,
    "hidden": false,
    "id": "2607.22530",
@@ -52508,8 +52509,8 @@
     "VTA",
     "Sim"
    ],
-   "updated": "2026-07-24",
-   "version": "v1"
+   "updated": "2026-09-28",
+   "version": "v2"
   },
   "2607.22964": {
    "abstract": "Tactile gloves digitize contact and force during hand-object interactions, enabling robotics applications in dexterous manipulation, teleoperation, and learning from demonstration. To preserve hand dexterity and capture the nuances of natural interactions, these gloves and the integrated tactile sensors are designed to be soft, flexible, and comfortable. However, such flexible sensors are sensitive not only to contact forces but also unavoidably to hand pose changes, resulting in pose-related artifacts (PRAs). PRAs are especially problematic in the low-force range, resulting in misdetections or late-onset detections of contact, which raises the minimum detectable force (MDF) of the glove. In this work, we characterize the PRAs in relation to pose and force. Building on these insights, we introduce a glove-agnostic algorithmic framework that leverages hand pose information, which is increasingly available, to mitigate PRAs without glove modifications. Our pose-aware force estimation model augments tactile-to-force pipelines with a residual prediction branch that explicitly accounts for pose-induced sensor deformations. We validate our approach across 3 glove designs and 15 users, reducing MDF by 10.4%, 12.2%, and 18.3%, with consistent improvements across all evaluated metrics. This method provides a practical path to improving the usability of tactile gloves in data collection and diverse robotic applications.",
@@ -57900,7 +57901,7 @@
     "cs.RO"
    ],
    "authors": [
-    "Tzah Sarusi"
+    "Tzach Sarusi"
    ],
    "code_url": null,
    "comment": "7 pages, 5 figures, 1 table. Project page: https://tzahsarusi.github.io",
@@ -57929,8 +57930,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-12",
-   "version": "v1"
+   "updated": "2026-09-28",
+   "version": "v2"
   },
   "2609.14783": {
    "abstract": "Robots need touch to manipulate objects safely and reliably, as many properties, such as softness, texture, and contact stability, are hard to infer from vision alone. However, vision-based tactile sensors yield different observations of the same material due to variations in optics, elastomer properties, and illumination, leading to poor generalization when trained on a single or multiple sensors. We propose a language-guided distillation framework for learning sensor-robust tactile representations. Language encodes high-level semantic properties of touch (e.g., rough, soft, slippery) that remain invariant across sensing hardware, providing a natural sensor-agnostic supervisory signal. We construct a 39K-sample touch-language dataset with human-annotated material labels and train a tactile encoder to align sensor-specific tactile images with language embeddings in a shared semantic space. We evaluate our approach for few-shot learning and cross-sensor transfer and benchmark it on six existing tactile datasets. Our method achieves 95% accuracy in the 100-shot setting, improves cross-sensor transfer by an average of 13.3% accuracy, and yields up to 19% accuracy gains across six existing tactile datasets. These results demonstrate that language-guided distillation enables scalable and hardware-agnostic tactile representation learning. Code and dataset are available at https://mashood3624.github.io/Language_Tactile/",
@@ -60553,7 +60554,7 @@
    "version": "v1"
   },
   "2609.25619": {
-   "abstract": "This work investigates how to enable general multi-finger robotic hands to perform the complete tool manipulation process, which entails picking up a tool, loading it into a suitable pose, and then wielding it. Inspired by human tool manipulation and mechanical design principles, we model the hand and the tool as a unified hand-object mechanism (HOM) composed of sub-assemblies. Specifically, we define a HOM as consisting of the hand, the object, and the generalized contact frames, allowing the HOM's motions to be expressed with the same set of Cartesian-space relative contact velocities, irrespective of the hand's kinematics and geometry. Then, we define a HOM's sub-assemblies as relative contact velocity and contact force constraints between fingers. Building on these definitions, we developed a lightweight and physically interpretable motion planning and contact estimation framework using least squares and a complementary filter. We evaluated our framework in simulation by teleoperating five different robotic hands. The results show that our framework enabled all five hands to execute the complete tool manipulation process, achieving dexterous behaviors even from identical, simple reference trajectories. Furthermore, the results showcase our framework's adaptability to different hands, tools, and tasks, enabled by its kinematic and geometric foundation.",
+   "abstract": "This work investigates how to enable general multi-finger robotic hands to perform the complete tool manipulation process, which entails picking up a tool, loading it into a suitable pose, and then wielding it. Inspired by human tool manipulation and mechanical design principles, we model the hand and the tool as a unified hand-object mechanism (HOM) composed of sub-assemblies. Specifically, we define a HOM as consisting of the hand, the object, and the generalized contact frames, allowing the HOM's motions to be expressed with the same set of Cartesian-space relative contact velocities, irrespective of the hand's kinematics and geometry. Then, we define a HOM's sub-assemblies as relative contact velocity and contact force constraints between fingers. Building on these definitions, we developed a lightweight and physically interpretable motion planning and contact estimation framework using least squares and a complementary filter. We evaluated our framework in simulation by teleoperating five different robotic hands. The results show that our framework enabled all five hands to execute the complete tool manipulation process, achieving dexterous behaviors even from identical, simple reference trajectories. Furthermore, the results showcase our framework's adaptability to different hands, tools, and tasks, enabled by its kinematic and geometric foundation. Please visit website for videos: \\href{https://sunyuw.github.io/hom-sim/}{https://sunyuw.github.io/hom-sim/}",
    "added_at": "2026-09-23 06:33",
    "arxiv_categories": [
     "cs.RO"
@@ -60577,7 +60578,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://sunyuw.github.io/hom-sim/",
    "published": "2026-09-22",
    "scores": {},
    "seed": false,
@@ -60585,8 +60586,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-22",
-   "version": "v1"
+   "updated": "2026-09-26",
+   "version": "v2"
   },
   "2609.25654": {
    "abstract": "Robots operating safely in cluttered everyday environments often need to infer scene geometry from partial observations. Methods that detect objects in 2D and reconstruct them independently struggle in such scenes: a missed object is never reconstructed, a merged detection can fuse two objects, and separately reconstructed meshes may overlap or fail to touch their supporting surfaces. We introduce CODA (Complete Once, Decompose Afterward), a generative model that instead reconstructs the complete scene geometry from a single unsegmented RGB-D image, then separates the surface into the surrounding environment and movable objects. Still, generated scene geometry can drift from the observed partial point cloud. To reduce this drift, CODA uses two explicit 3D grounding mechanisms to keep reconstructed geometry consistent with observed surfaces while completing unseen regions. Experiments on HomebrewedDB and our custom cluttered-scene dataset show more accurate reconstructions and a higher fraction of objects remaining in place under simulated gravity than both object-first and scene-first baselines.",
@@ -61105,7 +61106,7 @@
    "version": "v1"
   },
   "2609.28660": {
-   "abstract": "Human hand-object interactions (HOIs) provide a rich source of demonstrations for dexterous manipulation, but learning directly from them presents challenges in bridging morphology gaps, ensuring dynamical feasibility, and sim-to-real deployment. We present Morphometric Imitation, a three-stage framework that transforms reconstructed HOIs into zero-shot sim-to-real visuomotor policies. First, morphometric optimization (MMO) kinematically retargets human motion across hand morphologies while preserving demonstrated contacts. Second, residual reinforcement learning (RL) refines the kinematic reference using object pose and contact information from the human motion to produce dynamically feasible robot demonstrations. Third, these demonstrations are distilled into visuomotor policies. Across three robot hands and ten HOIs, MMO improves contact F1 over the strongest of five baselines by at least 8 points for every hand, while also improving the success rate of downstream dynamic retargeting by as much as 35 points. Ablations on the residual RL show complementary benefits from using object pose and contact information. Finally, the visuomotor policies achieve 89.3% zero-shot success in 300 real-world trials on 30 objects. Project page: $\\href{https://morphometricimitation.github.io}{\\text{this https URL}}$",
+   "abstract": "Human hand-object interactions (HOIs) provide a rich source of demonstrations for dexterous manipulation, but learning directly from them presents challenges in bridging morphology gaps, ensuring dynamical feasibility, and sim-to-real deployment. We present Morphometric Imitation, a three-stage framework that transforms reconstructed HOIs into zero-shot sim-to-real visuomotor policies. First, morphometric optimization (MMO) kinematically retargets human motion across hand morphologies while preserving demonstrated contacts. Second, residual reinforcement learning (RL) refines the kinematic reference using object pose and contact information from the human motion to produce dynamically feasible robot demonstrations. Third, these demonstrations are distilled into visuomotor policies. Across three robot hands and ten HOIs, MMO outperforms five baselines in contact F1, improving on the strongest ones by 8 to 28 points, while improving the success rate of downstream dynamic retargeting by as much as 35 points. On a Sharpa hand, the visuomotor policies achieve 89.3% zero-shot success in 300 real-world trials on 30 objects spanning 10 categories. Project page: https://morphometricimitation.github.io",
    "added_at": "2026-09-25 06:31",
    "arxiv_categories": [
     "cs.RO"
@@ -61142,8 +61143,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-23",
-   "version": "v1"
+   "updated": "2026-09-25",
+   "version": "v2"
   },
   "2609.28959": {
    "abstract": "Humanoid parkour policies can traverse various terrains, but task completion may mask challenges of harsh landings, edge contacts, and unstable stance contacts. Humans naturally regulate foot-terrain interaction through tactile feedback, modulating contact compliance according to terrain stiffness. This highlights a key domain gap between humans and humanoid robots: the absence of rich tactile sensing in most humanoid systems. We address this problem with TactileStep, a deployable tactile learning framework that brings sole pressure sensing into humanoid locomotion control for softer touchdowns and more stable support. TactileStep aligns tactile simulation with the real pressure insole, allowing the policy to learn from the same contact features available on hardware. During training, we use tactile and motion cues to recognize different foot-contact phases and apply phase-aware rewards that encourage safer landing and more stable stance. Evaluated in simulation and on a Unitree G1 humanoid across diverse terrains, TactileStep reduces peak touchdown force by up to 48.8% and peak A-weighted impact noise by up to 30.1 dB over a strong perceptive baseline, while increasing stance contact area by up to 23.8%.",
@@ -61892,6 +61893,547 @@
     "Other"
    ],
    "updated": "2026-09-25",
+   "version": "v1"
+  },
+  "2609.32064": {
+   "abstract": "This paper presents Grasp2Twist, a bimanual dexterous manipulation system that learns to grasp and twist open jar lids using reinforcement learning. Learning this task raises three challenges: learning a unified policy for a multi-stage task, sustaining lid twisting, and sim-to-real transfer. To address the first challenge, we introduce a continuous enclosure measure to guide grasp formation and a binary enclosure indicator to guide the grasp-to-twist transition for unified policy learning. We derive both from the geometric relationship between the object center and the convex hull formed by the hand's palm and fingertips. Kinematic constraints limit how far the hand can rotate the lid with fixed contacts, so sustained twisting requires finger contact reconfiguration. We use a three-stage curriculum to facilitate exploration of these contact changes and also improve robustness for sim-to-real transfer. With our approach, the learned policy demonstrates finger gaiting, reconfiguring hand-object contacts to sustain lid rotation. It transfers zero-shot to the physical system and achieves an 88% task success rate across six household containers, including peanut-butter, vitamin, and instant-coffee jars. Ablations further validate the roles of the geometric enclosure in grasp formation and the curriculum in contact-reconfiguration exploration.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Mo Xu",
+    "Yunfu Deng",
+    "Jianuo Wang",
+    "Josiah Hanna",
+    "Bilge Mutlu"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 6 figures. Under review",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.32064",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-25",
+   "scores": {},
+   "seed": false,
+   "title": "Grasp2Twist: Learning Bimanual Dexterous Jar Opening by Reinforcement Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-25",
+   "version": "v1"
+  },
+  "2609.32471": {
+   "abstract": "Vision-based tactile sensors (VBTS) provide rich contact information for robotic manipulation, but existing designs can be hard to simplify and adapt to the size and constraints of humanoid fingertips. We introduce \\textbf{GlowTact}, a pressure-responsive vision-based tactile sensing mechanism that directly visualizes contact pressure. \\textbf{GlowTact} requires only single-color, non-directional illumination, and the raw tactile image directly represents the pressure distribution without explicit geometry reconstruction. This simple sensing principle enables compact, customizable tactile sensors while preserving high sensitivity and rich spatial detail. We demonstrate gram-scale contact detection, accurate normal-force estimation, and reconstruction of fine contact geometry, including M1 screw threads. These results establish \\textbf{GlowTact} as a practical new sensing technology for compact humanoid fingertips, combining a durable nitrile membrane and simple optical design with sensitive and information-rich tactile perception.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yuxiang Ma",
+    "Megha Tippur",
+    "Pengfei Ye",
+    "Sandra Q. Liu",
+    "Haonan Chen",
+    "Francis Richard Cottrell",
+    "Edward Adelson"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.32471",
+   "modality": "mixed",
+   "modality_keywords": {
+    "numeric": [
+     "pressure distribution"
+    ],
+    "vision": [
+     "tactile image",
+     "vision-based tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-26",
+   "scores": {},
+   "seed": false,
+   "title": "GlowTact: Simple and Compact Vision-Based Tactile Sensing with High Sensitivity and Spatial Resolution",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-26",
+   "version": "v1"
+  },
+  "2609.33235": {
+   "abstract": "Implicit object properties that are difficult to directly infer from vision, such as material, container contents, or softness, can be revealed through tactile sensing and exploratory interactions. However, because tactile signals are transient and sparse, extracting informative tactile events and effectively incorporating them into robotic manipulation remains a challenge. In this work, we present an object-centric context-aware manipulation framework that learns task-agnostic object representations through tactile exploration. A token learner autonomously selects representative tactile segments from long-horizon exploration, while contrastive alignment with descriptive text embeddings enables a latent space that captures multiple physical object properties. These learned representations are then used as semantic context to guide object-centric manipulation policies and adapt strategies based on object properties. Experiments show that the learned representations achieve 93% and 84% property estimation accuracy on seen and unseen objects. Evaluated on three tasks involving visually ambiguous objects, i.e. multi-object rearrangement, pouring, and box opening, the proposed framework improves both target selection and property-dependent manipulation adaptation, raising task success, aggregated over all evaluation trials, from 41% to 92% on seen objects and from 19% to 67% on unseen objects over baseline policies without object-context conditioning. Videos and additional results are available at https://xinyiyxyx.github.io/tactile-object-centric/.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xinyi Yang",
+    "Zilin Si",
+    "Zhuowei Xu",
+    "Zeynep Temel",
+    "Oliver Kroemer"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.33235",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://xinyiyxyx.github.io/tactile-object-centric/",
+   "published": "2026-09-27",
+   "scores": {
+    "VTA": 3.0
+   },
+   "seed": false,
+   "title": "Learning with Object-centric Representations of Tactile Interactive Perception for Robot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.33256": {
+   "abstract": "Vision-Language-Action (VLA) models map visual observations and language instructions directly to robot actions, but they do not explicitly represent the phase structure of manipulation tasks or the rigid-body dynamics governing execution. We present ActionGround, a neuro-symbolic, training-free runtime layer that wraps a frozen VLA policy without retraining, fine-tuning, or weight access, adding less than 1 ms of overhead per control step. A symbolic phase-aware finite-state machine identifies the manipulation phase (approach, grasp, transport, or place) and applies a phase-specific rule-based correction. In parallel, an always-on, inertia-weighted Euler-Lagrange term incorporates the robot's equations of motion into each control step, while its dynamics residual is logged as a consistency diagnostic rather than used as a gate. We evaluate ActionGround across OpenVLA, OpenVLA-OFT, Force-VLA, and Generalist-VLA on ten LIBERO-Spatial pick-and-place tasks using a 7-DoF Franka Panda. With fixed parameters across tasks and backbones, ActionGround improves success rate by up to 6 percentage points and stability by up to 19.3 percentage points, while improving trajectory efficiency by up to 15%. In a separate Robosuite noise sweep, ActionGround provides approximately a 10x improvement in trajectory-jerk robustness under injected action noise. In a matched-seed Robosuite simulation companion to a real Agilex Piper trial, simulated baseline success increases from 35% to 95%. The physical-hardware experiment is presented as a qualitative deployment demonstration; quantitative per-trial success on the real arm is left for future work. Our evaluation is limited to rigid-object pick-and-place manipulation.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Namai Chandra",
+    "Madhur Thareja",
+    "Shriram Damodaran",
+    "Addison Lin Wang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.33256",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-27",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "ActionGround: Training-Free Runtime Refinement of Frozen VLA Policies",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.33551": {
+   "abstract": "Transferring human demonstrations to dexterous robots remains challenging because differences in hand morphology and contact dynamics often cause retargeted motions to fail at producing the intended object behavior. We present \\textbf{FoLD}, a framework for learning dexterous manipulation of articulated objects through explicit force guidance. FoLD compute compensatory force fields from human demonstrations together with the robot's current interaction state, yielding a force prior that promotes the demonstrated object motion. This force prior informs a residual policy that adapts retargeted hand motions to the contact requirements of the task. We evaluate FoLD on a public benchmark for articulated object manipulation, where it consistently outperforms state-of-the-art baselines across tasks and embodiments. We further validate FoLD on real dexterous robot platforms, demonstrating successful transfer of human manipulation skills to robot execution. Here is the link of our project page: https://gghgghgghgg.github.io/FoLD-project-page/.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Haowei Shen",
+    "Tingai Li",
+    "Yumeng Liu",
+    "Wenyuan Guang",
+    "Xuanze Yang",
+    "Qing Fang",
+    "Kai Xu",
+    "Ligang Liu",
+    "Ruizhen Hu"
+   ],
+   "code_url": null,
+   "comment": "Project Page: https://gghgghgghgg.github.io/FoLD-project-page/",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.33551",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://gghgghgghgg.github.io/FoLD-project-page/",
+   "published": "2026-09-27",
+   "scores": {},
+   "seed": false,
+   "title": "FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.33882": {
+   "abstract": "Glove-based motion capture is emerging as a scalable approach to collecting dexterous-hand demonstration data. However, due to the kinematic gap between the human and robot hand, the recorded human motions cannot be executed directly on the robot, especially for contact-rich tool-use tasks involving in-hand reorientation. Prior work bridges this gap in simulation through reinforcement learning (RL) or trajectory optimization, but the human contact pattern is hard to preserve under such formulations, often producing unnatural manipulation and unstable functional grasps. These methods also train a separate policy or solve a separate optimization for each reference trajectory, which is inefficient. To solve these problems, we propose DexTaG, a tactile-guided RL framework for dexterous manipulation. During training, tactile signals captured by the glove guide policy search toward the measured human contact pattern, reducing reliance on precise reference geometry for contact supervision. To improve efficiency, we train a single generalizable retargeter jointly on all training trajectories of the same object. The retargeter is further distilled into a tactile-free student controller conditioned on the target object trajectory for real-world deployment. On marker-pen and hammer manipulation tasks, DexTaG learns natural, contact-rich behaviors that baselines with distance-based contact heuristics fail to learn, generalizes to held-out trajectories of the same object and task, and outperforms single-trajectory baselines on OakInk2.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Han Yang",
+    "Yian Wang",
+    "Yunlong Song",
+    "Zhenjia Xu",
+    "Chuang Gan"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.33882",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-27",
+   "scores": {
+    "VTA": 19.8
+   },
+   "seed": false,
+   "title": "DexTaG: Tactile-as-Guidance in Reinforcement Learning for Dexterous Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.33973": {
+   "abstract": "Manipulating a Rubik's Cube with a single dexterous hand is a challenging test of sustained, contact-rich control: the hand must execute successive layer turns while keeping the cube secure. Each turn requires some fingers to support the cube while others push a moving layer, release contact, and reset for the next move. To learn this coordination, we introduce FINGR (Future-supervised Interaction Network with Geometric Representations), a policy that combines finger-relative geometry with future interaction prediction. A shared point encoder expresses the cube relative to each fingertip and aggregates its points without depending on cubie indexing. Learned future tokens share the observation encoder and receive supervision for contact-force changes, layer-turn progress, and finger joint displacement at multiple time scales. The resulting representation conditions a flow policy that directly generates finger actions. On a real dexterous hand, our policy achieves 99.0% success over 300 turn attempts, compared with 79.7% for the base flow policy. Integrated with grasping and table-assisted regrasping, the policy solves all ten scrambled $2\\times2\\times2$ cubes in a mean complete-system time of approximately 137 seconds. The project website is available at https://www.lyt0112.com/projects/FINGR",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yutong Liang",
+    "Quanquan Peng",
+    "Matthew Kim",
+    "Xiaolong Wang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.33973",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://www.lyt0112.com/projects/FINGR",
+   "published": "2026-09-27",
+   "scores": {},
+   "seed": false,
+   "title": "FINGR: Learning Dexterous Hand Control for Real-World Rubik's Cube Solving",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.34006": {
+   "abstract": "Contact-rich policies often fail because distinct physical states look alike yet require different actions. Cameras may not reveal whether a connector is aligned or fully seated, while many normal-only tactile sensors can miss the tangential interactions perpendicular to the grasping direction that distinguish these states. We ask whether a learning policy needs calibrated shear measurements, or only a repeatable observation that separates shear-dependent contact states. We introduce TacGooseBumps (TacGB), a passive domed film that mechanically encodes tangential loading as pattern changes in an existing sensor's pressure map. Tangential loading tilts each dome and redistributes pressure across its footprint; an end-to-end policy consumes the resulting maps without added electronics, force reconstruction, or taxel-level dome alignment. Across four imitation-learning tasks and two data-collection pipelines, TacGB improves goal attainment, efficiency, and contact quality: insertion success increases by up to 36 percentage points, and successful insertions are completed faster, while fragile-object placement becomes gentler and drawing becomes more continuous and straight. Signal, stage-wise, failure-mode, and trajectory analyses link these gains to contact regimes in which task-relevant tangential interactions are poorly resolved by vision and normal pressure alone. Together, these results show that shear need not be measured metrically to benefit robot learning; it can instead be mechanically encoded without changing the underlying tactile sensor or the policy's pressure-map input format.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Wenjie Li",
+    "Binyu Yang",
+    "Yuxin Chen",
+    "Ambrose Wang",
+    "Masayoshi Tomizuka"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 8 figures. Wenjie Li and Binyu Yang contributed equally",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.34006",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "taxel"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-27",
+   "scores": {
+    "VTA": 8.0
+   },
+   "seed": false,
+   "title": "TacGooseBumps (TacGB): Retrofitting Normal-Only Tactile Sensors with Shear Encoding for Learning Contact-Rich Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-27",
+   "version": "v1"
+  },
+  "2609.34182": {
+   "abstract": "Dexterous manipulation requires tactile feedback.However, robot tactile demonstrations are difficult to scale,because dexterous-hand teleoperation provides limited tactile feedback to the operator. In contrast, human demonstrations offer a substantially more scalable source of diverse tactile interactions. Motivated by a simple premise: hands can change, but the underlying physics of interaction does not. We leverage human tactile data to improve dexterous manipulation policies. Specifically, we first build a tactile motion-capture system that synchronously records images, tactile signals, and hand motions. Using this system, we construct the UVTA dataset spanning five contact-rich tasks, with 1,000 human demonstrations covering diverse interaction patterns and 150 robot demonstrations per task. To transfer the underlying physics of human interaction to robot control, we propose a Unified Visual-Tactile-Action Model that maps both embodiments into aligned tactile and action representations and jointly predicts future action and tactile trajectories. The joint objective enables human demonstrations to supervise contact-aware representation learning, while only robot actions are executed during deployment. In real-robot evaluations across five tasks, our method achieves an average success rate of 70%, outperforming the strongest visual-tactile baseline, which achieves 29%, and an architecture ablation, which achieves 42%. Performance improves consistently with additional human demonstrations and exhibits no saturation at 1,000 demonstrations per task, validating the effectiveness of scalable human tactile data for dexterous manipulation. Project page is available at https://uni-vta.github.io/.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Wenqiao Li",
+    "Qianyou Zhao",
+    "Jiawen Hao",
+    "Xuezhou Zhu",
+    "Tengyu Liu",
+    "Kaifeng Zhang",
+    "Chuan Wen",
+    "Siyuan Huang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.34182",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://uni-vta.github.io/",
+   "published": "2026-09-28",
+   "scores": {
+    "VTA": 10.0
+   },
+   "seed": false,
+   "title": "Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.34256": {
+   "abstract": "General-purpose embodied manipulation hinges on a unified action representation that generalizes across embodiments and scales readily. Yet existing policies rely on embodiment-specific action spaces, making cross-embodiment demonstrations difficult to leverage at scale and limiting transfer to new embodiments and spatial variations. To this end, we introduce Universal Manipulation Representation (UMR), a unified action representation that enables zero-shot skill transfer from human demonstrations to heterogeneous robots. UMR decomposes manipulation into two functionally distinct yet geometrically linked components: embodiment-agnostic World Flow, which describes task-relevant object motion in the world frame, and Ego Trajectory, which represents end-effector motion relative to the current pose. We instantiate UMR as World--Ego Point VLA (WEPVLA), a compact 0.5B-parameter policy that learns in the unified geometric action space through a dual-stream Point Action Adapter and a unified Point Action Expert, with an $SE(3)$ conjugation coupling the two components. To improve data efficiency, we complement UMR with a Data-Efficient Strategy (DES) that diversifies object configurations through stage-aware point-cloud editing while preserving demonstrated contact geometry. In simulation, WEPVLA achieves average success rates of 97.5\\% on LIBERO and 85.7\\% on the 10-task RLBench benchmark. In real-world experiments, a single policy trained on human demonstrations augmented by DES transfers zero-shot to diverse deployment conditions. With about 10 minutes of collected human demonstrations per task and no robot demonstrations, it achieves 91.7\\% average success across six evaluation settings, compared with 60.8\\% for HumanEgo. Code and additional materials are available at https://umr-wepvla.github.io/.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Song Liu",
+    "Linyi Li",
+    "Yanshun Zhao",
+    "Rxuan Li",
+    "Xinrui Xu",
+    "Yi Ju",
+    "Yahui Deng",
+    "Senge Zhang",
+    "Guoyu Liu",
+    "Yixuan Li",
+    "Wuyang Zhang",
+    "Yao Li",
+    "Congcong Zhu",
+    "Jingrun Chen"
+   ],
+   "code_url": null,
+   "comment": "Submitted to IEEE International Conference on Robotics and Automation (ICRA)",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.34256",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://umr-wepvla.github.io/",
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "UMR: Universal Manipulation Representation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.34286": {
+   "abstract": "World models for manipulation are typically trained from video, yet the events that determine how manipulation unfolds, such as making and releasing contact, are difficult to observe visually and are often easier to sense through touch. We present the Dexterous Tactile World Model (DTWM), a video world model for future-frame prediction of egocentric manipulation from both observed video and tactile signals from a glove worn on each hand. We condition a pretrained video diffusion transformer on each hand's tactile signal through a zero-initialized residual at the corresponding hand location in the video tokens, while a causal mask prevents predicted frames from accessing future information. Compared with a vision-only model matched in architecture, parameters, and training, DTWM reduces the underestimation of hand motion from 23% to 9%, while reducing the perceptual error in the hand region by 7.4% across three training runs per model. The benefit also increases over the prediction horizon, with the improvement in the later predicted chunks being about 4.1x larger than in the first. DTWM also outperforms other visual-tactile world models under the same setting, and training with touch improves future-frame prediction even when no touch is available at inference. Ablations show that the model benefits from both the magnitude and spatial location of force: replacing the tactile signal with binary contact states, either per hand or per location, increases prediction error. The observed course of the force indicates whether the interaction will persist or change.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.LG",
+    "cs.RO"
+   ],
+   "authors": [
+    "Ziyao Zeng",
+    "Xiatao Sun",
+    "Hao Wang",
+    "Yueyang Pan",
+    "Zhengxiang Yu",
+    "Fengyu Yang",
+    "Tianyu Liu",
+    "Zhiwen Fan",
+    "Daniel Rakita"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://adonis-galaxy.github.io/dtwm-project-page/",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.34286",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": "https://adonis-galaxy.github.io/dtwm-project-page/",
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Dexterous Tactile World Model",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.34604": {
+   "abstract": "World models learn environment dynamics from interaction experience. These dynamics depend on the current state and actions, as well as on properties that persist across interactions. Yet standard predictive training can reduce error using local evidence alone, without organizing persistent information into reusable context. We introduce SPRII, a training principle that uses relations between interactions as weak supervision for persistent context while retaining the learner's native objective. For example, different trajectories of the same system share persistent properties even when their states and actions differ. SPRII uses such relations to guide context learning without numerical property labels. Two composable components encourage contexts from related interactions to agree (Align) and use one interaction's context to predict another's future (Cross). Our analysis distinguishes three linked questions: what persistent information is accessible in the learned context (Formation), how that context influences a fixed predictor (Use), and whether it reduces task error (Value). Success at one stage does not guarantee success at the next. Controlled experiments show that more reliable relations improve representation organization, but adding a shared-property constraint can reduce access to a property that remains shared. Context substitutions change predictions at fixed model weights, while the benefit from history depends on prediction horizon and readout. Evaluations span thirteen settings, including controlled physical systems, public dynamics tasks, robotic and tactile data, and partner interaction, across multiple learner families. Relative to the corresponding baselines, SPRII yields average gains of over 10% in downstream task performance and over 15% in persistent-property readout. The project page is available at https://persistent-learning-review.netlify.app/interactive.html.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.LG"
+   ],
+   "authors": [
+    "Ji Dai",
+    "Quan Fang",
+    "Junyu Gao",
+    "Rongfeng Guo",
+    "Haoyan Rong",
+    "YipingHuang",
+    "Yongxi Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.34604",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.LG",
+   "project_url": "https://persistent-learning-review.netlify.app/interactive.html",
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Shaping Persistent Representations from Independent Interactions",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.35450": {
+   "abstract": "Physical contact often determines how a humanoid should respond during loco-manipulation, yet vision and proprioception alone are often insufficient to characterize physical interaction, especially when the contact region is occluded. Unlike sparse force or torque measurements at predefined regions, distributed tactile sensing preserves spatially resolved contact patterns across the robot body. We therefore study how to integrate such whole-body tactile information into vision-language-action (VLA) policies for contact-rich control. Our approach, Uni-VLaT, introduces a tactile pathway whose latent state is trained not only for action generation, but also to predict future tactile, proprioceptive, and visual representations. This predictive objective builds a tactile-anchored multimodal context, encouraging a more structured understanding of the physical world. We evaluate Uni-VLaT on five real-robot tasks covering tactile-triggered locomotion, sustained physical interaction, human-robot contact, and loco-manipulation. Uni-VLaT achieves a 75% average success rate, outperforming a baseline without tactile input by 43 points and a tactile-input baseline without predictive supervision by 7 points. Across two pretrained VLA backbones, our method improves Table Sweeping by 30 points on both backbones and Back-Tap Walking by 85-90 points. Ablations further show that contextualized tactile prediction and absolute future targets are critical to performance. These results indicate that predictive tactile learning provides an effective route for extending pretrained VLA policies to whole-body physical interaction.",
+   "added_at": "2026-09-29 07:25",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zihao Wang",
+    "Shutong Liu",
+    "Siqi Zheng",
+    "Liu Cao",
+    "Ruoqi Chen",
+    "Rundong Liu",
+    "Yanchao Yang",
+    "Mengdi Xu"
+   ],
+   "code_url": null,
+   "comment": "12 pages, 5 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.35450",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-28",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-09-28",
    "version": "v1"
   }
  }
