@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-29 18:46 ｜ 共 1508 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-09-30 07:16 ｜ 共 1515 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 65 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 106 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 335 篇
-- [Other（其他触觉相关）](#other) — 1040 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 337 篇
+- [Other（其他触觉相关）](#other) — 1045 篇
 
 ## Sim
 
@@ -204,6 +204,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-29 |  **TaRL: Learning General and Physical Rewards from Tactile Demonstrations** | Po-Yi Wu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36785) · [Page](https://embodiedai-ntu.github.io/tarl) |
+| 2026-09-29 | 🖐 **HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation** | Naisheng Ye et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36596) |
 | 2026-09-28 | 🖐 **Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation** | Wenqiao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34182) · [Page](https://uni-vta.github.io/) |
 | 2026-09-27 | 🖐 **DexTaG: Tactile-as-Guidance in Reinforcement Learning for Dexterous Manipulation** | Han Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33882) |
 | 2026-09-27 |  **TacGooseBumps (TacGB): Retrofitting Normal-Only Tactile Sensors with Shear Encoding for Learning Contact-Rich Manipulation** | Wenjie Li et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.34006) |
@@ -546,10 +548,15 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-29 |  **Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents** | Sicheng Xie et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.37810) |
+| 2026-09-29 |  **A robust single-sensing-element tactile sensor for concurrent pressure and tackiness detection with real-time signal decoupling capability** | Ying Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.36558) |
+| 2026-09-29 | 🖐 **Kinematic Nonlinear Spatio-Temporal Trajectory Warping for Contact-Rich Dexterous Manipulation Demonstrations** | Hyojae Park et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36676) |
 | 2026-09-28 |  **Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation** | Mohamed Abouagour et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30608) · [Page](https://sites.google.com/view/auditbeforeyoucommit) |
 | 2026-09-28 |  **UMR: Universal Manipulation Representation** | Song Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34256) · [Page](https://umr-wepvla.github.io/) |
 | 2026-09-28 | 🖐 **Dexterous Tactile World Model** | Ziyao Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34286) · [Page](https://adonis-galaxy.github.io/dtwm-project-page/) |
 | 2026-09-28 |  **Shaping Persistent Representations from Independent Interactions** | Ji Dai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34604) · [Page](https://persistent-learning-review.netlify.app/interactive.html) |
+| 2026-09-28 | 🖐 **Action Chunking Proximal Policy Optimization with Feedback Correction** | Sanghyun Hahn et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36250) · [Code](https://github.com/hshhahn/ACPPO) |
+| 2026-09-28 | 🖐 **Design and Validation of an Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation** | Chunghyeon Lee et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.36241) |
 | 2026-09-27 |  **Learning with Object-centric Representations of Tactile Interactive Perception for Robot Manipulation** | Xinyi Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33235) · [Page](https://xinyiyxyx.github.io/tactile-object-centric/) |
 | 2026-09-27 | 🖐 **FoLD: Force-Informed Learning for Dexterous Articulated Object Manipulation** | Haowei Shen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33551) · [Page](https://gghgghgghgg.github.io/FoLD-project-page/) |
 | 2026-09-27 | 🖐 **FINGR: Learning Dexterous Hand Control for Real-World Rubik's Cube Solving** | Yutong Liang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33973) · [Page](https://www.lyt0112.com/projects/FINGR) |

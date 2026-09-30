@@ -1,5 +1,5 @@
 {
- "last_update": "2026-09-29 18:46",
+ "last_update": "2026-09-30 07:16",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -38653,7 +38653,7 @@
    "version": "v1"
   },
   "2603.10971": {
-   "abstract": "Reinforcement learning has achieved remarkable success in domains such as Atari games, navigation, and locomotion, where exploration can often be guided by novelty over states or dynamics. In contrast, dexterous manipulation requires rich physical hand--object interactions, but existing methods often suffer from unstable contact-based novelty signals, inefficient distance novelty signals, or reliance on task-specific priors. We propose ContactExplorer, a general exploration method for dexterous manipulation tasks. ContactExplorer represents contact as the intersection between object surface points and hand keypoints, encouraging dexterous hands to discover diverse and novel contact patterns, namely which fingers contact which object regions. It maintains a contact counter conditioned on discretized object states obtained via learned hash codes, capturing how frequently each finger interacts with different object regions. This counter is leveraged in two complementary ways: (1) to assign a count-based contact coverage reward that promotes exploration of novel contact patterns, and (2) an energy-based reaching reward that guides the agent toward under-explored contact regions. We evaluate ContactExplorer on a diverse set of dexterous manipulation tasks. Experimental results show that ContactExplorer substantially improves sample efficiency and success rates over existing exploration methods, and that the contact patterns learned with ContactExplorer transfer robustly to the real world. Project page is https://contact-explorer.github.io.",
+   "abstract": "Reinforcement learning explores effectively in domains such as Atari games, navigation, and locomotion, where novelty over states or dynamics is a sufficient signal. In contrast, dexterous manipulation requires rich physical hand--object interactions, but existing methods often suffer from unstable contact-based novelty signals, inefficient distance novelty signals, or reliance on task-specific priors. We propose ContactExplorer, a general exploration method for dexterous manipulation tasks. ContactExplorer represents contact as the intersection between object surface points and hand keypoints, encouraging dexterous hands to discover diverse and novel contact patterns, namely which fingers contact which object regions. It maintains a contact counter conditioned on discretized object states obtained via learned hash codes. This counter is leveraged in two complementary ways: (1) a count-based contact coverage reward that promotes exploration of novel contact patterns, and (2) an energy-based reaching reward that guides the agent toward under-explored contact regions. We evaluate ContactExplorer on seven contact-rich manipulation tasks and five dexterous hand embodiments. Experimental results show that ContactExplorer substantially improves sample efficiency and success rates over existing exploration methods, that it reduces the need for task-specific priors, and that it remains effective across hand embodiments and transfers to the real world. Project page is https://contact-explorer.github.io.",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO",
@@ -38670,7 +38670,7 @@
     "Lin Shao"
    ],
    "code_url": null,
-   "comment": "24 pages",
+   "comment": "12 pages",
    "hand": true,
    "hidden": false,
    "id": "2603.10971",
@@ -38691,8 +38691,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-06-04",
-   "version": "v3"
+   "updated": "2026-09-29",
+   "version": "v4"
   },
   "2603.11080": {
    "abstract": "Disassembly automation has long been pursued to address the growing demand for efficient and proper recovery of valuable components from the end-of-life (EoL) electronic products. Existing approaches have demonstrated promising and regimented performance by decomposing the disassembly process into different subtasks. However, each subtask typically requires extensive data preparation, model training, and system management. Moreover, these approaches are often task- and component-specific, making them poorly suited to handle the variability and uncertainty of EoL products and limiting their generalization capabilities. All these factors restrict the practical deployment of current robotic disassembly systems and leave them highly reliant on human labor. With the recent development of foundation models in robotics, vision-language-action (VLA) models have shown impressive performance on standard robotic manipulation tasks, but their applicability to complex, contact-rich, and long-horizon industrial practices like disassembly, which requires sequential and precise manipulation, remains limited. To address this challenge, we propose SELF-VLA, an agentic VLA framework that integrates explicit disassembly skills. Experimental studies demonstrate that our framework significantly outperforms current state-of-the-art end-to-end VLA models on two contact-rich disassembly tasks. The video illustration can be found via https://zh.engr.tamu.edu/wp-content/uploads/sites/310/2026/03/IROS-VLA-Video.mp4.",
@@ -44261,7 +44261,7 @@
    "version": "v1"
   },
   "2605.21862": {
-   "abstract": "Chunked vision-language-action (VLA) policies predict multi-step robot controls, conditioning each update on the current visual observation alone. Yet robot actions cause contact, occlusion, and object motion, and the geometry that later decisions depend on can change before the next visual update arrives. Spatial VLAs improve current-frame geometry. Temporal VLAs aggregate past frames. Neither maintains an action-updated scene prior across chunks. We argue for a persistent action-updated scene state across control calls, and introduce EvoScene-VLA. Its recurrent scene prefix carries a geometry-aware scene state across chunks. At each vision-language model (VLM) call, the VLM combines scene information from the current observation with the action-updated prior from the previous chunk; the action decoder outputs both the next action chunk and a compact scene update. This update becomes the next prior, which the VLM corrects against the new observation when the next call arrives. Each control call therefore starts from a scene prior that reflects both recent actions and fresh visual evidence. During training, \\textbf{Scene Predictor} supplies future scene-token targets, and Geometric Anchor aligns scene slots with frozen depth and 3D teachers. We discard both modules at deployment. On 31 RoboTwin tasks, EvoScene-VLA raises average success from 87.2% to 89.1% in fixed evaluation and from 86.1% to 88.5% in randomized evaluation. On the Galaxea R1-Lite real robot, EvoScene-VLA outperforms all baselines.",
+   "abstract": "Chunked vision-language-action (VLA) policies generate multi-step actions from one observation and typically re-observe after executing the action chunk. Earlier actions change the scene conditions for later steps, while occlusion can compromise visual feedback. Spatial and temporal VLAs enhance geometry and memory, but their representations may become stale as actions alter object poses and contacts. We introduce EvoScene-VLA, which uses compact scene tokens to unify within-chunk scene prediction, cross-chunk state propagation, and observation-based correction. The action expert jointly denoises actions and future scene states in a single flow-matching process, allowing predicted scene changes to inform action generation. The final scene state serves as the next prior for subsequent correction. At the next control call, the vision-language model (VLM) fuses the incoming visual input with this prior. Two-level geometric anchoring applies local depth supervision to per-view scene features and global 3D feature supervision to the fused scene state; a shared geometric decoder imposes the same constraints on current and future states. Since demonstrations do not directly provide future scene states, we train a scene predictor using 3D teacher features from future images. Its predictions provide targets for the action expert's future scene states. At deployment, we remove both Scene Predictor and Geometric Anchor. EvoScene-VLA improves average success over the matched baseline by 2.4 and 2.2 percentage points on 31 RoboTwin tasks under fixed and randomized settings, respectively, and by 2.7 points on LIBERO. Across three real-robot tasks, average success rises from 37.3% to 42.0%. Ablations show that a recurrent scene state alone does not necessarily improve performance, whereas state propagation can improve control when combined with geometric and future scene supervision.",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO",
@@ -44276,7 +44276,7 @@
     "Hongdong Li"
    ],
    "code_url": null,
-   "comment": "",
+   "comment": "Updated manuscript, experiments, and preprint formatting",
    "hand": false,
    "hidden": false,
    "id": "2605.21862",
@@ -44297,8 +44297,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-15",
-   "version": "v2"
+   "updated": "2026-09-29",
+   "version": "v3"
   },
   "2605.21976": {
    "abstract": "Vision-based learning from demonstrations has achieved remarkable success in enabling robots to perform manipulation tasks and high-level semantic reasoning, yet it remains insufficient for complex, contact-rich manipulation. While there is broad agreement that tactile sensing improves manipulation, there is no empirical guidance on which tactile sensors are best suited for which manipulation tasks. In this paper, we provide a systematic, task-driven evaluation of tactile sensors for robot manipulation and propose a framework for selecting and evaluating sensors based on manipulation policy performance. Separate manipulation policies are trained for tactile sensors of four distinct modalities: visual, acoustic, magnetic, and resistive, across three tasks: pick-and-place with unknown mass, object reorientation, and plug insertion. For each task, an analysis of how sensor properties such as spatial resolution, shear sensing, and tactile representation, and the inherent material friction affect task performances is done. Rather than tactile sensing being universally beneficial in the same way, our results show that the usefulness of tactile information depends strongly on sensor modality, material properties, and the specific manipulation tasks. All of the tactile sensors, code, data, and hardware setup will be publicly available on the project website.",
@@ -55021,7 +55021,7 @@
    "version": "v1"
   },
   "2608.16889": {
-   "abstract": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Applied to long horizons, it breaks twice. (1) Competence comes from whole-task exploration at test time, whose cost is multiplicative in stages: if one stage needs T episodes, a K-stage task needs about T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, so a subtask can succeed in a form its successor cannot use. We present BATON. Against (1), BATON makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Cost becomes additive (T*K) and every failure is attributed to a single stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is called only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. No parameters are updated. On the long-horizon benchmark RoboMemArena, BATON improves task success by 11.6% and cumulative success by 14.9% over the SoTA.",
+   "abstract": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) and world-action models (WAMs) increasingly master individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising pathway freezes the VLA and puts an LLM coding agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Yet applied to long horizons, this recipe breaks twice. (1) Its competence comes from whole-task exploration at test time, whose cost is exponential in the number of stages: if one stage needs T episodes, a K-stage task needs on the order of T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, and a subtask can succeed in a form its successor cannot use. We present BATON to address both failures. Against (1), BATON makes the subtask the unit of exploration: each subtask is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Exploration cost becomes linear (KT), and each failure is attributed to one stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is invoked only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. On the RoboMemArena benchmark, BATON improves task success by 37.7% and cumulative success by 29.7% over the SoTA.",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO",
@@ -55055,8 +55055,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-17",
-   "version": "v1"
+   "updated": "2026-09-28",
+   "version": "v2"
   },
   "2608.17209": {
    "abstract": "End-to-end vision-language-action (VLA) and world-action models offer an elegant route to general-purpose robotics, but their reliability is bounded by validated physical coverage. When an unfamiliar object, sensor, embodiment, or contact falls outside that coverage and no validated fallback exists, correcting the failure requires new robot data, a policy update, and regression testing. This recurring burden is the retraining tax. Unlike text, embodied data must often be created by operating machines. We present Teach-and-Grow Learning (TGL), an agent-centered architecture for general robot learning. In its general form, a multimodal agent turns a few successful demonstrations into reusable Skill Blocks: closed-loop behaviors for meaningful subgoals. In a new scene, the agent grounds and composes these blocks, selects learned or geometric tools, observes the physical outcome, and revises the route when execution departs from intent. A Skill Library stores executable behavior, while structured Experience Memory carries forward success, failure, and repair. New tasks are acquired without task-specific policy retraining. Our LIBERO evaluation attains state-of-the-art performance; controlled studies expose skill induction, persistent reuse, and agent-directed adaptation. Finally, we propose the Teach-and-Grow scaling-law hypothesis: if X denotes effective reusable experience, future-task error and teaching demand should approach irreducible floors as power laws in X. The architecture therefore treats deployment as a period of continued learning, in which one task can make the next easier.",
@@ -56176,7 +56176,7 @@
    "version": "v1"
   },
   "2608.25798": {
-   "abstract": "Contact-rich manipulation requires adapting to contact states that can evolve substantially within an action horizon. However, chunk-based vision-language-action models predict complete action chunks from observations collected before execution, leaving tactile conditioning stale during execution. Existing tactile-reactive approaches typically rely on separate high-frequency controllers, which increase both architectural and training complexity. In this paper, we introduce TacForcing, a streaming action-generation framework that effectively incorporates execution-time tactile feedback. Instead of employing a separate reactive controller, TacForcing replaces the standard action expert with a streaming action expert to generate actions conditioned on the evolving tactile observations acquired during execution. TacForcing also introduces Execution-Aware Tactile Attention (EATA), which restricts tactile conditioning to actions nearing execution, thereby reducing the temporal mismatch between tactile acquisition and action execution. Across six simulated UniVTAC tasks and three real-world contact-rich manipulation tasks, TacForcing achieves average success rates of 65% and 69%, respectively, outperforming strong baselines in both settings.",
+   "abstract": "Contact-rich manipulation requires adapting to contact states that can evolve substantially within an action horizon. However, chunk-based vision-language-action models predict complete action chunks from observations collected before execution, leaving tactile conditioning stale during execution. Existing tactile-reactive approaches typically rely on separate high-frequency controllers, which increase both architectural and training complexity. In this paper, we introduce TacForcing, a streaming action-generation framework incorporating execution-time tactile feedback. TacForcing replaces the standard action expert with a streaming expert that generates action blocks sequentially while preserving intermediate states of unfinished blocks. After each block is executed, the expert resumes generation from these states using newly acquired tactile feedback. To better align tactile conditioning with action execution, we further introduce Execution-Aware Tactile Attention (EATA), which restricts direct access to each tactile update to the next block scheduled for execution. Across six UniVTAC simulation tasks and six real-world contact-rich manipulation tasks on two robot platforms, TacForcing achieves average success rates of 65% in simulation and 66% in the real world, outperforming the strongest baselines by 6 and 15 percentage points, respectively.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO",
@@ -56192,11 +56192,12 @@
     "Xiangyang Gu",
     "Yuhan Cao",
     "Xiao Xia",
+    "Yi Yang",
     "Yanzhe Hu",
     "Zhijie Deng"
    ],
    "code_url": null,
-   "comment": "15 pages, 6 figures",
+   "comment": "15 pages, 9 figures, 2 tables. Revised text and expanded real-world experiments",
    "hand": false,
    "hidden": false,
    "id": "2608.25798",
@@ -56219,8 +56220,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-26",
-   "version": "v1"
+   "updated": "2026-09-29",
+   "version": "v2"
   },
   "2608.25872": {
    "abstract": "Contact-rich manipulation requires precise interaction feedback. While vision-centric imitation learning is prevalent, external visual observations provide indirect and ambiguous cues about contact states, particularly under occlusion or subtle object--gripper interactions; dedicated tactile or force sensors can provide rich contact information but introduce additional hardware complexity, calibration requirements, and deployment costs. To bridge this gap, we propose VISTA-Policy, an imitation learning paradigm that utilizes the Visual Deformation Field (VDF), a 3D displacement representation of a compliant gripper, as high-dimensional visuo-physical feedback. The framework integrates: 1) a Physics-Aware Encoding Engine for real-time VDF decoding; 2) an Energy Aggregation Denoising Mechanism to isolate true interaction signals; and 3) a Deformation-Augmented Policy Network with incremental gripper actions for precise closed-loop correction. Extensive evaluations on Cross-Scale Object Grasping, Cap Unscrewing, and Calligraphy Writing demonstrate that VISTA-Policy outperforms the strong pure-vision baseline 3D Diffusion Policy and the tactile baseline. VISTA-Policy further demonstrates substantial out-of-distribution generalization to unseen object scales and robustness against dynamic disturbances, offering a durable and cost-effective route toward general-purpose fine-grained manipulation in unstructured environments. Project videos and supplementary materials are available at: https://sites.google.com/view/vista-policy.",
@@ -62173,8 +62174,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-27",
-   "version": "v1"
+   "updated": "2026-09-29",
+   "version": "v2"
   },
   "2609.34006": {
    "abstract": "Contact-rich policies often fail because distinct physical states look alike yet require different actions. Cameras may not reveal whether a connector is aligned or fully seated, while many normal-only tactile sensors can miss the tangential interactions perpendicular to the grasping direction that distinguish these states. We ask whether a learning policy needs calibrated shear measurements, or only a repeatable observation that separates shear-dependent contact states. We introduce TacGooseBumps (TacGB), a passive domed film that mechanically encodes tangential loading as pattern changes in an existing sensor's pressure map. Tangential loading tilts each dome and redistributes pressure across its footprint; an end-to-end policy consumes the resulting maps without added electronics, force reconstruction, or taxel-level dome alignment. Across four imitation-learning tasks and two data-collection pipelines, TacGB improves goal attainment, efficiency, and contact quality: insertion success increases by up to 36 percentage points, and successful insertions are completed faster, while fragile-object placement becomes gentler and drawing becomes more continuous and straight. Signal, stage-wise, failure-mode, and trajectory analyses link these gains to contact regimes in which task-relevant tangential interactions are poorly resolved by vision and normal pressure alone. Together, these results show that shear need not be measured metrically to benefit robot learning; it can instead be mechanically encoded without changing the underlying tactile sensor or the policy's pressure-map input format.",
@@ -62219,7 +62220,7 @@
    "version": "v1"
   },
   "2609.34182": {
-   "abstract": "Dexterous manipulation requires tactile feedback.However, robot tactile demonstrations are difficult to scale,because dexterous-hand teleoperation provides limited tactile feedback to the operator. In contrast, human demonstrations offer a substantially more scalable source of diverse tactile interactions. Motivated by a simple premise: hands can change, but the underlying physics of interaction does not. We leverage human tactile data to improve dexterous manipulation policies. Specifically, we first build a tactile motion-capture system that synchronously records images, tactile signals, and hand motions. Using this system, we construct the UVTA dataset spanning five contact-rich tasks, with 1,000 human demonstrations covering diverse interaction patterns and 150 robot demonstrations per task. To transfer the underlying physics of human interaction to robot control, we propose a Unified Visual-Tactile-Action Model that maps both embodiments into aligned tactile and action representations and jointly predicts future action and tactile trajectories. The joint objective enables human demonstrations to supervise contact-aware representation learning, while only robot actions are executed during deployment. In real-robot evaluations across five tasks, our method achieves an average success rate of 70%, outperforming the strongest visual-tactile baseline, which achieves 29%, and an architecture ablation, which achieves 42%. Performance improves consistently with additional human demonstrations and exhibits no saturation at 1,000 demonstrations per task, validating the effectiveness of scalable human tactile data for dexterous manipulation. Project page is available at https://uni-vta.github.io/.",
+   "abstract": "Dexterous manipulation requires tactile feedback. However, robot tactile demonstrations are difficult to scale,because dexterous-hand teleoperation provides limited tactile feedback to the operator. In contrast, human demonstrations offer a substantially more scalable source of diverse tactile interactions. Motivated by a simple premise: hands can change, but the underlying physics of interaction does not. We leverage human tactile data to improve dexterous manipulation policies. Specifically, we first build a tactile motion-capture system that synchronously records images, tactile signals, and hand motions. Using this system, we construct the UVTA dataset spanning five contact-rich tasks, with 1,000 human demonstrations covering diverse interaction patterns and 150 robot demonstrations per task. To transfer the underlying physics of human interaction to robot control, we propose a Unified Visual-Tactile-Action Model that maps both embodiments into aligned tactile and action representations and jointly predicts future action and tactile trajectories. The joint objective enables human demonstrations to supervise contact-aware representation learning, while only robot actions are executed during deployment. In real-robot evaluations across five tasks, our method achieves an average success rate of 70%, outperforming the strongest visual-tactile baseline, which achieves 29%, and an architecture ablation, which achieves 42%. Performance improves consistently with additional human demonstrations and exhibits no saturation at 1,000 demonstrations per task, validating the effectiveness of scalable human tactile data for dexterous manipulation. Project page is available at https://uni-vta.github.io/.",
    "added_at": "2026-09-29 07:25",
    "arxiv_categories": [
     "cs.RO",
@@ -62259,8 +62260,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-28",
-   "version": "v1"
+   "updated": "2026-09-29",
+   "version": "v2"
   },
   "2609.34256": {
    "abstract": "General-purpose embodied manipulation hinges on a unified action representation that generalizes across embodiments and scales readily. Yet existing policies rely on embodiment-specific action spaces, making cross-embodiment demonstrations difficult to leverage at scale and limiting transfer to new embodiments and spatial variations. To this end, we introduce Universal Manipulation Representation (UMR), a unified action representation that enables zero-shot skill transfer from human demonstrations to heterogeneous robots. UMR decomposes manipulation into two functionally distinct yet geometrically linked components: embodiment-agnostic World Flow, which describes task-relevant object motion in the world frame, and Ego Trajectory, which represents end-effector motion relative to the current pose. We instantiate UMR as World--Ego Point VLA (WEPVLA), a compact 0.5B-parameter policy that learns in the unified geometric action space through a dual-stream Point Action Adapter and a unified Point Action Expert, with an $SE(3)$ conjugation coupling the two components. To improve data efficiency, we complement UMR with a Data-Efficient Strategy (DES) that diversifies object configurations through stage-aware point-cloud editing while preserving demonstrated contact geometry. In simulation, WEPVLA achieves average success rates of 97.5\\% on LIBERO and 85.7\\% on the 10-task RLBench benchmark. In real-world experiments, a single policy trained on human demonstrations augmented by DES transfers zero-shot to diverse deployment conditions. With about 10 minutes of collected human demonstrations per task and no robot demonstrations, it achieves 91.7\\% average success across six evaluation settings, compared with 60.8\\% for HumanEgo. Code and additional materials are available at https://umr-wepvla.github.io/.",
@@ -62434,6 +62435,291 @@
     "VTLA"
    ],
    "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.36241": {
+   "abstract": "Dexterous robotic hands typically reproduce human hand morphology but inherit its one-sided grasping workspace, requiring wrist or arm reorientation to grasp from the opposite side. Existing reversible hands generally rely on non-anthropomorphic, soft, or task-specific finger arrangements, whereas conventional five-digit anthropomorphic hands remain designed primarily for palmar-side grasping. This paper presents an anthropomorphic, human-scale (200 mm length), lightweight (220 g), 3D-printed, 17-DoF robotic hand built on a bidirectional antagonistic tendon-routing mechanism, in which flexion/extension (except the coupled joint) and abduction/adduction at joints are actively driven without passive return springs. The proposed routing mechanism allows all degrees of freedom to cross their neutral configuration and form grasp closures on either the palmar or dorsal side. Experimental evaluation demonstrates an average motor-to-joint transmission error of 3.0%, an average joint transmission bandwidth of 13.2 Hz, a maximum fingertip force of 29 N, and a positioning repeatability up to 0.15 mm. The hand further achieves a Kapandji score of 8, successfully performs all 33 GRASP Taxonomy grasp types, and performs palmar- and dorsal-side grasping tasks, validating bidirectional operation in a compact, human-scale platform.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Chunghyeon Lee",
+    "Hyukjun Kwon",
+    "Sungeon Kim",
+    "Saehyun Moon",
+    "Seokhwan Jeong"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.36241",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "fingertip force"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Design and Validation of an Antagonistic Tendon-Driven Dexterous Robotic Hand with Bidirectional Operation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.36250": {
+   "abstract": "Action chunking provides temporal abstraction in reinforcement learning by selecting short action sequences instead of individual actions, but many existing approaches face two limitations in high-dimensional robotic control. First, many rely on value functions over action chunks, which can be difficult to learn as action dimensionality and chunk length grow. Second, executing chunks open-loop removes within-chunk feedback, limiting reactivity in contact-rich tasks. We present Action Chunking PPO (ACPPO), a PPO extension that uses a chunked actor while retaining a standard state-value critic, thereby avoiding chunked Q-functions. We further propose ACPPO-Corr, which augments the chunk planner with a stepwise feedback corrector that adjusts planned actions online within each chunk. Across 25 simulated robotics tasks from IsaacGym and Bi-DexHands, spanning locomotion, arm manipulation, and dexterous hand-object interaction, ACPPO-Corr achieves the strongest aggregate performance among evaluated methods and performs best on both decision-frequency-sensitive and decision-frequency-neutral task subsets. Ablations show that moderate chunk lengths work best and that corrector regularization is important for balancing chunk-level planning with local feedback. These results suggest that action chunking can be effective in online PPO when chunk-level planning is paired with closed-loop correction. The code is available at: https://github.com/hshhahn/ACPPO.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.LG",
+    "cs.RO"
+   ],
+   "authors": [
+    "Sanghyun Hahn",
+    "Jonghyun Choi"
+   ],
+   "code_url": "https://github.com/hshhahn/ACPPO",
+   "comment": "Accepted at NeurIPS 2026",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.36250",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.LG",
+   "project_url": null,
+   "published": "2026-09-28",
+   "scores": {},
+   "seed": false,
+   "title": "Action Chunking Proximal Policy Optimization with Feedback Correction",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-28",
+   "version": "v1"
+  },
+  "2609.36558": {
+   "abstract": "Integrating tackiness sensation into the artificial skin of humanoid robots significantly enhances their cognitive and operational capabilities. However existing tactile sensors face challenges in decoupling of the multimodal signal and stability. Here we present a surface-soft tactile sensor that incorporates a Hall effect sensor and a soft magnetic composite within a robust elastic framework. The sensor surface indents under pressure and bulges prominently when retracted from sticky surfaces dynamically altering the Hall sensor-magnet distance. This generates whole-process-traceable and baseline-separated signals enabling real-time differentiation between pressure and pull-off force. This single-sensing-element design facilitates bimodal sensing at the same contact spot while eliminate stress cross-talk enhancing both accuracy and sensitivity. The fusion of a robust framework and magneto-mechanical sensing mechanism equips the sensor with exceptional reliability and excellent signal baseline stability. This tactile sensor holds substantial potential for advancing robotic capabilities in evaluating adhesive properties monitoring rubber aging precisely handling lightweight objects and cognizing natural objects surface characteristics.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO",
+    "cond-mat.mtrl-sci"
+   ],
+   "authors": [
+    "Ying Yang",
+    "Mingwei Gu",
+    "Jia-Sen Xie",
+    "Xingyu Ma",
+    "Yan-Na Lu",
+    "Lin Zheng",
+    "Jinhui Gu",
+    "Junshuai Chen",
+    "Yunjie Lu",
+    "Denys Makarov",
+    "Jin Ge"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.36558",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "hall effect"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-29",
+   "scores": {},
+   "seed": false,
+   "title": "A robust single-sensing-element tactile sensor for concurrent pressure and tackiness detection with real-time signal decoupling capability",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-29",
+   "version": "v1"
+  },
+  "2609.36596": {
+   "abstract": "Contact-rich dexterous manipulation requires policies that translate physical feedback into motion commands while regulating interaction loads across evolving multi-contact interactions. This requires haptic observations of contact state and action supervision showing how commands should adapt. Existing policies often overlook complementary fingertip tactile and joint-torque feedback, while common action targets either encode excessive loading or omit motion constrained by the object. We introduce HACo, a Haptic Active Compliance policy that learns force-regulating actions directly from haptic feedback. Compliance-regulated teleoperation converts operator inputs into controller-executable compliant actions that preserve motion intent while regulating loads. HACo learns these actions directly, using command-state discrepancy as auxiliary compliant-intent supervision. It combines local fingertip tactile responses with joint-torque feedback capturing load transmission through the articulated hand, including contacts beyond tactile coverage. A Compliance Grounding Module uses gated haptic cross-attention to ground action generation in the evolving haptic state, enabling closed-loop force regulation without explicit online contact modeling. We evaluate HACo on a real-world benchmark covering multi-contact friction, tangential interaction, fragile curved-surface contact, rotational torque, and deformable-object manipulation. Across 20 trials per task, HACo achieves an 83% mean success rate, compared with 35% for the strongest evaluated baseline. These results demonstrate active compliance across diverse force-sensitive dexterous manipulation tasks.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Naisheng Ye",
+    "Yinzhe Zhou",
+    "Junkai Zhao",
+    "Yuhang Lu",
+    "Checheng Yu",
+    "Zhenjie Yang",
+    "Pengwei Wang",
+    "Hongyang Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.36596",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-29",
+   "scores": {
+    "VTA": 5.5
+   },
+   "seed": false,
+   "title": "HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-29",
+   "version": "v1"
+  },
+  "2609.36676": {
+   "abstract": "We present a straightforward but effective method for repurposing existing contact-rich dexterous manipulation demonstrations. Starting from inputs of hand and object trajectories, our method outputs high-quality nonlinear trajectory warps that account for intermediate waypoints, environmental barriers, temporal shifts, and varied start/end configurations. Foundational to our method is the utilization of contact distributions, which we show allows us to reliably compute complex and high-dimensional dexterous hand trajectories following a simple object-centric warp specification pipeline. We evaluate our method across 12 variations sourced from 4 demonstrations in a publicly available dataset of human hand motion data, perform baseline comparisons, and demonstrate generalization of our approach to different manipulators. Results and code will be made available on publication.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Hyojae Park",
+    "Arjun S. Lakshmipathy",
+    "Nancy S. Pollard"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2609.36676",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-29",
+   "scores": {},
+   "seed": false,
+   "title": "Kinematic Nonlinear Spatio-Temporal Trajectory Warping for Contact-Rich Dexterous Manipulation Demonstrations",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-29",
+   "version": "v1"
+  },
+  "2609.36785": {
+   "abstract": "Contact-rich manipulation requires robots to sequence precise contacts, maintain stable grasps, and apply directed forces. Reinforcement learning (RL) can acquire such behaviors automatically, but its performance hinges on reward design: sparse rewards reduce the learning efficiency, while dense rewards are hard to specify. Visual reward learning addresses this by inferring rewards from action-free demonstrations. Because it conditions only on visual observations, it fails to capture rewards beyond visual goals. We propose Tactile Reward Learning (TaRL), a framework that learns rewards from tactile demonstrations. TaRL takes a sequence of tactile deformation maps as input, and regresses task-completion progress from both successful and failed demonstrations. Because TaRL captures local robot-object interaction, it provides informative feedback to learn firm grasps and correctly directed forces; meanwhile, it is robust to changes in scene layout such as object position. We evaluate TaRL on four manipulation tasks in simulation and two in the real world. Used as a shaping reward, it substantially improves both sample efficiency and final success rate, raising success on Nut threading from 34% to 56% in simulation and on cube pickup from 37% to 97% in the real world. Combining tactile with visual rewards improves performance further. TaRL also generalizes across object instances: trained on box placement and directly deployed to can placement, it significantly improves policy learning on the new task. Project page is available at https://embodiedai-ntu.github.io/tarl.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Po-Yi Wu",
+    "Dao-Jan Chang",
+    "Shang-Ya Hsiao",
+    "Hong-Ming Chen",
+    "Yu-Cheng Su",
+    "Tsung-Wei Ke"
+   ],
+   "code_url": null,
+   "comment": "7 pages, 13 figures. Project page: https://embodiedai-ntu.github.io/tarl",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.36785",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://embodiedai-ntu.github.io/tarl",
+   "published": "2026-09-29",
+   "scores": {
+    "VTA": 14.0
+   },
+   "seed": false,
+   "title": "TaRL: Learning General and Physical Rewards from Tactile Demonstrations",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-09-29",
+   "version": "v1"
+  },
+  "2609.37810": {
+   "abstract": "Vision-language-action and world-action models have demonstrated impressive capabilities in robotics, yet generalization to unseen tasks remains challenging. More recently, general-purpose multimodal agents have shown great potential for zero-shot robotic task solving. However, they often incur high execution costs by reasoning and exploring the physical world from scratch. To reduce these costs, we introduce RoboSkill, a framework that connects skill acquisition and reuse through an Explore, Execute, Evolve loop. Within this loop, the agent explores to gather task-relevant information, executes tasks while adapting to feedback, and evolves its skill library based on execution records. It then reuses these skills to guide exploration and execution in the next cycle, closing the loop. To improve loop efficiency, we complement vision with tactile feedback to reduce uncertainty during physical interaction. We further augment textual guidance with reusable code to reduce reasoning overhead during skill reuse. On LIBERO-10, RoboSkill improves first-episode success rates by 12.5--25.0 percentage points and reduces average runtime by 7.6--72.4% across four agents. On real robots, it improves success rates by 8.3 percentage points and reduces average runtime for successful trials by at least 14.4%.",
+   "added_at": "2026-09-30 07:16",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Sicheng Xie",
+    "Yitong Chen",
+    "Haidong Cao",
+    "Shunlin Lu",
+    "Zuxuan Wu",
+    "Yu-Gang Jiang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2609.37810",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-09-29",
+   "scores": {
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-29",
    "version": "v1"
   }
  }
