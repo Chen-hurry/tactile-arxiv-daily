@@ -2,16 +2,16 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-09-30 18:30 ｜ 共 1515 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-01 07:40 ｜ 共 1523 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
 ## 目录
 
-- [Sim（触觉仿真环境）](#sim) — 65 篇
-- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 106 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 337 篇
-- [Other（其他触觉相关）](#other) — 1045 篇
+- [Sim（触觉仿真环境）](#sim) — 66 篇
+- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 107 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 340 篇
+- [Other（其他触觉相关）](#other) — 1049 篇
 
 ## Sim
 
@@ -19,6 +19,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-29 |  **PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation** | Shaohong Zhong et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.38418) |
 | 2026-09-24 |  **TactileStep: Sole Tactile Learning for Regulating Foot-Terrain Interaction in Humanoid Locomotion** | Zizhuo Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.28959) |
 | 2026-09-22 |  **CableVLA: Simulation-Privileged Global-Local Representation Learning for Cable Routing** | Zhifei Teng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.25606) |
 | 2026-09-21 |  **Norm2Tex: Augmenting Visuo-Tactile Simulations with Texture** | Seongjin Bien et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.25398) |
@@ -91,6 +92,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-09-30 |  **Tactile Curiosity Drives Robot Interaction** | Klemens Iten et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.40134) |
 | 2026-09-28 |  **Uni-VLaT: Whole-Body Tactile Adaptation of VLA Policies for Humanoid Loco-Manipulation** | Zihao Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.35450) |
 | 2026-09-27 |  **ActionGround: Training-Free Runtime Refinement of Frozen VLA Policies** | Namai Chandra et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33256) |
 | 2026-09-22 | 🖐 **VisForce: Visual Grounding of Current and Desired Forces for Goal-Conditioned Dexterous Manipulation** | Jung-Woo Lee et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.25785) |
@@ -204,8 +206,11 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-01 |  **What to Attend, What to Keep: Skill-Conditioned Visuotactile Representation with Progress-Guided Event Memory** | Amir-Hossein Shahidzadeh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38494) · [Page](http://what-to-attend-what-to-keep.github.io/) |
+| 2026-09-30 | 🖐 **OccluDex: Hierarchical 3D Visuo-Tactile Representation Learning for Egocentric Dexterous Manipulation under Self-Occlusion** | Ziheng Xu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39017) |
 | 2026-09-29 | 🖐 **HACo: Learning Haptic Active Compliance for Force-Aware Dexterous Manipulation** | Naisheng Ye et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36596) |
 | 2026-09-29 |  **TaRL: Learning General and Physical Rewards from Tactile Demonstrations** | Po-Yi Wu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36785) · [Page](https://embodiedai-ntu.github.io/tarl) |
+| 2026-09-29 |  **PneuTac: Tactile Manipulation with Soft Pneumatic Robots via Unified MPM-Gaussian Splatting Simulation** | Shaohong Zhong et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2609.38418) |
 | 2026-09-28 | 🖐 **Unified Visual-Tactile-Action Modeling from Human Demonstrations for Dexterous Manipulation** | Wenqiao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34182) · [Page](https://uni-vta.github.io/) |
 | 2026-09-27 | 🖐 **DexTaG: Tactile-as-Guidance in Reinforcement Learning for Dexterous Manipulation** | Han Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.33882) |
 | 2026-09-27 |  **TacGooseBumps (TacGB): Retrofitting Normal-Only Tactile Sensors with Shear Encoding for Learning Contact-Rich Manipulation** | Wenjie Li et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.34006) |
@@ -548,6 +553,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-01 | 🖐 **Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies** | Galbot Team et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38537) |
+| 2026-10-01 |  **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation** | Haoxuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38989) |
+| 2026-10-01 |  **Blackout vs. Freeze: Analyzing Physical Failure Modes of VLAs under Camera Faults** | Heejae Suh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39145) |
+| 2026-10-01 |  **Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models** | Mingyue Cui et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39820) |
 | 2026-09-29 |  **A robust single-sensing-element tactile sensor for concurrent pressure and tackiness detection with real-time signal decoupling capability** | Ying Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.36558) |
 | 2026-09-29 | 🖐 **Kinematic Nonlinear Spatio-Temporal Trajectory Warping for Contact-Rich Dexterous Manipulation Demonstrations** | Hyojae Park et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36676) |
 | 2026-09-29 |  **Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents** | Sicheng Xie et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.37810) |
