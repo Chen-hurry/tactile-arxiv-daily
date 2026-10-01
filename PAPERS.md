@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-01 07:40 ｜ 共 1523 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-01 18:57 ｜ 共 1523 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -553,13 +553,13 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-01 | 🖐 **Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies** | Galbot Team et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38537) |
-| 2026-10-01 |  **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation** | Haoxuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38989) |
-| 2026-10-01 |  **Blackout vs. Freeze: Analyzing Physical Failure Modes of VLAs under Camera Faults** | Heejae Suh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39145) |
-| 2026-10-01 |  **Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models** | Mingyue Cui et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39820) |
+| 2026-09-30 |  **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation** | Haoxuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38989) · [Page](https://hatchetproject.github.io/delivery_steer/) |
+| 2026-09-30 |  **Blackout vs. Freeze: Analyzing Physical Failure Modes of VLAs under Camera Faults** | Heejae Suh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39145) |
+| 2026-09-30 |  **Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models** | Mingyue Cui et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39820) |
 | 2026-09-29 |  **A robust single-sensing-element tactile sensor for concurrent pressure and tackiness detection with real-time signal decoupling capability** | Ying Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2609.36558) |
 | 2026-09-29 | 🖐 **Kinematic Nonlinear Spatio-Temporal Trajectory Warping for Contact-Rich Dexterous Manipulation Demonstrations** | Hyojae Park et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.36676) |
 | 2026-09-29 |  **Explore, Execute, Evolve: A Skill Acquisition and Reuse Loop for Embodied Agents** | Sicheng Xie et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.37810) |
+| 2026-09-29 | 🖐 **Systematically Exploring the Capabilities of GPT-6 Astra as Embodied Policies** | Galbot Team et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38537) |
 | 2026-09-28 |  **Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation** | Mohamed Abouagour et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.30608) · [Page](https://sites.google.com/view/auditbeforeyoucommit) |
 | 2026-09-28 |  **UMR: Universal Manipulation Representation** | Song Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34256) · [Page](https://umr-wepvla.github.io/) |
 | 2026-09-28 | 🖐 **Dexterous Tactile World Model** | Ziyao Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.34286) · [Page](https://adonis-galaxy.github.io/dtwm-project-page/) |
