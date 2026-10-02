@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-02 07:27 ｜ 共 1526 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-02 18:34 ｜ 共 1526 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -845,8 +845,8 @@
 | 2026-05-29 |  **Shaft-integrated Force Sensing with Transformer-based Dynamics Compensation for Telesurgery** | Shuyuan Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2605.31434) · [Page](https://enhanced-telerobotics.github.io/shaft_force_sensing/) |
 | 2026-05-29 |  **SoFiE: Soft Finger Exoskeleton for Intelligent Grasping** | Magnus Malthe Sigsgaard Nielsen et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2606.00397) |
 | 2026-05-28 |  **Generating Multimodal Textures with a Soft Hydro-Pneumatic Haptic Ring** | Ana Sanz Cozcolluela et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2503.17971) |
-| 2026-05-28 | 🖐 **ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation** | Aaron Kim et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2605.30508) · [Page](https://aristohand.github.io) |
 | 2026-05-28 | 🖐 **BORA: Bridging Offline Reinforcement Learning and Online Residual Adaptation for Real-World Dexterous VLA Models** | Zhongxi Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2605.30226) |
+| 2026-05-28 | 🖐 **ARISTO Hand: Sensing-Driven Distal Hyperextension for Fine-Grained Manipulation** | Aaron Kim et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2605.30508) · [Page](https://aristohand.github.io) |
 | 2026-05-27 |  **Magnet-Based Soft Robotic Skin Using a 3D-Printed Multi-Lattice Structure and CNN-Based Tactile Super-Resolution** | Yunseong Bang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2605.28352) |
 | 2026-05-27 |  **Tactile-Proprioceptive Sensor Fusion for Contact Wrench Estimation in Whole-Body Physical Human-Robot Interaction** | Junha Min et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2605.28412) |
 | 2026-05-27 |  **EIT-Pneumatic Hybrid Robotic Skin for Practical and Accurate Force Map Reconstruction** | Junhwi Cho et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2605.28468) |
