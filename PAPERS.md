@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-02 18:34 ｜ 共 1526 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-03 07:00 ｜ 共 1526 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -553,6 +553,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-01 |  **External Photoreflective Tactile Sensing Based on Surface Deformation Measurement** | Seiichi Yamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.06311) |
 | 2026-09-30 |  **Cue the Flow: Steering Flow-Matching Policies for Open-World Delivery Manipulation** | Haoxuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38989) · [Page](https://hatchetproject.github.io/delivery_steer/) |
 | 2026-09-30 |  **Blackout vs. Freeze: Analyzing Physical Failure Modes of VLAs under Camera Faults** | Heejae Suh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39145) |
 | 2026-09-30 |  **Learning from Runtime Feedback through Failure-Bank Self-Evolution for Vision-Language-Action Models** | Mingyue Cui et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.39820) |
@@ -1093,7 +1094,6 @@
 | 2025-11-11 |  **Intuitive control of supernumerary robotic limbs through a tactile-encoded neural interface** | Tianyu Jia et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.08454) |
 | 2025-11-10 | 🖐 **Lightning Grasp: High Performance Procedural Grasp Synthesis with Contact Fields** | Zhao-Heng Yin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.07418) · [Code](https://github.com/zhaohengyin/lightning-grasp) |
 | 2025-11-09 | 🖐 **Robust Differentiable Collision Detection for General Objects** | Jiayi Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.06267) · [Code](https://github.com/JYChen18/DiffCollision) |
-| 2025-11-09 |  **External Photoreflective Tactile Sensing Based on Surface Deformation Measurement** | Seiichi Yamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.06311) |
 | 2025-11-09 |  **ArtReg: Visuo-Tactile based Pose Tracking and Manipulation of Unseen Articulated Objects** | Prajval Kumar Murali et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.06378) |
 | 2025-11-08 |  **Tactile Data Recording System for Clothing with Motion-Controlled Robotic Sliding** | Michikuni Eguchi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.11634) |
 | 2025-11-06 | 🖐 **Isaac Lab: A GPU-Accelerated Simulation Framework for Multi-Modal Robot Learning** | NVIDIA et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2511.04831) · [Code](https://github.com/isaac-sim/IsaacLab) |
