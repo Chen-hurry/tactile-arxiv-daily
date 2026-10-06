@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-06 08:02 ｜ 共 1552 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-06 18:58 ｜ 共 1552 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -210,8 +210,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-10-04 | 🖐 **Now You Feel It, Now You See Me: Digital-Twin-based Teleoperation Interface for Dexterous Manipulation** | Youngchan Shim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05081) |
-| 2026-10-03 | 🖐 **Robot Learning with Visual Predicted Force** | Haonan Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04741) |
 | 2026-10-03 | 🖐 **TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport** | Xingting Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04363) |
+| 2026-10-03 | 🖐 **Robot Learning with Visual Predicted Force** | Haonan Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04741) |
 | 2026-10-02 |  **Equivariant Visual-Tactile Diffusion Policy for Contact-Rich Manipulation** | Lik Hang Kenny Wong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.03333) · [Page](https://vista-paper.github.io/) |
 | 2026-10-02 |  **RATE: Risk-Aware Tactile Encoding for Contact-rich Robotic Manipulation** | Yuyao Jiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.03538) |
 | 2026-10-01 |  **What to Attend, What to Keep: Skill-Conditioned Visuotactile Representation with Progress-Guided Event Memory** | Amir-Hossein Shahidzadeh et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2609.38494) · [Page](http://what-to-attend-what-to-keep.github.io/) |
@@ -563,16 +563,16 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-10-05 |  **Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints** | Mubassir Serneabat Sudipto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05835) · [Code](https://github.com/msudipto/AdaptiveShot_HybridQAD_Framework) |
-| 2026-10-05 | 🖐 **InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation** | Yucheng Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06850) · [Page](https://sirui-xu.github.io/InterMimicGen) |
 | 2026-10-05 | 🖐 **DexForge: High-Fidelity Physics-Informed Dexterous Retargeting** | Meizhong Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06331) · [Page](https://wmz1226.github.io/DexForge/) |
 | 2026-10-05 |  **Recursive Video In-Context Learning for Agentic Robot** | Wenrui Bao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06843) |
-| 2026-10-04 |  **TacGELLO: Tactile Contact Feedback for a 3D-Printed Teleoperation Leader** | Younsoo Kim et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.05583) |
+| 2026-10-05 | 🖐 **InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation** | Yucheng Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06850) · [Page](https://sirui-xu.github.io/InterMimicGen) |
 | 2026-10-04 | 🖐 **VICON: Visual-Inertial-Contact based Hand-Object Tracking for Manipulation Datasets** | Yubin Jeon et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.05180) · [Code](https://github.com/VICON-dataset/dataset) |
 | 2026-10-04 |  **Vela: Scaling Vision-Language-Action Models with Adaptive Action Curve Parametrization** | Yifan Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05230) · [Page](https://clementine24.github.io/Vela/) |
-| 2026-10-03 |  **Distributed Cascade Force Control of Soft-Tactile-Based Multi-robot System for Object Transportation** | Duy Anh Nguyen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04775) |
+| 2026-10-04 |  **TacGELLO: Tactile Contact Feedback for a 3D-Printed Teleoperation Leader** | Younsoo Kim et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.05583) |
+| 2026-10-03 |  **ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies** | Zhe Tao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04607) · [Code](https://github.com/anthonytao80-crypto/ForeAct3D) |
 | 2026-10-03 |  **DNPush: Distributed Nonparallel Pushing Force Control of Multi-Robot Systems for Object Transportation** | Duy Anh Nguyen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04764) |
 | 2026-10-03 | 🖐 **PatternDex: Learning Interaction Patterns to Guide Reinforcement Learning of Bimanual Dexterous Manipulation of Articulated Objects** | David Minkwan Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04765) · [Page](https://patterndex.github.io/PatternDex/) |
-| 2026-10-03 |  **ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies** | Zhe Tao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04607) · [Code](https://github.com/anthonytao80-crypto/ForeAct3D) |
+| 2026-10-03 |  **Distributed Cascade Force Control of Soft-Tactile-Based Multi-robot System for Object Transportation** | Duy Anh Nguyen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04775) |
 | 2026-10-02 |  **ManiPhysicsBench: Physics-Based Assessment of Object Preservation in VLA Manipulation** | Sangwu Park et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.02802) |
 | 2026-10-02 |  **SARI: Phase-Split Sim-Real Co-Training for Contact-Rich Manipulation** | Xingxin He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.02804) |
 | 2026-10-02 | 🖐 **PointWAM: 3D World Action Modeling for Dexterous Robotic Manipulation** | Chunghyun Park et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.02840) · [Page](https://chrockey.github.io/PointWAM) |
