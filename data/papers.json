@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-05 07:36",
+ "last_update": "2026-10-06 08:02",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -36123,6 +36123,50 @@
    "updated": "2026-02-15",
    "version": "v1"
   },
+  "2602.14174": {
+   "abstract": "Contact-rich manipulation requires robots to regulate both motion and interaction forces, yet achieving adaptive compliance remains a fundamental challenge. Learning from real-world data is costly and risky, while simulation-based approaches struggle with the sim-to-real gap in contact dynamics; existing sim-to-real methods either require real-world adaptation or sacrifice adaptive compliance by relying on isotropic compliant controllers. Our key insight is that force regulation decomposes into a time-varying but simulation-transferable directional component and a dynamics-sensitive but manually tunable magnitude component. We instantiate this directional component as two policy outputs, a task frame and a control mode vector, predicted by a visuomotor policy adapted from a pre-trained VLA model and trained via imitation learning on automatically generated simulation demonstrations. At deployment, an admittance controller integrates these predictions with human-specified stiffness and target wrench values to realize adaptive compliance. Our approach achieves adaptive compliance using only simulation data and can benefit from large-scale VLA pre-training. Extensive real-world experiments on four contact-rich tasks, microwave opening, peg-in-hole insertion, whiteboard wiping, and door opening, demonstrate strong task success rates and robustness to external disturbances. Project page: https://yifei-y.github.io/project-pages/TDC/.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yifei Yang",
+    "Anzhe Chen",
+    "Zhenjie Zhu",
+    "Kechun Xu",
+    "Yunxuan Mao",
+    "Yufei Wei",
+    "Lu Chen",
+    "Rong Xiong",
+    "Yue Wang"
+   ],
+   "code_url": null,
+   "comment": "Accepted by CoRL 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2602.14174",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://yifei-y.github.io/project-pages/TDC/",
+   "published": "2026-02-15",
+   "scores": {
+    "VTLA": 3.0
+   },
+   "seed": false,
+   "title": "TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-05",
+   "version": "v2"
+  },
   "2602.15873": {
    "abstract": "Tactile -vision-language (TVL) models are increasingly deployed in real-world robotic and multimodal perception tasks, where test-time distribution shifts are unavoidable. Existing test-time adaptation (TTA) methods provide filtering in unimodal settings but lack explicit treatment of modality-wise reliability under asynchronous cross-modal shifts, leaving them brittle when some modalities become unreliable. We study TTA for TVL models under such shifts and propose a reliability-aware framework that estimates per-modality reliability from prediction uncertainty and perturbation-based responses. This shared reliability signal is used to (i) filter unreliable test samples, (ii) adaptively fuse tactile , visual, and language features, and (iii) regularize test-time optimization with a reliability-guided objective. On the TAG-C benchmark and additional TVL scenarios, our approach consistently outperforms strong TTA baselines, achieving accuracy gains of up to 49.9\\% under severe modality corruptions, underscoring the importance of explicit modality-wise reliability modeling for robust test-time adaptation.",
    "added_at": "2026-09-15 04:03",
@@ -62353,8 +62397,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-28",
-   "version": "v1"
+   "updated": "2026-10-03",
+   "version": "v2"
   },
   "2609.34286": {
    "abstract": "World models for manipulation are typically trained from video, yet the events that determine how manipulation unfolds, such as making and releasing contact, are difficult to observe visually and are often easier to sense through touch. We present the Dexterous Tactile World Model (DTWM), a video world model for future-frame prediction of egocentric manipulation from both observed video and tactile signals from a glove worn on each hand. We condition a pretrained video diffusion transformer on each hand's tactile signal through a zero-initialized residual at the corresponding hand location in the video tokens, while a causal mask prevents predicted frames from accessing future information. Compared with a vision-only model matched in architecture, parameters, and training, DTWM reduces the underestimation of hand motion from 23% to 9%, while reducing the perceptual error in the hand region by 7.4% across three training runs per model. The benefit also increases over the prediction horizon, with the improvement in the later predicted chunks being about 4.1x larger than in the first. DTWM also outperforms other visual-tactile world models under the same setting, and training with touch improves future-frame prediction even when no touch is available at inference. Ablations show that the model benefits from both the magnitude and spatial location of force: replacing the tactile signal with binary contact states, either per hand or per location, increases prediction error. The observed course of the force indicates whether the interaction will persist or change.",
@@ -63215,8 +63259,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-30",
-   "version": "v1"
+   "updated": "2026-10-05",
+   "version": "v2"
   },
   "2610.02338": {
    "abstract": "A growing body of work suggests that tactile sensing gives robot policies contact information that complements vision in dexterous manipulation. However, visuo-tactile robot data remains scarce: dexterous demonstrations require teleoperating robots, which limits dataset scale. Human demonstrations are far cheaper to collect and offer a path to scale this data, but only if human and robot hands carry tactile sensors with corresponding signals. This requires sensors that conform to different hand geometries, cover the full hand, and share a common layout across embodiments. We present SoTa, a low-cost capacitive tactile skin that provides full-hand coverage on humans and robots while preserving a shared layout of 202 taxels across corresponding finger and palm regions. Our multilayer design with fabric electrodes enables in-house fabrication of thin, soft skins with customizable geometry for under $10 in materials per skin. The sensor retains over 97% of its initial response span after 10,000 loading-unloading cycles with traces retaining continuity through 1,280 tight-fist folding cycles. The shared taxel layout supports human-robot co-training with a common tactile encoder and no learned cross-sensor mapping. Across three contact-rich manipulation tasks, tactile observations improve in-distribution success over vision-only policies. With a fixed robot demonstration budget, adding human demonstrations more than doubles mean success across eight evaluation conditions, from 22.8% to 45.9%, improving success in all five out-of-distribution conditions. We plan to open-source the resources needed to fabricate and operate these skins.",
@@ -63517,6 +63561,745 @@
     "VTA"
    ],
    "updated": "2026-10-02",
+   "version": "v1"
+  },
+  "2610.03773": {
+   "abstract": "Soft tactile sensors elevate robotic touch through enhanced flexibility and adaptability, yet most existing designs depend on embedded electronics that are susceptible to interference and environmental limitations. In this work, we leverage fluid-solid interactions to develop a class of soft tactile sensors that operate entirely without electronics at the sensing site. The sensor comprises a fluid-filled elastomeric channel connected to only two external pressure sensors. Touching different regions of the elastomeric surface displaces the viscous fluid, producing distinct pressure patterns that encode both touch position and force. These signals are decoded through a machine learning framework that integrates feature extraction, soft clustering, and adaptive neuro-fuzzy inference to achieve accurate localization and force estimation. We validate this concept through single-point touch localization and force estimation in a linear (1D) sensor and extend the same sensing principle to 2D tactile mapping by routing the channel across the surface using space-filling curves, while maintaining the same minimal hardware setup. This simple approach remains effective in environments where conventional electronic sensors often fail, such as underwater or in the presence of magnetic interference.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cond-mat.soft",
+    "cs.RO"
+   ],
+   "authors": [
+    "Arman Goshtasbi",
+    "Minke Berghuis",
+    "Aida Parvaresh",
+    "Saravana Prashanth Murali Babu",
+    "Robert W. Style",
+    "Ahmad Rafsanjani"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.03773",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cond-mat.soft",
+   "project_url": null,
+   "published": "2026-09-29",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "Tactile Perception through Fluid-Solid Interaction",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-09-29",
+   "version": "v1"
+  },
+  "2610.03861": {
+   "abstract": "Foundation models and large-scale human data provide rich sources of manipulation intent, but translating this intent into multi-fingered robot behavior remains difficult. Dexterous hands still lack a reusable low-level primitive that reliably establishes contact across tasks and embodiments. We propose GOTT, a reach-acquire-move framework built around a single cross-embodiment contact-acquisition primitive. Given a robot-agnostic object trajectory and a reach specification, GOTT first brings the hand near a task-relevant contact region. The shared closed-loop primitive then establishes stable contact from this approximate initialization, and a pose-conditioned controller tracks the desired object motion. Reach specifications may come from future-aware planning, external models, or human demonstrations, while the primitive and tracking backend remain unchanged. Simulation and real-world experiments show that GOTT is able to establish robust contact across diverse objects, arm-hand platforms, and seen and unseen hand morphologies. It also consistently improves end-to-end task success over open-loop grasp execution.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+   ],
+   "authors": [
+    "Yulin Liu",
+    "Lai Wei",
+    "Yen-Jen Wang",
+    "Akash Sharma",
+    "Pieter Abbeel",
+    "Henrik I. Christensen",
+    "Haozhi Qi"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://dex-gott.github.io/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.03861",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://dex-gott.github.io/",
+   "published": "2026-10-02",
+   "scores": {},
+   "seed": false,
+   "title": "GOTT: Object-centric Dexterous Manipulation with a Reusable Cross-Embodiment Primitive",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-02",
+   "version": "v1"
+  },
+  "2610.04363": {
+   "abstract": "Learning contact-rich dexterous manipulation from human demonstrations provides a scalable source of interaction data, yet transferring such skills to robots remains challenging due to unreliable human--robot correspondence. Existing human-to-robot transfer methods typically rely on visual appearance or motion similarity, which may associate similar motions with different contact states and force patterns. Tactile dynamics provide interaction-aware cues to distinguish manipulation processes with similar motions but different contact states. We introduce tactile-guided optimal transport (TacOT), a framework for human-to-robot contact-rich manipulation. TacOT leverages action--tactile dynamic time warping to identify human--robot demonstration correspondences with consistent interaction dynamics and uses these correspondences to guide soft optimal transport alignment in a shared policy representation space. This enables human demonstrations to provide contact-rich supervision for robot policy learning without requiring predefined frame-level human--robot pairing. Across four real-world dexterous manipulation tasks, TacOT improves closed-loop success rates over action-guided OT by up to 17 points on in-distribution tasks and 20 points under targeted human-to-robot out-of-distribution transfer. Further analyses show that tactile-guided correspondence selects demonstration pairs with more consistent contact dynamics and produces latent representations that better reflect interaction-state evolution. These results demonstrate that tactile dynamics provide an effective semantic signal for establishing reliable human-to-robot correspondence in contact-rich dexterous manipulation.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xingting Li",
+    "Yifan Han",
+    "Zijian Lin",
+    "Wei Hou",
+    "Chuqiao Lyu",
+    "Shoujie Li",
+    "Wenbo Ding"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 8 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.04363",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {
+    "VTA": 14.0
+   },
+   "seed": false,
+   "title": "TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04391": {
+   "abstract": "Vision-language-action policies may predict a transferable manipulation strategy yet fail to realize it reliably on the encountered object: objects compatible with the same grasp differ in geometry and compliance, and visual feedback degrades under closure occlusion. AgenticTactileVLA is presented as an execution-time supervisor that shifts part of object-specific adaptation from prediction to physical interaction. A fixed VLA provides the approach and hand targets; the supervisor decides whether to remain transparent, refine finger flexion, retain or release the corrected configuration, return control to the VLA for retry, or select a compliant hand-control regime. It uses finger-position and motor-effort feedback as proprioceptive contact evidence and requires neither tactile sensors nor VLA retraining. On a Unitree G1 with a BrainCo Revo2 hand, a randomized matched-block evaluation on five objects held out from VLA training yields 61.3% completion for the base VLA, 72.0% for unconditional close-to-stall control, and 84.0% for the supervisor under a shared budget; the gain is positive on every object and persists under moderate pose perturbations. Ablations show the gain is not explained by extended closure alone, and that selective triggering reduces correction episodes by 65.7% with no detected change in completion. A retention audit shows acceptance predicts retention in 88.9% of held-out cases, while compliant objects expose conservative false rejection. A thin-walled-cup study demonstrates contextual routing to compliant control, matching an always-compliant reference. These results suggest that contact-guided execution-time adaptation can improve the object-level generalization of a fixed VLA to held-out objects by adapting physical realization without object-specific retraining.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Elizaveta Semenyakina",
+    "Ivan Snegirev",
+    "Mikhail Kiselev",
+    "Miguel Altamirano Cabrera",
+    "Artem Lykov",
+    "Hajira Amjad",
+    "Dzmitry Tsetserukou"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.04391",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "AgenticTactileVLA: Contact-Guided Execution-Time Supervision for Generalizable Dexterous Manipulation without VLA Retraining",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04607": {
+   "abstract": "Robots need to anticipate how their actions will change the world, since manipulation success hinges on the resulting contacts and object motions. However, existing Vision-Language-Action (VLA) policies that predict future observations from shared features leave the forecast decoupled from the actions the policy will actually execute, and impose no physical constraints on how the scene may evolve. We introduce ForeAct3D, a framework for policy-grounded future world modeling within VLA policies. Learnable geometric queries decode depth, semantic segmentation, and camera pose from the policy representation into current and future semantic 3D scene states, and the future queries are conditioned on the policy-generated action chunk to ground the forecast in the planned interaction. A physical-consistency closure relates the two states through background staticity and instance-level rigidity, and anchors the wrist-camera pose to end-effector kinematics. These objectives shape the shared representation used for action generation during training, and no future prediction is required at inference. Without robot pretraining, ForeAct3D achieves 98.3\\% average success on LIBERO and an average task length of 3.73 on CALVIN, outperforming its base policy on every suite. Ablations show that semantic 3D supervision, physical consistency, and action conditioning each improve manipulation performance, and that action conditioning substantially improves future object localization. Real-world experiments on spatial placement, object insertion, and sequential manipulation further raise average success from 6.7\\% to 37.8\\% over the base policy. The project page and code are available at https://github.com/anthonytao80-crypto/ForeAct3D.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Zhe Tao",
+    "Feiran Wang",
+    "Gaowen Liu",
+    "Ramana Rao Kompella$",
+    "Yan Yan"
+   ],
+   "code_url": "https://github.com/anthonytao80-crypto/ForeAct3D",
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.04607",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {},
+   "seed": false,
+   "title": "ForeAct3D: Policy-Grounded Future World Modeling for VLA Policies",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04741": {
+   "abstract": "Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual force prediction from the deformation of a compliant Fin Ray gripper. Our approach trains two models. First, we train a visual force estimator on calibration data and use it to annotate task demonstrations with force estimates. Second, we train an action--force proposal policy on these force-augmented demonstrations to jointly generate candidate robot actions and their associated forces. At test time, we sample candidate actions and the forces they are expected to produce, then execute the action whose predicted force is closest to a target from the demonstrations. We evaluate our approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action selection for contact-rich manipulation without requiring force or tactile sensors at deployment.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Haonan Chen",
+    "Feiyang Wu",
+    "Yuxiang Ma",
+    "Mustafa Mete",
+    "Pengfei Ye",
+    "Junxuan Shen",
+    "Cheng Zhu",
+    "Aurora Ruggeri",
+    "Kelvin Cheung",
+    "Jiayuan Mao",
+    "Edward Adelson",
+    "Jiajun Wu",
+    "Robert D. Howe",
+    "Yilun Du"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 8 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.04741",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {
+    "VTA": 11.8
+   },
+   "seed": false,
+   "title": "Robot Learning with Visual Predicted Force",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04764": {
+   "abstract": "This letter proposes DNPush, a Distributed Nonparallel Pushing force controller for cooperative object transport without inter-robot communication. Each robot uses local force measurements, a preassigned force weight, and a locally expressed desired transport direction, without requiring an object model, contact locations, a CoM estimate, or moment arm magnitudes online. DNPush regulates nonparallel force magnitudes from local force direction misalignments through a reciprocal-sine law. Under the stated contact conditions, Lyapunov analysis with LaSalle's invariance principle proves convergence to a unique rotational equilibrium, where perpendicular force contributions cancel and the net torque from normal forces is zero. Object velocity converges to the desired transport direction, and suitable contact regions exist for convex polygons. Simulations isolate the reciprocal-sine scaling mechanism, five-robot coordination, and active rotational damping. Hardware experiments with soft tactile differential-drive robots achieve a velocity direction error of 0.61 deg +/- 0.79 deg over five trials with a fixed transport direction and demonstrate object transport through waypoints with three robots.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "authors": [
+    "Duy Anh Nguyen",
+    "Pham Duy Hung",
+    "Trung Dung Ngo"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 8 figures. Submitted to IEEE Robotics and Automation Letters",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.04764",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {},
+   "seed": false,
+   "title": "DNPush: Distributed Nonparallel Pushing Force Control of Multi-Robot Systems for Object Transportation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04765": {
+   "abstract": "In this paper, we develop a method that enables bimanual dexterous hands to manipulate articulated objects with a high success rate without suffering from an embodiment gap. We observe that the correlation between hand motions and object motions is dictated by the object rather than the hands and can be learned from human-object demonstrations. Based on this observation, we propose PatternDex, a method that learns this correlation and represents it as a token sequence, which we call an interaction pattern. From this pattern, PatternDex estimates the wrist motions and contact points that fit the target robot, and then trains a reinforcement learning policy that exploits these estimates as guidance. Since the guidance fits the target embodiment, the policy explores only the actions that the target robot can execute and thus achieves high success rates. PatternDex also requires only simple fine-tuning to train a new robot, since it can reuse the learned interaction pattern. We evaluate PatternDex with bimanual dexterous hands on human demonstrations from the ARCTIC dataset. PatternDex achieves, on average, a 92.8% success rate with Allegro hands, while the state-of-the-art baseline achieves 52.2%. Also, it achieves success rates above 70% with three other robot hands after fine-tuning alone. Furthermore, we verify that the learned policy transfers well to a real-world task of opening a microwave. Videos and additional results are available at https://patterndex.github.io/PatternDex/",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "David Minkwan Kim",
+    "Runfa Blark Li",
+    "Beckham Po-Ju Lee",
+    "Nikolay Atanasov",
+    "Truong Nguyen"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 5 figures, 3 tables. Project page: https://patterndex.github.io/PatternDex/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.04765",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://patterndex.github.io/PatternDex/",
+   "published": "2026-10-03",
+   "scores": {},
+   "seed": false,
+   "title": "PatternDex: Learning Interaction Patterns to Guide Reinforcement Learning of Bimanual Dexterous Manipulation of Articulated Objects",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.04775": {
+   "abstract": "In this paper, we present a distributed cascade force control system (DCFC) for multiple robots with the aim of pushing a rigid object towards a desired moving target without their inter-robot communication. These mobile robots are equipped with 360-degree vision-based soft tactile sensors utilized to determine contact location and resultant impact force. By investigating the dynamics of moving rigid objects on the flat, we proposed a distributed cascade control. The inner loop control incorporates contact force and positioning, ensuring the robots' pushing contact and application of the desired force to the object. The outer loop control coordinates the robots to push the object in a desired direction without inter-robot communication, regardless of the unknown object mass. The stability and convergence of the system are verified using the Lyapunov stability theory. We also conducted simulation and real-word experiments to validate the performance of the proposed control method, and the experimental results showcase the successful coordination of multiple robots in pushing an object towards a moving desired direction.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "authors": [
+    "Duy Anh Nguyen",
+    "Nhat Minh Dinh Le",
+    "Nhan Huu Nguyen",
+    "Pham Duy Hung",
+    "Van Anh Ho",
+    "Trung Dung Ngo"
+   ],
+   "code_url": null,
+   "comment": "6 pages, 7 figures. Published in the 2024 IEEE/SICE International Symposium on System Integration (SII)",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.04775",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-03",
+   "scores": {},
+   "seed": false,
+   "title": "Distributed Cascade Force Control of Soft-Tactile-Based Multi-robot System for Object Transportation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-03",
+   "version": "v1"
+  },
+  "2610.05081": {
+   "abstract": "Teleoperation is becoming increasingly important for collecting high-quality demonstrations to teach robots dexterous manipulation skills. For dexterous manipulation, bare-hand tracking provides a practical way to control robotic hands and demonstrate coordinated finger movements without gloves or exoskeletons. However, this type of teleoperation faces two key feedback limitations: a lack of force feedback and visual feedback of occluded region. The absence of force feedback hinders precise and safe manipulation, as operators must infer contact force visually rather than feel them directly. Occlusion by objects or other robot parts impairs the assessment of hand positions, approach distances, and pre-grasp configurations suited to the object's shape. To address these limitations, we propose a digital-twin-based augmented reality (AR) teleoperation interface that integrates bare-hand tracking, bimanual robotic hands, and virtual representations of the robot and task objects. The interface renders tactile measurements on robot hand meshes as visuo-force feedback. Furthermore, it offers a user-controlled virtual view panel or occlusion-aware transparency rendering to provide occlusion-mitigating visual feedback. We evaluated the interface through user studies involving Task 1 and Task 2, examining how force visualization and visual assistance support demonstration collection in tasks requiring careful force regulation and manipulation under occlusion.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Youngchan Shim",
+    "Kyutae Lee",
+    "JooYun Kim",
+    "Jaeseong Hwang",
+    "Harim Ji",
+    "Yongseok Lee"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 5 figures, 4 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.05081",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-04",
+   "scores": {
+    "VTA": 8.0
+   },
+   "seed": false,
+   "title": "Now You Feel It, Now You See Me: Digital-Twin-based Teleoperation Interface for Dexterous Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-04",
+   "version": "v1"
+  },
+  "2610.05180": {
+   "abstract": "Learning dexterous manipulation benefits from human demonstration datasets that capture diverse and natural hand-object interactions. In particular, contact points and forces provide supervision on where and how strongly to interact, which cannot be fully captured by motion trajectories alone. However, methods for jointly capturing hand and object motion, contact points, and forces remain limited. Moreover, severe occlusion from hand-object interaction challenges accurate tracking of both hands and objects. To address these limitations, we present a Visual-Inertial-CONtact based hand-object tracking (VICON) framework. It holistically captures both hand and object motion along with contact information during manipulation, even under severe occlusion. First, we adopt a visual-inertial glove and an RGB-D camera for accurate hand tracking, and redesign the glove to incorporate contact sensing. Specifically, force-sensitive resistors (FSRs) are placed on the glove based on human grasp frequency to synchronously record contact states and calibrated normal forces. Second, without requiring pre-existing CAD models, we estimate object poses using RGB-D images and a mesh reconstructed from a monocular video. We propose factor-graph-based object trajectory estimation that fuses object-pose estimates weighted by visibility under hand-object occlusion, FSR measurements, and a hand-motion prior. Across 40 motion-capture sessions with five objects, VICON achieves a 2.5% failed-frame rate compared with 50.9-64.6% for the baselines, with median errors of 3.9 mm and 3.0 degrees under occlusion. Using VICON, we construct a dataset containing synchronized hand-object motion, contact points, and normal forces, and will publicly release an expanded dataset covering 10 object categories at https://github.com/VICON-dataset/dataset.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yubin Jeon",
+    "Uiseong Shin",
+    "Hwanchul La",
+    "Jaeseong Kang",
+    "Hyelim Choi",
+    "Yongseok Lee"
+   ],
+   "code_url": "https://github.com/VICON-dataset/dataset",
+   "comment": "9 pages, 6 figures, 4 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.05180",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "force-sensitive resistor",
+     "fsr",
+     "fsrs"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-04",
+   "scores": {},
+   "seed": false,
+   "title": "VICON: Visual-Inertial-Contact based Hand-Object Tracking for Manipulation Datasets",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-04",
+   "version": "v1"
+  },
+  "2610.05230": {
+   "abstract": "Most vision-language-action models represent future motion as fixed-rate action chunks, tying temporal resolution and prediction horizon to a fixed output budget. This pointwise representation wastes capacity on highly correlated neighboring actions, leaves temporal continuity and smoothness to be learned implicitly, and forces a tradeoff between long-horizon coverage and the local precision required for contact-rich manipulation. To address these limitations, we introduce Vela, a vision-language-action foundation model that represents future robot behavior as continuous trajectories. Vela combines a compact spline-based action representation with motion-dependent temporal support and a shared action interface for heterogeneous embodiments, allowing a fixed output budget to adapt its temporal resolution across motions. We pretrain Vela on large-scale multi-embodiment robot data and evaluate it on LIBERO-X, EBench, and two real-world long-horizon tasks, egg-cake cooking and potato shredding, obtaining promising results across simulation and physical manipulation. These results highlight the potential of continuous action representations as a foundation for future embodied foundation models. Project page and more results: https://clementine24.github.io/Vela/ .",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Yifan Li",
+    "Jiaxu Wang",
+    "Dongming Wu",
+    "Yicheng Jiang",
+    "Ryan Ji",
+    "Xiangyu Yue",
+    "Yanwei Fu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.05230",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://clementine24.github.io/Vela/",
+   "published": "2026-10-04",
+   "scores": {},
+   "seed": false,
+   "title": "Vela: Scaling Vision-Language-Action Models with Adaptive Action Curve Parametrization",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-04",
+   "version": "v1"
+  },
+  "2610.05583": {
+   "abstract": "Passive leader arms transmit an operator's motion without returning remote contact or load cues. TacGELLO uses the existing servos of a 3D-printed leader for tactile contact feedback at the gripper trigger and current-based load cues at the arm joints. AnySkin contact detection activates a trigger position hold, while changes in follower joint current adjust leader-servo output limits to command resistance during lifting. Across six UR3 sessions with one operator, sent-command tracking error was 0.15--0.36$^\\circ$ RMSE, with estimated trajectory lag of 82--98\\,ms. Tactile onset was logged in 60 of 62 segmented TacGELLO grasp intervals. Median commanded closure after tactile or width-based contact references was 0.7--2.1\\,mm with TacGELLO and 13.0--13.9\\,mm with the original interface.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Younsoo Kim",
+    "Sangmin Song",
+    "Sarath Kodagoda",
+    "Marc Carmichael",
+    "Karthick Thiyagarajan"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.05583",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "anyskin"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-04",
+   "scores": {},
+   "seed": false,
+   "title": "TacGELLO: Tactile Contact Feedback for a 3D-Printed Teleoperation Leader",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-04",
+   "version": "v1"
+  },
+  "2610.05835": {
+   "abstract": "Tactile Internet (TI) security analytics must balance reliable thresholded decisions with constrained computational and measurement resources. We study this tension for finite-shot hybrid quantum anomaly inference and introduce the Adaptive-Shot Variational Quantum Circuit (AS-VQC) policy. This validation-calibrated policy begins each record at 128 shots and cumulatively escalates through 256, 512, and 1024 shots only when the finite-shot anomaly score remains close to a validation-selected security threshold. The quantum scorer is evaluated as an off-path security analytics component rather than part of the haptic critical path. Using a 4,875-record CESNET-TimeSeries24-derived aggregate-flow benchmark, leakage-safe random, entity-group-disjoint, and temporal holdouts, and five trained quantum neural network (QNN) checkpoints per holdout, the primary AS-VQC-95 (beta = 0.95) policy averages 129.2, 276.9, and 131.2 shots per record, saving 87.4%, 73.0%, and 87.2% of the uniform 1024-shot baseline (Fixed-1024), respectively. The decision disagreement with analytic (exact-expectation) inference is 0.771%, 0.409%, and 0.635%, lower than both the uniform 128-shot baseline (Fixed-128) and a matched-budget shuffled-allocation control. Fixed-1024 remains more decision-stable, establishing a measurable reliability-resource trade-off rather than cost-free equivalence. A more conservative AS-VQC-99 (beta = 0.99) further reduces disagreement while using fewer than 512 average shots across all holdouts. These results show that finite quantum measurements can be treated as an inference resource and concentrated on boundary-sensitive TI-security decisions while exposing checkpoint-dependent escalation under unseen-entity conditions.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.CR",
+    "cs.LG",
+    "cs.NI"
+   ],
+   "authors": [
+    "Mubassir Serneabat Sudipto",
+    "Shakil Ahmed",
+    "Ashfaq Khokhar",
+    "Samir M. Iqbal"
+   ],
+   "code_url": "https://github.com/msudipto/AdaptiveShot_HybridQAD_Framework",
+   "comment": "Accepted at the 40th Conference on Neural Information Processing Systems (NeurIPS 2026). Workshop: Secure and Trustworthy Quantum Machine Learning (SaTQuML). Presentation: Short Oral Presentation. Code: https://github.com/msudipto/AdaptiveShot_HybridQAD_Framework",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.05835",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CR",
+   "project_url": null,
+   "published": "2026-10-05",
+   "scores": {
+    "VTA": 3.5
+   },
+   "seed": false,
+   "title": "Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-05",
+   "version": "v1"
+  },
+  "2610.05997": {
+   "abstract": "Early development unfolds in caregiver-infant dyads, where infants' sensorimotor streams are shaped by physical contact and face-to-face interaction. Yet developmental robotics simulators commonly model infants in isolation, limiting the study of caregiver-mediated experience. We present a caregiver-enabled extension of the Multi-Modal Infant Model (MIMo) in MuJoCo that turns MIMo into a controllable platform for replaying dyadic interaction and generating dense infant-perspective observations. The system provides (i) an articulated caregiver model compatible with MIMo morphologies, parameterized from anthropometrics and optionally resized to a recorded caregiver; (ii) a workflow to replay naturalistic caregiver-infant holding and soothing interactions; and (iii) logging and visualizing the infant's first-person multimodal experience (we show touch and vision). We showcase the tool on touch by introducing origin-aware contact logging that disambiguates self-, caregiver-, and environment-generated contact and supports aggregation into touch-rate statistics comparable to manual coding. While we showcase tactile analysis, the platform is intended more broadly as a generator of multimodal dyadic datasets (touch and egocentric vision) for modeling the development of social interaction.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Noemi Vaculinova",
+    "Matej Hoffmann"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 10 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.05997",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-05",
+   "scores": {
+    "Sim": 20.0
+   },
+   "seed": false,
+   "title": "Infant simulator with an embodied caregiver: Generating infant-perspective touch and vision during social interaction",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-10-05",
+   "version": "v1"
+  },
+  "2610.06331": {
+   "abstract": "Human demonstrations offer rich examples of precise dexterous manipulation and a promising source of robot training data. However, high-fidelity reproduction of demonstrated motions and hand-object interactions across robot embodiments remains challenging under physical constraints. We present DexForge, a differentiable physics-grounded framework for converting human video demonstrations into high-fidelity robot trajectories. We reconstruct spherical-Gaussian object models and hand-object motion from visual observations, then build a differentiable simulator combining efficient Gaussian collision detection with existing differentiable dynamics. Based on this simulator, DexForge combines contact-aware kinematic retargeting with force-aware dynamics retargeting: robot-adapted stable contacts guide kinematic reference construction and subsequent gradient-based control refinement for precise physical motion reproduction. Experiments on 130 DexYCB and HOT3D demonstrations across seven dexterous hands show success-rate gains of approximately 35-53 percentage points over the baseline, with object position and orientation tracking errors on successful trajectories reduced by approximately 34-67% and 71-78%, respectively. Further experiments demonstrate open-loop transfer to MuJoCo and real-robot execution. Our project page is available at https://wmz1226.github.io/DexForge/",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Meizhong Wang",
+    "Kun Cao",
+    "Ruiqi Ni",
+    "Lihua Xie",
+    "Yiguang Hong"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.06331",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://wmz1226.github.io/DexForge/",
+   "published": "2026-10-05",
+   "scores": {},
+   "seed": false,
+   "title": "DexForge: High-Fidelity Physics-Informed Dexterous Retargeting",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-05",
+   "version": "v1"
+  },
+  "2610.06843": {
+   "abstract": "LLM agents that orchestrate frozen vision-language-action (VLA) policies improve across episodes through text memory, which records what the agent did but not how the task is done. A demonstration video shows it, but fits poorly into an agent's context. The full video slows every turn, fixed keyframes lose the contact detail that decides whether a grasp holds, and what the agent needs shifts from the task's structure while planning to the frames around each contact. We introduce Recursive Video In-Context Learning (RV-ICL), a training-free method that turns a demonstration into a hierarchy the agent navigates rather than a prompt it receives. The hierarchy is built from the sub-events of the demonstration, such as grasps and releases. Its levels grow finer, from keyframes of the whole task to phases, moments and short clips, and are exposed through read-only tools. The agent reads the coarse levels before planning. During execution it re-enters the hierarchy whenever a step needs more detail and loads only the clip of its current sub-goal. One demonstration per task is enough. Built on RPent, RV-ICL raises success from 92.6% to 96.5% on LIBERO-PRO and from 86.7% to 95.8% on LIBERO-Plus.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CL",
+    "cs.MA"
+   ],
+   "authors": [
+    "Wenrui Bao",
+    "Xinxin Liu",
+    "Bingxin Xu",
+    "Yuzhang Shang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.06843",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-05",
+   "scores": {},
+   "seed": false,
+   "title": "Recursive Video In-Context Learning for Agentic Robot",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-05",
+   "version": "v1"
+  },
+  "2610.06850": {
+   "abstract": "Captured human-object interactions provide rich supervision for humanoid loco-manipulation, but they are sparse, heterogeneous, and not directly executable by robots. We introduce InterMimicGen, a self-evolving motion-imitation framework in which robot motion data and a tracking policy improve each other. First, we consolidate motion-captured human-object interaction datasets and retarget them into humanoid robot references while preserving whole-body coordination and dexterous hand-object relationships. This produces a large and diverse humanoid robot reference collection for dexterous whole-body loco-manipulation. Second, we train a physics-based generalist tracker that executes these references in simulation on a humanoid with dexterous hands, covering a scale and diversity beyond prior humanoid tracking systems for loco-manipulation. Third, we close a data flywheel: each round makes small, task-preserving changes to where an interaction takes place and how the body performs it, fine-tunes the tracker on them, and keeps only the variants whose simulated execution completes the task, which seed the next round. With more iterations, these small edits compound into broader coverage around the sparse original demonstrations while preserving task semantics and motion quality. Experiments show contact-preserving retargeting across robot configurations, broad tracking with a single generalist policy, executable motions that keep growing over augmentation rounds, and transfer to real robots. InterMimicGen provides a unified path from heterogeneous human demonstrations to a continually expanding motion resource for humanoid robot learning.",
+   "added_at": "2026-10-06 08:02",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.GR"
+   ],
+   "authors": [
+    "Yucheng Zhang",
+    "Sirui Xu",
+    "Jinhong Li",
+    "Liuyu Bian",
+    "Anatulya Nandi",
+    "Derek Zhang",
+    "Xiangchen Liu",
+    "Xueting Li",
+    "Umar Iqbal",
+    "Yu-Xiong Wang",
+    "Liang-Yan Gui"
+   ],
+   "code_url": null,
+   "comment": "Project Page: https://sirui-xu.github.io/InterMimicGen",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.06850",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://sirui-xu.github.io/InterMimicGen",
+   "published": "2026-10-05",
+   "scores": {},
+   "seed": false,
+   "title": "InterMimicGen: Scaling Humanoid Loco-Manipulation through Self-Evolving Motion Imitation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-05",
    "version": "v1"
   }
  }
