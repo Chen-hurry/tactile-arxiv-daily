@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-07 07:40 ｜ 共 1562 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-07 19:25 ｜ 共 1562 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -93,9 +93,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-06 |  **PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation** | Kun Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08784) · [Page](https://song-kun.github.io/pears) |
-| 2026-10-06 |  **MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback** | Jaeyoung Lee et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.08425) |
 | 2026-10-06 |  **TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback** | Kazutoshi Tanaka | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07621) |
+| 2026-10-06 |  **MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback** | Jaeyoung Lee et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.08425) |
+| 2026-10-06 |  **PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation** | Kun Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08784) · [Page](https://song-kun.github.io/pears) |
 | 2026-10-03 | 🖐 **AgenticTactileVLA: Contact-Guided Execution-Time Supervision for Generalizable Dexterous Manipulation without VLA Retraining** | Elizaveta Semenyakina et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04391) |
 | 2026-10-03 |  **ROMA: LLM System for Real-World Object-Centric Multi-Sensory Active Perception** | Ruoxuan Feng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06955) |
 | 2026-10-02 |  **SimpleTouch: Can Vision-Language-Action Models Master Contact-Rich Manipulation Without Tactile Policy Pretraining?** | Chen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.02784) · [Page](https://simpletouch-robot.github.io/) |
@@ -213,8 +213,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-06 |  **PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation** | Kun Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08784) · [Page](https://song-kun.github.io/pears) |
 | 2026-10-06 |  **PhysTacGen: Physics-Aware Visual-Tactile Sensor Image Generation** | Guo Tang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.08068) · [Code](https://github.com/VDIGPKU/PhysTacGen) |
+| 2026-10-06 |  **PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation** | Kun Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08784) · [Page](https://song-kun.github.io/pears) |
 | 2026-10-05 | 🖐 **ReDex: Repairing Sim-to-Real Dexterous Policies by Finger-Level Compliant Interaction** | Jinzhou Li et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.07525) |
 | 2026-10-04 | 🖐 **Now You Feel It, Now You See Me: Digital-Twin-based Teleoperation Interface for Dexterous Manipulation** | Youngchan Shim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05081) |
 | 2026-10-03 | 🖐 **TacOT: Learning Contact-Rich Dexterous Manipulation from Human Demonstrations via Tactile-Guided Optimal Transport** | Xingting Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.04363) |
@@ -569,10 +569,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-06 |  **Post-Grasp Kinematic Repair for Robotic Insertion via Object-in-Gripper Reorientation** | Haegu Lee et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08421) |
-| 2026-10-06 | 🖐 **ExoBridge: Learning a Bare Hand to Hand-Worn Exoskeleton Mapping through Human Limb Coupling** | Ruitong Tian et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07692) |
-| 2026-10-06 | 🖐 **EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors** | Harsh Gupta et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07681) · [Page](https://eigendexplore.github.io/) |
 | 2026-10-06 |  **SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining** | Jicong Ao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07652) |
+| 2026-10-06 | 🖐 **EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors** | Harsh Gupta et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07681) · [Page](https://eigendexplore.github.io/) |
+| 2026-10-06 | 🖐 **ExoBridge: Learning a Bare Hand to Hand-Worn Exoskeleton Mapping through Human Limb Coupling** | Ruitong Tian et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07692) |
+| 2026-10-06 |  **Post-Grasp Kinematic Repair for Robotic Insertion via Object-in-Gripper Reorientation** | Haegu Lee et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08421) |
 | 2026-10-05 |  **Adaptive-Shot Hybrid Quantum Anomaly Detection for Tactile Internet Security: Reliability-Aware Measurement Allocation Under Resource Constraints** | Mubassir Serneabat Sudipto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05835) · [Code](https://github.com/msudipto/AdaptiveShot_HybridQAD_Framework) |
 | 2026-10-05 | 🖐 **DexForge: High-Fidelity Physics-Informed Dexterous Retargeting** | Meizhong Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06331) · [Page](https://wmz1226.github.io/DexForge/) |
 | 2026-10-05 |  **Recursive Video In-Context Learning for Agentic Robot** | Wenrui Bao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.06843) |
