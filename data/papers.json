@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-07 19:25",
+ "last_update": "2026-10-08 07:56",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -49549,7 +49549,7 @@
    "version": "v1"
   },
   "2606.30988": {
-   "abstract": "Robot manipulation often relies on sensory feedback beyond vision, particularly in contact-rich settings where force, tactile, or audio signals reveal interaction states that are not directly observable from images. However, these modalities are often hardware- and task-specific, and large-scale multisensory robot datasets remain scarce. As a result, it is impractical to pretrain policies with every sensor they may encounter. We study multisensory continual learning: adapting a pretrained robot policy to new tasks with newly introduced modalities while preserving performance under the original sensor suite. We propose MultiSensory World Model (MuSe), which incorporates limited multisensory data into pretrained vision-only policies through multi-stage fusion, multisensory future prediction, and experience replay over pretraining data. We instantiate MuSe by augmenting a pretrained vision-only policy with force-torque sensing and evaluate it on real-world manipulation tasks. Our experiments show that MuSe performs strongly on contact-rich finetuning tasks while preserving, and in some cases improving, performance on the original pretraining tasks. These results suggest that a modest multisensory dataset can improve general robot capabilities beyond the finetuning distribution. Project website: https://jadenvc.github.io/multisensory-continual-learning/",
+   "abstract": "Robot manipulation often relies on sensory feedback beyond vision, particularly in contact-rich settings where force, tactile, or audio signals reveal interaction states that are not directly observable from images. However, these modalities are often hardware- and task-specific, and large-scale multisensory robot datasets remain scarce. As a result, it is impractical to pretrain policies with every sensor they may encounter. We study multisensory continual learning: adapting a pretrained robot policy such as a World-Action Model or VLA to new tasks with newly introduced modalities while preserving performance under the original sensor suite. We propose MultiSensory World Model (MuSe), which incorporates limited multisensory data into pretrained vision-only policies through multi-stage fusion, multisensory future prediction, and experience replay over pretraining data. We instantiate MuSe by augmenting a pretrained vision-only World-Action Model with tactile force-torque sensing and evaluate it on real-world manipulation tasks. Our experiments show that MuSe performs strongly on contact-rich finetuning tasks while preserving, and in some cases improving, performance on the original pretraining tasks. These results suggest that a modest multisensory dataset can improve general robot capabilities beyond the finetuning distribution. Project website: https://jadenvc.github.io/multisensory-continual-learning/",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -49581,15 +49581,15 @@
    "project_url": "https://jadenvc.github.io/multisensory-continual-learning/",
    "published": "2026-06-29",
    "scores": {
-    "VTA": 12.0
+    "VTLA": 2.5
    },
    "seed": false,
    "title": "Multisensory Continual Learning: Adapting Pretrained Visuomotor Policies to Force",
    "topics": [
-    "VTA"
+    "Other"
    ],
-   "updated": "2026-07-05",
-   "version": "v3"
+   "updated": "2026-10-06",
+   "version": "v4"
   },
   "2606.31132": {
    "abstract": "Generative control policies (GCPs), such as diffusion policies and flow-based vision-language-action models, enable test-time scaling in robot control. Test-time compute can be allocated along two axes: sequential scaling, which increases denoising steps to refine actions, and parallel scaling, which samples multiple candidate actions to search across modes of the policy distribution. However, the optimal allocation of sequential and parallel compute is hard to know a priori as it is state-, task-, and policy-dependent. For example, early stages of a grasp may benefit from broader parallel exploration, while near-contact phases may require more sequential refinement for precision. We present ELASTIC, an algorithm that learns state-dependent test-time compute schedules for GCPs. We formulate compute allocation as a meta-Markov Decision Process in which a meta-policy interacts with a frozen pretrained robot policy and selects sequential steps and parallel samples at each denoising iteration to maximize task success while minimizing compute. Using reinforcement learning, this meta-policy also learns adaptive compute schedules without access to the GCP's training data. Across simulated manipulation benchmarks with diffusion policies, ELASTIC Pareto-dominates fixed and single-axis scaling baselines at matched compute budgets. On real-world robot manipulation with the $π_{0.5}$ vision-language-action model, ELASTIC matches best-of-$10$ success while reducing wall-clock latency by 34%.",
@@ -57961,7 +57961,7 @@
     "Yuchen Cui"
    ],
    "code_url": null,
-   "comment": "Accepted at the 10th Conference on Robot Learning (CoRL 2026). Project website: https://visibletouch.github.io/",
+   "comment": "Accepted as a Spotlight at the 10th Conference on Robot Learning (CoRL 2026). Project website: https://visibletouch.github.io/",
    "hand": false,
    "hidden": false,
    "id": "2609.14156",
@@ -57984,8 +57984,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-09-12",
-   "version": "v1"
+   "updated": "2026-10-07",
+   "version": "v2"
   },
   "2609.14173": {
    "abstract": "Human-to-robot skill transfer from sensing gloves has so far relied on shared hardware: the same tactile glove worn by the demonstrator and the robot, or a learned alignment between two tactile sensors. We present GIFT (Glove-Inferred Force Transfer), a pipeline in which the interface between human and robot is a physical unit rather than a shared sensor: fingertip force is measured in newtons on the human side and estimated in newtons on the robot side. A wearable glove records finger flexion, calibrated fingertip force, and wrist orientation, while a head-mounted camera records the demonstration; no robot is present. At deployment, the robot estimates force from actuator-current residuals relative to a free-space baseline, through a calibrated mapping to newtons, so any position-controlled hand that reports motor current can serve as the deployment platform. The policy uses a glove-space state and predicts finger-position targets; the robot enters only through two calibrated adapters, a retargeting decoder and a force estimator. We evaluate GIFT on a cup grasp-and-hold task with two action-chunking policies trained on the same demonstrations, with fingertip-force inputs retained in one and zeroed in the other. In a 50-rollout evaluation with sample size and metrics fixed before scoring, both policies succeeded in all 25 rollouts. The median of the per-rollout hold-phase grip-force estimates was 53% lower with force inputs: 1.20 N versus 2.55 N (one-sided Mann-Whitney U, p<0.0001). In an observation ablation, a vision-only policy achieved 0/15 grasps, policies given hand-command state acquired the grasp, and the force inputs determined how hard the policy held. A force channel measured on the human hand thus transfers to a robot hand with no tactile hardware, through a retargeting map from five glove channels to seven robot actuators, with no sensor shared between the two.",
@@ -64715,6 +64715,532 @@
     "VTLA"
    ],
    "updated": "2026-10-06",
+   "version": "v1"
+  },
+  "2610.08870": {
+   "abstract": "Unlike conventional teleoperation, wearable interfaces allow operators to collect dexterous demonstrations through their own hand motions while directly interacting with task objects. This direct interaction reduces dependence on the target robot during collection, but it also makes the collection hardware part of the physical process that generates each demonstration. Interface geometry can influence both how a task is performed and what tactile observations are recorded for learning. We study two versions of a DexUMI-family exoskeleton that share the same robot command definition, mapping procedure, and tactile module type but differ in hand-side geometry. The revised interface reduces reported physical demand, improves selected device ratings, enables tactile access in a precision grasp that is mechanically blocked by the baseline, and produces task-dependent changes in recorded contact. Lid twisting primarily exhibits a change in contact location, whereas egg carton opening primarily exhibits a change in contact occurrence. We then train matched policies using either a binary aggregate input or a spatial-plus-force input. On lid twisting and egg carton opening, policies trained on revised-interface demonstrations achieve higher success than those trained on baseline demonstrations, with a significant pooled interface effect. Across these and two additional tasks, USB insertion and soldering tool pick and place, the spatial-plus-force input likewise outperforms binary aggregation. These results show that wearable collection hardware is part of the data-generation process for robot learning. Such interfaces should therefore be evaluated not only through operator experience, but also through the tactile interactions they make recordable and the policy performance their demonstrations support.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruitong Tian",
+    "Fang Xu",
+    "Noah B. Wilson",
+    "Xianyao Li",
+    "Eric Jing Du"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 6 figures. Submitted to ICRA 2027",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.08870",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-06",
+   "scores": {
+    "VTA": 14.0
+   },
+   "seed": false,
+   "title": "From Wearable Interfaces to Dexterous Policies: Contact Shifts and Tactile Representations",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-06",
+   "version": "v1"
+  },
+  "2610.09455": {
+   "abstract": "Recently, approaches that leverage human video datasets for robot policy training have become increasingly prevalent. However, most existing hand trackers regress pose from cropped frames with limited priors on hand motion and object interaction, resulting in inaccurate and physically inconsistent estimates. Moreover, the lack of physical cues, e.g., contact and force, limits the use of human videos for robot policy training. To this end, we propose RLHND, a video foundation model-based hand tracking model that jointly estimates hand pose and realistic tactile information from monocular egocentric videos. RLHND turns the pre-trained Cosmos 3 video diffusion backbone into a deterministic clip-level feature extractor via clean-latent conditioning, carrying its learned priors on hand motion and hand-object interaction into tracking. For pose estimation, RLHND (i) predicts hand poses with anatomically plausible joint angles and (ii) enables optional conditioning on the shape parameter to maintain consistent hand shape within the same video and even across videos recorded by the same actor. For tactile estimation, a separate tactile expert stream, trained with the pose stream frozen, predicts dense contact and force over the hand surface. We further adopt LBS-based feature spreading to enable vertex-wise feature extraction without costly per-vertex attention. RLHND achieves state-of-the-art performance across various benchmark datasets for pose estimation, while also achieving state-of-the-art performance in contact and force estimation. Moreover, we demonstrate the utility of RLHND for robot learning through retargeting results and real-world robot experiments. The code will be publicly available at https://seungjun-moon.github.io/rlhnd/.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.RO"
+   ],
+   "authors": [
+    "Seungjun Moon",
+    "Subin Jeon",
+    "Sangwoo Kim",
+    "Hanbyul Joo",
+    "Jinwoo Shin"
+   ],
+   "code_url": null,
+   "comment": "34 pages, 15 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.09455",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": "https://seungjun-moon.github.io/rlhnd/",
+   "published": "2026-10-07",
+   "scores": {
+    "VTA": 3.0,
+    "VTLA": 7.0
+   },
+   "seed": false,
+   "title": "RLHND: Video Foundation Models as Physically Grounded Hand Trackers for Robot Learning",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.09536": {
+   "abstract": "Robotic grasping and surface exploration benefit from simultaneous measurement of normal and tangential forces and from surface information obtained through contact. Here, we present a compact magnetociliary tactile sensor (MagCilia) that combines a flexible magnetic-cilia structure with a Hall sensor for 3D force sensing. Quasi-static finite element analysis is used to investigate structural deformation and magnetic responses under multidirectional loading. To reconstruct forces from the coupled magnetic channels, we propose causal history fusion regression (CHFR), which combines current magnetic-field measurements with their recent changes. Five-fold cross-validation grouped by calibration record yields root-mean-square errors of 0.40, 0.57, and 0.69 N for Fx, Fy, and Fz, respectively, with corresponding coefficients of determination of 0.93, 0.90, and 0.92. Robotic experiments demonstrate tangential-force-guided gripper adjustment and multi-axis load monitoring under external perturbations. Frequency-domain features of the reconstructed forces distinguish six surface categories with 99.39% accuracy in three-fold cross-validation grouped by acquisition session. An online robotic demonstration additionally identifies all six tested surfaces. These results demonstrate 3D force reconstruction, grasping feedback, and surface recognition using a single compact tactile unit.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yu Feng",
+    "Hao Wu",
+    "Haotian Guo",
+    "Haoming Liu",
+    "William Su",
+    "Jingxiang Guo",
+    "Jiankun Li",
+    "Masayoshi Tomizuka",
+    "Wen Jung Li",
+    "Jianshu Zhou"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.09536",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "3d force"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-07",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "MagCilia: A Compact Magnetociliary Tactile Sensor with 3D Force Sensing for Robotic Contact Perception and Grasping Feedback",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.09696": {
+   "abstract": "Robot manipulation data collection has been shifting from teleoperation toward robot-free demonstrations, through interfaces such as the Universal Manipulation Interface (UMI) or directly from human hands. Vision-Language-Action (VLA) policies trained on such data inherit the demonstrator's timing. Yet human timing does not directly transfer to robots: compliant hands tolerate fast contact, whereas robots may overshoot due to actuator and tracking limitations; conversely, robots can move faster in free space. This motivates a unified approach that reconciles execution speed with contact safety. We present RoboPace, an online retiming layer that preserves the policy's geometric path while adapting its timing, respecting the target robot's kinematic and dynamic constraints. It adapts execution speed based on predicted contact, jointly accounting for contact-dependent speed limits and the robot's motion constraints. The method requires no policy retraining and operates in real time. Across three contact-rich tasks on a dual-arm robot, faster uniform execution and physical-limit-only retiming largely fail. RoboPace instead achieves higher overall success than slow uniform execution while completing four of five commands in approximately half the time, retaining the reliability of slow execution without its time cost.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Mimo Shirasaka",
+    "Takehiko Ohkawa",
+    "Takuya Okubo",
+    "Nicola Scianca",
+    "Tatsuya Matsushima",
+    "Kei Ota"
+   ],
+   "code_url": null,
+   "comment": "Project: https://robopace.airoa.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.09696",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://robopace.airoa.io/",
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.09718": {
+   "abstract": "Vision-Language-Action (VLA) models acquire broad manipulation capabilities via large-scale pretraining, yet eliciting them through language requires fine-grained alignment between instructions and physical interactions. Existing robot demonstrations typically provide only coarse task descriptions, omitting how actions are executed, including which gripper acts, which object is contacted, and how it is grasped and moved. We introduce YUBI-STAG, a framework for Spatio-Temporal Annotation and Grounding that automatically enriches manipulation demonstrations with interaction-rich semantics to align pretrained VLAs with fine-grained manipulation language. Combining contact-object segmentation with vision-language models, YUBI-STAG annotates object identities, attributes and states, per-gripper actions, bimanual coordination, and spatially grounded interactions. To address YUBI-STAG's reliance on localized sequences and multi-stage VLM inference, we distill it into YUBI-VLM. YUBI-VLM directly recovers action structure and annotations from raw, unsegmented video in few inference calls and operates from wrist views alone. We evaluate both frameworks on YUBI-STAG-Bench across temporal, semantic, and spatial grounding tasks. YUBI-VLM retains much of YUBI-STAG's annotation accuracy with fewer inference calls and shorter runtime while generalizing to unseen manipulations. Finally, post-training VLA policies on these annotations aligns them with fine-grained language and contact-aware structure. Bimanual experiments demonstrate improved performance and instruction following, including control over object identity, acting gripper, target location, and spatial relations absent from original labels.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Masatoshi Tateno",
+    "Takehiko Ohkawa",
+    "Yueh-Hua Wu",
+    "Hanlong Li",
+    "Tatsuya Matsushima",
+    "Yoichi Sato",
+    "Kei Ota"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://yubi-stag.airoa.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.09718",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://yubi-stag.airoa.io/",
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10020": {
+   "abstract": "Hybrid force/motion control requires knowledge of the interaction force and of a task frame defining the force- and motion-controlled directions. These quantities are usually obtained from force/torque sensing or model-based residuals, often assuming also a nominal environment model. This work addresses the online estimation of the contact force and a possibly time-varying task frame using only soft optical tactile sensing, under the assumption of locally planar contact with a negligible contact moment. The proposed method maps a single image of the deformed elastomer of a soft optical tactile sensor to observable contact variables: indentation depth, two surface-to-sensor tilt angles, and 3D contact force, each with a per-sample uncertainty estimate. The mapping is learned through a self-labeling acquisition procedure, in which a manipulator imposes controlled contacts while an auxiliary Force/Torque sensor is used offline to provide ground-truth labels. The tactile measurement is then fused with robot proprioceptive data in an Extended Kalman Filter, producing a continuously updated estimate of the contact task frame and of the interaction force. Control experiments with a DigiTac sensor mounted on a UR10 manipulator demonstrate closed-loop contact force regulation against a flat rigid board in linear and angular motion by a human operator, with touch as the only exteroceptive feedback.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Antonio Rapuano",
+    "Simone Orelli",
+    "Barbara Bazzana",
+    "Antonio Franchi",
+    "Alessandro De Luca"
+   ],
+   "code_url": null,
+   "comment": "14 pages, 9 figures, 7 tables. Video: https://youtube.com/playlist?list=PLejKMZmW8AvI. Dataset: https://doi.org/10.5281/zenodo.23209032",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10020",
+   "modality": "mixed",
+   "modality_keywords": {
+    "numeric": [
+     "force/torque"
+    ],
+    "vision": [
+     "optical tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://youtube.com/playlist?list=PLejKMZmW8AvI",
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "Tactile Reconstruction of Contact Task Frames and Forces for Hybrid Force/Motion Control",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10283": {
+   "abstract": "Humans can grasp everyday objects with almost perfect success rates using fingertip tactile feedback, yet much of the robotic grasping literature emphasizes vision-based grasp selection with parallel grippers. In this work, we systematically investigate how high-resolution, dynamic tactile sensing contributes to grasp stability prediction and model-guided grasping in dexterous robotic hands. To this end, we collected a dataset of 10,000 grasp trials across 200 objects using a multi-fingered robotic hand equipped with four Digit 360 tactile sensors, recording external vision, proprioception, and tactile streams throughout each grasp. With this dataset, we trained end-to-end temporal multimodal models to predict post-lift stability from pre-lift grasp observations and compared sensing modalities and encoding backbones. Experimental results and controlled input ablations show that incorporating touch, and particularly high-resolution, dynamic touch, improves grasp stability prediction. Finally, we deployed the learned predictor as an online stability gate on the real robot, where visuo-tactile model-guided regrasping improved the success rate among executed lifts by 10.5 percentage points over a non-tactile gate. These results show how rich fingertip sensing and expressive temporal models that capture the dynamics of touch can support learned grasping with multi-fingered hands without explicit contact or force modeling, providing a scalable data-driven path from tactile experience toward stable dexterous manipulation. The dataset is publicly available at https://lasr-lab.github.io/dexterous-grasp-stability/.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "authors": [
+    "Ken Nakahara",
+    "Aleksei Buvailik",
+    "Prokhor Kotov",
+    "Roberto Calandra"
+   ],
+   "code_url": null,
+   "comment": "12 Pages. Website: https://lasr-lab.github.io/dexterous-grasp-stability/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.10283",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://lasr-lab.github.io/dexterous-grasp-stability/",
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "Temporal Visuo-Tactile Learning for Dexterous Grasp Stability",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10288": {
+   "abstract": "Large-scale egocentric human interaction data is becoming an important source of physical supervision for embodied learning, yet video alone leaves the contact and pressure that characterize physical interaction unrecorded. Recent visual-tactile datasets provide this missing supervision, but their synchronized tactile data remain far smaller in volume than human video. Moreover, the largest resources often merge recordings from different sensors or annotation procedures, which makes the effect of data scale difficult to isolate. We therefore introduce TouchScale, a 500-hour dataset of contact-rich human interaction recorded with a single unified wearable setup. Its approximately 2K predefined task descriptions span everyday activities and structured manipulation, and each recording temporally aligns egocentric RGB-D video with wrist RGB video and dense full-hand bimanual tactile measurements. Compared with prior tactile data, training on the full TouchScale raises zero-shot contact IoU on data from an unseen tactile sensor from 0.134 to 0.383. Pretraining a visual encoder on TouchScale also yields the highest action recognition accuracy on three benchmarks among the compared visual-tactile datasets. Used for visual-tactile mid-training of a robot policy, TouchScale improves the average real-world success rate across four contact-rich manipulation tasks from 22.5% to 57.5%. With the sensor and collection protocol held fixed, both zero-shot tactile prediction and robot success show an overall upward trend as more TouchScale data is used. These results suggest that human visual-tactile data collected at scale with consistent sensing benefits both perception and robot manipulation. We will publicly release TouchScale, including all synchronized visual-tactile recordings and reconstructed object models, to support future research on scalable visual-tactile learning.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.CV"
+   ],
+   "authors": [
+    "Dayou Li",
+    "Hao Wang",
+    "Qianqian Yang",
+    "Zihao Zhu",
+    "Haoquan Fang",
+    "Ziyao Zeng",
+    "Yan Han",
+    "Zihan Wang",
+    "Yan Wang",
+    "Baoru Huang",
+    "Dilin Wang",
+    "Kenji Shimada",
+    "Yiyue Luo",
+    "Manling Li",
+    "Teresa Lv",
+    "Mustafa Mukadam",
+    "Rakesh Ranjan",
+    "Ruohan Zhang",
+    "Qi He",
+    "Changliu Liu",
+    "Xu Chen",
+    "Marco Pavone",
+    "Bangya Liu",
+    "Jiachen Li",
+    "Masayoshi Tomizuka",
+    "Zhiwen Fan"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://touch-scale.github.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10288",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": "https://touch-scale.github.io/",
+   "published": "2026-10-07",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10346": {
+   "abstract": "Robotic minimally invasive surgery has revolutionized surgical practice. However, as the surgeons are mechanically separated from the surgical tools, loss of tactile feedback occurs. We present a compact force sensor with three, millimeter scale sensing elements (taxels) that can be affixed to the grasping face of a robotic surgical tool. The sensor features a miniaturized design using Hall effect sensors and magnets embedded in a deformable elastomer contact layer. Sensor calibration is achieved with a 6 degree of freedom (DoF) parallel robot. Each taxel can detect applied normal and shear forces with average RMSE of 2.133 kPa. The calibrated sensor was validated on phantom and ex vivo porcine tissue, demonstrating tactile sensing during retraction as well as slip. This work introduces a small-scale Hall effect based tactile sensor, enabling sensing for force-sensitive robotic surgical applications.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Charles DeLorey",
+    "Michael Brockdorff",
+    "Adam Metcalf",
+    "Benjamin Calmé",
+    "Pietro Valdastri",
+    "Dominic Jones"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 12 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10346",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "hall effect",
+     "taxel",
+     "taxels"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "Hall Effect-Based Tactile Force Detection Sensor for Robot-Assisted Minimally Invasive Surgery",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10370": {
+   "abstract": "As smart glasses and lightweight MR devices become increasingly practical, input remains a key challenge. The bare palm is an always-available, tactile, and proprioceptively accessible surface, but it has neither an explicit coordinate system nor embedded touch sensing. Prior on-palm systems typically expose isolated touch events, discrete regions, continuous trajectories, or task-specific gestures, limiting the palm's ability to support precise selection and gesture manipulation through a common input representation. We present PalmSpace, a wrist-worn infrared system that exposes mode-aware, body-referenced absolute input on the bare palm without per-user sensing calibration. At the interaction level, PalmSpace jointly represents contact occurrence, interaction mode, and palm-referenced absolute location; at the model level, it learns these coupled outputs through a shared real-time representation. In leave-one-participant-out evaluation with 17 participants, PalmSpace achieved 6.7 mm mean localization error, 98.9% contact detection accuracy, and 96.7% F1 for four-class interaction-state recognition. User studies further demonstrated absolute pointing and dragging, eyes-free digit input, and representative multi-finger controls including scrolling and pinch-based map manipulation. These results show that a morphologically variable bare palm can function as a transferable, mode-aware interaction surface.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.HC",
+    "cs.CV"
+   ],
+   "authors": [
+    "Chentao Li",
+    "Mingze Gao",
+    "Runze Sun",
+    "Zhaoguo Wang",
+    "Jianjiang Feng",
+    "Jie Zhou"
+   ],
+   "code_url": null,
+   "comment": "Preprint. Initial version",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10370",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.HC",
+   "project_url": null,
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "PalmSpace: Towards a Versatile On-Palm Interaction Space through Unified Touch Modeling",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10384": {
+   "abstract": "Tactile feedback provides embodied agents with physical information beyond visual observations, enabling more reliable interaction with the real world. However, despite the rapid progress of vision-tactile-language-action (VTLA) policies, there remains a lack of unified benchmarks for evaluating tactile-enabled robot manipulation across simulation and the real world. To address this gap, we introduce OpenViTac, a visuo-tactile manipulation benchmark for evaluating robot policies across simulation and the real world. OpenViTac organizes contact-rich manipulation into four tactile-relevant capability dimensions and provides paired simulation-real-world settings for consistent evaluation of VLA, WAM, and VTLA policies. Building upon this benchmark, we investigate how different tactile representations and integration strategies affect the performance of pretrained VLA models. Correspondingly, we introduce OpenVTLA, a tactile augmentation framework that combines the best-performing representation and integration strategy. Furthermore, we leverage the paired benchmark setting to study sim-real co-training and analyze factors affecting cross-domain policy learning. Together, OpenViTac provides a unified platform for evaluating and advancing visuo-tactile robot manipulation.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yifan Wu",
+    "Qin Li",
+    "Nan Min",
+    "Guojin Zhong",
+    "Haoyu Zhao",
+    "Zhiyuan Li",
+    "Houze Xu",
+    "Shengqi Xu",
+    "Xingyao Lin",
+    "Zijie Diao",
+    "Zhaoxiang Liu",
+    "Shiguo Lian",
+    "Shunlin Lu",
+    "Shihao Zhao",
+    "Ziyi Ye",
+    "Zuxuan Wu",
+    "Yu-Gang Jiang"
+   ],
+   "code_url": null,
+   "comment": "Project website: https://fvl-repo.github.io/OpenViTac/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10384",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://fvl-repo.github.io/OpenViTac/",
+   "published": "2026-10-07",
+   "scores": {
+    "VTLA": 20.0
+   },
+   "seed": false,
+   "title": "OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10510": {
+   "abstract": "Tactile sim-to-real learning must bridge simulated contact and device-specific sensor responses while preserving information needed for control. We propose a factorized tactile representation and control framework that maps normal force and contact patch to an effective contact response recoverable from sensor readings. The response is separated into contact geometry, force distribution, and temporal contact change, with representation-specific encoding and randomization. A Tactile Gated Policy preserves these representations separately through control and operates over all mask configurations without retraining. We evaluate the approach through response reconstruction, spatial alignment, force regulation, and contact-rich adversarial peg insertion in simulation and the real world, enabling the utility and transfer reliability of different tactile representations to be assessed independently. The approach achieves <1 mm contact localization, 1.69 N force-tracking error on unseen geometries, and a 35% improvement in real-world adversarial peg insertion over the unfactorized response, with different tactile representations benefiting different interactions.",
+   "added_at": "2026-10-08 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Siqi Shang",
+    "Bianca Aumann",
+    "Tye Brady",
+    "Joshua Migdal",
+    "Taskin Padir"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 7 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10510",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-07",
+   "scores": {
+    "VTA": 20.0
+   },
+   "seed": false,
+   "title": "Factorized Tactile Representation and Control for Sim-to-Real Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-07",
    "version": "v1"
   }
  }
