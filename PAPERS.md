@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-08 07:56 ｜ 共 1574 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-08 19:20 ｜ 共 1574 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -93,8 +93,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-07 |  **OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework** | Yifan Wu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10384) · [Page](https://fvl-repo.github.io/OpenViTac/) |
 | 2026-10-07 |  **RLHND: Video Foundation Models as Physically Grounded Hand Trackers for Robot Learning** | Seungjun Moon et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09455) · [Page](https://seungjun-moon.github.io/rlhnd/) |
+| 2026-10-07 |  **OpenViTac: Learning and Benchmarking Visuo-Tactile Policies in a Unified Sim-and-Real Framework** | Yifan Wu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10384) · [Page](https://fvl-repo.github.io/OpenViTac/) |
 | 2026-10-06 |  **TacZero: Training-Free Peg Insertion Using a General-Purpose Vision-Language Model with Tactile Feedback** | Kazutoshi Tanaka | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07621) |
 | 2026-10-06 |  **MIM-VLA: Learning Physical Interaction Representations from Gripper Motor Feedback** | Jaeyoung Lee et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.08425) |
 | 2026-10-06 |  **PEARS: Physical-Prior-Guided Efficient Adaptation via Failure Reasoning and Diffusion Steering for Tactile Manipulation** | Kun Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.08784) · [Page](https://song-kun.github.io/pears) |
@@ -572,14 +572,14 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-07 |  **PalmSpace: Towards a Versatile On-Palm Interaction Space through Unified Touch Modeling** | Chentao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10370) |
-| 2026-10-07 |  **Hall Effect-Based Tactile Force Detection Sensor for Robot-Assisted Minimally Invasive Surgery** | Charles DeLorey et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.10346) |
-| 2026-10-07 |  **TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning** | Dayou Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10288) · [Page](https://touch-scale.github.io/) |
-| 2026-10-07 | 🖐 **Temporal Visuo-Tactile Learning for Dexterous Grasp Stability** | Ken Nakahara et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10283) · [Page](https://lasr-lab.github.io/dexterous-grasp-stability/) |
-| 2026-10-07 |  **Tactile Reconstruction of Contact Task Frames and Forces for Hybrid Force/Motion Control** | Antonio Rapuano et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2610.10020) · [Page](https://youtube.com/playlist?list=PLejKMZmW8AvI) |
 | 2026-10-07 |  **MagCilia: A Compact Magnetociliary Tactile Sensor with 3D Force Sensing for Robotic Contact Perception and Grasping Feedback** | Yu Feng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.09536) |
-| 2026-10-07 |  **YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding** | Masatoshi Tateno et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09718) · [Page](https://yubi-stag.airoa.io/) |
 | 2026-10-07 |  **RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies** | Mimo Shirasaka et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09696) · [Page](https://robopace.airoa.io/) |
+| 2026-10-07 |  **YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding** | Masatoshi Tateno et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09718) · [Page](https://yubi-stag.airoa.io/) |
+| 2026-10-07 |  **Tactile Reconstruction of Contact Task Frames and Forces for Hybrid Force/Motion Control** | Antonio Rapuano et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2610.10020) · [Page](https://youtube.com/playlist?list=PLejKMZmW8AvI) |
+| 2026-10-07 | 🖐 **Temporal Visuo-Tactile Learning for Dexterous Grasp Stability** | Ken Nakahara et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10283) · [Page](https://lasr-lab.github.io/dexterous-grasp-stability/) |
+| 2026-10-07 |  **TouchScale: 500 Hours of Human Vision and Touch for Visual-Tactile Learning** | Dayou Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10288) · [Page](https://touch-scale.github.io/) |
+| 2026-10-07 |  **Hall Effect-Based Tactile Force Detection Sensor for Robot-Assisted Minimally Invasive Surgery** | Charles DeLorey et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.10346) |
+| 2026-10-07 |  **PalmSpace: Towards a Versatile On-Palm Interaction Space through Unified Touch Modeling** | Chentao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.10370) |
 | 2026-10-06 |  **SMART: Zero-Shot Sim-to-Real Articulated Object Manipulation via Large-Scale Synthetic Pretraining** | Jicong Ao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07652) |
 | 2026-10-06 | 🖐 **EigenDEXplore: Structured Exploration for Dexterous Manipulation with Human Priors** | Harsh Gupta et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07681) · [Page](https://eigendexplore.github.io/) |
 | 2026-10-06 | 🖐 **ExoBridge: Learning a Bare Hand to Hand-Worn Exoskeleton Mapping through Human Limb Coupling** | Ruitong Tian et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.07692) |
