@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-09 07:56",
+ "last_update": "2026-10-09 18:54",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -29026,7 +29026,7 @@
    "version": ""
   },
   "2510.13324": {
-   "abstract": "Contact-rich manipulation depends on applying the correct grasp forces throughout the manipulation task, especially when handling fragile or deformable objects. Most existing imitation learning approaches often treat visuotactile feedback only as an additional observation, leaving applied forces as an uncontrolled consequence of gripper commands. In this work, we present Force-Aware Robotic Manipulation (FARM), an imitation learning framework that integrates high-dimensional tactile data to infer tactile -conditioned force signals, which in turn define a matching force-based action space. We collect human demonstrations using a modified version of the handheld Universal Manipulation Interface (UMI) gripper that integrates a GelSight Mini visual tactile sensor. For deploying the learned policies, we developed an actuated variant of the UMI gripper with geometry matching our handheld version. During policy rollouts, the proposed FARM diffusion policy jointly predicts robot pose, grip width, and grip force. FARM outperforms several baselines across three tasks with distinct force requirements -- high-force, low-force, and dynamic force adaptation -- demonstrating the advantages of its two key components: leveraging force-grounded, high-dimensional tactile observations and a force-based control space. The codebase and design files are open-sourced and available at https:// tactile -farm.github.io .",
+   "abstract": "Contact-rich manipulation depends on applying the correct grasp forces throughout the manipulation task, especially when handling fragile or deformable objects. Most existing imitation learning approaches often treat visuotactile feedback only as an additional observation, leaving applied forces as an uncontrolled consequence of gripper commands. In this work, we present Force-Aware Robotic Manipulation (FARM), an imitation learning framework that integrates high-dimensional tactile data to infer tactile-conditioned force signals, which in turn define a matching force-based action space. We collect human demonstrations using a modified version of the handheld Universal Manipulation Interface (UMI) gripper that integrates a GelSight Mini visual tactile sensor. For deploying the learned policies, we developed an actuated variant of the UMI gripper with geometry matching our handheld version. During policy rollouts, the proposed FARM diffusion policy jointly predicts robot pose, grip width, and grip force. FARM outperforms several baselines across three tasks with distinct force requirements -- high-force, low-force, and dynamic force adaptation -- demonstrating the advantages of its two key components: leveraging force-grounded, high-dimensional tactile observations and a force-based control space. The codebase and design files are open-sourced and available at https://tactile-farm.github.io .",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -29054,7 +29054,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://tactile-farm.github.io",
    "published": "2025-10-15",
    "scores": {
     "VTA": 26.5
@@ -30595,7 +30595,7 @@
    "version": "v1"
   },
   "2511.07797": {
-   "abstract": "Vision-based tactile sensors (VBTSs) are a promising technology for robots, providing them with dense signals that can be translated into a multi-faceted understanding of contact. However, existing VBTS tactile surfaces make use of silicone gels, which provide high sensitivity but easily deteriorate from loading and surface wear. We propose that polyurethane rubber, a typically harder material used for high-load applications like shoe soles, rubber wheels, and industrial gaskets, may provide improved physical gel resilience, potentially at the cost of sensitivity. To compare the resilience and sensitivity of two polyurethane gel formulations against a common silicone baseline, we propose a series of repeatable characterization protocols. Our resilience tests assess sensor durability across normal loading, shear loading, and abrasion. For sensitivity, we introduce learning-free assessments of force and spatial sensitivity to directly measure the physical capabilities of each gel without effects introduced from data and model quality. We also include a bottle cap loosening and tightening demonstration to validate the results of our controlled tests with a real-world example. Our results show that polyurethane yields a more robust sensor. While it sacrifices sensitivity at low forces, the effective force range is largely increased, revealing the utility of polyurethane VBTSs over silicone versions in more rugged, high-load applications.",
+   "abstract": "Vision-based tactile sensors (VBTSs) are a promising technology for robots, providing them with dense signals that can be translated into a multi-faceted understanding of contact. However, existing VBTS tactile surfaces make use of silicone gels, which provide high sensitivity but easily deteri- orate from loading and surface wear. Furthermore, existing literature lacks rigorous durability and sensitivity evaluations targeted for intrinsic sensor performance. We propose that polyurethane rubber, a typically harder material used for high-load applications like shoe soles, rubber wheels, and industrial gaskets, may provide improved physical gel resilience, potentially at the cost of sensitivity. In addition, we propose a methodological framework to evaluate and compare tactile sensor hardware across designs and material compositions. Our resilience tests assess sensor durability across normal loading, shear loading, and abrasion. For sensitivity, we introduce learning-free assessments of force and spatial sensitivity to isolate intrinsic sensor capabilities from the confounding effects of downstream dataset and network architecture choices. We also perform a system-level validation using a bottle cap loosening and tightening task to show the translation of our controlled test results with a real-world example. Our results show that polyurethane substantially improves resilience. While it sacrifices sensitivity at low forces, the effective force range is largely increased, revealing the utility of polyurethane VBTSs over silicone versions in more rugged, high-load applications.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -30621,16 +30621,14 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": null,
-   "published": "2026-04-08",
-   "scores": {
-    "VTA": 2.5
-   },
+   "published": "2026-10-01",
+   "scores": {},
    "seed": false,
-   "title": "Characterizing the Resilience and Sensitivity of Polyurethane Vision-Based Tactile Sensors",
+   "title": "A Learning-Free Characterization Framework for the Resilience and Sensitivity of Polyurethane Vision-Based Tactile Sensors",
    "topics": [
     "Other"
    ],
-   "updated": "2026-04-08",
+   "updated": "2026-10-01",
    "version": ""
   },
   "2511.08454": {
@@ -35436,7 +35434,7 @@
    "version": ""
   },
   "2602.10013": {
-   "abstract": "Successfully manipulating many everyday objects, such as potato chips, requires precise force regulation. Failure to modulate force can lead to task failure or irreversible damage to the objects. Humans can precisely achieve this by adapting force from tactile feedback, even within a short period of physical contact. We aim to give robots this capability. However, commercial grippers exhibit high cost or high minimum force, making them unsuitable for studying force-controlled policy learning with everyday force-sensitive objects. We introduce TF-Gripper, a low-cost (~$150) force-controlled parallel-jaw gripper that integrates tactile sensing as feedback. It has an effective force range of 0.45-45N and is compatible with different robot arms. Additionally, we designed a teleoperation device paired with TF-Gripper to record human-applied grasping forces. While standard low-frequency policies can be trained on this data, they struggle with the reactive, contact-dependent nature of force regulation. To overcome this, we propose RETAF (REactive Tactile Adaptation of Force), a framework that decouples grasping force control from arm pose prediction. RETAF regulates force at high frequency using wrist images and tactile feedback, while a base policy predicts end-effector pose and gripper open/close action. We evaluate TF-Gripper and RETAF across five real-world tasks requiring precise force regulation. Results show that compared to position control, direct force control significantly improves grasp stability and task performance. We further show that tactile feedback is essential for force regulation, and that RETAF consistently outperforms baselines and can be integrated with various base policies. We hope this work opens a path for scaling the learning of force-controlled policies in robotic manipulation. Project page: https://force-gripper.github.io .",
+   "abstract": "Successfully manipulating many everyday objects, such as potato chips, requires precise force regulation. Failure to modulate force can lead to task failure or irreversible damage to the objects. Humans can precisely achieve this by adapting force from tactile feedback, even within a short period of physical contact. We aim to give robots this capability. However, commercial grippers exhibit high cost or high minimum force, making them unsuitable for studying force-controlled policy learning with everyday force-sensitive objects. We introduce TF-Gripper, a low-cost (~$150) force-controlled parallel-jaw gripper that integrates tactile sensing as feedback. It has an effective force range of 0.45-45 N and is compatible with different robot arms. Additionally, we designed a teleoperation device paired with TF-Gripper to record human-applied grasping forces. While we can train standard low-frequency policies with the collected force data, achieving reliable performance remains challenging due to the reactive and contact-dependent nature of force-regulated manipulation. To overcome this, we propose RETAF (REactive Tactile Adaptation of Force), a framework that decouples grasping force control from arm pose prediction. RETAF regulates force at high frequency using wrist images and tactile feedback, while a base policy predicts end-effector pose and gripper open/close action. Our experiments show that, compared to position control, direct force control with TF-Gripper improves grasp stability and overall task performance across six real-world tasks. We further show that tactile feedback is essential for force regulation, and that RETAF consistently outperforms baselines and can be integrated with various base policies. We hope this work opens a path for scaling the learning of force-controlled policies in robotic manipulation. Project page: https://force-gripper.github.io .",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -35450,7 +35448,7 @@
     "Yen-Ling Kuo"
    ],
    "code_url": null,
-   "comment": "10 pages, 11 figures",
+   "comment": "12 pages, 17 figures",
    "hand": false,
    "hidden": false,
    "id": "2602.10013",
@@ -35464,16 +35462,16 @@
    "pinned": false,
    "primary_category": "cs.RO",
    "project_url": "https://force-gripper.github.io",
-   "published": "2026-02-10",
+   "published": "2026-10-06",
    "scores": {
     "VTA": 12.5
    },
    "seed": false,
-   "title": "Learning Force-Regulated Manipulation with a Low-Cost Tactile-Force-Controlled Gripper",
+   "title": "Learning Force-Regulated Robotic Manipulation with a Low-Cost Tactile-Force-Controlled Gripper",
    "topics": [
     "VTA"
    ],
-   "updated": "2026-02-10",
+   "updated": "2026-10-06",
    "version": ""
   },
   "2602.10093": {
@@ -65658,6 +65656,44 @@
    ],
    "updated": "2026-10-08",
    "version": "v1"
+  },
+  "2610.12245": {
+   "abstract": "Social and service robots in public spaces need to anticipate which nearby person is about to approach and touch them, so that a response can be prepared before contact. It is largely unknown which cues support this anticipation when a model trained with one robot is used on another robot at a different site. We study this question with a fixed-reference pose residual (FRPR) model: a geometry predictor built from the person's bounding box and mask is trained and frozen, and a temporal network then learns from body pose an additive correction to its logit, so that every prediction splits exactly into a geometry term and a pose term. Between two public egocentric datasets recorded by different robots, HUI360 and SSUP-A, with every choice made on source data, the pose correction raised average precision (AP) from 0.277 to 0.321 from SSUP-A to HUI360 and gave no measurable gain in the opposite direction; the same asymmetry held over a stronger, source-selected geometry reference. Freezing gave no AP advantage over joint training, and simple geometric baselines and tree ensembles remained competitive or better, so the construction serves measurement rather than prediction accuracy. A head-orientation residual added small gains in both directions. Post hoc, whether a person faces the camera kept its discriminative direction across datasets, whereas head pitch reversed. With thresholds chosen on source data, the neural models that use geometry detected at most 17% of target interactions. Code and processed data are available at https://github.com/WeiZhou96/FRPR-interaction-anticipation.",
+   "added_at": "2026-10-09 18:54",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Bowen Yang",
+    "Xinliang Xiao",
+    "Wenjing Zhang",
+    "Li Yang",
+    "Wei Zhou"
+   ],
+   "code_url": "https://github.com/WeiZhou96/FRPR-interaction-anticipation",
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.12245",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-09",
+   "scores": {},
+   "seed": false,
+   "title": "Fixed-Reference Pose Residuals for Measuring Cross-Dataset Cue Transfer in Human-Robot Interaction Anticipation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-09",
+   "version": ""
   },
   "2610.12440": {
    "abstract": "Human demonstrations are a scalable data source for learning dexterous manipulation, but the embodiment gap prevents human motion from being executed directly on robots. Inverse kinematics (IK) retargets human motion to robots efficiently but ignores dynamics, often producing infeasible motions. Reinforcement learning (RL) and sampling-based model predictive control (MPC) are commonly employed to yield dynamically feasible motions, but both are sample-inefficient and sensitive to hyperparameters. RL suffers from costly and unstable training and tedious reward engineering; MPC avoids policy optimization, yet retargets each trajectory in isolation, and solving one does not make the next easier. Sampling cost grows rapidly with dataset size and task difficulty. We hypothesize that dynamically feasible trajectories concentrate near a low-dimensional manifold shared across demonstrations, so that retargeting can be reduced to sampling from that manifold, conditioned on human motion, rather than solving a fresh optimization problem for every demonstration. We propose \\textbf{Generative Neural Retargeting} (GNR), which uses a flow matching model to sample feasible trajectories. GNR outperforms MPC with only $8.5\\%$ of the samples required by MPC, achieving a success rate of $56.20\\%$ compared to $27.20\\%$ for MPC. GNR can be used for scalable and efficient retargeting of large-scale, long-horizon, and millimeter precision human demonstrations: by applying GNR within a real-to-sim data engine, we produce a dexterous manipulation dataset with dense contact-force labels, spanning $223$k demonstrations and $3.3$k object geometries.",
