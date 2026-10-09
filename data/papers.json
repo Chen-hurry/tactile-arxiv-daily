@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-08 19:20",
+ "last_update": "2026-10-09 07:56",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -55698,8 +55698,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-21",
-   "version": "v2"
+   "updated": "2026-10-08",
+   "version": "v3"
   },
   "2608.20312": {
    "abstract": "The capability to perceive and synthesize human-human interactions is fundamental to developing intelligent digital human systems. However, existing datasets and modeling approaches are fundamentally constrained by low-fidelity kinematics, the omission of dexterous hand gestures and a severe lack of rich multimodal annotations. Furthermore, fragmented interaction representations and inconsistent evaluation protocols also impede fair and rigorous benchmarking. To systematically address these bottlenecks, we present Inter-X++, a comprehensive and large-scale benchmark designed to empower versatile HHI analysis. Captured via a novel hybrid motion capture system, Inter-X++ provides 11,388 high-fidelity interaction sequences and over 8.1M frames, featuring precise whole-body movements and detailed finger articulations. Meanwhile, we enrich the data foundation with multifaceted annotations, including hierarchical fine-grained textual descriptions, interaction categories, causal interaction orders, the relationship and personality of the subjects, as well as vertex-level contact maps and physically regularized constraints. Leveraging these elaborate annotations, we formulate a unified testing ground comprising four categories of downstream tasks that symmetrically span both generative and perceptive paradigms. To eliminate benchmarking ambiguities, we systematically standardize the interaction representations and evaluation protocols. Finally, we go beyond dataset construction to propose OpenHHI, a single and unified HHI representation and modeling framework that jointly optimizes interaction reconstruction and semantic understanding. Extensive experiments reveal that OpenHHI achieves state-of-the-art performance on both generation and perception tasks. This definitively proves that our unified representation successfully bridges interaction understanding and generation simultaneously.",
@@ -64344,8 +64344,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-10-03",
-   "version": "v1"
+   "updated": "2026-10-08",
+   "version": "v2"
   },
   "2610.07525": {
    "abstract": "Dexterous manipulation policies trained in simulation often fail to transfer to the real world because of errors in contact timing and force regulation. Yet these policies can retain useful multi-finger coordination for task progression. We propose ReDex, a framework for adapting a simulation-trained base policy to the real world by correcting local contact failures and incorporating tactile feedback. Starting from a proprioception-only base policy, ReDex allows a human operator to physically correct contact failures at selected fingers under compliant control during real-world rollouts, while the frozen base policy continues to control the remaining fingers. These rollouts combine base policy execution, human-corrected finger motion, and fingertip force observations. We reconstruct force-informed targets from these rollouts to train a standalone force-conditioned policy via behavior cloning. This design reduces human correction effort, enables learning of contact regulation from real-world interaction, and introduces force feedback into a proprioception-only policy without tactile simulation or complex full-hand teleoperation. We evaluate ReDex on two challenging, contact-rich dexterous manipulation tasks on real hardware. Compared with sim-to-real transferred base policies, ReDex increases Object Flipping success rate from 14\\% to 86\\% across two objects and average Screwdriver Rotation progress from 26.0% to 95.3% across three objects.",
@@ -65065,8 +65065,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-07",
-   "version": "v1"
+   "updated": "2026-10-08",
+   "version": "v2"
   },
   "2610.10346": {
    "abstract": "Robotic minimally invasive surgery has revolutionized surgical practice. However, as the surgeons are mechanically separated from the surgical tools, loss of tactile feedback occurs. We present a compact force sensor with three, millimeter scale sensing elements (taxels) that can be affixed to the grasping face of a robotic surgical tool. The sensor features a miniaturized design using Hall effect sensors and magnets embedded in a deformable elastomer contact layer. Sensor calibration is achieved with a 6 degree of freedom (DoF) parallel robot. Each taxel can detect applied normal and shear forces with average RMSE of 2.133 kPa. The calibrated sensor was validated on phantom and ex vivo porcine tissue, demonstrating tactile sensing during retraction as well as slip. This work introduces a small-scale Hall effect based tactile sensor, enabling sensing for force-sensitive robotic surgical applications.",
@@ -65241,6 +65241,507 @@
     "VTA"
    ],
    "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10637": {
+   "abstract": "Hair stroking is common in daily grooming and personal care, and is also widely used in hair-product evaluation, motivating robots with similar physical interaction capabilities. Existing robotic hair-care and surface-following methods mainly rely on trajectory planning, compliance, force regulation, or tactile-conditioned policies, but deformable hair can remain in contact while gradually drifting across the end-effector, making local interaction difficult to regulate. We propose TacHair, a tactile contact-distribution guided online correction framework that represents high-resolution tactile observations as a spatial hair-contact distribution. A visuotactile imitation policy generates the nominal stroking motion, while a separately trained residual module corrects local contact deviations, separating task progression from contact recovery. We evaluate TacHair in 525 real-robot trials across five head geometries and three hair conditions. A successful stroke requires both sufficient task progression and contact maintenance; our method improves success from 42.9% to 62.3% and contact maintenance from 59.4% to 88.0% over the same visuotactile policy without correction. These results demonstrate spatial tactile contact distributions as an effective feedback representation for contact-preserving interaction with deformable and visually occluded surfaces. Demos, code, and datasets are available at https://tachair.github.io.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruiyi Hu",
+    "Yongqiang Zhao",
+    "Daniel Bak",
+    "Yupeng Wang",
+    "Xuyang Zhang",
+    "Shan Luo"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10637",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://tachair.github.io",
+   "published": "2026-10-07",
+   "scores": {
+    "VTA": 15.5
+   },
+   "seed": false,
+   "title": "TacHair: Tactile Contact-Distribution Guided Online Correction for Robotic Hair Stroking and Perception",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10748": {
+   "abstract": "Navigation in vision-denied environments is challenging for humanoid robots because proprioceptive odometry drifts and localization uncertainty accumulates rapidly. We present TAPNAV, a tactile active-perception framework that enables humanoid navigation toward a goal by actively probing surrounding structures without relying on vision. TAPNAV maintains a pose belief from odometry, IMU, and tactile contact observations, and couples uncertainty-aware global route planning with information-gain-driven local probing. The global planner searches for routes that keep predicted localization uncertainty bounded by exploiting opportunities for tactile correction, while the local planner selects probe actions that maximize expected information gain. A whole-body controller coordinates the humanoid's locomotion and end-effector contact to execute the planned navigation and probe motions. We evaluate TAPNAV in simulation and on a Unitree G1 across different floor plans and obstacle geometries. TAPNAV achieves lower state estimation error and a higher task completion rate than baselines. These results demonstrate that actively planning physical interactions with the environment can provide localization cues for reliable humanoid navigation without vision.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Huaze Liu",
+    "Zhenyu Wu",
+    "Jaehwi Jang",
+    "Junjie Sheng",
+    "Andrew Collins",
+    "Aaron Xie",
+    "Zhaoyuan Gu",
+    "Kaijie Zhu",
+    "Ding Jiang",
+    "Kevin Cai",
+    "Ye Zhao"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 10 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.10748",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "TAPNAV: Humanoid Navigation through Tactile Active Perception",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.10855": {
+   "abstract": "Monocular videos of human manipulation provide abundant dexterous demonstrations, yet reconstructing hand-object interaction from a single view and transferring it to robot hands remain difficult, limiting their direct use for robot execution. Prior methods either require task-specific RL training, limiting scalability, or assume clean motion-capture trajectories and thus cannot operate directly on video. We present OmniHOI, a pipeline that turns an RGB video of hand-object interaction into an interaction-faithful trajectory on dexterous hands. The key idea is to enforce physical consistency using the evidence available at each stage: image evidence during reconstruction, contact geometry during retargeting, and dynamics during physics-in-the-loop refinement. Each stage optimizes the corresponding representation directly, correcting errors before they propagate downstream or must be absorbed by a learned policy. Across 150 motion-capture trajectories transferred to each of five dexterous hands with 6 to 22 DoF, we achieve 39-89% success, compared with at most 31% for prior transfer methods. On 60 monocular video clips, we achieve 53% success, compared with 28% for the best prior video-to-robot pipeline. Its trajectories also execute on a real bimanual robot across diverse tasks.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ting Mao",
+    "Yanming Shao",
+    "Ziheng Wang",
+    "Haoyu Liu",
+    "Yiqun Wang",
+    "Xuanye Wu",
+    "Yao Mu"
+   ],
+   "code_url": null,
+   "comment": "The project page is available at https://hydrofoooil.github.io/OmniHOI/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.10855",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://hydrofoooil.github.io/OmniHOI/",
+   "published": "2026-10-07",
+   "scores": {},
+   "seed": false,
+   "title": "OmniHOI: Dexterous Hand-Object Interaction from Monocular Human Video",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-07",
+   "version": "v1"
+  },
+  "2610.11054": {
+   "abstract": "Soft pneumatic actuators are widely used in soft robotics. However, their actuation modes are typically fixed by internal chamber designs or reinforcements, making post fabrication reconfiguration difficult. This paper presents a reconfigurable fabric-based pneumatic actuator that enables rapid, tool free, and reusable switching among multiple actuation modes by attaching constraint fabric modules to a buttoned textile sleeve. By rearranging low-stretch constraint parts on a single actuator body, the proposed system realizes four actuation modes isotropic expansion, contraction, bending, and twisting without redesigning or disassembling the actuator.We further introduce an attachable capacitive fabric-based tactile sensor module that can be mounted at arbitrary locations on the actuator surface for task dependent contact sensing. Experiments demonstrated an elongation ratio of 1.2, a maximum bending angle of approximately 60 degrees, and a twisting angle of approximately 90 degrees at 24 kPa, while achieving blocking forces exceeding 10 N across all modes. The tactile sensor exhibited a monotonic, force-dependent increase in capacitance with low hysteresis (approximately 12%) and stable cyclic responses under preload. Finally, we constructed soft robotic arms composed of multiple actuators and demonstrated in situ motion reconfiguration for grasping by changing the attached constraint patterns. These results indicate that the proposed modular constraint and sensing framework improves the functional adaptability of fabric-based soft robots while preserving a simple, robust actuator structure.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kentaro Kimura",
+    "Hiroki Ishizuka",
+    "Yusuke Sakaue",
+    "Sei Ikeda",
+    "Osamu Oshiro"
+   ],
+   "code_url": null,
+   "comment": "IEEE Access in Revision",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.11054",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "A Reconfigurable Fabric Based Pneumatic Actuator with Button Fastened Constraint Modules for Multi Mode Actuation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.11221": {
+   "abstract": "An ideal robot grasp is firm enough to securely handle an object, yet gentle enough to avoid damaging it. Achieving this balance requires knowledge of the object's material properties, such as its mass, elasticity, and surface friction. These properties, however, are seldom precisely known a priori. In this work, we propose a visuotactile approach to estimating material properties in real time, during the process of grasping. Our method uses these estimated properties to determine the minimum grasp force required to handle the object. We contribute a new dataset of real-world objects (fruits and vegetables) with measured physical properties (shape, mass, elasticity, and friction), which we use to construct our force estimation model via simulations. We experimentally validate our approach to grasp force control using a robot with a parallel-jaw gripper. We demonstrate our system's ability to gently grasp a wide variety of objects, in each case adapting to their unique physical properties.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Matthew Beveridge",
+    "Shree K. Nayar"
+   ],
+   "code_url": null,
+   "comment": "CoRL 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.11221",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "How Firm Should a Grasp Be?",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.11945": {
+   "abstract": "Collecting tactile demonstrations on robots is costly and slow, motivating the use of lower-cost human tactile gloves for scalable data collection. However, human capacitive/piezoresistive gloves and robotic tactile sensors differ fundamentally in transduction principle, sensor layout, spatial resolution, and dynamic response, making alignment of raw sensor channels ill-posed. To address this problem, we present TACROSS, a scalable system for learning from human touch and transferring it to robots that bridges this heterogeneity by aligning tactile streams at the level of contact events rather than raw sensor values. The hardware component of TACROSS integrates a piezoresistive glove with five layers and a cost of USD 10.86 with 285 sensing points. To align contact semantics, we design canonicalizers and residual adapters that map heterogeneous signals into a shared tactile latent with 256 dimensions via a temporal Transformer with attention across fingers. We further introduce a robot-grounded policy learning scheme in which robot demonstrations provide the sole source of ground-truth action supervision, while human demonstrations support tactile representation learning and provide confidence-weighted auxiliary supervision through valid retargeted hand targets. We evaluate our system on four contact-rich manipulation tasks. Compared to conventional teleoperation, our proposed system achieves a 3.5-fold efficiency improvement while reducing demonstration acquisition equipment cost by 95.7%. We will open-source the TACROSS hardware and software system and publicly release a tactile dataset comprising over 150 hours of recordings. Project page: https://tacross-touch-project.github.io/.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "Bo Chen",
+    "Huanzhang Hu",
+    "Junyang Ma",
+    "Bo Yue",
+    "Fangdi Yu",
+    "Haijier Chen",
+    "Xianxin Lai",
+    "Shuyu Pan",
+    "Zhen Yang",
+    "Xiaoquan Sun",
+    "Wenze Cui",
+    "Zhongliang Jiang",
+    "Shaopeng Liu",
+    "Jiayu Chen"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.11945",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "piezoresistive",
+     "tactile glove"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://tacross-touch-project.github.io/",
+   "published": "2026-10-08",
+   "scores": {
+    "VTA": 8.0
+   },
+   "seed": false,
+   "title": "TACROSS: An Efficient and Low-Cost Scalable Human Touch System Across Heterogeneous Tactile Sensors for Dexterous Robot Learning",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12026": {
+   "abstract": "Humanoid robots are a promising platform for general-purpose manipulation. Recent Vision-Language-Action (VLA) policies learn actions directly from multimodal observations, while World Action Models (WAMs) further incorporate future visual prediction to improve action generation. However, in hierarchical humanoid systems, VLA and WAM policies output reference actions that are subsequently realized through whole-body control, robot dynamics, balance, and contact. This hierarchy creates an action--execution gap: the reference produced by the policy can differ from the motion realized by the robot. Without explicitly modeling the realized body state, future visual prediction must jointly explain scene evolution and discrepancies between reference actions and executed motion, making it difficult to associate an action with its physical outcome. We propose HWAM, a Humanoid World Action Model with joint state--action generation, which makes the robot's post-execution proprioceptive state an explicit prediction target. By jointly generating reference actions and their realized body states, HWAM directly incorporates supervision of executed motion into action learning. HWAM is trained through three complementary conditional paths. The Policy path jointly denoises state--action trajectories conditioned only on current observations, matching deployment conditions. Forward Dynamics Modeling (FDM) predicts future visual observations conditioned on actions and post-execution states, while Inverse Dynamics Modeling (IDM) reconstructs the joint trajectory from visual transitions. Together, these paths connect policy references, realized body motion, and visual outcomes. HWAM achieves the highest success rate among evaluated baselines on three real-robot tasks on the LimX OLI humanoid. On Candy Picking, HWAM achieves a 70.6% success rate, compared with 43.3% for Fast-WAM.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Yan Yang",
+    "Jikun Rong",
+    "Minzhao Zhu",
+    "Zheyi Zhao",
+    "Qirui Hu",
+    "Zihan Lan",
+    "Weixin Mao",
+    "Yinhao Li",
+    "Zhen Fu",
+    "Hua Chen"
+   ],
+   "code_url": null,
+   "comment": "Under review. 15 pages, 5 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.12026",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "Humanoid World Action Model With Joint State--Action Generation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12046": {
+   "abstract": "Dexterous manipulation requires both large-scale task progression and precise contact-rich interaction, making it challenging to collect demonstrations that effectively support both regimes. We present SkillWeave, a heterogeneous demonstration framework for long-horizon dexterous manipulation that combines teleoperation for coarse reaching and transport with kinesthetic teaching for precise, contact-rich skills. To address the visual mismatch introduced by the demonstrator's presence during kinesthetic data collection, we propose an object-mask-conditioned diffusion policy that uses offline object segmentation for training supervision and a lightweight learned mask predictor at deployment, avoiding online segmentation and image inpainting. To mitigate distribution shift between independently trained sub-task policies, we introduce successor-aware terminal steering, which selects among actions sampled from the predecessor policy to guide the system toward states supported by the successor's demonstrated initial-state distribution. Across three real-world long-horizon tasks, SkillWeave achieves 27% average end-to-end success. Mask-conditioned kinesthetic policies improve dexterous sub-task success to an average of 65%, while successor-aware handoffs achieve an average composition efficiency of 87%. These results show that matching demonstration modality to interaction regime, explicitly addressing kinesthetic visual mismatch, and steering policy handoffs toward successor-supported states substantially improves long-horizon dexterous manipulation. Videos and code are available at skillweave-authors.github.io .",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ryosei Tamura",
+    "Xiaoxiang Dong",
+    "Uksang Yoo",
+    "Yuemin Mao",
+    "Romina Mir",
+    "Jonathan Francis",
+    "Jeffrey Ichnowski"
+   ],
+   "code_url": null,
+   "comment": "IROS 2026 Workshop on Haptics and Dexterous Manipulation",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.12046",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "SkillWeave: Weaving Heterogeneous Demonstrations into Long-Horizon Manipulation Skills",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12073": {
+   "abstract": "Vision-based tactile sensors provide rich contact information, but processing high-resolution images can be costly for resource-constrained platforms such as space robots. This work investigates whether a compact representation of tactile motion can classify object rotation across different gravity conditions. Dense optical flow from a simulated GelSight Mini is aggregated over a 7x9 grid into 126 features and used to classify the direction of load-induced rotation under Earth, Mars, Moon, and orbital gravity. Gravity causes a small but significant shift in these features, accounting for 1.6% of their variance (R2 = 0.016). Despite its small magnitude, this shift affects models trained only on Earth data: XGBoost accuracy decreases from 94.4% on Earth to 75.9% in orbit. In contrast, a single model trained across all four gravity domains achieves 96.3% overall accuracy and 95.1%-97.0% across individual domains, without using gravity as an input. The representation can also be reduced to 40 features while retaining 95.7% accuracy, with XGBoost requiring only 0.14 ms per inference. These findings show that Earth-gravity performance alone is insufficient to establish the transferability of tactile perception for space robotic manipulation, highlighting the need to account for gravity-induced domain shifts during training and validation.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Oscar Martinez-Bernal",
+    "Mario Cavero-Vidal",
+    "Francesco Grella",
+    "Carol Martinez"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.12073",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "gelsight",
+     "vision-based tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "A Minimal Optical-Flow Representation for Vision-Based Tactile Rotation Classification in Robotic Manipulation Across Gravity Domains",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12123": {
+   "abstract": "Generating a plausible robot action does not establish that current observations justify its execution. Motivated by exploratory observations of high-confidence visual outputs under severe occlusion, we present PIER, an execution-authorization interface that separates evidence checks, decision provenance, and stage-scoped re-observation from hardware control. The deterministic gate evaluates declared visual and tactile inputs, while its caller maintains a budget of at most one re-observation per stage. We evaluate the implementation using 1,600 threshold-grid cases and 1,200 paired synthetic traces spanning score noise, missing tactile inputs, stale observations, and falsely reassuring scores. The finite grid yields zero declared invariant violations, and a matched Boolean baseline reproduces all non-recovery decisions. Under synthetic score noise, re-observation reduces valid-state denials from 57/120 to 18/120 while increasing invalid-state proceeds from 5/120 to 7/120. Stale and falsely reassuring inputs expose limitations that threshold checks alone cannot resolve. Exploratory visual, tactile, and robot setup records provide context but do not establish physical task performance. These results characterize an inspectable authorization interface and its input-contract limitations, without claiming superiority over equivalent rule logic, calibrated tactile accuracy, or certified physical safety.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zoe Li",
+    "Anze Wang",
+    "Zhongyu Chen",
+    "Jingran Hu"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 4 figures. Ancillary files include reproducibility code and retained experimental records",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.12123",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {
+    "VTA": 3.0
+   },
+   "seed": false,
+   "title": "PIER: An Evidence-Gated Execution Interface for Robotic Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12440": {
+   "abstract": "Human demonstrations are a scalable data source for learning dexterous manipulation, but the embodiment gap prevents human motion from being executed directly on robots. Inverse kinematics (IK) retargets human motion to robots efficiently but ignores dynamics, often producing infeasible motions. Reinforcement learning (RL) and sampling-based model predictive control (MPC) are commonly employed to yield dynamically feasible motions, but both are sample-inefficient and sensitive to hyperparameters. RL suffers from costly and unstable training and tedious reward engineering; MPC avoids policy optimization, yet retargets each trajectory in isolation, and solving one does not make the next easier. Sampling cost grows rapidly with dataset size and task difficulty. We hypothesize that dynamically feasible trajectories concentrate near a low-dimensional manifold shared across demonstrations, so that retargeting can be reduced to sampling from that manifold, conditioned on human motion, rather than solving a fresh optimization problem for every demonstration. We propose \\textbf{Generative Neural Retargeting} (GNR), which uses a flow matching model to sample feasible trajectories. GNR outperforms MPC with only $8.5\\%$ of the samples required by MPC, achieving a success rate of $56.20\\%$ compared to $27.20\\%$ for MPC. GNR can be used for scalable and efficient retargeting of large-scale, long-horizon, and millimeter precision human demonstrations: by applying GNR within a real-to-sim data engine, we produce a dexterous manipulation dataset with dense contact-force labels, spanning $223$k demonstrations and $3.3$k object geometries.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Dechen Gao",
+    "Yue Yang",
+    "Ben Abbatematteo",
+    "Nathan Godwin",
+    "Pengcheng Wang",
+    "Roger Boldu",
+    "Steven Man",
+    "Zhiyang Dou",
+    "Chuan Qin",
+    "Sho Nakagome",
+    "Eric Whitmire"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.12440",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12465": {
+   "abstract": "General-purpose robots must perform a wide range of tasks from agile locomotion to dexterous manipulation. While sim-to-real reinforcement learning (RL) has proven to be a useful tool for this goal, current RL pipelines depend on engineering-heavy, per-task structural priors such as shaped rewards and demonstrations. Recent work has shown that diverse simulator resets, combined with massively parallel simulation, can alleviate much of this engineering burden on several manipulation problems. However, we find that naively scaling this paradigm to more precise or dynamic problems remains non-trivial. While simulator resets can help with exploration, uniformly sampling over this distribution wastes a growing fraction of learning experience on task configurations the policy has already mastered or cannot yet attempt. This makes it challenging to see the expected benefits of scaling parallel environments for RL, since much of the learning signal in a batch is wasted during learning. To mitigate this, we introduce Success Guided Sampling (SGS), a simple adaptive sampler that concentrates RL training on task configurations around the frontier of the policy's capabilities. Doing so allows large-scale simulated RL to make the most out of the experience in a batch, enabling much more effective scaling to large-scale parallel simulation. Across experiments using up to $2^{20}$ (over one million) parallel environments, SGS enables RL to solve challenging multi-terrain quadruped locomotion and contact-rich assembly tasks that prior methods fail to solve. Finally, we distill the learned manipulation policies into RGB-based policies and demonstrate zero-shot transfer to several challenging assembly tasks on real hardware. Project website: https://sgs-rl.github.io/.",
+   "added_at": "2026-10-09 07:56",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "Octi Zhang",
+    "Mateo Guaman Castro",
+    "Patrick Yin",
+    "Ignacio Dagnino",
+    "Abhishek Gupta",
+    "Rosario Scalise",
+    "Byron Boots"
+   ],
+   "code_url": null,
+   "comment": "CoRL 2026. Project website: https://sgs-rl.github.io/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.12465",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://sgs-rl.github.io/",
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
    "version": "v1"
   }
  }
