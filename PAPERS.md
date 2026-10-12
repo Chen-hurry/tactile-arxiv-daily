@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-11 18:13 ｜ 共 1587 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-12 07:54 ｜ 共 1589 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 67 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 115 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 352 篇
-- [Other（其他触觉相关）](#other) — 1093 篇
+- [Other（其他触觉相关）](#other) — 1095 篇
 
 ## Sim
 
@@ -575,6 +575,7 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-10-09 |  **Fixed-Reference Pose Residuals for Measuring Cross-Dataset Cue Transfer in Human-Robot Interaction Anticipation** | Bowen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12245) · [Code](https://github.com/WeiZhou96/FRPR-interaction-anticipation) |
+| 2026-10-09 | 🖐 **AlphaNIST: Emergent Assembly Skills from Binary Task Rewards** | Octi Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.13354) · [Page](https://alpha-nist.github.io/) |
 | 2026-10-08 |  **A Reconfigurable Fabric Based Pneumatic Actuator with Button Fastened Constraint Modules for Multi Mode Actuation** | Kentaro Kimura et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11054) |
 | 2026-10-08 |  **How Firm Should a Grasp Be?** | Matthew Beveridge et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11221) |
 | 2026-10-08 |  **Humanoid World Action Model With Joint State--Action Generation** | Yan Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12026) |
@@ -583,6 +584,7 @@
 | 2026-10-08 |  **PIER: An Evidence-Gated Execution Interface for Robotic Manipulation** | Zoe Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12123) |
 | 2026-10-08 | 🖐 **Generative Neural Retargeting for Human-to-Robot Dexterous Manipulation** | Dechen Gao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12440) |
 | 2026-10-08 | 🖐 **A Balanced Data Diet: Addressing the Exploration Bottleneck in Mega-Scale RL for Robot Control** | Octi Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12465) · [Page](https://sgs-rl.github.io/) |
+| 2026-10-08 |  **Tactile Sensing-based Secure and Gentle Grasping of Unknown Objects** | Feng Han | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12790) |
 | 2026-10-07 |  **MagCilia: A Compact Magnetociliary Tactile Sensor with 3D Force Sensing for Robotic Contact Perception and Grasping Feedback** | Yu Feng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.09536) |
 | 2026-10-07 |  **RoboPace: Contact-Aware Time-Optimal Retiming for Action-Chunk Policies** | Mimo Shirasaka et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09696) · [Page](https://robopace.airoa.io/) |
 | 2026-10-07 |  **YUBI-STAG: Contact and Semantic-Rich Alignment for VLAs via Automated Video-Language Grounding** | Masatoshi Tateno et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.09718) · [Page](https://yubi-stag.airoa.io/) |

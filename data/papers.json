@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-11 18:13",
+ "last_update": "2026-10-12 07:54",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -63644,8 +63644,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-02",
-   "version": "v1"
+   "updated": "2026-10-08",
+   "version": "v2"
   },
   "2610.04363": {
    "abstract": "Learning contact-rich dexterous manipulation from human demonstrations provides a scalable source of interaction data, yet transferring such skills to robots remains challenging due to unreliable human--robot correspondence. Existing human-to-robot transfer methods typically rely on visual appearance or motion similarity, which may associate similar motions with different contact states and force patterns. Tactile dynamics provide interaction-aware cues to distinguish manipulation processes with similar motions but different contact states. We introduce tactile-guided optimal transport (TacOT), a framework for human-to-robot contact-rich manipulation. TacOT leverages action--tactile dynamic time warping to identify human--robot demonstration correspondences with consistent interaction dynamics and uses these correspondences to guide soft optimal transport alignment in a shared policy representation space. This enables human demonstrations to provide contact-rich supervision for robot policy learning without requiring predefined frame-level human--robot pairing. Across four real-world dexterous manipulation tasks, TacOT improves closed-loop success rates over action-guided OT by up to 17 points on in-distribution tasks and 20 points under targeted human-to-robot out-of-distribution transfer. Further analyses show that tactile-guided correspondence selects demonstration pairs with more consistent contact dynamics and produces latent representations that better reflect interaction-state evolution. These results demonstrate that tactile dynamics provide an effective semantic signal for establishing reliable human-to-robot correspondence in contact-rich dexterous manipulation.",
@@ -63732,7 +63732,7 @@
    "version": "v1"
   },
   "2610.04607": {
-   "abstract": "Robots need to anticipate how their actions will change the world, since manipulation success hinges on the resulting contacts and object motions. However, existing Vision-Language-Action (VLA) policies that predict future observations from shared features leave the forecast decoupled from the actions the policy will actually execute, and impose no physical constraints on how the scene may evolve. We introduce ForeAct3D, a framework for policy-grounded future world modeling within VLA policies. Learnable geometric queries decode depth, semantic segmentation, and camera pose from the policy representation into current and future semantic 3D scene states, and the future queries are conditioned on the policy-generated action chunk to ground the forecast in the planned interaction. A physical-consistency closure relates the two states through background staticity and instance-level rigidity, and anchors the wrist-camera pose to end-effector kinematics. These objectives shape the shared representation used for action generation during training, and no future prediction is required at inference. Without robot pretraining, ForeAct3D achieves 98.3\\% average success on LIBERO and an average task length of 3.73 on CALVIN, outperforming its base policy on every suite. Ablations show that semantic 3D supervision, physical consistency, and action conditioning each improve manipulation performance, and that action conditioning substantially improves future object localization. Real-world experiments on spatial placement, object insertion, and sequential manipulation further raise average success from 6.7\\% to 37.8\\% over the base policy. The project page and code are available at https://github.com/anthonytao80-crypto/ForeAct3D.",
+   "abstract": "Robots need to anticipate how their actions will change the world, since manipulation success hinges on the resulting contacts and object motions. However, existing Vision-Language-Action (VLA) policies that predict future observations from shared features leave the forecast decoupled from the actions the policy will actually execute, and impose no physical constraints on how the scene may evolve. We introduce ForeAct3D, a framework for policy-grounded future world modeling within VLA policies. Learnable geometric queries decode depth, semantic segmentation, and camera pose from the policy representation into current and future semantic 3D scene states, and the future queries are conditioned on the policy-generated action chunk to ground the forecast in the planned interaction. A physical-consistency closure relates the two states through background staticity and instance-level rigidity, and anchors the wrist-camera pose to end-effector kinematics. These objectives shape the shared representation used for action generation during training, and no future prediction is required at inference. Without robot pretraining, ForeAct3D achieves 98.3% average success on LIBERO and an average task length of 3.73 on CALVIN, outperforming its base policy on every suite. Ablations show that semantic 3D supervision, physical consistency, and action conditioning each improve manipulation performance, and that action conditioning substantially improves future object localization. Real-world experiments on spatial placement, object insertion, and sequential manipulation further raise average success from 6.7% to 37.8% over the base policy. The project page and code are available at https://github.com/anthonytao80-crypto/ForeAct3D.",
    "added_at": "2026-10-06 08:02",
    "arxiv_categories": [
     "cs.RO",
@@ -63742,7 +63742,7 @@
     "Zhe Tao",
     "Feiran Wang",
     "Gaowen Liu",
-    "Ramana Rao Kompella$",
+    "Ramana Rao Kompella",
     "Yan Yan"
    ],
    "code_url": "https://github.com/anthonytao80-crypto/ForeAct3D",
@@ -63767,8 +63767,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-03",
-   "version": "v1"
+   "updated": "2026-10-09",
+   "version": "v2"
   },
   "2610.04741": {
    "abstract": "Force-aware manipulation typically relies on specialized force or tactile sensors. We show that force-aware manipulation can instead be achieved through visual force prediction from the deformation of a compliant Fin Ray gripper. Our approach trains two models. First, we train a visual force estimator on calibration data and use it to annotate task demonstrations with force estimates. Second, we train an action--force proposal policy on these force-augmented demonstrations to jointly generate candidate robot actions and their associated forces. At test time, we sample candidate actions and the forces they are expected to produce, then execute the action whose predicted force is closest to a target from the demonstrations. We evaluate our approach on berry picking, empty-can grasping, in-hand reorientation, and plug insertion. Our results show that visual force prediction can guide inference-time action selection for contact-rich manipulation without requiring force or tactile sensors at deployment.",
@@ -64841,8 +64841,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-07",
-   "version": "v1"
+   "updated": "2026-10-09",
+   "version": "v2"
   },
   "2610.09696": {
    "abstract": "Robot manipulation data collection has been shifting from teleoperation toward robot-free demonstrations, through interfaces such as the Universal Manipulation Interface (UMI) or directly from human hands. Vision-Language-Action (VLA) policies trained on such data inherit the demonstrator's timing. Yet human timing does not directly transfer to robots: compliant hands tolerate fast contact, whereas robots may overshoot due to actuator and tracking limitations; conversely, robots can move faster in free space. This motivates a unified approach that reconciles execution speed with contact safety. We present RoboPace, an online retiming layer that preserves the policy's geometric path while adapting its timing, respecting the target robot's kinematic and dynamic constraints. It adapts execution speed based on predicted contact, jointly accounting for contact-dependent speed limits and the robot's motion constraints. The method requires no policy retraining and operates in real time. Across three contact-rich tasks on a dual-arm robot, faster uniform execution and physical-limit-only retiming largely fail. RoboPace instead achieves higher overall success than slow uniform execution while completing four of five commands in approximately half the time, retaining the reliability of slow execution without its time cost.",
@@ -65778,6 +65778,89 @@
     "Other"
    ],
    "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.12790": {
+   "abstract": "Reliable robotic manipulation requires maintaining a firm grasp while strictly avoiding both contact slip and structural damage to the object. Satisfying these inherent \\textit{secure-and-gentle} grasping constraints is challenging for unknown objects. We present a novel online data-driven predictive control framework for safe dynamic robotic grasping of unknown objects. The proposed system features a pair of compact, single-channel tactile-sensing modules that characterize the gripper-object dynamic interaction in real time, entirely bypassing the need for prior knowledge or offline training. A finite-state-machine-based grasping force probing mechanism is developed to establish the initial grasping force and explicitly identify grasping force constraints. Through online dynamics learning, a Gaussian Process (GP) model captures gripper-object interaction dynamics. The model uncertainties are further used to form robust grasping constraints, which are embedded into a model predictive control scheme. We demonstrate error convergence in a probabilistic sense. The proposed control framework runs at 100~Hz in real time to dynamically manipulate and handle objects rather than static holding. Extensive experimental evaluations across diverse contact surface topologies and various types of objects validate superior performance and efficiency compared to baseline strategies. The proposed method is able to manipulate objects ranging from delicate items, such as raw tofu and marshmallows, to rough objects, such as rocks.",
+   "added_at": "2026-10-12 07:54",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Feng Han"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.12790",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-08",
+   "scores": {},
+   "seed": false,
+   "title": "Tactile Sensing-based Secure and Gentle Grasping of Unknown Objects",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-08",
+   "version": "v1"
+  },
+  "2610.13354": {
+   "abstract": "The NIST Assembly Task Board #1 remains a challenging benchmark for learning-based methods in robotic manipulation. Over short horizons, it demands precise, contact-rich control of small, tight-fitting parts. Over long horizons, it requires recovery and coordination across extended action sequences. Demonstrations, task decomposition, and dense progress rewards have enabled research advances by providing guidance on how to assemble. But how much of the strategy must be specified? The progression from AlphaGo to AlphaGo Zero showed that RL at scale can discover superhuman strategies without prescribing how to win. AlphaNIST asks whether a sparse binary task reward and task diversity admitted by this task-agnostic reward can similarly let a robot discover how to assemble. In simulation, we train a single policy from scratch across all 20 assembly tasks on the NIST Assembly Task Board #1, reaching 98.2% overall training success without demonstrations, progress shaping, scripted primitives, or per-task tuning. The framework also trains policies to complete ten assembly pairs in a single episode without a prescribed order, with task success rewarded only when all ten pairs are simultaneously complete. The learned policies discover dexterous and planning-like behaviors: choosing grasps for later assembly, using surrounding geometry to reorient parts, and preparing one part, assembling another, then returning to finish the first without an explicit planner. For videos, see our website: https://alpha-nist.github.io/",
+   "added_at": "2026-10-12 07:54",
+   "arxiv_categories": [
+    "cs.AI",
+    "cs.RO"
+   ],
+   "authors": [
+    "Octi Zhang",
+    "Iretiayo Akinola",
+    "Rosario Scalise",
+    "Mateo Guaman Castro",
+    "Patrick Yin",
+    "Tobias Widmer",
+    "Miles Macklin",
+    "Chris Amevor",
+    "Dylan Turpin",
+    "Dirk Van Gelder",
+    "Jan Carius",
+    "Ankur Handa",
+    "Gavriel State",
+    "Yunrong Guo",
+    "Yashraj Narang"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 9 figures, ICRA",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.13354",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.AI",
+   "project_url": "https://alpha-nist.github.io/",
+   "published": "2026-10-09",
+   "scores": {},
+   "seed": false,
+   "title": "AlphaNIST: Emergent Assembly Skills from Binary Task Rewards",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-09",
    "version": "v1"
   }
  }
