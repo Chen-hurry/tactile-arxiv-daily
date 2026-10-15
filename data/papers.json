@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-14 18:06",
+ "last_update": "2026-10-15 06:20",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -45509,8 +45509,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-06-15",
-   "version": "v2"
+   "updated": "2026-10-13",
+   "version": "v3"
   },
   "2606.03268": {
    "abstract": "Dexterous manipulation learning has long been hindered by the high costs of data and training, as pure reinforcement learning typically requires large-scale interactive exploration and imitation learning depends on high-quality demonstrations that are expensive to collect. To address this problem, we propose EaDex, a multi-embodiment dexterous manipulation learning framework under low-cost demonstration conditions, which enables rapid generation of demonstration data and consequently reduces training time for efficient dexterous manipulation. At the data level, EaDex captures human hand motions using only a single RGB-D camera and constructs structured demonstration data through MANO-based hand modeling, data normalization, and motion retargeting. At the learning level, we introduce a contact-reward-based dynamic demonstration annealing mechanism, which guides early-stage exploration under demonstration and gradually transitions to autonomous optimization with accumulating contact rewards. Using our custom dataset, we evaluate EaDex on three dexterous hands and three articulated object-opening tasks, covering nine cross-embodiment manipulation settings, achieving a 55.3% relative improvement over the baseline without demonstration annealing. These results validate the effectiveness of the proposed low-cost demonstration pipeline and the dynamic demonstration annealing strategy for dexterous manipulation learning.",
@@ -50895,7 +50895,7 @@
    "version": "v1"
   },
   "2607.07968": {
-   "abstract": "Soft robotic exogloves can provide hand rehabilitation and assistance. Fitting these gloves often relies on standardized measurements not tailored to the individual, limiting their effectiveness, especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic exoglove. The glove was fit to a user's hand with topological scans and fabricated with silicone mold casting. Finite element analysis (FEA) was performed to evaluate actuator bending and forces from physical human-robot interaction (pHRI) between an actuator and a simplified personalized biomechanical finger model. Pneumatic pressure control experiments were conducted to flex the user's finger with static and dynamic references. Fabrication results show that topological scans enable precise tailoring to hand anatomy. Simulations showed that anatomical personalization enables analysis of pHRI contact forces, and results indicate sufficient joint mobilization with non-ideal compression on the proximal phalanx. Pneumatic testing indicates that pressure control allows accurate and targeted mobility of the metacarpophalangeal (MCP) and proximal interphalangeal (PIP) joints with intrinsic stiffness. Testing of multiple designs showed that relaxing the strain-limiting layer improves actuator-to-finger joint alignment during actuation. This work presents personalization to the human hand in structural conformability, joint topology, modeling of pHRI contact, and time-dependent actuation-deformation profiles. This lays a groundwork for informing exoglove design optimization to enable assistance in dexterous manipulation and neuromuscular rehabilitation of fine motor skills.",
+   "abstract": "Soft robotic exogloves can provide hand rehabilitation and assistance. Fitting these gloves often relies on standardized measurements not tailored to the individual, limiting their effectiveness, especially for fine articulation necessary for dexterous manipulation. We present the design, fabrication, modeling, and testing of a personalized pneumatically-actuated soft robotic exoglove. The glove was fit to a user's hand with topological scans and fabricated with silicone mold casting. Finite element analysis (FEA) was performed to evaluate actuator bending and forces from physical human-robot interaction (pHRI) between an actuator and a simplified personalized biomechanical finger model. Pneumatic pressure control experiments were conducted to flex the user's finger with static and dynamic references. Fabrication results show that topological scans enable precise tailoring to hand anatomy. Simulations showed that anatomical personalization enables analysis of pHRI contact forces, and results indicate sufficient joint mobilization with non-ideal compression on the proximal phalanx. Pneumatic testing indicates that pressure control allows accurate and targeted mobility of the metacarpophalangeal (MCP) and proximal interphalangeal (PIP) joints with intrinsic stiffness. Testing of multiple designs showed that relaxing the strain-limiting layer improves actuator-to-finger joint alignment during actuation. This work presents personalization to the human hand in structural conformability, joint topology, modeling of pHRI contact, and time-dependent actuation-deformation profiles. This lays the groundwork for informing exoglove design optimization to enable assistance in dexterous manipulation and neuromuscular rehabilitation of fine motor skills.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -50906,7 +50906,7 @@
     "Jacqueline Libby"
    ],
    "code_url": null,
-   "comment": "8 pages, 14 figures. To be published in The IEEE RAS/EMBS 11th International Conference on Biomedical Robotics and Biomechatronics (BioRob 2026)",
+   "comment": "8 pages, 14 figures. Accepted in IEEE Transactions on Medical Robotics and Bionics (T-MRB)",
    "hand": true,
    "hidden": false,
    "id": "2607.07968",
@@ -50927,8 +50927,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-07-08",
-   "version": "v1"
+   "updated": "2026-10-14",
+   "version": "v2"
   },
   "2607.08283": {
    "abstract": "Vision--Language--Action (VLA) policies such as $π_{0.5}$ and OpenVLA perform well on many manipulation tasks, but they are often reactive: the next action is predicted from the current observation, instruction, and proprioceptive state. This assumption breaks down in stage-dependent manipulation, where visually similar states may require different actions depending on latent task progress and previous interaction outcomes. We argue that such tasks require not only memory, but dynamics-aware belief updates: the policy should preserve task progress during stable or occluded phases and revise its belief near contact, release, or subgoal transitions. We introduce Temporally Conditioned Memory-Fusion Policies (TFP), a lightweight memory-action framework for VLA backbones. TFP maintains an episode-local task-progress belief with Liquid Time-Constant dynamics and injects the updated belief directly into the flow-matching action decoder through adaptive modulation. This lets temporally accumulated context shape the generated action chunk, rather than serving only as passive history context. With a 3.3B-parameter model, TFP improves the average success rate from 96.9% to 98.75% on LIBERO and from 91.4% to 93.77% on LIBERO-plus. On the memory-focused MIKASA ShellGameTouch diagnostic, TFP achieves success up to 75.0%. Mechanistic analyses show that write-gain changes near manipulation events are about 6 times larger than far non-event phases, and hidden-state interventions show that the belief causally modulates generated action chunks. These results suggest that compact, event-sensitive memory dynamics can improve VLA policies under occlusion, visual perturbation, and stage-dependent task structure.",
@@ -62233,8 +62233,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-27",
-   "version": "v1"
+   "updated": "2026-10-14",
+   "version": "v2"
   },
   "2609.33882": {
    "abstract": "Glove-based motion capture is emerging as a scalable approach to collecting dexterous-hand demonstration data. However, due to the kinematic gap between the human and robot hand, the recorded human motions cannot be executed directly on the robot, especially for contact-rich tool-use tasks involving in-hand reorientation. Prior work bridges this gap in simulation through reinforcement learning (RL) or trajectory optimization, but the human contact pattern is hard to preserve under such formulations, often producing unnatural manipulation and unstable functional grasps. These methods also train a separate policy or solve a separate optimization for each reference trajectory, which is inefficient. To solve these problems, we propose DexTaG, a tactile-guided RL framework for dexterous manipulation. During training, tactile signals captured by the glove guide policy search toward the measured human contact pattern, reducing reliance on precise reference geometry for contact supervision. To improve efficiency, we train a single generalizable retargeter jointly on all training trajectories of the same object. The retargeter is further distilled into a tactile-free student controller conditioned on the target object trajectory for real-world deployment. On marker-pen and hammer manipulation tasks, DexTaG learns natural, contact-rich behaviors that baselines with distance-based contact heuristics fail to learn, generalizes to held-out trajectories of the same object and task, and outperforms single-trajectory baselines on OakInk2.",
@@ -62310,8 +62310,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-29",
-   "version": "v2"
+   "updated": "2026-10-13",
+   "version": "v3"
   },
   "2609.34006": {
    "abstract": "Contact-rich policies often fail because distinct physical states look alike yet require different actions. Cameras may not reveal whether a connector is aligned or fully seated, while many normal-only tactile sensors can miss the tangential interactions perpendicular to the grasping direction that distinguish these states. We ask whether a learning policy needs calibrated shear measurements, or only a repeatable observation that separates shear-dependent contact states. We introduce TacGooseBumps (TacGB), a passive domed film that mechanically encodes tangential loading as pattern changes in an existing sensor's pressure map. Tangential loading tilts each dome and redistributes pressure across its footprint; an end-to-end policy consumes the resulting maps without added electronics, force reconstruction, or taxel-level dome alignment. Across four imitation-learning tasks and two data-collection pipelines, TacGB improves goal attainment, efficiency, and contact quality: insertion success increases by up to 36 percentage points, and successful insertions are completed faster, while fragile-object placement becomes gentler and drawing becomes more continuous and straight. Signal, stage-wise, failure-mode, and trajectory analyses link these gains to contact regimes in which task-relevant tangential interactions are poorly resolved by vision and normal pressure alone. Together, these results show that shear need not be measured metrically to benefit robot learning; it can instead be mechanically encoded without changing the underlying tactile sensor or the policy's pressure-map input format.",
@@ -64029,7 +64029,7 @@
     "cs.RO"
    ],
    "authors": [
-    "Yubin Jeon",
+    "Youbeen Jeon",
     "Uiseong Shin",
     "Hwanchul La",
     "Jaeseong Kang",
@@ -64062,8 +64062,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-04",
-   "version": "v1"
+   "updated": "2026-10-14",
+   "version": "v2"
   },
   "2610.05230": {
    "abstract": "Most vision-language-action models represent future motion as fixed-rate action chunks, tying temporal resolution and prediction horizon to a fixed output budget. This pointwise representation wastes capacity on highly correlated neighboring actions, leaves temporal continuity and smoothness to be learned implicitly, and forces a tradeoff between long-horizon coverage and the local precision required for contact-rich manipulation. To address these limitations, we introduce Vela, a vision-language-action foundation model that represents future robot behavior as continuous trajectories. Vela combines a compact spline-based action representation with motion-dependent temporal support and a shared action interface for heterogeneous embodiments, allowing a fixed output budget to adapt its temporal resolution across motions. We pretrain Vela on large-scale multi-embodiment robot data and evaluate it on LIBERO-X, EBench, and two real-world long-horizon tasks, egg-cake cooking and potato shredding, obtaining promising results across simulation and physical manipulation. These results highlight the potential of continuous action representations as a foundation for future embodied foundation models. Project page and more results: https://clementine24.github.io/Vela/ .",
@@ -64556,8 +64556,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-06",
-   "version": "v1"
+   "updated": "2026-10-13",
+   "version": "v2"
   },
   "2610.07692": {
    "abstract": "Human video offers a scalable source of experience for dexterous robot learning, but obtaining motion and tactile supervision while preserving bare hand interaction remains challenging. We present ExoBridge, a framework that leverages human limb coupling to learn a bridging function from bare hand video to the motion and tactile state of a sensorized exoskeleton. Our central idea is to use coordinated bimanual behavior to connect an uninstrumented visual source with a measured manipulation interface. During collection, one hand remains bare and provides visual observations, while the opposite hand wears the exoskeleton and supplies synchronized motion and tactile measurements. These paired demonstrations train a temporal visual model to predict fingertip contact, continuous tactile intensity, and relative encoder motion from bare hand video alone. The exoskeleton defines an intermediate state space whose motion coordinates are linked to a dexterous robot hand through existing calibration. Evaluation on 1,215 demonstrations across four manipulation tasks uses held out collection sessions and yields a pooled any contact AUROC of 0.916 and a Pearson correlation of 0.790 for tactile intensity. The learned bridge also predicts relative changes in exoskeleton configuration from bare hand video. These results demonstrate that human limb coupling can turn exoskeleton measurements into supervision for bare hand video, establishing a learned bridge between human visual demonstrations and a robot oriented manipulation interface.",
@@ -65409,8 +65409,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-07",
-   "version": "v1"
+   "updated": "2026-10-14",
+   "version": "v2"
   },
   "2610.11054": {
    "abstract": "Soft pneumatic actuators are widely used in soft robotics. However, their actuation modes are typically fixed by internal chamber designs or reinforcements, making post fabrication reconfiguration difficult. This paper presents a reconfigurable fabric-based pneumatic actuator that enables rapid, tool free, and reusable switching among multiple actuation modes by attaching constraint fabric modules to a buttoned textile sleeve. By rearranging low-stretch constraint parts on a single actuator body, the proposed system realizes four actuation modes isotropic expansion, contraction, bending, and twisting without redesigning or disassembling the actuator.We further introduce an attachable capacitive fabric-based tactile sensor module that can be mounted at arbitrary locations on the actuator surface for task dependent contact sensing. Experiments demonstrated an elongation ratio of 1.2, a maximum bending angle of approximately 60 degrees, and a twisting angle of approximately 90 degrees at 24 kPa, while achieving blocking forces exceeding 10 N across all modes. The tactile sensor exhibited a monotonic, force-dependent increase in capacitance with low hysteresis (approximately 12%) and stable cyclic responses under preload. Finally, we constructed soft robotic arms composed of multiple actuators and demonstrated in situ motion reconfiguration for grasping by changing the attached constraint patterns. These results indicate that the proposed modular constraint and sensing framework improves the functional adaptability of fabric-based soft robots while preserving a simple, robust actuator structure.",
@@ -66611,8 +66611,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-10-13",
-   "version": "v1"
+   "updated": "2026-10-14",
+   "version": "v2"
   },
   "2610.18867": {
    "abstract": "Bringing general-purpose agents into the physical world calls for an executable representation of physical intelligence. Compared with vision-language-action (VLA) models, which map observations and language instructions directly to actions, code makes control logic explicit and reusable. Code can serve not only as a policy representation but also as the workspace in which the agent solves a task. Rather than following a prescribed workflow of planning, execution, and verification, the agent can autonomously inspect the state, revise and execute code, and use feedback to choose the next step. The success of this SWE-style loop in digital environments motivates its extension to physical tasks. Yet physical execution remains prone to recurring failures. To retain and refine experience for later scenes, we introduce EmbodiedEvo, where a coding agent evolves reusable Skills and Lessons through feedback on a single Playground scene, then freezes the resulting harness for diverse new scenes. On RoboDojo-Sim, EmbodiedEvo achieves an average score of 44.48 and a success rate of 37.82\\%, surpassing all officially verified results. Paired tests show the largest gains on memory-dependent tasks and successful reuse of coordinated procedures, while fine contact control remains difficult. Experience from stronger models also improves weaker executors: Astra's experience raises Sol and Luna's success rates by 8.86 and 5.50 percentage points over no experience. Compared with raw interaction history, Skills and Lessons achieve comparable task performance at 53.0\\% lower execution cost.",
@@ -66763,6 +66763,358 @@
     "Other"
    ],
    "updated": "2026-10-13",
+   "version": "v1"
+  },
+  "2610.19155": {
+   "abstract": "Human demonstrations offer a scalable alternative to costly robot data collection for dexterous manipulation, but most human datasets lack force measurements. Dexterous manipulation requires not only visual and proprioceptive understanding but also the ability to anticipate and regulate interaction forces. To scale force-aware human-robot co-training, we introduce EgoForce, a large-scale human tactile dataset capturing force-rich manipulation experience, and combine it with robot demonstrations for pretraining. We present FACT, a robot foundation model that cascades from prospective visual planning to force-aware refinement for dexterous manipulation. FACT comprises two jointly trained components. A Track-Guided Coarse Planner jointly predicts actions, future video, and visual tracks. Future video and visual tracks also provide a shared task representation that facilitates cross-embodiment knowledge transfer and coarse action generation. Building on this coarse plan, a Force-Action Joint Refiner jointly predicts future force and refines the coarse action, allowing anticipated force and action to shape each other during refinement. We evaluate the model on ten tasks requiring fine-grained coordination and force feedback, including tool use, musical instruments, and precision laboratory procedures. Using as few as 10 robot trajectories with 90 human trajectories for fine-tuning, FACT outperforms both baselines, with success-rate gains of up to 60 percentage points over T-Rex. Ablations show that force supervision in human pretraining data is crucial for downstream robot performance after fine-tuning, while visual track prediction and training with future-force prediction improve dexterous execution. Experiments varying the human-robot data ratio during fine-tuning further suggest that FACT learns from human demonstrations nearly as effectively as from robot demonstrations.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zhi Cao",
+    "Yining Hong",
+    "Jiaolong Yang",
+    "Yejin Choi",
+    "Li Fei-Fei",
+    "Jiajun Wu",
+    "Huang Huang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.19155",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-13",
+   "scores": {
+    "VTA": 4.0,
+    "VTLA": 11.5
+   },
+   "seed": false,
+   "title": "FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-13",
+   "version": "v1"
+  },
+  "2610.19224": {
+   "abstract": "Surface navigation on the Moon is subject to extreme illumination contrast and deployment-time perceptual disturbances. While modular navigation pipelines have long supported planetary rover navigation, robustness is compromised by measurement errors that propagate through hand-engineered components. End-to-end learned policies are an alternative approach to navigation, which maps observations directly to control actions without intermediate components. Vision-language-action models, in particular, have driven significant breakthroughs in robotics and autonomous vehicle research. By leveraging internet-scale vision-language pretraining, these models can be exploited for their commonsense reasoning and visual understanding to provide robust generalization with limited task-specific data. However, their applicability and performance have yet to be characterized for lunar surface operations. In this study, we design a vision-language-action policy for autonomous lunar rover docking and characterize its performance relative to a modular navigation pipeline. We develop a scalable training framework that generates safety-aware expert demonstrations in a high-fidelity lunar simulation environment. In closed-loop evaluations, our policy performs competitively relative to the modular baseline under perceptual disturbances unseen during training. To address the tradeoff between compute consumption and closed-loop safety, the policy adapts its execution horizon by determining how far the rover may safely travel in open loop. Adaptive-horizon execution reduces inference frequency while limiting hazard-contact rates relative to fixed horizons in the evaluated scenarios.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Sitan Huang",
+    "Grace Gao"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.19224",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-13",
+   "scores": {},
+   "seed": false,
+   "title": "End-to-End Vision-Language-Action Policies for Autonomous Lunar Rover Docking",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-13",
+   "version": "v1"
+  },
+  "2610.19518": {
+   "abstract": "While multi-fingered dexterous robot hands have the potential to provide human-level dexterity, using them for functional manipulation remains difficult because task success depends on precise contact, coordinated arm-hand motion, and reactive recovery from execution errors. Precise contact depends on complex contact dynamics that are difficult to model accurately in simulation, motivating real-world learning. However, real-world demonstrations in the full arm-hand control space are costly and noisy because each trajectory must coordinate arm motion with high-DoF multi-finger contact. Small execution deviations can further cause slipped contact or premature force application, making recovery from off-nominal contact states important for robust execution. To deal with these challenges, we propose HiFun, a hierarchical real-world RL framework for functional dexterous manipulation tasks. Our key insight is to decouple the control complexity into a functional hand skill for precise contact execution and an arm-hand coordination policy for arm control and hand-skill activation. This design enables effective real-time human intervention for reactive recovery learning and efficient data collection with Dynamic Movement Primitive (DMP) augmentation. Across six real-world tasks on two dexterous hands, HiFun achieves 98.3% average success within one hour of online training and remains robust to dynamic disturbances. The project page is available at https://hly-123.github.io/HiFun/.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Linyi Huang",
+    "Guowei Huai",
+    "Weibin Liu",
+    "Shulong Jiang",
+    "Ping Tan",
+    "Weixuan Zhang",
+    "Hui Zhang",
+    "Jie Song"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.19518",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://hly-123.github.io/HiFun/",
+   "published": "2026-10-14",
+   "scores": {},
+   "seed": false,
+   "title": "HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.19594": {
+   "abstract": "Whole-body mobile manipulation suffers from two fundamental challenges: inherent motion heterogeneity across locomotion, arm, and hand modules, and progressive error accumulation over long-horizon multi-stage tasks. Existing teleoperation platforms also lack integrated dexterous tactile sensing to support coordinated whole-body decision-making. This paper presents RoboSpan, a high-DoF whole-body teleoperation and demonstration platform, and the Hierarchical Modular Framework (HMF) for learning modular coordination policies. HMF functionally decouples the 29-DoF action space into fine hand manipulation, arm pose adjustment, and mobile-base spatial configuration branches, and introduces the Coordinated Modular Embodied Transformer (COMET) with inter-modular cross-attention to enable dynamic information exchange and action coordination. Vision-language model driven hierarchical task decomposition structurally suppresses temporal error propagation, while a full-palm 2D tactile representation encodes distributed contact signals for cross-module tactile empowerment. Experiments on a physical 29-DoF robot demonstrate that the proposed method achieves over 20\\% higher task success rate than mainstream baselines across a range of long-horizon whole-body tasks, markedly improving stability and robustness in contact-rich manipulation.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Keqiang Ren",
+    "Xuecheng Ye",
+    "Hanyu Liu",
+    "Zhihua Wang",
+    "Tao Jian",
+    "Yunsheng Ma",
+    "Jiayi Wen",
+    "Xinran Li",
+    "Zhigong Song"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.19594",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-14",
+   "scores": {
+    "VTA": 9.5,
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.19604": {
+   "abstract": "Force feedback provides vision-language-action (VLA) policies with physical observations that can guide action selection and execution. However, differences in tasks, demonstrations, and control settings across existing systems hinder reliable comparisons of force integration designs. We introduce ForceBench, a simulation benchmark for evaluating six-axis wrist-force integration under a unified protocol. ForceBench combines eight tasks spanning physical-property inference, resistance-dependent interaction, and contact-rich assembly with 1,600 synchronized demonstrations and task-specific success criteria. We compare one no-force baseline and six force integration designs on a shared $π_{0.5}$ backbone. Prompt Fusion achieves the highest observed mean simulation success of 35.31%, compared with 23.25% for the baseline, and improves success rates across all three task categories. Predictive and temporal gains in simulation concentrate on physical-property inference, while both temporal designs underperform the baseline on assembly. Real-world evaluation of eight systems across five tasks supports the main qualitative trends: Prompt Fusion and Dual-Path Fusion achieve 63.00% mean success, compared with 40.00% for the baseline, but only Prompt Fusion improves every task. These findings support ForceBench's practical value for identifying the benefits and limitations of force integration across manipulation demands. The project page is available at https://forcebench-platform.github.io/.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xuan Han",
+    "Zinuo Jin",
+    "Tianlin Li",
+    "Yunfan Lou",
+    "Xin Liu",
+    "Yuchen Xue",
+    "Yuanpeng He",
+    "Boxian Yao",
+    "Shuhan Zhan",
+    "Ruihai Wu",
+    "Zhibo Pang"
+   ],
+   "code_url": null,
+   "comment": "14 pages, 8 figures. Project page: https://forcebench-platform.github.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.19604",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "six-axis"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://forcebench-platform.github.io/",
+   "published": "2026-10-14",
+   "scores": {
+    "VTLA": 5.0
+   },
+   "seed": false,
+   "title": "ForceBench: Benchmarking Force Integration for Robotic Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.20134": {
+   "abstract": "Tactile sensing is becoming central to robust, adaptive, and dexterous robotic manipulation. Beyond its traditional role in contact detection and reactive control, touch is increasingly used to learn transferable representations, condition manipulation policies, and support embodied physical reasoning. Yet existing surveys largely emphasize tactile hardware and perception, leaving the rapid shift toward learning-based tactile manipulation insufficiently synthesized. This paper reviews tactile-guided skill learning from a learning-centric perspective, organized by the functional role of touch across the learning and control pipeline. We examine tactile representation and policy learning, tactile foundation models, predictive and adaptive control, and generalization across objects, tasks, sensors, embodiments, and simulation-to-real transfer. Across these directions, we identify common design principles and remaining challenges in learning transferable physical representations, integrating semantic reasoning with contact-level control, and scaling tactile learning across heterogeneous data and hardware. Finally, we outline emerging directions toward tactile foundation and world models that can predict, reason about, and adapt physical interactions. Together, this review characterizes the transition of touch from a task-specific feedback signal toward a core modality for general-purpose embodied intelligence. An accompanying database of the reviewed literature and associated resources is available at https://sites.google.com/view/touch-in-robot-learning-review.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kiyanoush Nazari",
+    "Luchen Li",
+    "Haoshu Fang",
+    "Nima Fazeli",
+    "Zhibin Li",
+    "Fumiya Iida",
+    "Thomas George Thuruthel"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.20134",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://sites.google.com/view/touch-in-robot-learning-review",
+   "published": "2026-10-14",
+   "scores": {
+    "VTA": 8.8,
+    "VTLA": 7.0
+   },
+   "seed": false,
+   "title": "Tactile-Guided Robot Learning: From Representation Learning to Foundation Models",
+   "topics": [
+    "VTA",
+    "VTLA"
+   ],
+   "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.20320": {
+   "abstract": "Large-scale robot learning increasingly relies on diverse human demonstrations, yet tactile manipulation data remain difficult to scale, and existing multimodal datasets often lack consistent quality control and structured supervision. We present TacClaw-Infinity, a large-scale structured Vision-Tactile-Language-Action (VTLA) dataset for contact-rich manipulation, collected with TacClaw, a tactile-enabled UMI-style handheld interface that records synchronized visual observations, fingertip tactile signals, and end-effector trajectories without requiring a target robot during data collection. TacClaw-Infinity is built through a distributed worldwide collection across homes, laboratories, industrial workplaces, retail stores, and outdoor environments including tasks contributed by academic and industrial collaborators. Together, these efforts yield over 10,000 hours, 1 million episodes, and 1 billion frames spanning more than 1,000 task types. We develop a scalable pipeline for trajectory reconstruction, multimodal quality control, embodiment-aware filtering, and structured annotation, covering contact-centric segmentation, subtask description, and spatial grounding. We validate TacClaw-Infinity at both the data and model levels: At the data level, we assess the collection interface, the action-space compatibility of the curated demonstrations, and the structured annotations, while for the model level, we demonstrate cross-embodiment transfer across three heterogeneous robots without robot-specific demonstrations.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Fucai Zhu",
+    "Xidong Zhang",
+    "Yichi Zhang",
+    "Yipan Wang",
+    "Fubo Wang",
+    "Zibin Wu",
+    "Kaiqi Li",
+    "Jianhao Jiao",
+    "Shihan Lu",
+    "Di Hu",
+    "Mengdi Xu",
+    "Siyu Zhu",
+    "Xiaoxiao Long",
+    "Yao Yao",
+    "Xun Cao",
+    "Zhuo Xu",
+    "Koichi Hashimoto",
+    "Qifeng Chen",
+    "Zhe Li",
+    "Jianfei Yang",
+    "Haofei Lu",
+    "Danica Kragic",
+    "Shuicheng Yan",
+    "Jianghua Duan",
+    "Michael Yu Wang",
+    "Weihao Yuan"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.20320",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-14",
+   "scores": {
+    "VTLA": 34.2
+   },
+   "seed": false,
+   "title": "TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.20351": {
+   "abstract": "Human demonstrations are today used largely for pretraining vision-language-action models, with little ability to use the same data for target-embodiment or task-oriented training, which scalable deployment of robots in industrial and general environments depends on. A human demonstration recorded on a simple and scalable device such as a mobile phone can serve as post-training data for a robot whose body differs in structure and capability from the human who recorded it. This is made possible not by retargeting the hand's motion but the object's. A capture yields a body-free record: the object's pose over time, its contact intervals, and a reconstructed 3D object with provenance. Any robot, given as a URDF and a short descriptor, is solved against that record and scored in simulation against the demonstrated object motion as ground truth: the human-to-simulation leg of human-to-simulation-to-robot transfer, measured per robot. Each (robot, episode) pair gets one outcome: pass, failure with a named mode, or refusal, with its reason, before any motion. The method runs as a working system over a growing collection; the set analysed here is a sample of it: 42 captures solved on 8 robots, 157 pairs, of which 31.2% pass, 52.2% fail, 14.0% are refused and 2.5% are unauditable (kinematic feasibility, +/-50 mm / +/-15 deg, in simulation). Refusals held up: every pair the checks refuse on stored evidence yet ran anyway failed (13 of 13; 5 on a body whose public model welds its hand). A description file could not be shown to screen a robot: its outcomes were barely more predictable than guessing. No policy has yet been trained on the record. The record decides what a robot may post-train on; whether the policy then works on the real robot is the simulation-to-robot question, answered downstream.",
+   "added_at": "2026-10-15 06:20",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Nagasrikanth Kallakuri"
+   ],
+   "code_url": null,
+   "comment": "16 pages, 17 figures, 7 tables, 2 algorithms; 56-page supplement as ancillary file. A subset of episodes with their per-robot outcomes: https://playground.dxtr.co",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.20351",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://playground.dxtr.co",
+   "published": "2026-10-14",
+   "scores": {},
+   "seed": false,
+   "title": "Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-14",
    "version": "v1"
   }
  }
