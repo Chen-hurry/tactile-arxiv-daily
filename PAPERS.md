@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-15 06:20 ｜ 共 1618 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-15 17:49 ｜ 共 1618 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -93,9 +93,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-14 | 🖐 **TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation** | Fucai Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20320) |
-| 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
 | 2026-10-14 |  **ForceBench: Benchmarking Force Integration for Robotic Manipulation** | Xuan Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.19604) · [Page](https://forcebench-platform.github.io/) |
+| 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
+| 2026-10-14 | 🖐 **TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation** | Fucai Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20320) |
 | 2026-10-13 |  **Interaction Latents as Actions for Contact-Rich Manipulation** | Yuhang Zheng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.18855) · [Page](https://mrsecant.github.io/ILA/) |
 | 2026-10-13 | 🖐 **FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity** | Zhi Cao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19155) |
 | 2026-10-10 |  **DEFT-VLA: Stage-Localized Force Specialization for Contact-Rich Robotic Manipulation** | Zan Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.14854) |
@@ -222,8 +222,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
 | 2026-10-14 | 🖐 **RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation** | Keqiang Ren et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19594) |
+| 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
 | 2026-10-13 |  **ForeTac: Predictive Contact Guidance for Generative Robot Policies** | Zhiyuan Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.18118) · [Page](https://foretac.github.io/) |
 | 2026-10-12 |  **PACE: Temporal-Role Tactile Conditioning for Chunk-Based Insertion Policies** | Zhiyuan Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.16308) · [Page](https://pace-insertion.github.io/) |
 | 2026-10-12 | 🖐 **DexNinja: Learning Robust Dexterous Cutting Policy with a Real-to-Sim-to-Real Data Engine** | Haozhe Lou et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.17208) |
