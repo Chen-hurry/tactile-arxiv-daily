@@ -2,16 +2,16 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-15 17:49 ｜ 共 1618 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-16 06:16 ｜ 共 1622 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
 ## 目录
 
 - [Sim（触觉仿真环境）](#sim) — 67 篇
-- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 122 篇
+- [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 123 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 358 篇
-- [Other（其他触觉相关）](#other) — 1112 篇
+- [Other（其他触觉相关）](#other) — 1115 篇
 
 ## Sim
 
@@ -93,6 +93,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-15 | 🖐 **Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation** | Tianxing Chen et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.22342) · [Page](https://xsparkai.com/Spark-0) |
 | 2026-10-14 |  **ForceBench: Benchmarking Force Integration for Robotic Manipulation** | Xuan Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.19604) · [Page](https://forcebench-platform.github.io/) |
 | 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
 | 2026-10-14 | 🖐 **TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation** | Fucai Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20320) |
@@ -587,6 +588,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-15 | 🖐 **Dexterity from Supervised Play** | Botao He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22340) |
+| 2026-10-15 | 🖐 **Whole-Body Dexterity** | Conor Mc Gartoll et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22184) |
+| 2026-10-15 |  **CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance** | Zixuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.21453) · [Page](https://vincent2311.github.io/Projects/CarryOn/) |
 | 2026-10-14 | 🖐 **HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning** | Linyi Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19518) · [Page](https://hly-123.github.io/HiFun/) |
 | 2026-10-14 |  **Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand** | Nagasrikanth Kallakuri | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20351) · [Page](https://playground.dxtr.co) |
 | 2026-10-13 | 🖐 **EgoCPT: Learning Dexterous Manipulation from a Single Ego-Centric Video with Contact-Aware Optimization** | Zhixin Sun et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.17572) |

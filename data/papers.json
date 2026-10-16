@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-15 17:49",
+ "last_update": "2026-10-16 06:16",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -48895,7 +48895,7 @@
     "Jeannette Bohg"
    ],
    "code_url": null,
-   "comment": "25 pages, 19 figures, 4 tables. Project page: https://play2perfect.github.io",
+   "comment": "26 pages, 19 figures, 4 tables. Project page: https://play2perfect.github.io",
    "hand": true,
    "hidden": false,
    "id": "2606.26428",
@@ -48916,8 +48916,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-08",
-   "version": "v3"
+   "updated": "2026-10-15",
+   "version": "v4"
   },
   "2606.26663": {
    "abstract": "World Action Models (WAMs) jointly predict future visual observations and actions, but visual futures alone often miss slip, jamming, contact-direction changes, and subtle misalign- ment in contact-rich manipulation. Tactile signals reveal these hidden physical states, yet naive tactile-token injection can disrupt visual dynamics modeling due to the limited scale of tactile data, a phenomenon we term tactile pollution. We in- troduce Tactile-WAM, which uses asymmetric attention to block video queries from tactile keys while preserving tac- tile access for action queries. A contact-change-aware bias further strengthens action attention to touch. Because tactile pixel changes do not reliably reflect contact changes, we derive Observed proxy changes drive the attention bias, while future- proxy supervision preserves action-relevant contact dynamics in predicted tactile representations. On ManiFeel, visual-path isolation reduces deviation from the RGB-only trajectory by 21.8% in MSE at the step-matched 20K checkpoint without a statistically detectable change in ground-truth video qual- ity. The full model improves average success from 15.6% to 32.7%, with VideoClean providing the largest gain. On five real-robot tasks, Tactile-WAM achieves 49.2% success.",
@@ -67115,6 +67115,194 @@
     "Other"
    ],
    "updated": "2026-10-14",
+   "version": "v1"
+  },
+  "2610.21453": {
+   "abstract": "While generalist vision-language-action (VLA) models have enabled diverse open-world manipulation, real-world robotic assistance requires two critical capabilities they currently lack: personalization and reliable execution. First, executing an instruction like \"make me a sandwich\" requires grounding subtask decomposition in persistent user preferences rather than relying on a single generic solution. Second, reliable deployment demands explainable safety assurance that proactively prevents hazards and gracefully recovers from occasional physical failures. To address these gaps, we present CarryOn, a dual-loop harness designed to augment a frozen VLA policy. The planning loop maintains persistent user-level and scene-level context that is continually grounded against new observations and revised through interaction, enabling personalized task selection and execution grounding across conversations and changing scenes. The execution loop actively supervises policy rollouts, shielding actions from predicted hazardous contact. When execution fails, the system invokes reusable control-based recovery skills that restore task progress and are refined through reflection on earlier failures. On a real robot and in simulation, CarryOn dispatches preference-consistent subtasks across users and scenes, reduces the violation rate of an already safety-finetuned VLA from 52.6% to 6.1%, and increases recovery success from 13% to 80% when refined skills are reused.",
+   "added_at": "2026-10-16 06:16",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Zixuan Wang",
+    "Yuqi Liu",
+    "Yuxin Chen",
+    "Sengqiao Yang",
+    "Jinhui Ye",
+    "Pengguang Chen",
+    "Changsheng Lu",
+    "Shu Liu",
+    "Bei Yu",
+    "Jiaya Jia"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://vincent2311.github.io/Projects/CarryOn/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.21453",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://vincent2311.github.io/Projects/CarryOn/",
+   "published": "2026-10-15",
+   "scores": {},
+   "seed": false,
+   "title": "CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-15",
+   "version": "v1"
+  },
+  "2610.22184": {
+   "abstract": "Current humanoid dexterous manipulation remains largely confined to end-effectors and simple grasps, falling short of humans' ability to engage the entire body by bracing and sliding bulky objects against the arms and torso. We introduce Whole-Body Dexterity (WBD), a general framework that uses the robot's body and appendages as contact surfaces to grasp and manipulate objects. Our sim-to-real pipeline first generates a dataset of feasible whole-body grasps, then trains reinforcement-learning experts on a general any-to-any repositioning objective by sampling initial and goal grasps from the dataset, and distills these experts into a single policy that uses proprioception and object geometry. We show that the distilled policy transfers zero-shot to a real Unitree G1, where it repositions a basketball and a cardboard box to regions around the torso and completes a long-horizon task that stows a box under one arm, carries it from a shelf to a table, and places it. The controller operates interactively, steered by coarse motion references from a human teleoperator. Across real-world whole-body manipulation tasks, the distilled controller completes 90% of trials, compared with 18% for direct retargeting and 4% for a generalist whole-body controller.",
+   "added_at": "2026-10-16 06:16",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG",
+    "eess.SY"
+   ],
+   "authors": [
+    "Conor Mc Gartoll",
+    "An Dang",
+    "Pranay Thangeda",
+    "Arjun Gupta",
+    "Carolina Higuera",
+    "Nima Fazeli",
+    "Mustafa Mukadam",
+    "Manikantan Nambi"
+   ],
+   "code_url": null,
+   "comment": "20 pages, 13 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.22184",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-15",
+   "scores": {},
+   "seed": false,
+   "title": "Whole-Body Dexterity",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-15",
+   "version": "v1"
+  },
+  "2610.22340": {
+   "abstract": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a play policy from minutes of human play through behavior cloning, then deploys it autonomously to collect hours of interaction data to train a world model. During inference, the same play policy then guides model-predictive control (MPC) by proposing candidate action sequences for evaluation under the learned world model. To accelerate inference, we also introduce a method for distilling a closed-loop, goal-conditioned policy through self-play within the learned world model. We evaluate this framework on underactuated pushing and any-to-any in-hand pose reorientation with a multifingered hand, in simulation and real world. In real world experiment, our method outperforms hindsight behavior cloning by 69.6% in success rate and achieves comparable success to reinforcement learning with 490 times less interaction data. These results demonstrate that supervised play can autonomously collect interaction data, guide model-based planning, and enable policy learning without any task-specific demonstrations or sim-to-real transfer.",
+   "added_at": "2026-10-16 06:16",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Botao He",
+    "Yiming Dou",
+    "Yiannis Aloimonos",
+    "Jitendra Malik",
+    "Akash Sharma",
+    "Ruoshi Liu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.22340",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-15",
+   "scores": {},
+   "seed": false,
+   "title": "Dexterity from Supervised Play",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-15",
+   "version": "v1"
+  },
+  "2610.22342": {
+   "abstract": "Generalist robot policies benefit from large-scale visual pretraining but often struggle with contact-rich dexterous manipulation, where force, compliance, and incipient slip are hard to observe from images. We present Spark-0, a spatially aligned vision-tactile-language-action (VTLA) model that uses touch in two complementary ways. During pretraining, image-space contact maps derived from tactile gloves, together with features from a frozen 3D geometry teacher, supervise the visual tokens; these objectives are removed at inference. In parallel, a tactile pathway encodes regional force histories and 3D taxel states to condition the action expert. A single checkpoint therefore supports both vision-only and tactile-conditioned deployment. To scale this supervision, we build HumanTouch, a 1,000-hour dataset of full-hand tactile human manipulation, and pretrain Spark-0 on it together with egocentric video, robot data, and simulation. We also release SparkArena, which pairs vision-only simulated tasks with tactile-conditioned real-robot tasks on one dexterous embodiment. Spark-0 achieves the highest mean success rate on both SparkArena tracks and ranks first on all eight aggregate metrics of the Ego Humanoid Manipulation Benchmark. Compared with vision-only pretraining on the same data and compute with touch discarded, retaining the touch of 1,000 hours of HumanTouch raises vision-only success on Ego Humanoid from 52.5% to 71.7%, and success on SparkArena-Real, where touch is also used at deployment, from 44.0% to 52.0%, indicating that touch serves not only as a policy input but also as scalable supervision for dexterous visuomotor pretraining. The Website is available at: https://xsparkai.com/Spark-0.",
+   "added_at": "2026-10-16 06:16",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Tianxing Chen",
+    "Wenwei Lin",
+    "Chuqiao Lyu",
+    "Peicheng Xiang",
+    "Junyuan Tang",
+    "Tian Nian",
+    "Zijian Cai",
+    "Kehe Ye",
+    "Chenze Yu",
+    "Wenxuan Zhu",
+    "Eric J. Chen",
+    "Yan Qin",
+    "Yue Chen",
+    "Tongyu Wu",
+    "Junhao Gong",
+    "Kai-Chong Lei",
+    "Jiahao Zhang",
+    "Kailun Su",
+    "Qiwei Liang",
+    "Renjing Xu",
+    "Ping Luo",
+    "Wenbo Ding"
+   ],
+   "code_url": null,
+   "comment": "Website: https://xsparkai.com/Spark-0",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.22342",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "tactile glove",
+     "taxel"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://xsparkai.com/Spark-0",
+   "published": "2026-10-15",
+   "scores": {
+    "VTLA": 16.2
+   },
+   "seed": false,
+   "title": "Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-15",
    "version": "v1"
   }
  }
