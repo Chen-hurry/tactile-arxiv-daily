@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-16 06:16 ｜ 共 1622 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-16 17:34 ｜ 共 1623 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 67 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 123 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 358 篇
-- [Other（其他触觉相关）](#other) — 1115 篇
+- [Other（其他触觉相关）](#other) — 1116 篇
 
 ## Sim
 
@@ -588,9 +588,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-15 | 🖐 **Dexterity from Supervised Play** | Botao He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22340) |
-| 2026-10-15 | 🖐 **Whole-Body Dexterity** | Conor Mc Gartoll et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22184) |
 | 2026-10-15 |  **CarryOn: A Dual-Loop Harness for Personalized and Reliable Robot Assistance** | Zixuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.21453) · [Page](https://vincent2311.github.io/Projects/CarryOn/) |
+| 2026-10-15 | 🖐 **Whole-Body Dexterity** | Conor Mc Gartoll et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22184) |
+| 2026-10-15 | 🖐 **Dexterity from Supervised Play** | Botao He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22340) |
 | 2026-10-14 | 🖐 **HiFun: a Hierarchical Framework for Efficient Functional Dexterous Manipulation Learning** | Linyi Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19518) · [Page](https://hly-123.github.io/HiFun/) |
 | 2026-10-14 |  **Human Demonstrations as Post-Training Data for Any Robot Body: Retargeting the Object, Not the Hand** | Nagasrikanth Kallakuri | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20351) · [Page](https://playground.dxtr.co) |
 | 2026-10-13 | 🖐 **EgoCPT: Learning Dexterous Manipulation from a Single Ego-Centric Video with Contact-Aware Optimization** | Zhixin Sun et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.17572) |
@@ -610,6 +610,7 @@
 | 2026-10-09 |  **Fixed-Reference Pose Residuals for Measuring Cross-Dataset Cue Transfer in Human-Robot Interaction Anticipation** | Bowen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12245) · [Code](https://github.com/WeiZhou96/FRPR-interaction-anticipation) |
 | 2026-10-09 | 🖐 **AlphaNIST: Emergent Assembly Skills from Binary Task Rewards** | Octi Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.13354) · [Page](https://alpha-nist.github.io/) |
 | 2026-10-09 | 🖐 **OATH: Object-Agnostic Tracking for Dexterous Hands, Enabling Rapid Physics-based Retargeting** | Solvin Sigurdson et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.14379) · [Page](https://multiplylabs.github.io/oath/) |
+| 2026-10-09 |  **RAPID: Proactive Rate Control for Enabling High Data Rate and Low Latency in 5G Edge Networks** | Hamid Hassani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.13749) |
 | 2026-10-08 |  **A Reconfigurable Fabric Based Pneumatic Actuator with Button Fastened Constraint Modules for Multi Mode Actuation** | Kentaro Kimura et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11054) |
 | 2026-10-08 |  **How Firm Should a Grasp Be?** | Matthew Beveridge et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11221) |
 | 2026-10-08 |  **HWAM: Humanoid World Action Model With Joint State--Action Generation** | Yan Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12026) |

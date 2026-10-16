@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-16 06:16",
+ "last_update": "2026-10-16 17:34",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -65908,6 +65908,46 @@
    ],
    "updated": "2026-10-09",
    "version": "v1"
+  },
+  "2610.13749": {
+   "abstract": "Many 6G use cases such as tactile Internet and eXtended reality applications would simultaneously require a high data rate and low latency wireless connectivity.It is increasingly being realized that the current transport protocols relying on packet loss and delay are insufficient to satisfy the data rate and latency requirements of such applications. To address this problem, we propose RAPID, a transport layer solution designed for private 5G edge networks, where the bottleneck is located at the base station. We show that by regulating the send rate to maintain a target physical resource block utilization, we can achieve high data rate, low latency communication. We design a simple yet effective policy that adapts to the dynamic nature of wireless channel conditions. In a multi-UE scenario with two RAPID flows and one TCP Cubic flow, our testbed results show that RAPID flows achieve significant improvements in one-way delay, i.e., 72x and 55x lower compared to TCP Cubic, with negligible packet loss at the cost of modest goodput reductions of 16% and 27%, respectively.",
+   "added_at": "2026-10-16 17:34",
+   "arxiv_categories": [
+    "cs.NI"
+   ],
+   "authors": [
+    "Hamid Hassani",
+    "Sonia M. Heemstra de Groot",
+    "Ignas G. Niemegeers",
+    "Kishor C. Joshi",
+    "George Exarchakos"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.13749",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.NI",
+   "project_url": null,
+   "published": "2026-10-09",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "RAPID: Proactive Rate Control for Enabling High Data Rate and Low Latency in 5G Edge Networks",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-09",
+   "version": ""
   },
   "2610.14372": {
    "abstract": "Dexterous robot hands can receive useful motion intent from teleoperation or learned policies, but successful execution also depends on contact decisions that these commands rarely specify. We introduce DexFLEX, a contact-aware foundation controller that turns upstream fingertip-motion drafts into contact-consistent joint commands. Instead of treating a draft as a trajectory to copy, DexFLEX treats it as evidence about intent: from the current tactile-proprioceptive state, it proposes feasible short-horizon motion chunks, predicts their contact consequences, and selects the candidate that best follows the command while preserving future contact stability. At inference time, a simple Draft-Dream-Select procedure combines pure-prior proposals for recovery with draft-seeded proposals for responsiveness, then decodes the selected motion into executable joint-space targets. Across degraded-command simulation, real-world shared control, and visuomotor policy learning, the same trained controller improves robustness without retraining, increasing real-world teleoperation success from 29.2% to 78.3% and reaching 46.7% policy-learning success, 3.5 times direct joint-action prediction, and 1.56 times prior-only correction. Videos are available at dex-flex.github.io.",
