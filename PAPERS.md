@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-16 17:34 ｜ 共 1623 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-17 06:02 ｜ 共 1623 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -609,8 +609,8 @@
 | 2026-10-10 | 🖐 **Edge-Native Temporal--Graph Dual-Expert Inference for Dexterous Grasp Classification** | Jiajian Zheng et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.14926) |
 | 2026-10-09 |  **Fixed-Reference Pose Residuals for Measuring Cross-Dataset Cue Transfer in Human-Robot Interaction Anticipation** | Bowen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12245) · [Code](https://github.com/WeiZhou96/FRPR-interaction-anticipation) |
 | 2026-10-09 | 🖐 **AlphaNIST: Emergent Assembly Skills from Binary Task Rewards** | Octi Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.13354) · [Page](https://alpha-nist.github.io/) |
-| 2026-10-09 | 🖐 **OATH: Object-Agnostic Tracking for Dexterous Hands, Enabling Rapid Physics-based Retargeting** | Solvin Sigurdson et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.14379) · [Page](https://multiplylabs.github.io/oath/) |
 | 2026-10-09 |  **RAPID: Proactive Rate Control for Enabling High Data Rate and Low Latency in 5G Edge Networks** | Hamid Hassani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.13749) |
+| 2026-10-09 | 🖐 **OATH: Object-Agnostic Tracking for Dexterous Hands, Enabling Rapid Physics-based Retargeting** | Solvin Sigurdson et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.14379) · [Page](https://multiplylabs.github.io/oath/) |
 | 2026-10-08 |  **A Reconfigurable Fabric Based Pneumatic Actuator with Button Fastened Constraint Modules for Multi Mode Actuation** | Kentaro Kimura et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11054) |
 | 2026-10-08 |  **How Firm Should a Grasp Be?** | Matthew Beveridge et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.11221) |
 | 2026-10-08 |  **HWAM: Humanoid World Action Model With Joint State--Action Generation** | Yan Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.12026) |
