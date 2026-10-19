@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-19 06:42 ｜ 共 1627 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-19 19:24 ｜ 共 1627 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -223,9 +223,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-16 |  **Blind Precise Assembly: Proprioceptive Sim-to-Real Peg-in-Hole for Diverse Parts** | Antonia Bronars et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.23849) · [Page](https://younghyopark.me/blind-proprioceptive-assembly/) |
-| 2026-10-16 | 🖐 **No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?** | Ayush Deshmukh et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.23438) |
 | 2026-10-16 | 🖐 **Ego2Contact: Predicting Touch from Egocentric Human Video for Contact-Rich Robot Manipulation** | Qianqian Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22932) |
+| 2026-10-16 | 🖐 **No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?** | Ayush Deshmukh et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.23438) |
+| 2026-10-16 |  **Blind Precise Assembly: Proprioceptive Sim-to-Real Peg-in-Hole for Diverse Parts** | Antonia Bronars et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.23849) · [Page](https://younghyopark.me/blind-proprioceptive-assembly/) |
 | 2026-10-14 | 🖐 **RoboSpan: Learning Modular Coordination Policies for High-DoF Whole-Body Mobile Manipulation with Teleoperation** | Keqiang Ren et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19594) |
 | 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
 | 2026-10-13 |  **ForeTac: Predictive Contact Guidance for Generative Robot Policies** | Zhiyuan Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.18118) · [Page](https://foretac.github.io/) |
