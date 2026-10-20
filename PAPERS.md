@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-20 06:28 ｜ 共 1642 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-20 18:02 ｜ 共 1642 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -224,10 +224,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-19 |  **GPT-6 Astra Is a Native Visuo-Tactile Policy for Contact-Rich Manipulation** | Chen Yang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.26846) · [Page](https://tactalent.github.io/) |
 | 2026-10-19 | 🖐 **Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware** | Wenhao He et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.26759) |
-| 2026-10-17 |  **ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation** | Jingyi Xiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.24512) · [Page](https://jingyi-xiang.github.io/contactbench) |
+| 2026-10-19 |  **GPT-6 Astra Is a Native Visuo-Tactile Policy for Contact-Rich Manipulation** | Chen Yang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.26846) · [Page](https://tactalent.github.io/) |
 | 2026-10-17 |  **Touch Where It Matters: Learning Local Tactile Policies for Fine-Grained Gripper Control** | Mingyuan Ba et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.24485) |
+| 2026-10-17 |  **ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation** | Jingyi Xiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.24512) · [Page](https://jingyi-xiang.github.io/contactbench) |
 | 2026-10-16 | 🖐 **Ego2Contact: Predicting Touch from Egocentric Human Video for Contact-Rich Robot Manipulation** | Qianqian Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.22932) |
 | 2026-10-16 | 🖐 **No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?** | Ayush Deshmukh et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.23438) |
 | 2026-10-16 |  **Blind Precise Assembly: Proprioceptive Sim-to-Real Peg-in-Hole for Diverse Parts** | Antonia Bronars et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.23849) · [Page](https://younghyopark.me/blind-proprioceptive-assembly/) |
@@ -596,14 +596,14 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-19 | 🖐 **Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation** | Jiaming Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26854) |
-| 2026-10-19 |  **Robotic Physical Comparison of Biologically Motivated and Counterfactual Sensory Arrangements using Biomimetic Skin** | Akihiro Miki et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26680) · [Page](https://poyotamu000.github.io/biomimetic-skin-sensory-arrangements/) |
-| 2026-10-19 |  **PrismWAM: Decoupling State Representations in World Action Models** | Tianyu Xin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26564) · [Page](https://prism-wam.github.io/) |
-| 2026-10-19 | 🖐 **PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags** | Binbin Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.26174) · [Page](https://phantomtac.org) |
-| 2026-10-19 | 🖐 **HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation** | Tianwei Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26765) |
-| 2026-10-19 | 🖐 **DexOAK: Object-Aware Kinematic Retargeting** | Federica Spinola et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26762) · [Page](https://fspinola.github.io/dexoak/) |
-| 2026-10-19 | 🖐 **DenseHap: Dense Hand Haptic Estimation from Monocular Images** | Junhan Xue et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26583) |
 | 2026-10-19 |  **CondenseVLA: Learnable History Condensation for Efficient Multi-Frame VLA** | Feiyang Hong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.25927) · [Code](https://github.com/FeiyangHong/CondenseVLA) |
+| 2026-10-19 | 🖐 **PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags** | Binbin Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.26174) · [Page](https://phantomtac.org) |
+| 2026-10-19 |  **PrismWAM: Decoupling State Representations in World Action Models** | Tianyu Xin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26564) · [Page](https://prism-wam.github.io/) |
+| 2026-10-19 | 🖐 **DenseHap: Dense Hand Haptic Estimation from Monocular Images** | Junhan Xue et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26583) |
+| 2026-10-19 |  **Robotic Physical Comparison of Biologically Motivated and Counterfactual Sensory Arrangements using Biomimetic Skin** | Akihiro Miki et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26680) · [Page](https://poyotamu000.github.io/biomimetic-skin-sensory-arrangements/) |
+| 2026-10-19 | 🖐 **DexOAK: Object-Aware Kinematic Retargeting** | Federica Spinola et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26762) · [Page](https://fspinola.github.io/dexoak/) |
+| 2026-10-19 | 🖐 **HandsOn: A Large-Scale Simulation Benchmark for Generalizable Dexterous Manipulation** | Tianwei Luo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26765) |
+| 2026-10-19 | 🖐 **Physical Words: A Vocabulary for Structuring Latent Reasoning in Robot Manipulation** | Jiaming Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.26854) |
 | 2026-10-17 |  **GazeAct: A Human-Gaze-Annotated Manipulation Dataset for Attention-Regularized Policies** | Anupam Pani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.24507) |
 | 2026-10-16 |  **CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots** | Zicheng Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.23288) |
 | 2026-10-16 |  **ACTS: Learning Visuo-Tactile World Models from Human Physical Interaction** | Yuxiang Ma et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.24285) · [Page](https://acts-anon.github.io/) |
