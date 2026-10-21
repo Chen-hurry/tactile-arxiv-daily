@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-21 06:28 ｜ 共 1651 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-21 18:09 ｜ 共 1651 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -225,10 +225,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-20 |  **Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning** | Zebin Xing et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.28613) · [Page](https://zebinx.github.io/PhysCanvas_HomePage/) |
-| 2026-10-20 |  **GPT-6-Astra Understands Touch and Outperform Vision--Tactile--Language--Action Models** | Ziyong Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28457) · [Page](https://gpt-as-tactile-policy.github.io/) |
-| 2026-10-20 |  **Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning** | Youwei Zhou et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28259) |
 | 2026-10-20 |  **Embodied Task Agents Can Perform Fine Manipulation through Tactile In-Context Learning** | Yubang Wang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.27613) · [Page](https://no-518.github.io/tactile-eta/) |
+| 2026-10-20 |  **Large Multimodal Models for Direct Robot Control: GPT-6 as a Beginning** | Youwei Zhou et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28259) |
+| 2026-10-20 |  **GPT-6-Astra Understands Touch and Outperform Vision--Tactile--Language--Action Models** | Ziyong Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28457) · [Page](https://gpt-as-tactile-policy.github.io/) |
+| 2026-10-20 |  **Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning** | Zebin Xing et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.28613) · [Page](https://zebinx.github.io/PhysCanvas_HomePage/) |
 | 2026-10-19 | 🖐 **Tactile In-Hand Object Rotation: A Comparative Study of Hand Morphology in Simulation and Hardware** | Wenhao He et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.26759) |
 | 2026-10-19 |  **GPT-6 Astra Is a Native Visuo-Tactile Policy for Contact-Rich Manipulation** | Chen Yang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.26846) · [Page](https://tactalent.github.io/) |
 | 2026-10-17 |  **Touch Where It Matters: Learning Local Tactile Policies for Fine-Grained Gripper Control** | Mingyuan Ba et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.24485) |
@@ -601,8 +601,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-20 | 🖐 **Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision** | Minseong Kweon et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28519) · [Page](https://touch-jepa.github.io) |
 | 2026-10-20 | 🖐 **Learning Tactile-Aware Hand Representations from Human Hand-Object Interaction Data** | Yeonguk Yu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.27995) |
+| 2026-10-20 | 🖐 **Touch-JEPA: Tactile Representation Learning from Hand-Object Video with Limited Tactile Supervision** | Minseong Kweon et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28519) · [Page](https://touch-jepa.github.io) |
 | 2026-10-20 | 🖐 **Learning Adaptable Dexterous Skills via Hybrid Dexterous Mimicking** | Yuxuan Kuang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.28628) · [Page](https://yuxuank.com/AdaDex/) |
 | 2026-10-19 |  **CondenseVLA: Learnable History Condensation for Efficient Multi-Frame VLA** | Feiyang Hong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.25927) · [Code](https://github.com/FeiyangHong/CondenseVLA) |
 | 2026-10-19 | 🖐 **PhantomTac: Hijacking Robotic Tactile Systems with Deploy-and-forget Tags** | Binbin Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.26174) · [Page](https://phantomtac.org) |
