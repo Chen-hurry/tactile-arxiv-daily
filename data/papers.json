@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-21 18:09",
+ "last_update": "2026-10-22 06:31",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -47037,7 +47037,7 @@
     "Furong Huang"
    ],
    "code_url": null,
-   "comment": "",
+   "comment": "Comments: Accepted to CoRL 2026. Project Page: https://mu0-wm.github.io/",
    "hand": false,
    "hidden": false,
    "id": "2606.13769",
@@ -47050,7 +47050,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://mu0-wm.github.io/",
    "published": "2026-06-11",
    "scores": {},
    "seed": false,
@@ -47058,8 +47058,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-06-15",
-   "version": "v2"
+   "updated": "2026-10-20",
+   "version": "v3"
   },
   "2606.13877": {
    "abstract": "Contact-rich manipulation poses a fundamental challenge for world models: visual and tactile observations capture different aspects of physical interaction, and their utility depends critically on how this information is represented. We introduce ContactWorld, a controlled benchmark and empirical study of vision-tactile representations across 12 contact-rich manipulation tasks. Using a fixed world-model architecture, training procedure, and planning framework, we examine representation effects through three complementary properties: spatial fidelity, motion coherence, and predictive stability. Point clouds preserve task-relevant geometry and track physical motion more reliably than image observations, helping explain their higher average planning success of 32.1%, compared with 20.7% and 22.0% for wrist- and front-view RGB, respectively. Tactile observations generally reduce long-horizon prediction-error accumulation, but these gains do not translate uniformly into task success. Structured tactile force fields provide the most consistent downstream improvements, with PointCloud+TacFF achieving the highest overall simulated success rate of 36.1%. We further validate these trends through 900 physical trials spanning six tasks, two robot platforms, and three tactile sensing systems. Together, ContactWorld identifies sensory representation as a central design factor in vision--tactile world models and provides empirical guidance for predictive planning in contact-rich manipulation.",
@@ -48107,6 +48107,58 @@
    ],
    "updated": "2026-06-18",
    "version": "v1"
+  },
+  "2606.20698": {
+   "abstract": "Safe control is a prerequisite for real-world embodied intelligence, for which safe reinforcement learning has emerged as a promising paradigm. However, existing safe reinforcement learning methods either require costly real-world exploration or depend on hand-crafted safety functions. Neither scales to vision-language-action models deployed in open-world physical environments. We propose SafeDojo, a model-based safe reinforcement learning framework that improves vision-language-action policies through world-model imagination. SafeDojo performs online reinforcement learning on top of an interactive video world model. A ResNet success classifier scores predicted future frames, while a lightweight safety head predicts per-step contact probabilities from the current latent context and proposed action chunk, jointly assessing task execution and trajectory safety. These decoupled signals are balanced through Lagrangian-constrained GRPO. On SafeLIBERO Level I, SafeDojo improves average safe-success rate by 8.25 percentage points over the strongest baseline; on the zero-shot Level II setting, it is competitive with the strongest model-free baseline. Real-world Franka deployment further shows the best average task and safe-success rates across five tasks. These results support world-model-based safe reinforcement learning as a promising path toward safer embodied intelligence.",
+   "added_at": "2026-10-22 06:31",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kai Tang",
+    "Peidong Jia",
+    "Zhong Chu",
+    "Jiajun Cao",
+    "Jixian Wu",
+    "Bohua Zhang",
+    "Rui Ma",
+    "Fangyuan Zhao",
+    "Sixiang Chen",
+    "Yichen Guo",
+    "Xiaowei Chi",
+    "Chun-Kai Fan",
+    "Kevin Zhang",
+    "Jinchang Xu",
+    "Fubing Yang",
+    "Weishi Mi",
+    "Xiaozhu Ju",
+    "Jian Tang",
+    "Shanghang Zhang"
+   ],
+   "code_url": null,
+   "comment": "CoRL 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2606.20698",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-06-15",
+   "scores": {},
+   "seed": false,
+   "title": "SafeDojo: Safe Reinforcement Learning for VLA via Interactive World Model",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-21",
+   "version": "v2"
   },
   "2606.20871": {
    "abstract": "We study how trajectory-shape diversity in demonstrations affects imitation learning (IL) performance across models, tasks, and data scales. We introduce Geometric Entropy (H_G), a task-agnostic metric that quantifies the intrinsic diversity of transit trajectories after normalizing away extrinsic variation, such as goal pose and workspace scale, via target-frame alignment. Across multiple IL architectures and both simulated and real-robot contact-rich manipulation tasks, we observe a consistent inverted-U relationship between success and H_G: increasing geometric diversity improves robustness in low-diversity regimes but degrades performance once diversity induces strategy ambiguity. Moreover, the optimal entropy shifts toward lower values as task mastery increases through more data, easier tasks, or stronger priors, and for a pretrained vision-language-action model the trend becomes effectively monotonic decreasing. Practically, H_G enables fast pre-training auditing of demonstration datasets and offers a simple guideline for calibrating demonstrations toward the learnable regime.",
@@ -61539,8 +61591,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-24",
-   "version": "v1"
+   "updated": "2026-10-20",
+   "version": "v2"
   },
   "2609.29822": {
    "abstract": "Robotic imitation learning often relies on external cameras, yet local interaction cues such as object proximity, contact onset, and grasp state are difficult to observe near the fingertips because of occlusion and limited temporal resolution. We study how to effectively incorporate complementary fingertip sensing into imitation learning using pressure-sensitive tactile and reflective proximity sensors, along with pretrained sensor encoders. The two modalities provide information at different manipulation phases: proximity sensing is informative before contact, whereas tactile sensing becomes informative after contact. However, naively adding these signals to a policy does not consistently improve performance and can even underperform vision-only policies, suggesting that sparse, phase-dependent sensor signals are difficult to exploit from limited demonstrations. We therefore propose a proprioception-anchored pretraining method, PROprioceptive-and-PRoactive Anchoring (PROPRA), which independently aligns each fingertip sensor history with proprioceptive and action segments. This provides a continuously available sensorimotor reference, allowing each sensor to be aligned independently during its informative phases. Experiments on real-world manipulation tasks show that our pretraining method improves average success rates over vision-only policies and image-anchored pretraining baselines. Representation analysis further shows that it preserves richer information about pre-contact states, enabling more effective use of complementary fingertip sensing. Please refer to our project page: https://tomohiromotoda.github.io/nia.propra/",
@@ -63886,7 +63938,7 @@
     "Yilun Du"
    ],
    "code_url": null,
-   "comment": "9 pages, 8 figures",
+   "comment": "9 pages, 8 figures. Project Website: https://visual-force.github.io/",
    "hand": true,
    "hidden": false,
    "id": "2610.04741",
@@ -63899,7 +63951,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://visual-force.github.io/",
    "published": "2026-10-03",
    "scores": {
     "VTA": 11.8
@@ -63909,8 +63961,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-03",
-   "version": "v1"
+   "updated": "2026-10-20",
+   "version": "v2"
   },
   "2610.04764": {
    "abstract": "This letter proposes DNPush, a Distributed Nonparallel Pushing force controller for cooperative object transport without inter-robot communication. Each robot uses local force measurements, a preassigned force weight, and a locally expressed desired transport direction, without requiring an object model, contact locations, a CoM estimate, or moment arm magnitudes online. DNPush regulates nonparallel force magnitudes from local force direction misalignments through a reciprocal-sine law. Under the stated contact conditions, Lyapunov analysis with LaSalle's invariance principle proves convergence to a unique rotational equilibrium, where perpendicular force contributions cancel and the net torque from normal forces is zero. Object velocity converges to the desired transport direction, and suitable contact regions exist for convex polygons. Simulations isolate the reciprocal-sine scaling mechanism, five-robot coordination, and active rotational damping. Hardware experiments with soft tactile differential-drive robots achieve a velocity direction error of 0.61 deg +/- 0.79 deg over five trials with a fixed transport direction and demonstrate object transport through waypoints with three robots.",
@@ -68137,7 +68189,7 @@
    "version": "v1"
   },
   "2610.26854": {
-   "abstract": "Multimodal reasoning provides robotic foundation models with predictive context needed for reliable action generation. However, language-based reasoning captures task semantics but struggles to express fine-grained physical dynamics, while latent reasoning models future state evolution but offers limited structure for organizing these dynamics into reusable reasoning primitives. To bridge this gap, we introduce PhysWord, a reasoning-before-acting foundation model built on Physical Words, which use atomic action verbs as shared semantic anchors for continuous representations of physical dynamics. Specifically, PhysWord predicts upcoming atomic action words and directly aligns their contextual hidden states with latent targets derived from the corresponding future observations. Building on these primitives, we construct a temporally structured PhysWord space with visual and optional tactile variants of each action word. Autoregressively predicting Physical Words across future timesteps captures transitions between execution stages, providing structured multimodal context for action generation. PhysWord achieves state-of-the-art success rates of 90.3\\% on visuotactile UniVTAC and 99.6\\% on vision-based LIBERO-Long, and outperforms competing methods on real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and enables long-horizon manipulation.",
+   "abstract": "Multimodal reasoning provides robotic foundation models with predictive context needed for reliable action generation. However, language-based reasoning captures task semantics but struggles to express fine-grained physical dynamics, while latent reasoning models future state evolution but offers limited structure for organizing these dynamics into reusable reasoning primitives. To bridge this gap, we introduce PhysWord, a reasoning-before-acting foundation model built on Physical Words, which use atomic action verbs as shared semantic anchors for continuous representations of physical dynamics. Specifically, PhysWord predicts upcoming atomic action words and directly aligns their contextual hidden states with latent targets derived from the corresponding future observations. Building on these primitives, we construct a temporally structured PhysWord space with visual and optional tactile variants of each action word. Autoregressively predicting Physical Words across future timesteps captures transitions between execution stages, providing structured multimodal context for action generation. PhysWord achieves state-of-the-art success rates of 90.3\\% on visuotactile UniVTAC and 99.6\\% on vision-based LIBERO-Long, and outperforms competing methods on real-world tasks using bimanual grippers and dexterous hands. Further evaluations demonstrate that our structured latent reasoning framework generalizes to unseen scenarios and enables long-horizon manipulation. Project page: https://nvidia-isaac.github.io/video_to_data/physicalword/",
    "added_at": "2026-10-20 06:28",
    "arxiv_categories": [
     "cs.RO"
@@ -68169,7 +68221,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://nvidia-isaac.github.io/video_to_data/physicalword/",
    "published": "2026-10-19",
    "scores": {
     "VTLA": 3.0
@@ -68179,8 +68231,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-20",
-   "version": "v2"
+   "updated": "2026-10-21",
+   "version": "v3"
   },
   "2610.27242": {
    "abstract": "Humanoid dexterous manipulation needs reference motions that are both semantically rich and kinematically feasible for the target robot. Text-conditioned hand-object interaction (HOI) generators supply diverse, language-specified demonstrations, but they synthesize motion in human (MANO) space. The embodiment gap is therefore deferred to post-hoc retargeting, where trajectories deployed on the robot can fail to maintain contact with objects and also degrade policy learning. Our key idea is that robot reachability should constrain the interaction trajectories while they are being generated. We present EmbodyHOI, which runs a differentiable inverse-kinematics (IK) solver for a specific humanoid embodiment inside the sampling loop of a frozen flow-matching HOI trajectory generator. We feed back gradients from the embodiment-aware IK solver into the HOI sampler and jointly optimize the position of the humanoid with respect to the object. Because guidance acts only at inference, one HOI trajectory generator trained on human hand poses transfers across humanoid embodiments without retraining. On ARCTIC trajectories with two contrasting humanoids (Unitree G1 and H1-2), our proposed guidance-based method cuts the retargeted wrist error from 8.9 cm to 0.6 cm while leaving text-to-HOI generation quality intact, and raises task success from 68% to 79% on 50 random G1 tasks and from 62% to 76% on a four-task H1-2 suite. Critically, cheaper alternatives for bridging the embodiment gap fail to beat EmbodyHOI. Post-hoc wrist refinement and compute-matched best-of-N selection both reach lower IK energy than our guidance yet train worse policies. For simulation results, see our website: https://embodyhoi.github.io/",
@@ -68527,6 +68579,192 @@
     "Other"
    ],
    "updated": "2026-10-20",
+   "version": "v1"
+  },
+  "2610.28814": {
+   "abstract": "In contact-rich manipulation, contact conditions can change before a visual policy updates its action plan. Recomputing the plan through the visual policy adds latency, while tactile feedback alone does not specify how the ongoing motion should be revised for the task. We introduce T-WLA, a world-language-action architecture that uses shared visual memory to guide both action generation and tactile correction. At each visual update, the visual branch integrates the current image, task instruction, and retrieved history into a visual memory that conditions base-action generation. The same memory is cached for a lightweight tactile editor, which combines it with the active action chunk and incoming touch to predict residual corrections to unexecuted actions without rerunning the visual branch. Future-image and future-pressure prediction provide training-only supervision, encouraging the visual memory and tactile features to capture interaction dynamics relevant to action generation and correction. We evaluate T-WLA on tactile-conditioned hand-motion prediction using EgoTouch and Tachin, and on four real-world dexterous manipulation tasks. T-WLA reduces finger-joint MPJPE by 30% relative to the strongest reported baseline and achieves an average success rate of approximately 50.0% across real-robot manipulation tasks. Videos and code are available at https://anonymous-submission-20.github.io/T-WLA.github.io/.",
+   "added_at": "2026-10-22 06:31",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kaichen Zhou",
+    "Yuzhen Chen",
+    "Hannah Yao",
+    "Chonghe Jiang",
+    "Rao Fu",
+    "Xihang Yu",
+    "Wei Dai",
+    "Bashar Kabbarah",
+    "Haoyu Chen",
+    "Ishita Goluguri",
+    "Zhiyang Dou",
+    "Haonan Chen",
+    "Fangneng Zhan",
+    "Mengyu Wang",
+    "Wojciech Matusik",
+    "Antonio Torralba",
+    "Paul Pu Liang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.28814",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://anonymous-submission-20.github.io/T-WLA.github.io/",
+   "published": "2026-10-20",
+   "scores": {
+    "VTA": 5.5,
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "T-WLA: Bridging Slow Vision and Fast Touch",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-20",
+   "version": "v1"
+  },
+  "2610.28880": {
+   "abstract": "Human video scales easily and does not need robot hardware, but existing methods require depth sensing, overlay the robot onto 2D video, or generate data only for the demonstrated objects. We present Real2Sem2Real (R2Sem2R), a real-to-semantic-to-real pipeline that turns one monocular RGB video of a human demonstration into thousands of robot demonstrations across the semantic object instances of a category. R2Sem2R tracks the SE(3) pose of each object with DINOv3-distilled Gaussian splats, outperforming existing methods and FoundationPose with estimated metric depth. R2Sem2R then aligns digital cousins, each generated from one or a few photographs, to the demonstrated objects with a semantic alignment. This alignment matches whole objects and the functional regions of target objects, such as a coffee machine's tray. R2Sem2R maps the human hand to a feasible robot grasp that extends to the cousins. Robot demonstrations are generated either in IsaacSim, for photorealistic rendering, or MuJoCo, for contact physics, and R2Sem2R can generate over 2,000 episodes in about two hours. On two real robots and four tasks, we train a vision-language-action policy on data from one human video per task, and policies trained on our data match or exceed policies trained on teleoperation across diverse object instances. The project page is available at https://real2sem2real.github.io/.",
+   "added_at": "2026-10-22 06:31",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Matthew Strong",
+    "Ankush K. Dhawan",
+    "Julien Poffet",
+    "Giuse Pham",
+    "Jinho So",
+    "Monroe Kennedy"
+   ],
+   "code_url": null,
+   "comment": "Matthew Strong and Ankush K. Dhawan contributed equally. Project page: https://real2sem2real.github.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.28880",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://real2sem2real.github.io/",
+   "published": "2026-10-20",
+   "scores": {},
+   "seed": false,
+   "title": "Real2Sem2Real: 3D Semantic Augmentations for Robot Learning from a Single Human RGB Demonstration",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-20",
+   "version": "v1"
+  },
+  "2610.29692": {
+   "abstract": "During steady pouring, images and robot pose may remain nearly unchanged while transferred mass accumulates, making the return decision ambiguous for a whole-task vision-language-action (VLA) policy. We present FlowVLA, which separates motor generation from physical-completion estimation. A shared $π_{0.5}$ action expert learns approach, pour, and return with boundary-aware supervision. A target-independent estimator fuses visual, joint, wrist-wrench, and recurrent force-belief histories to maintain an estimate of transferred mass. The controller initiates return when this estimate plus predicted residual outflow reaches the requested mass. In coffee-pot/water experiments, FlowVLA achieves 13.1 g goal-balanced mean absolute error (MacroMAE), lower than all tested VLA baselines. Across all attempts, 53.7% both complete the task and finish within +/-10% of the requested mass. The same model interpolates to held-out 150/250-g targets without retraining. Independently trained models further evaluate the formulation in three additional container-fluid settings.",
+   "added_at": "2026-10-22 06:31",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Liwen Yang",
+    "Yutian Zhang",
+    "Jiaqi Zhai",
+    "Li Yang",
+    "Tutian Tang",
+    "Qiwei Shan",
+    "Yancheng Bi",
+    "Qiankuan Shangguan",
+    "Yangkun Zhu",
+    "Ce Hao",
+    "Dong Wei",
+    "Qiaojun Yu",
+    "Dibo Hou"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 6 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.29692",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-21",
+   "scores": {
+    "VTLA": 5.5
+   },
+   "seed": false,
+   "title": "FlowVLA: Learning Flow-Aware Physical Completion for Quantitative Robotic Pouring",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-21",
+   "version": "v1"
+  },
+  "2610.29997": {
+   "abstract": "Despite recent progress in dexterous reference tracking, existing models focus primarily on single-hand manipulation and a limited range of interactions, leaving the bimanual dexterous behaviors common in real life unaddressed. The scarcity of contact-rich bimanual manipulation data and the increased complexity of coordinating contacts make developing a generalist bimanual tracker particularly challenging. Therefore, we present 1) DONIC, the first generalist bimanual tracker jointly trained across operation categories and human-motion sources, together with 2) BiHOI, a multi-view dataset of 1,575 sequences spanning 229 objects and emphasizing sustained bimanual interaction, where reconstructed interactions are retargeted into robot references. DONIC combines proximal policy optimization with behavioral cloning in a feedback loop that recycles verified successful executions into training demonstrations. An object-centered per-hand reward maintains object-motion feedback while supervising each hand according to its reference contact role. Clip-Centered Advantages remove reference-dependent advantage offsets while preserving within-trajectory differences. Together, these designs enable one single policy to learn coordinated manipulation across heterogeneous references. Without finetuning, a single checkpoint achieves 86.79% success on unseen trajectories of training objects and 57.32% on held-out objects, surpassing the state-of-the-art bimanual tracking baselines by 77.36 and 45.73 percentage points.",
+   "added_at": "2026-10-22 06:31",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Mingze Sun",
+    "Ziang Cao",
+    "Yuan Fei",
+    "Qiankuan Tao",
+    "Zihan Wang",
+    "Tianqi Liu",
+    "Junhao Chen",
+    "Haiwen Diao",
+    "Fangzhou Hong",
+    "Zhaoxi Chen",
+    "Ziwei Liu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.29997",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-21",
+   "scores": {},
+   "seed": false,
+   "title": "DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-21",
    "version": "v1"
   }
  }
