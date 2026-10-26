@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-25 17:07 ｜ 共 1662 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-26 06:50 ｜ 共 1663 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 69 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 125 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 372 篇
-- [Other（其他触觉相关）](#other) — 1138 篇
+- [Other（其他触觉相关）](#other) — 1139 篇
 
 ## Sim
 
@@ -606,6 +606,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-23 |  **MAST-VLA: Skill-Conditioned Adaptation with Trajectory-Affordance Priors for Multi-Skill Robot Manipulation** | Jiachi Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.32312) |
 | 2026-10-22 | 🖐 **IORA: Irregular Object Immobilization under Restricted Actuation** | Sang-Hun Han et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.30969) |
 | 2026-10-22 |  **GelSlim 5.0: Unifying Vision and Touch with a Single Fingertip Camera** | Xiangdong Wang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.31334) |
 | 2026-10-21 | 🖐 **DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations** | Mingze Sun et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.29997) |

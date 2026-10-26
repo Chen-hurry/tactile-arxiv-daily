@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-25 17:07",
+ "last_update": "2026-10-26 06:50",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -67535,7 +67535,7 @@
    "version": "v2"
   },
   "2610.23438": {
-   "abstract": "Humans manipulate objects within their hands through touch alone with remarkable ease, but for robots, achieving sustained real-world manipulation without vision remains an open challenge. Although reinforcement learning (RL) can generate sophisticated blind manipulation policies in simulation, transferring them to a real dexterous hand remains hindered by continuously changing contacts, motion-induced tactile information drift, and the gap between simulated and physical dynamics. We study this problem through Baoding ball rotation on the Shadow Dexterous Hand Lite, using only proprioception and binary tactile feedback as observations. We achieve successful zero-shot transfer through a combination of a sensor-aligned, coupling-aware embodiment in simulation, tactile calibration, and two novel episodic domain randomisations: slew-rate action limits and STuck-AT Taxels. On the physical hand, the policy achieves sustained blind Baoding rotation, completing 225 consecutive $\\mathbf{180^\\circ}$ rotations (112.5 full rotations) at $\\sim0.36 \\;\\text{rot/s}$ in a single continuous trial without any vision or object-state information. Furthermore, we evaluate the contribution of tactile sensing relative to proprioception alone and identify the hand regions where tactile information is most important. This is the strongest reported hardware result for Baoding ball manipulation in both rotation count and speed, irrespective of the sensing modality used. By effectively bridging the sim-to-real gap, our framework sets a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware.",
+   "abstract": "Humans manipulate objects within their hands through touch alone with remarkable ease, but for robots, achieving sustained real-world manipulation without vision remains an open challenge. Although reinforcement learning (RL) can generate sophisticated blind manipulation policies in simulation, transferring them to a real dexterous hand remains hindered by continuously changing contacts, motion-induced tactile information drift, and the gap between simulated and physical dynamics. We study this problem through Baoding ball rotation on the Shadow Dexterous Hand Lite, using only proprioception and binary tactile feedback as observations. We achieve successful zero-shot transfer through a combination of a sensor-aligned, coupling-aware embodiment in simulation, tactile calibration, and two novel episodic domain randomisations: slew-rate action limits and STuck-AT Taxels. On the physical hand, the policy achieves sustained blind Baoding rotation, completing $\\textbf{225 consecutive $\\mathbf{180^\\circ}$ rotations (112.5 full rotations) at $\\sim0.36 \\;\\text{rot/s}$}$ in a single continuous trial without any vision or object-state information. Furthermore, we evaluate the contribution of tactile sensing relative to proprioception alone and identify the hand regions where tactile information is most important. This is the strongest reported hardware result for Baoding ball manipulation in both rotation count and speed, irrespective of the sensing modality used. By effectively bridging the sim-to-real gap, our framework sets a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware.",
    "added_at": "2026-10-19 06:42",
    "arxiv_categories": [
     "cs.RO"
@@ -67572,8 +67572,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-16",
-   "version": "v1"
+   "updated": "2026-10-23",
+   "version": "v2"
   },
   "2610.23849": {
    "abstract": "Every robot already carries high-resolution contact sensors: its own joints. Legged robots and humanoids exploit them to walk, run, and track whole-body motions without vision, but there the contacts are large and forceful. Is joint sensing also enough for precise, contact-rich assembly, where the robot must find a millimeter-scale opening, mesh gear teeth, or catch a thread through light contact? We study this question by training blind assembly policies that observe only a short history of joint positions, velocities, and their own actions, without visual, force, torque, or tactile sensing. The poses of both the fixture and the part are unknown to the policy, and the grasp is randomized substantially. The policy must therefore assemble the parts through contact, sensed exclusively through its own proprioception. Trained with reinforcement learning entirely in simulation over randomized parts, grasps, and contacts, such policies learn peg insertion, gear meshing, and nut threading. The peg insertion policy transfers zero-shot to the real world and inserts pegs of different shapes and sizes in 73% of trials. Controlled comparisons with matched visual policies in simulation show that blind policies generalize far better to unseen part shapes and sizes, though they can be slower. Training such policies needs thousands of different assemblies, each simulated with its clearance intact, so we also release an open-source generator that builds them procedurally from exact convex pieces for MuJoCo; it is more accurate and faster than convex decomposition or MuJoCo's signed-distance collision. Videos and interactive simulations are at https://younghyopark.me/blind-proprioceptive-assembly/.",
@@ -67737,7 +67737,7 @@
    "version": "v1"
   },
   "2610.24512": {
-   "abstract": "Contact-rich manipulation is essential to everyday activities, yet evaluating robots' ability to perform these activities remains challenging because of their diverse contact behaviors and the difficulty of reproducing tasks across laboratories. Drawing on observations of everyday human manipulation, we identify eight recurring skill categories that provide a practical framework for studying these capabilities. We introduce ContactBench 1.0, an extensible benchmark that instantiates these skills through 36 reference tasks and more than 40 object assets. The assets capture task-relevant geometry and contact behavior, support reproducible fabrication using consumer-grade 3D printers, and are paired with simulation models with tunable resistance loads. Controlled task variations enable evaluation of policy generalization. We evaluate recent vision-based and vision-tactile policy learning methods on six benchmark tasks. The results reveal that the evaluated vision-only policies struggle to perceive or react to contact events, while the evaluated visual-tactile policies do not meaningfully improve performance. By providing shared tasks and physical and simulated assets, ContactBench 1.0 establishes a foundation for reproducible evaluation of contact-rich manipulation research. The benchmark is open-sourced at https://jingyi-xiang.github.io/contactbench",
+   "abstract": "Contact-rich manipulation underlies many everyday human activities, yet evaluating robots on such tasks remains difficult: the tasks involve diverse contact behaviors and are hard to reproduce across laboratories. Drawing on observations of everyday human manipulation, we identify eight essential skills that provide a practical framework for studying contact-rich manipulation. We introduce ContactBench 1.0, an extensible benchmark that instantiates these skills through 36 reference tasks and more than 40 object assets. The assets capture task-relevant geometry and contact behavior, can be fabricated reproducibly on consumer-grade 3D printers, and are each paired with a matching simulation model. Controlled task variations in both the real world and simulation enable evaluation of how well robot systems generalize. We evaluate recent representative vision-only and visual-tactile policy learning methods on six benchmark tasks. The results reveal that while vision-only policies struggle to perceive or react to contact events, visual-tactile policies do not meaningfully improve their performance, highlighting that contact-rich manipulation remains a significant challenge for current policy learning methods. By providing common task definitions alongside physical and simulated assets, ContactBench 1.0 offers a shared testbed for developing, evaluating, and comparing contact-rich manipulation systems. The benchmark will be open-sourced at https://jingyi-xiang.github.io/contactbench.",
    "added_at": "2026-10-20 06:28",
    "arxiv_categories": [
     "cs.RO"
@@ -67765,15 +67765,15 @@
    "project_url": "https://jingyi-xiang.github.io/contactbench",
    "published": "2026-10-17",
    "scores": {
-    "VTA": 11.8
+    "VTA": 9.8
    },
    "seed": false,
    "title": "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation",
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-17",
-   "version": "v1"
+   "updated": "2026-10-23",
+   "version": "v2"
   },
   "2610.25927": {
    "abstract": "Robot manipulation often depends on short-term cues - such as brief contacts, temporary occlusions, and intermediate object states - that are ambiguous in a single frame and can only be resolved by integrating observations over time. However, injecting historical information solely by enlarging the history window is computationally costly and frequently yields limited gains due to substantial redundancy and task-agnostic, inflexible sampling of observations. We propose CondenseVLA, a multi-frame VLA policy with a learnable decoder-side history condensation module for using short-term visual context in action decoding. Given a sequence of cached per-frame features from the VLM backbone, CondenseVLA distills observation history into a fixed set of slot tokens using learnable queries and multi-head cross-attention. Simple auxiliary regularization penalizes overlap among slot attention maps and decorrelates slot embeddings, encouraging complementary attention and reducing slot redundancy. Across the evaluated tasks, CondenseVLA improves Simpler-WidowX success from 58.7% to 69.8% (+11.1 percentage points), achieves 97.2% on LIBERO, and reaches 52.8% on real-world tasks. It achieves 21.6% success on memory-dependent RMBench tasks. These results support selective condensation of bounded recent visual evidence for action decoding, while harder multi-observation tasks expose the limits of a finite history window. Project page: https://github.com/FeiyangHong/CondenseVLA",
@@ -69025,6 +69025,46 @@
     "Sim"
    ],
    "updated": "2026-10-22",
+   "version": "v1"
+  },
+  "2610.32312": {
+   "abstract": "Generalist robot manipulation requires a single vision-language-action (VLA) policy to execute diverse skills across scenes and instructions. However, current multi-skill VLA policies often leave two aspects of an instruction insufficiently modeled: which primitive skill to execute and where/how to contact and move objects. We propose MAST-VLA (Multi-skill Adaptation with Skill-conditioned experts and Trajectory-affordance priors), a dual-conditioning framework for robot manipulation. MAST-VLA introduces skill-conditioned LoRA Mixture-of-Experts (LoRA-MoE) adapters in the LLM backbone, where skill-query tokens and routing biases guide low-rank expert specialization, and converts a predicted affordance heatmap into a patch-level trajectory-affordance spatial prior for the action head. On the CALVIN ABC$\\rightarrow$D long-horizon multi-skill cross-scene generalization setting, MAST-VLA achieves state-of-the-art performance, reaching an Avg. Len of 4.65 over five-subtask evaluation sequences. Real-robot multi-skill sequence experiments further validate its deployability under real perception and control noise.",
+   "added_at": "2026-10-26 06:50",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jiachi Yang",
+    "Zhiyi Xu",
+    "Hongquan Zhang",
+    "Xin Tan",
+    "Zhizhong Zhang",
+    "Jingyu Gong",
+    "Yuan Xie"
+   ],
+   "code_url": null,
+   "comment": "Accepted to CoRL 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.32312",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-23",
+   "scores": {},
+   "seed": false,
+   "title": "MAST-VLA: Skill-Conditioned Adaptation with Trajectory-Affordance Priors for Multi-Skill Robot Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-23",
    "version": "v1"
   }
  }
