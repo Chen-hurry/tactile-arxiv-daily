@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-28 07:17 ｜ 共 1679 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-28 18:57 ｜ 共 1679 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -19,8 +19,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-27 |  **ActiveAlign: Aligning Egocentric Manipulation via Active Perception** | Ri-Zhao Qiu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36859) |
 | 2026-10-27 | 🖐 **CARD: Contact-Anchored Retargeting for Dexterous Manipulation** | Cunxi Dai et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.36539) · [Page](https://card-retargeting.github.io/) |
+| 2026-10-27 |  **ActiveAlign: Aligning Egocentric Manipulation via Active Perception** | Ri-Zhao Qiu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36859) |
 | 2026-10-22 |  **OpenTac: An Open Ecosystem for Customizable, Scalable, and Transferable 3D Tactile Sensing** | Ariel Slepyan et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.31661) · [Page](https://opentac.github.io) |
 | 2026-10-20 |  **Physical Canvas: A Vision Tactile World Model For Robot Policy Evaluation And Learning** | Zebin Xing et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.28613) · [Page](https://zebinx.github.io/PhysCanvas_HomePage/) |
 | 2026-10-05 |  **Infant simulator with an embodied caregiver: Generating infant-perspective touch and vision during social interaction** | Noemi Vaculinova et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.05997) |
@@ -610,9 +610,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-27 |  **GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers** | Liang Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36507) · [Page](https://graft-humanoid.github.io/) |
 | 2026-10-27 |  **Externalizing Hand Grip Pressure Through Real-Time Visual Feedback** | Andrew L. Huard et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36769) |
 | 2026-10-27 | 🖐 **A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation** | Jihao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36789) |
-| 2026-10-27 |  **GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers** | Liang Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36507) · [Page](https://graft-humanoid.github.io/) |
 | 2026-10-26 | 🖐 **The Language of Deformation: Semantic Failure Analysis as a Prerequisite for Dexterous Manipulation of Deformable Objects** | Ignacio Cuiral-Zueco et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.35103) |
 | 2026-10-26 | 🖐 **DEX-PHD: A Dexterous Portable Handheld Device for Multimodal Data Collection** | Jooyoung Hong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.35462) |
 | 2026-10-26 |  **High-resolution tactile observation makes hidden racket-control mechanisms learnable** | Haoyang Tian et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.35563) |
