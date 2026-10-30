@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-10-30 07:40 ｜ 共 1685 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-10-30 18:41 ｜ 共 1685 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -232,9 +232,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-10-29 |  **SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing** | Yunchu Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40646) · [Page](https://personalrobotics.github.io/SwapBot) |
-| 2026-10-29 | 🖐 **Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment** | Xinyuan He et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39582) |
 | 2026-10-29 | 🖐 **Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection** | Li Guan et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39076) |
+| 2026-10-29 | 🖐 **Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment** | Xinyuan He et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39582) |
+| 2026-10-29 |  **SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing** | Yunchu Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40646) · [Page](https://personalrobotics.github.io/SwapBot) |
 | 2026-10-27 |  **ActiveAlign: Aligning Egocentric Manipulation via Active Perception** | Ri-Zhao Qiu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36859) |
 | 2026-10-22 |  **Continuous-Time Motion Planning and Steering with Global Convergence** | Mohsen Amiri et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.30607) |
 | 2026-10-22 |  **VecTile: A Low-Cost Flexible Tactile Array for 3-DoF Force Sensing** | Jian Hou et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.31472) · [Page](https://jiannnh.github.io/VecTile/) |
