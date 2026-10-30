@@ -1,5 +1,5 @@
 {
- "last_update": "2026-10-29 19:04",
+ "last_update": "2026-10-30 07:40",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -32387,7 +32387,7 @@
     "Arash Ajoudani"
    ],
    "code_url": "https://github.com/jack-sherman01/Awesome-Learning4Safe-Contact-rich-tasks",
-   "comment": "94 pages, 10 figures, npj Robotics Version 3",
+   "comment": "Accepted by npj Robotics, 94 pages, 10 figures",
    "hand": false,
    "hidden": false,
    "id": "2512.11908",
@@ -32408,8 +32408,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-18",
-   "version": "v3"
+   "updated": "2026-10-29",
+   "version": "v4"
   },
   "2512.13644": {
    "abstract": "Modeling dexterous hand-object interactions is challenging as it requires understanding how subtle finger motions influence the environment through contact with objects. While recent world models address interaction modeling, they typically rely on coarse action spaces that fail to capture fine-grained dexterity. We, therefore, introduce DexWM, a Dexterous Interaction World Model that predicts future latent states of the environment conditioned on past states and dexterous actions. To overcome the scarcity of finely annotated dexterous datasets, DexWM represents actions using finger keypoints extracted from egocentric videos, enabling training on over 900 hours of human and non-dexterous robot data. Further, to accurately model dexterity, we find that predicting visual features alone is insufficient; therefore, we incorporate an auxiliary hand consistency loss that enforces accurate hand configurations. DexWM outperforms prior world models conditioned on text, navigation, or full-body actions in future-state prediction and demonstrates strong zero-shot transfer to unseen skills on a Franka Panda arm with an Allegro gripper, surpassing Diffusion Policy by over 50% on average across grasping, placing, and reaching tasks.",
@@ -41430,8 +41430,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-26",
-   "version": "v3"
+   "updated": "2026-10-29",
+   "version": "v4"
   },
   "2604.12343": {
    "abstract": "We address the challenging task of detecting the precise moment when hands make contact with objects in egocentric videos. This frame-level detection is crucial for augmented reality, human-computer interaction, assistive technologies, and robot learning applications, where contact onset signals action initiation or completion. Temporally precise detection is particularly challenging due to subtle hand motion variations near contact, frequent occlusions, fine-grained manipulation patterns, and the inherent motion dynamics of first-person perspectives. To tackle these challenges, we propose a Hand-informed Context Enhanced module (HiCE; pronounced `high-see') that leverages spatiotemporal features from hand regions and their surrounding context through cross-attention mechanisms, learning to identify potential contact patterns. Our approach is further refined with a grasp-aware loss and soft label that emphasizes hand pose patterns and movement dynamics characteristic of touch events, enabling the model to distinguish between near-contact and actual contact frames. We also introduce TouchMoment, an egocentric dataset containing 4,021 videos and 8,456 annotated contact moments spanning over one million frames. Experiments on TouchMoment show that, under a strict evaluation criterion that counts a prediction as correct only if it falls within a two-frame tolerance of the ground-truth moment, our method achieves substantial gains and outperforms state-of-the-art event-spotting baselines by 16.91% average precision.",
@@ -50240,7 +50240,7 @@
     "Wenqi Zhang"
    ],
    "code_url": null,
-   "comment": "22 pages, 14 figures",
+   "comment": "",
    "hand": false,
    "hidden": false,
    "id": "2607.01804",
@@ -50261,8 +50261,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-07-02",
-   "version": "v1"
+   "updated": "2026-10-29",
+   "version": "v2"
   },
   "2607.02503": {
    "abstract": "Contact-rich manipulation requires policies to react to local deformation, pressure, slip, and friction, yet these cues are temporally sparse and often invisible in visual observations. Existing visual-tactile policies usually feed tactile observations directly into action prediction, but rarely model tactile deformation dynamics during action generation. In this paper, we introduce VT-WAM, a Visual-Tactile World Action Model that jointly learns future visual prediction, tactile deformation prediction, and action prediction within a unified flow matching framework. In particular, VT-WAM introduces (1) Asymmetric Mixture-of-Transformers (MoT) attention to bridge a first-frame visual anchor with temporal tactile dynamics, and (2) contact-gated Action-Visual-Tactile Attention Guidance (AVTAG) to encourage action queries to rely on tactile evidence during contact phases. Across six real-world contact-rich manipulation tasks, VT-WAM achieves a 71.67% average success rate, outperforming Fast-WAM by 26.67% and OmniVTLA by 35.84%. Ablations demonstrate that modeling tactile deformation dynamics and guiding contact-phase tactile attention are both important for contact-rich tasks. Project website: https://vt-wam.github.io/.",
@@ -69711,6 +69711,380 @@
     "Sim"
    ],
    "updated": "2026-10-27",
+   "version": "v1"
+  },
+  "2610.37799": {
+   "abstract": "Human-level dexterity remains a central open problem in robotics, yet few simulation frameworks cover the full workflow of dexterous manipulation, from setting up a robot to collecting dexterous demonstrations and evaluating policies. We present DexSuite, an all-in-one simulation framework for dexterous manipulation built on the Genesis simulator. DexSuite provides 30 tasks and assembles its 10 arms and 12 end-effectors, from parallel-jaw grippers to dexterous hands, into more than 100 single-arm robots and thousands of bimanual pairs. It also ships a standardized environment API, integrated teleoperation, and simulated tactile sensing. Moreover, we define a benchmark of 16 task-embodiment pairs spanning diverse contact complexities and horizons, and release a dataset of 4,700 successful episodes in simulation from human teleoperation, scripted experts, and learned policies. We release DexSuite as open source and hope others will build on it. Videos and datasets are available at https://dexsuiteorg.github.io",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Anas Houssaini",
+    "Hugo He",
+    "Junming Shi",
+    "Amin Abyaneh",
+    "Ricardo Chahine",
+    "Shuo Wen",
+    "Mohamad H. Danesh",
+    "Charles-Étienne Fréchette",
+    "Mariana Sosa Guzman",
+    "Mathias Desrochers",
+    "Rayan Houssaini",
+    "Adam Landa",
+    "Theophile Soulie",
+    "Charlotte Morissette",
+    "Annie Tims",
+    "Martino Russi",
+    "Jonathan Lussier",
+    "Gregory Dudek",
+    "Doina Precup",
+    "Julen Urain",
+    "Hsiu-Chin Lin",
+    "David Meger"
+   ],
+   "code_url": null,
+   "comment": "7 pages, 7 figures, 2 tables. Project page: https://dexsuiteorg.github.io",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.37799",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://dexsuiteorg.github.io",
+   "published": "2026-10-27",
+   "scores": {
+    "Sim": 18.2,
+    "VTA": 5.5
+   },
+   "seed": false,
+   "title": "DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-10-27",
+   "version": "v1"
+  },
+  "2610.39076": {
+   "abstract": "Collecting naturalistic human manipulation demonstrations with accurate contact force and hand pose is essential for robot dexterous manipulation policy and foundational world model learning - yet no existing wearable platform provides both calibrated fingertip force sensing and occlusion-resilient hand tracking in a form factor that preserves natural manipulation behavior. We present Tactus, a textile-integrated sensing glove that co-optimizes three design pillars: (1) a thin, conformal 3D-knit form factor (1.5 mm fingertip stackup) designed to minimize interference with natural manipulation, (2) strategically placed capacitive tactile sensors at manipulation-relevant regions informed by empirical contact studies, and (3) IMU-fused pose tracking that maintains accuracy through the hand-object occlusions where manipulation data is most valuable. Tactus includes a documented calibration pipeline for cross-glove consistency and per-session calibration for subject-dependent correction. To enable objective comparison, we introduce standardized benchmarking protocols for tactile force regression and hand pose estimation, and apply them to Tactus and two commercially available tactile gloves - to our knowledge the first quantitative cross-platform evaluation of this kind. Tactus resolves a minimum detectable force of 0.59 N at 95% confidence, 1.6 - 2.7x lower than the commercial baselines, and with 0.87 cross-participant consistency, while our pose tracking sustains 11.0 mm fingertip keypoint relative error during manipulation, when occlusion is heaviest. We show that these combined signals support object property estimation, slip detection, and representative recording of hand-object interaction - yielding demonstration data with the fidelity required for contact-aware manipulation policies and world models.",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.AR",
+    "cs.LG"
+   ],
+   "authors": [
+    "Li Guan",
+    "Rachael Granberry",
+    "Sahar Aseeri",
+    "Sahar Rostami",
+    "Taylor Niehues",
+    "Sai Dhanooshi Marri",
+    "Mia Huang",
+    "Dingtian Zhang",
+    "Ziyi Kou",
+    "Jason Pursel",
+    "Eric Whitmire",
+    "Vatsal Mehta",
+    "Ashish Deshpande",
+    "Tristan Trutna",
+    "Reed Belcher",
+    "Emelia Black",
+    "Julian Blake",
+    "Roger Boldu",
+    "Sean Bonaventure",
+    "Einar Boyovich",
+    "Jordan Brennan",
+    "Elizabeth Casillas",
+    "David Christensen",
+    "Tyler Christensen",
+    "Nicholas Colonnese",
+    "Stuart Dealey",
+    "Gaige DeHaven",
+    "Katie Doran",
+    "Chris Doughty",
+    "Robert Drury",
+    "Silvia Espino",
+    "Gabriel Geyne",
+    "Beth Goodrich",
+    "Kyra Gould",
+    "Joe Grisso",
+    "Susana Guerrero",
+    "Andrew Gwozdziowski",
+    "Monica Ha",
+    "Ehsan Hajiesmaili",
+    "Kate Healy",
+    "Rose Hope",
+    "Michael Hurst",
+    "Claire Ikemiya",
+    "Daisy Isibor",
+    "Rick James",
+    "Yashasvi Joginapally",
+    "Samuel Johnson",
+    "Tyler Jorgensen",
+    "Kristy Jost",
+    "Ben Kamath",
+    "Slava Karulin",
+    "Alexander Keener",
+    "Woo Kim",
+    "Alison Krauskopf",
+    "Ankit Kumar",
+    "Joshua Lang",
+    "Lizzy Li",
+    "Cameron Lynch",
+    "Daniel Ma",
+    "Hector Martinon",
+    "Christina Matos",
+    "Keagan McCurdy",
+    "Lee Mincey",
+    "Stuart Nezlek",
+    "Tiffany Nguyen",
+    "James O'Hara",
+    "Jason Osborne",
+    "Jacky Pai",
+    "Roham Pardakhtim",
+    "David Perek",
+    "Alexandre Poulin",
+    "Nick Raines",
+    "Salwa Rasheed",
+    "Leah Resneck",
+    "Kevin Rhodes",
+    "Ergys Ristani",
+    "Douglas Roberts",
+    "Anik Sarker",
+    "Harrison Scarborough",
+    "Jonas Schmidtler",
+    "Brian Shieh",
+    "Benjamin Shuman",
+    "Garrett Simard",
+    "Forrest Smith",
+    "Udara Somarathna",
+    "Eliot Sosin",
+    "Jonathan Stewart",
+    "Kristine Strom",
+    "Adam Swett",
+    "Hal Talbot-Mantooth",
+    "Julia Tanner",
+    "Sai Sharan Thirunagari",
+    "Curtis Torrey",
+    "Simge Uzun",
+    "Eileen Wachs",
+    "Rylan Wasson",
+    "Henry Wei",
+    "Jesse White",
+    "Beau Woodbyrne",
+    "Antonio Woods",
+    "Noah Young",
+    "Chandler Yount",
+    "Joseph Zhang",
+    "Sean Keller"
+   ],
+   "code_url": null,
+   "comment": "9 pages",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.39076",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "capacitive tactile",
+     "fingertip force",
+     "tactile glove"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-29",
+   "scores": {
+    "VTA": 10.0
+   },
+   "seed": false,
+   "title": "Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.39582": {
+   "abstract": "Human demonstrations provide a natural and scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying physical interaction is rarely preserved across embodiments. To address this limitation, we present a hierarchical three-stage framework for kinematic-tactile aligned dexterous retargeting. We use object-centric contact wrench space as a physical representation for tactile alignment between human and robot hands. The framework first aligns hand kinematics and contact geometry, and then constructs a human wrench support profile from tactile forces and contact geometry. Robot fingertip force targets are subsequently optimized to cover the human wrench support and converted into joint position corrections, yielding directly replayable robot hand trajectories. We evaluate the framework in simulation and real robot experiments across three pouring conditions. In the real robot experiments, our method achieves a 96.7\\% replay success rate and higher wrench transfer fidelity than representative retargeting baselines. The framework enables physically grounded transfer of kinematic and tactile information from human demonstrations to robot hands, providing a path toward scalable learning of contact-rich dexterous manipulation.",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xinyuan He",
+    "Ziheng Xu",
+    "Yueyuan Chen",
+    "Yufan Ye",
+    "Yuanshuo Tan",
+    "Huiming Pan",
+    "Jianjun Meng",
+    "Shuo Jiang",
+    "Peter B. Shull"
+   ],
+   "code_url": null,
+   "comment": "8 pages",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.39582",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "fingertip force"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-29",
+   "scores": {
+    "VTA": 8.0
+   },
+   "seed": false,
+   "title": "Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.40210": {
+   "abstract": "Bimanual dexterous manipulation requires continuous coordination of wrist motion, finger contact, and object motion. Human videos provide rich manipulation experience. Using this experience for robot control requires aligning human poses with robot commands and accounting for embodiment-specific kinematics and contact dynamics. We present AcrossDEX 1.0, a learning system that connects human motion pretraining, simulation-based expert learning, robot demonstration collection, and visual closed-loop execution. Pretraining on HOT3D Aria predicts one second of bimanual motion from five images and thirty annotated hand states over the preceding second. Robot adaptation preserves the visual encoder, temporal backbone, and wrist parameters. Shared wrist representations, separate finger fields, and validity masks support both six-channel Inspire hands and sixteen-joint Allegro hands. The robot policy predicts sixty control targets from frontal images, command history, and task conditions. It executes a prefix and replans from updated observations. We compare direct regression, diffusion, and flow matching on lid opening and return and closed-lid object reorientation. Direct regression achieves success rates of 40.6\\% for opening and return, 100.0\\% for Inspire reorientation, and 93.3\\% for Allegro reorientation. Flow matching achieves 90.0\\% on Allegro reorientation. Paired comparisons further show that constraining replanning with the previous plan improves the continuous execution of generative policies. These results demonstrate a common adaptation pipeline for two hand embodiments and highlight the roles of contact coordination and action-chunk continuity.",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xiaoyu Yang",
+    "Nan Wu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.40210",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-29",
+   "scores": {},
+   "seed": false,
+   "title": "AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.40349": {
+   "abstract": "Human demonstrations offer an efficient and scalable source of data for dexterous robot manipulation, but differences in sensing and hand morphology complicate the transfer of contact-rich interactions. We present TouchBridge, a hardware--software co-designed framework for human-to-robot data transformation. A wearable human demonstration interface and a corresponding robot interface establish cross-embodiment correspondence in visual and fingertip tactile sensing. We introduce Tac-Retarget, a tactile-conditioned retargeting method that uses measured contact to align fingertip contact patches and preserve their spatial relations within and across hands. Unlike object-aware or simulation-based transfer pipelines, Tac-Retarget requires no object mesh, object-pose estimate, or physics simulation for retargeting, enabling direct and scalable conversion of human demonstrations into robot-domain training data. Combined with visual synthesis and camera-anchored action conversion, TouchBridge produces robot-domain demonstrations for fine-tuning a pretrained vision-language-action (VLA) model. Across four real-world contact-rich tasks, policies fine-tuned solely on TouchBridge-converted human demonstrations achieve a 72.5% average success rate, compared with 77.5% using an equal number of teleoperated robot demonstrations, while human demonstration collection is 7.0x faster. Under the same policy and training setup, Tac-Retarget outperforms DexPilot and UniDex by 25.0 and 42.5 percentage points, respectively.",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Haozhe Zhang",
+    "Gu Zhang",
+    "Zirui Zou",
+    "Yuzheng Chen",
+    "Jinlong Wu",
+    "Zixuan Hu",
+    "Jianke Zhang",
+    "Yucheng Hu",
+    "Zhecheng Yuan",
+    "Huazhe Xu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.40349",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-29",
+   "scores": {
+    "VTLA": 5.0
+   },
+   "seed": false,
+   "title": "TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.40646": {
+   "abstract": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to autonomously swap and use task-appropriate tools is important for tool-centric manipulation. We introduce SwapBot, a modular, tool-centric end effector system featuring low-cost adapters that quickly convert common household tools into robot end effectors. Rather than pursuing a single universal gripper, SwapBot adopts a unified design principle that combines a fixed robot-side coupling interface with low-cost, tool-side adapters, enabling compatibility with diverse tools, including articulated ones, and multiple robot platforms. Each adapter integrates compact tactile sensors, supports fast autonomous swapping, and interfaces with an intuitive teleoperation system for efficient demonstration collection. User studies show that, during teleoperation, SwapBot reduces task completion time and operator workload. Using collected demonstrations on the robot, we train imitation learning policies to successfully perform tool-centric tasks like cooking tofu, stirring salad, flipping meat. Our ablation study shows that using tactile-augmented demonstrations improves policy performance across contact-rich skills, increasing success rates by 15 to 25 percentage points over RGB-only policies. These results highlight modular, tactile-equipped tools as a practical and extensible pathway toward robust and capable robot manipulation. Project website https://personalrobotics.github.io/SwapBot.",
+   "added_at": "2026-10-30 07:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yunchu Zhang",
+    "Ray Song",
+    "Junhan Jiao",
+    "Liyiming Ke",
+    "Yuchen Yang",
+    "Ruihan Gao",
+    "Emma Romig",
+    "Siddhartha Srinivasa",
+    "Yiyue Luo"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.40646",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://personalrobotics.github.io/SwapBot",
+   "published": "2026-10-29",
+   "scores": {
+    "VTA": 12.0
+   },
+   "seed": false,
+   "title": "SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-29",
    "version": "v1"
   }
  }
