@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-01 18:28 ｜ 共 1685 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-02 08:09 ｜ 共 1687 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 72 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 127 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 376 篇
-- [Other（其他触觉相关）](#other) — 1153 篇
+- [Other（其他触觉相关）](#other) — 1155 篇
 
 ## Sim
 
@@ -105,7 +105,7 @@
 | 2026-10-15 | 🖐 **Spark-0: Scaling Spatially Aligned Tactile Pretraining for Robot Dexterous Manipulation** | Tianxing Chen et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.22342) · [Page](https://xsparkai.com/Spark-0) |
 | 2026-10-14 |  **ForceBench: Benchmarking Force Integration for Robotic Manipulation** | Xuan Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.19604) · [Page](https://forcebench-platform.github.io/) |
 | 2026-10-14 | 🖐 **Tactile-Guided Robot Learning: From Representation Learning to Foundation Models** | Kiyanoush Nazari et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20134) · [Page](https://sites.google.com/view/touch-in-robot-learning-review) |
-| 2026-10-14 | 🖐 **TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation** | Fucai Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20320) |
+| 2026-10-14 | 🖐 **TacClaw-Infinity: A Large-Scale Vision-Tactile-Language-Action Dataset for Dexterous Manipulation** | Fucai Zhu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.20320) · [Code](https://github.com/tacclaw-infinity/TacClaw-Infinity) · [Page](https://tacclaw-infinity.github.io/) |
 | 2026-10-13 |  **Interaction Latents as Actions for Contact-Rich Manipulation** | Yuhang Zheng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.18855) · [Page](https://mrsecant.github.io/ILA/) |
 | 2026-10-13 | 🖐 **FACT: A Multimodal Force-Action-Track Foundation Model for Human-to-Robot Dexterity** | Zhi Cao et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.19155) |
 | 2026-10-10 |  **DEFT-VLA: Stage-Localized Force Specialization for Contact-Rich Robotic Manipulation** | Zan Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.14854) |
@@ -615,7 +615,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-10-30 |  **TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking** | Mingyang Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.41275) |
 | 2026-10-29 | 🖐 **AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments** | Xiaoyu Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40210) |
+| 2026-10-29 | 🖐 **Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds** | Zhixuan Xu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.41028) · [Page](https://nus-lins-lab.github.io/CIMIWeb/) |
 | 2026-10-27 |  **GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers** | Liang Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36507) · [Page](https://graft-humanoid.github.io/) |
 | 2026-10-27 |  **Externalizing Hand Grip Pressure Through Real-Time Visual Feedback** | Andrew L. Huard et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36769) |
 | 2026-10-27 | 🖐 **A fully articulated humanoid dexterous hand with human-level joint structure enabled by linkage-based actuation** | Jihao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36789) |

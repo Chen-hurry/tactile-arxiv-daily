@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-01 18:28",
+ "last_update": "2026-11-02 08:09",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -53095,7 +53095,7 @@
    "version": "v2"
   },
   "2607.25397": {
-   "abstract": "Successfully automating dexterous, long-horizon robotic manipulation requires frameworks capable of both high-level reasoning and fine-grained execution. Traditional task and motion planning (TAMP), while excellent at symbolic planning, is often brittle in contact-rich operations. Simultaneously, imitation learning (IL), while effective in manipulation tasks with visual feedback, is limited by its low capability in spatial generalization and multi-stage operation. To reconcile their complementary strengths and limitations, we propose DR-LfD (Decomposed and Reorganized Skills Learned from Demonstrations), a framework that seamlessly integrates visuomotor policies into a TAMP-gated decision-making system. Based on contact relationships, DR-LfD decomposes human demonstrations into atomic skills, which are reproduced as visuomotor policies or object-centric primitives. The initiation, termination, and constraints of the visuomotor policies are carefully modeled and implemented in a TAMP-compatible form, enabling reorganization of skills learned from different sources. DR-LfD transforms the learning problem from one requiring exponential demonstration data over possible skill sequences to one whose demonstration burden scales with the number of distinct skill types, with limited data for each skill. Through comprehensive real-world and simulation benchmarking across diverse scenarios, we demonstrate the strong performance of DR-LfD on tasks involving multiple steps, unseen setups, and physical constraints. Project website: https://dr-lfd.github.io/DR-LfD-website.",
+   "abstract": "Successfully automating dexterous, long-horizon bimanual manipulation requires frameworks capable of both high-level reasoning and fine-grained execution. Traditional task and motion planning (TAMP), while excellent at symbolic planning, is often brittle in contact-rich operations. Simultaneously, imitation learning (IL), while effective in manipulation tasks with visual feedback, is limited by its low capability in spatial generalization and multi-stage operation. To reconcile their complementary strengths and limitations, we propose DR-LfD (Decomposed and Reorganized Skills Learned from Demonstrations), a framework that integrates visuomotor policies into a TAMP-gated decision-making system. Based on contact relationships, DR-LfD decomposes human demonstrations into atomic skills, which are reproduced as visuomotor policies or object-centric primitives. The initiation, termination, and constraints of the visuomotor policies are carefully modeled and implemented in a TAMP-compatible form, enabling reorganization of skills learned from different sources. DR-LfD transforms the learning problem from one requiring exponential demonstration data over possible skill sequences to one whose demonstration burden scales with the number of distinct skill types, with limited data for each skill. Real-world and simulation benchmarks demonstrate data-efficient skill composition under unseen setups and physical constraints. On two DexMimicGen tasks, DR-LfD with 100 demonstrations outperforms diffusion-based imitation policies with 1000.",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO"
@@ -53113,7 +53113,7 @@
     "Jia Pan"
    ],
    "code_url": null,
-   "comment": "21 pages, 12 figures",
+   "comment": "Accepted by T-RO. Website: https://dr-lfd.github.io/DR-LfD-website",
    "hand": true,
    "hidden": false,
    "id": "2607.25397",
@@ -53134,8 +53134,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-07-28",
-   "version": "v1"
+   "updated": "2026-10-30",
+   "version": "v2"
   },
   "2607.26452": {
    "abstract": "World models must learn the joint dynamics of states, actions, events, and observations, yet existing video, robotics, and simulation datasets usually capture only part of this structure. We introduce CG-World, a large-scale world-state dataset and protocol derived from industrial computer graphics production pipelines. CG-World explicitly records intermediate states, including multimodal semantics, spatial structure, skeletal and controller states, motion curves, camera and lighting parameters, physics caches, contact events, and multi-pass renderings. CG-World v1 contains approximately 850,000 temporally aligned segments of 1-5 seconds. It separates latent states, observations, relations, events, and branch metadata, and organizes them into unified spatiotemporal samples. To support intervention learning and counterfactual reasoning, CG-World defines a branch lineage covering factual trajectories, observation interventions, action interventions, mechanism interventions, and strict counterfactual branches, with intervention targets, invariants, and alternative outcomes explicitly recorded. We evaluate the dataset on geometry-conditioned video generation, action prediction, and closed-loop vision-language-action policy transfer. Results show that CG-World provides reusable structured supervision for controlled generation, action modeling, and embodied policy transfer. We plan to expand CG-World through continued data collection and community collaboration toward a shared data infrastructure for world models, Physical AI, and embodied intelligence.",
@@ -67237,8 +67237,8 @@
     "Michael Yu Wang",
     "Weihao Yuan"
    ],
-   "code_url": null,
-   "comment": "",
+   "code_url": "https://github.com/tacclaw-infinity/TacClaw-Infinity",
+   "comment": "Updated project website and code repository links; research content unchanged. Project: https://tacclaw-infinity.github.io/ ; Code: https://github.com/tacclaw-infinity/TacClaw-Infinity",
    "hand": true,
    "hidden": false,
    "id": "2610.20320",
@@ -67251,7 +67251,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://tacclaw-infinity.github.io/",
    "published": "2026-10-14",
    "scores": {
     "VTLA": 34.2
@@ -67261,8 +67261,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-10-14",
-   "version": "v1"
+   "updated": "2026-10-30",
+   "version": "v2"
   },
   "2610.20351": {
    "abstract": "Human demonstrations are today used largely for pretraining vision-language-action models, with little ability to use the same data for target-embodiment or task-oriented training, which scalable deployment of robots in industrial and general environments depends on. A human demonstration recorded on a simple and scalable device such as a mobile phone can serve as post-training data for a robot whose body differs in structure and capability from the human who recorded it. This is made possible not by retargeting the hand's motion but the object's. A capture yields a body-free record: the object's pose over time, its contact intervals, and a reconstructed 3D object with provenance. Any robot, given as a URDF and a short descriptor, is solved against that record and scored in simulation against the demonstrated object motion as ground truth: the human-to-simulation leg of human-to-simulation-to-robot transfer, measured per robot. Each (robot, episode) pair gets one outcome: pass, failure with a named mode, or refusal, with its reason, before any motion. The method runs as a working system over a growing collection; the set analysed here is a sample of it: 42 captures solved on 8 robots, 157 pairs, of which 31.2% pass, 52.2% fail, 14.0% are refused and 2.5% are unauditable (kinematic feasibility, +/-50 mm / +/-15 deg, in simulation). Refusals held up: every pair the checks refuse on stored evidence yet ran anyway failed (13 of 13; 5 on a body whose public model welds its hand). A description file could not be shown to screen a robot: its outcomes were barely more predictable than guessing. No policy has yet been trained on the record. The record decides what a robot may post-train on; whether the policy then works on the real robot is the simulation-to-robot question, answered downstream.",
@@ -70085,6 +70085,90 @@
     "VTA"
    ],
    "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.41028": {
+   "abstract": "Robot-free human demonstrations offer a promising route to scaling dexterous manipulation data. The key challenge is to preserve the demonstrator's natural dexterity while producing contact-grounded observations and actions that transfer to robot hands. We present Contact Imitation Interface (CIMI), a framework with contact-grounded demonstration and learning interfaces. The demonstration interface combines shared contact geometry and fingertip RGB views with contact-alignment-first retargeting and reprojection of wider scene views. The learning interface introduces a hierarchical policy in which a contact-surface planner predicts relative contact-surface trajectories and a controller coordinates wrist and finger commands to improve contact alignment. CIMI combines contact-grounded observations, retargeting, and action representations, improving mean final-stage success by at least 50 percentage points over baseline policies across six hand-task pairs on LEAP and Wuji. Hardware designs and software are publicly available.",
+   "added_at": "2026-11-02 08:09",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zhixuan Xu",
+    "Yichen Li",
+    "Bingchen Wu",
+    "Rui Wang",
+    "Yiwen Hou",
+    "Zixuan Liu",
+    "Tianyu Qiu",
+    "Lin Shao"
+   ],
+   "code_url": null,
+   "comment": "15 pages (8-page main paper and 7-page supplementary material). Project website with code and hardware designs: https://nus-lins-lab.github.io/CIMIWeb/",
+   "hand": true,
+   "hidden": false,
+   "id": "2610.41028",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://nus-lins-lab.github.io/CIMIWeb/",
+   "published": "2026-10-29",
+   "scores": {},
+   "seed": false,
+   "title": "Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-29",
+   "version": "v1"
+  },
+  "2610.41275": {
+   "abstract": "Embodied visual tracking requires a robot to follow a language-specified person under occlusion, look-alike distractors, and ambiguous instructions. We show that improving tracking persistence can simultaneously increase safety violations. Using a compact 0.6B vision-language-action (VLA) tracker with a frozen backbone, we update only the planner head with proximal policy optimization (PPO). PPO improves success and following rates across all three EVT-Bench settings, but increases the collision rate on distracted tracking because episodes that previously ended in target loss can instead end in contact. We introduce TRACE, an execution-time target-state risk gate that preserves the learned policy and intervenes selectively. A lightweight risk head processes 84 cues, including candidate boxes, identity margins, a learned range-and-bearing probe, and the policy's commands. When the calibrated risk exceeds a threshold, TRACE rescales the translational component of the next waypoint while leaving yaw unchanged. The executed action is identical to PPO's on more than 98% of steps. In paired evaluations on identical episodes, TRACE reduces the distracted-tracking collision rate by 3.96 percentage points, while further improving success and following rates. Matched slowdown controls without target-state timing do not reproduce this improvement. Concurrent evaluation reproduces a collision reduction of 3.77 points, compared with 0.29 points for identical-arm null pairs, indicating that the effect exceeds evaluation variability. These results show that target-state-aware execution can recover the safety cost of policy post-training with minimal intervention.",
+   "added_at": "2026-11-02 08:09",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Mingyang Lyu",
+    "Gongce Cao",
+    "Yiyang Jia",
+    "Lu Jia",
+    "Erliang Lin",
+    "Yuhao Zhang",
+    "Yinqian Sun",
+    "Pin Lyu",
+    "Feifei Zhao",
+    "Bo Wang"
+   ],
+   "code_url": null,
+   "comment": "35 pages, including appendices",
+   "hand": false,
+   "hidden": false,
+   "id": "2610.41275",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-10-30",
+   "scores": {},
+   "seed": false,
+   "title": "TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-30",
    "version": "v1"
   }
  }
