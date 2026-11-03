@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-02 22:23",
+ "last_update": "2026-11-03 08:29",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -65251,8 +65251,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-08",
-   "version": "v2"
+   "updated": "2026-11-02",
+   "version": "v3"
   },
   "2610.10346": {
    "abstract": "Robotic minimally invasive surgery has revolutionized surgical practice. However, as the surgeons are mechanically separated from the surgical tools, loss of tactile feedback occurs. We present a compact force sensor with three, millimeter scale sensing elements (taxels) that can be affixed to the grasping face of a robotic surgical tool. The sensor features a miniaturized design using Hall effect sensors and magnets embedded in a deformable elastomer contact layer. Sensor calibration is achieved with a 6 degree of freedom (DoF) parallel robot. Each taxel can detect applied normal and shear forces with average RMSE of 2.133 kPa. The calibrated sensor was validated on phantom and ex vivo porcine tissue, demonstrating tactile sensing during retraction as well as slip. This work introduces a small-scale Hall effect based tactile sensor, enabling sensing for force-sensitive robotic surgical applications.",
@@ -69914,8 +69914,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-29",
-   "version": "v1"
+   "updated": "2026-10-31",
+   "version": "v2"
   },
   "2610.39582": {
    "abstract": "Human demonstrations provide a natural and scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying physical interaction is rarely preserved across embodiments. To address this limitation, we present a hierarchical three-stage framework for kinematic-tactile aligned dexterous retargeting. We use object-centric contact wrench space as a physical representation for tactile alignment between human and robot hands. The framework first aligns hand kinematics and contact geometry, and then constructs a human wrench support profile from tactile forces and contact geometry. Robot fingertip force targets are subsequently optimized to cover the human wrench support and converted into joint position corrections, yielding directly replayable robot hand trajectories. We evaluate the framework in simulation and real robot experiments across three pouring conditions. In the real robot experiments, our method achieves a 96.7\\% replay success rate and higher wrench transfer fidelity than representative retargeting baselines. The framework enables physically grounded transfer of kinematic and tactile information from human demonstrations to robot hands, providing a path toward scalable learning of contact-rich dexterous manipulation.",
@@ -70147,7 +70147,7 @@
     "Bo Wang"
    ],
    "code_url": null,
-   "comment": "35 pages, including appendices",
+   "comment": "35 pages, including appendices; updated Mingyang Lyu's affiliations. No changes to the scientific content",
    "hand": false,
    "hidden": false,
    "id": "2610.41275",
@@ -70168,7 +70168,469 @@
    "topics": [
     "Other"
    ],
+   "updated": "2026-11-02",
+   "version": "v2"
+  },
+  "2611.00455": {
+   "abstract": "Tactile sensing provides robots with direct observations of contact physics, local geometry, and interaction dynamics, making it a vital source of feedback for contact-rich manipulation. However, existing tactile manipulation studies are often developed and evaluated within specific task settings, making it difficult to systematically compare how tactile information contributes under different interaction conditions. In this work, we develop a benchmark in simulation comprising 128 tasks organized around three complementary evaluation regimes: Precise, Recognition, and Dynamic. The benchmark further includes controlled static and dynamic task variants and 12 perturbation settings for evaluating robustness under changes in visual and physical conditions. These settings motivate studying tactile information as a temporally evolving interaction representation rather than only as an instantaneous observation. We therefore propose an action-conditioned latent predictive world model that integrates tactile history and learns a tactile state through prediction of future tactile latents. Building on this representation, we design a model that conditions action generation on the learned tactile state and uses predicted future tactile information to refine candidate actions through predictive tactile reflection. Experiments on the proposed benchmark show consistent gains from incorporating tactile information across the evaluated regimes. Project Page: https://tacmind-bench.github.io/",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jiaxin Shi",
+    "Zibin Wu",
+    "Yichi Zhang",
+    "Jianghua Duan",
+    "Siyu Zhu",
+    "Weihao Yuan"
+   ],
+   "code_url": null,
+   "comment": "Project Page: https://tacmind-bench.github.io/",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.00455",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://tacmind-bench.github.io/",
+   "published": "2026-10-30",
+   "scores": {
+    "Sim": 2.5
+   },
+   "seed": false,
+   "title": "TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation",
+   "topics": [
+    "Other"
+   ],
    "updated": "2026-10-30",
+   "version": "v1"
+  },
+  "2611.00957": {
+   "abstract": "Tactile sensing plays an important role in imitation learning for contact-rich manipulation by providing direct observations of physical contact with objects. Recently, several tactile foundation models (TFMs) have been proposed to learn general-purpose tactile representations through pretraining on large-scale tactile datasets. However, how these pretrained tactile representations should be leveraged for end-to-end imitation learning remains insufficiently explored. In this work, we integrate multiple TFMs into Diffusion Policy and systematically evaluate their effectiveness for contact-rich manipulation under common experimental settings. We further investigate adaptation strategies, including encoder fine-tuning and task-specific mid-training, to understand how pretrained tactile representations can be effectively used for downstream imitation learning. Through extensive evaluation across diverse manipulation tasks in both real-world and simulation environments, including more than 5,000 real-world policy rollouts, we provide empirical insights into the use of TFMs for end-to-end imitation learning. Project page: https://mmurooka.github.io/tfm4il-project-page/",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Masaki Murooka",
+    "Ryoichi Nakajo",
+    "Tomohiro Motoda",
+    "Koshi Makihara",
+    "Hanbit Oh",
+    "Keisuke Shirai",
+    "Yukiyasu Domae"
+   ],
+   "code_url": null,
+   "comment": "Accepted for the 2027 IEEE/SICE International Symposium on System Integration (SII 2027)",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.00957",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://mmurooka.github.io/tfm4il-project-page/",
+   "published": "2026-10-31",
+   "scores": {
+    "Sim": 2.5,
+    "VTA": 15.8,
+    "VTLA": 7.0
+   },
+   "seed": false,
+   "title": "Evaluating Tactile Foundation Models for End-to-End Imitation Learning in Contact-Rich Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-10-31",
+   "version": "v1"
+  },
+  "2611.01229": {
+   "abstract": "Extended Reality (XR) technologies have shown potential to improve laparoscopic skills acquisition. Among fundamental skills in laparoscopic surgery is accurate instrument handling. Appropriate instrument alignment and a perpendicular path ensure movement efficiency and improved performance. This work introduces an interactive XR platform designed to support an immersive, engaging, and accessible environment that facilitates continuous practice. This platform incorporates a gamification layer enriched by pseudo-haptics that generate a motivational feedback loop, allowing trainees to continuously practice instrument manipulation and angle control. The platform monitors instrument orientation, computes angular deviation from an ideal reference vector, and assigns scores based on user performance. A point-based scoring component reinforces correct technique and penalizes deviations in tool alignment beyond predefined thresholds. Furthermore, a pseudo-haptic feedback mechanism is integrated to provide real-time tactile feedback when deviation exceeds tolerance. Combined with low-cost hardware and accessible deployment, the framework aims to increase training scalability, engagement, and improve skill acquisition. Preliminary evaluations indicate that integrating gamified feedback significantly improves precision, reduces angular variance, and encourages sustained practice.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.HC",
+    "cs.GR"
+   ],
+   "authors": [
+    "Bita koohestani",
+    "Ashkan Rezaei",
+    "Azam Bastanfard"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.01229",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.HC",
+   "project_url": null,
+   "published": "2026-10-31",
+   "scores": {},
+   "seed": false,
+   "title": "Precision Through Play: Enhancing Fundamental Laparoscopic Skill Acquisition Via Gamified XR and Pseudo-Haptics",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-10-31",
+   "version": "v1"
+  },
+  "2611.01483": {
+   "abstract": "Tactile sensing plays a crucial role in everyday human interaction. Consider inserting a plug into a tight socket, vision alone provides limited guidance during the final insertion stage, and we instead rely on both anticipated contact and realized tactile feedback to ajust the insertion motion. The same capability is equally important for robots, particularly in dexterous manipulation tasks. Yet many contemporary robot policies remain vision-dominant. This visual bias, compounded by limited tactile data and sparse contact events, can cause directly incorporated tactile signals to be ignored or even compromise the policy's pretrained capabilities, yielding degrading performance as observed in our experiments. We present $TF^2$-Steering, which refines actions via learned residual steering of the flow-matching action expert's velocity field, using a tactile mixture-of-experts architecture to integrate both tactile forecasts and real-time tactile feedback. Together with specific designed three stages training recipe, $TF^2$-Steering enables tactile signals to correct and, when necessary, redirect the flow-matching action-generation process, while building on the strong action-generation capacity of the vision-based foundation policy. Extensive experiments across six simulated and six real-world manipulation tasks demonstrate the effectiveness of $TF^2$-Steering. It outperforms the strongest evaluated baselines by 10.7 percentage points in average simulation success rate and 9.1 percentage points in average real-world progress success rate. Project page: https://yiming-cc.github.io/tf2-steering/.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yiming Chen",
+    "Xiaofei Wei",
+    "Chun Gu",
+    "Wei Xiao",
+    "Peidong Liu",
+    "Li Zhang"
+   ],
+   "code_url": null,
+   "comment": "19 pages, 6 figures. Project page: https://yiming-cc.github.io/tf2-steering/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.01483",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://yiming-cc.github.io/tf2-steering/",
+   "published": "2026-11-01",
+   "scores": {
+    "VTA": 5.5,
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-01",
+   "version": "v1"
+  },
+  "2611.01609": {
+   "abstract": "Robotic surface exploration benefits from tactile interfaces that accommodate contact and capture variations in surface characteristics. Herein, we report MagPillar, a tactile sensor inspired by spider tactile hairs that combines a magnetic pillar array with three-axis Hall sensing. A full-array mechanical and magnetic-field model characterizes how pillar deformation affects the superposed fields measured across the array, providing a physical basis for interpreting its contact responses. The compliant pillar architecture translates contact with surface textures and geometric features into distinct magnetic response patterns. Then, in robotic surface perception experiments, spectral features and logistic regression distinguish six material surfaces with an offline accuracy of 99.34% under within-session temporally blocked cross-validation. Continuous scans over periodic protrusions produce amplitude and peak-spacing variations consistent with changes in surface geometry. These findings connect compliant contact mechanics with distributed magnetic sensing, paving a new path for material recognition and qualitative surface-profile perception.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Haotian Guo",
+    "Yu Feng",
+    "Hao Wu",
+    "Jiazhi Tang",
+    "Jianshu Zhou"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.01609",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-01",
+   "scores": {},
+   "seed": false,
+   "title": "MagPillar: A Soft Magnetopillar Array Tactile Sensor for Robotic Surface Perception",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-01",
+   "version": "v1"
+  },
+  "2611.02525": {
+   "abstract": "Touching a virtual agent involves more than detecting a finger on a display: the contact surface can deform and resist the user's push, and the agent can respond to that action. We describe the Desktop Amid Touch (DAT) screen, which combines spatial projection onto a semi-transparent, deformable mesh with touch sensing and motorized control of resistance to indentation. An initial prototype detected a single touch and estimated its position and depth from tension changes around a flexible projection screen. A subsequent prototype added motorized tension control to vary the screen's resistance to indentation. We describe the tension-controlled DAT implementation and its demonstrations, distinguishing what has been observed from what remains an open design question. These capabilities raise a design question: should touchable virtual agents respond as though they had preferences or boundaries, and under what conditions should such behavior be implemented on systems like DAT. The present paper describes a system and frames this question; it does not establish how users interpret an agent's refusal or consent.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.HC",
+    "cs.AR",
+    "cs.RO",
+    "eess.SY"
+   ],
+   "authors": [
+    "Takaya Tamamoto",
+    "Tomoko Yonezawa"
+   ],
+   "code_url": null,
+   "comment": "The 2nd International Workshop on Trust and Blame in Multi-Person Multi-Agent Societies (TBSA_2nd) in conjunction with HAI 2026, 4 pages, 4 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.02525",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.HC",
+   "project_url": null,
+   "published": "2026-11-02",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.02677": {
+   "abstract": "Long-horizon robotic assembly requires reliable perception and action across grasping, alignment, and insertion. Vision captures global object pose and scene context, where as fingertip touch provides local contact cues that are especially useful as contact states change. We present a visuotactile diffusion policy that combines four-step histories from two camera views and two fingertip tactile images to condition action-sequence generation. A recurrent temporal representation integrates recent observations from both modalities. To encourage it to capture how contact evolves under action, an auxiliary objective predicts fingertip-image changes two steps ahead from the temporal representation and demonstrated actions. This objective is used only during training and adds no inference-time computation. Across three independent training seeds in MuJoCo assembly experiments, the full model achieves an average success rate of $59.0\\% \\pm 2.6\\%$, improving on the visual-only baseline ($42.7\\% \\pm 1.5\\%$) by 16.3 percentage points.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Kaihong Ouyang",
+    "Zihao Su",
+    "Chengxuan Zheng",
+    "Weiyi Lai",
+    "Dong Zhou"
+   ],
+   "code_url": null,
+   "comment": "7 pages, 2 figures. Presented at ICCSSE 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.02677",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "tactile images"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-02",
+   "scores": {
+    "Sim": 2.5,
+    "VTA": 17.5
+   },
+   "seed": false,
+   "title": "Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.02794": {
+   "abstract": "Robust multimodal perception for soft robotic grasping is challenged by modality-dependent noise, semantic ambiguity, and limited coordinated multisensory data. We introduce Soma, a dataset containing 100 objects, 1,000 continuous grasping trajectories, and 74,914 multimodal samples grouped by software acquisition cycle, spanning remote RGB, hand RGB, depth, tactile, IMU, and structured text observations. We also collect Soma-Success, an independent grasp-outcome dataset with 1,000 trials (998 retained after quality control), to evaluate frozen-encoder transfer for post-hoc grasp outcome classification and early grasp success prediction. Built on Soma, SomaAlign learns multimodal representations in three stages: masked reconstruction estimates relative modality reliability; reliability-aware contrastive alignment uses pair-specific adaptive temperatures to adjust alignment sharpness; and conflict-aware semantic constraints improve intra-sample cross-modal consistency while preserving global feature geometry. SomaAlign achieves an average Recall@10 of 90.66% across 30 directed cross-modal retrieval tasks. The learned representations also support physical attribute recognition, multimodal question answering, cross-modal generation, and cross-dataset transfer to grasp outcome prediction. On Soma-Success, frozen SomaAlign encoders with lightweight probes achieve 94.59% post-hoc classification accuracy and 84.07% early prediction accuracy. Together, Soma, Soma-Success, and SomaAlign provide a data and representation-learning foundation for robust and transferable multimodal perception in soft robotic manipulation.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "Haoyuan Wang",
+    "Shuai Peng",
+    "Yongkai Liao",
+    "Yuxiao Sun",
+    "Wei Luo",
+    "Xinxing Chen",
+    "Jian Huang"
+   ],
+   "code_url": null,
+   "comment": "18 pages, 9 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.02794",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-02",
+   "scores": {},
+   "seed": false,
+   "title": "SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.03294": {
+   "abstract": "Contact-rich manipulation requires fine-grained control and complex physical interactions with the environment, posing significant challenges for robot policy learning. Vision-only policies struggle with such tasks, as contact states and interaction forces are difficult to infer from visual observations alone. Existing methods mitigate this issue by incorporating force or tactile sensing. However, they often treat these signals as auxiliary observations without fully exploiting their role in modeling future interaction dynamics. To address this, we propose ForceLDM, a force-aware latent dynamics model that learns future contact and motion dynamics to guide action generation. Rather than directly predicting future observations, which can entangle task-relevant dynamics with irrelevant sensory details, ForceLDM learns a compact representation of future dynamics through knowledge distillation. Specifically, a teacher network with privileged future force/torque and optical flow signals extracts future dynamic features, which are then distilled into a student network trained only on current observations. This enables the student model to reason about upcoming contacts and physical dynamics without relying on future sensory inputs at deployment. To improve robustness and generalization, we further introduce a curriculum-based progressive noise injection strategy to mitigate over-reliance on future features. Experiments on five real-world contact-rich manipulation tasks demonstrate that ForceLDM outperforms state-of-the-art baselines, generalizes effectively to novel objects, and remains robust to environmental perturbations. Project page and code are available at https://tpy001.github.io/ForceLDM/.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Peiyuan Tang",
+    "Yao Li",
+    "Xiaodong Zhang",
+    "Wuyang Zhang",
+    "Qin Xia",
+    "Yanyong Zhang",
+    "Zijiang Yang"
+   ],
+   "code_url": null,
+   "comment": "NeurIPS 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.03294",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "force/torque"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://tpy001.github.io/ForceLDM/",
+   "published": "2026-11-02",
+   "scores": {
+    "VTA": 5.0
+   },
+   "seed": false,
+   "title": "ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.03489": {
+   "abstract": "Pre-touch sensing, or sensing information about an object before contact, is an attractive modality for robot hands as it can allow a robot to anticipate and respond to a contact before it happens. In this work, we introduce ToFTouch, a multimodal tactile sensor combining three multizone (4$\\times$4 resolution) time-of-flight sensors with an optics-based pressure sensing array. We mount this sensor on a parallel jaw gripper and demonstrate its utility on three distinct tasks: (i) pre-grasp adjustment, (ii) item extraction from clutter, and (iii) item insertion into tight spaces. For pre-grasp adjustment, ToF feedback reduced cycle time by 7.4$\\%$ by enabling anticipatory gripper closure during approach. For extraction, ToF sensing enabled successful retrieval across all tested depth offsets ($\\pm$2 cm) deviating from the nominal pick point, including conditions where baseline approaches failed, with standard deviations below 0.4 cm. For insertion into dense clutter, we explore the proximity and tactile information provided from ToFTouch during an insertion trajectory. The results demonstrate the utility of multizone ToF sensing in a manipulation environment.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Eric T. Chang",
+    "Bianca Aumann",
+    "Zhanpeng He",
+    "Mohamed Elnoor",
+    "Thomas Liang",
+    "Matei Ciocarlie",
+    "Nima Fazeli",
+    "Joshua Migdal",
+    "Tye Brady",
+    "Taskin Padir"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.03489",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-02",
+   "scores": {},
+   "seed": false,
+   "title": "Exploring Proximity and Tactile Sensing for Robotic Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.03520": {
+   "abstract": "Contact-rich manipulation benefits from tactile feedback that captures both detailed contact geometry and interaction forces. When scooping grains, contact patterns help infer spoon orientation, while resistance transmitted through the grasp guides motion. To provide these complementary sensing capabilities, we present PanoTac, a low-cost, compliant tactile fingertip designed for dense three-axis tactile sensing. Each fingertip provides a $12 \\times 32 \\times 3$ tactile representation, with one normal ($z$) and two shear ($x$, $y$) response components at each taxel. The sensor operates at 60 Hz and costs less than $50 per fingertip. Sensor characterization quantifies response repeatability and consistency across sensor instances and contact locations. We integrate PanoTac into a robotic system with a visuo-tactile pipeline. Across test-tube preparation, grain scooping, and salt pouring, the resulting policies outperform vision-only baselines by an average of 46.7 percentage points. Ablations show that removing either spatial contact information or shear feedback reduces overall performance across the task suite. Our project page is available at https://panotac.github.io.",
+   "added_at": "2026-11-03 08:29",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+   ],
+   "authors": [
+    "Binglin",
+    "Wang",
+    "Xiaole",
+    "Jiang",
+    "Zicheng Teng",
+    "Xinqi Liu",
+    "Yunzhu Li",
+    "Lerrel Pinto",
+    "Zichen Jeff Cui",
+    "Binghao Huang"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://panotac.github.io",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.03520",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "taxel"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://panotac.github.io",
+   "published": "2026-11-02",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "PanoTac: A Dense Three-Axis Tactile Sensor for Robust Touch-Centric Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-02",
    "version": "v1"
   }
  }

@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-02 22:23 ｜ 共 1687 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-03 08:29 ｜ 共 1698 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 72 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 127 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 376 篇
-- [Other（其他触觉相关）](#other) — 1155 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 380 篇
+- [Other（其他触觉相关）](#other) — 1162 篇
 
 ## Sim
 
@@ -232,6 +232,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-02 |  **ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation** | Peiyuan Tang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03294) · [Page](https://tpy001.github.io/ForceLDM/) |
+| 2026-11-02 |  **Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction** | Kaihong Ouyang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.02677) |
+| 2026-11-01 | 🖐 **$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering** | Yiming Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01483) · [Page](https://yiming-cc.github.io/tf2-steering/) |
+| 2026-10-31 |  **Evaluating Tactile Foundation Models for End-to-End Imitation Learning in Contact-Rich Manipulation** | Masaki Murooka et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.00957) · [Page](https://mmurooka.github.io/tfm4il-project-page/) |
 | 2026-10-29 | 🖐 **Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection** | Li Guan et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39076) |
 | 2026-10-29 | 🖐 **Kinematic-Tactile Aligned Dexterous Retargeting with Contact Wrench Space Alignment** | Xinyuan He et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39582) |
 | 2026-10-29 |  **SwapBot: Tool-Centric Robot Manipulation via Interchangeable End-Effectors and Tactile Sensing** | Yunchu Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40646) · [Page](https://personalrobotics.github.io/SwapBot) |
@@ -615,7 +619,14 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-02 |  **PanoTac: A Dense Three-Axis Tactile Sensor for Robust Touch-Centric Manipulation** | Binglin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03520) · [Page](https://panotac.github.io) |
+| 2026-11-02 | 🖐 **Exploring Proximity and Tactile Sensing for Robotic Manipulation** | Eric T. Chang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.03489) |
+| 2026-11-02 |  **SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping** | Haoyuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02794) |
+| 2026-11-02 |  **Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-** | Takaya Tamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02525) |
+| 2026-11-01 |  **MagPillar: A Soft Magnetopillar Array Tactile Sensor for Robotic Surface Perception** | Haotian Guo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01609) |
+| 2026-10-31 |  **Precision Through Play: Enhancing Fundamental Laparoscopic Skill Acquisition Via Gamified XR and Pseudo-Haptics** | Bita koohestani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01229) |
 | 2026-10-30 |  **TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking** | Mingyang Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.41275) |
+| 2026-10-30 |  **TacMind: Benchmarking and Modeling Tactile Interaction States for Robotic Manipulation** | Jiaxin Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.00455) · [Page](https://tacmind-bench.github.io/) |
 | 2026-10-29 | 🖐 **AcrossDEX 1.0: From Human Motion Pretraining to Bimanual Dexterous Manipulation across Hand Embodiments** | Xiaoyu Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40210) |
 | 2026-10-29 | 🖐 **Contact Imitation Interface: Transferring Dexterous Skills by Showing How Contact Unfolds** | Zhixuan Xu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.41028) · [Page](https://nus-lins-lab.github.io/CIMIWeb/) |
 | 2026-10-27 |  **GRAFT: Geometry-Aware Residual Adaptation for Foundation Trackers** | Liang Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36507) · [Page](https://graft-humanoid.github.io/) |
