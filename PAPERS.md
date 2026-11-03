@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-03 08:29 ｜ 共 1698 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-03 20:11 ｜ 共 1698 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -232,8 +232,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-02 |  **ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation** | Peiyuan Tang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03294) · [Page](https://tpy001.github.io/ForceLDM/) |
 | 2026-11-02 |  **Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction** | Kaihong Ouyang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.02677) |
+| 2026-11-02 |  **ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation** | Peiyuan Tang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03294) · [Page](https://tpy001.github.io/ForceLDM/) |
 | 2026-11-01 | 🖐 **$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering** | Yiming Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01483) · [Page](https://yiming-cc.github.io/tf2-steering/) |
 | 2026-10-31 |  **Evaluating Tactile Foundation Models for End-to-End Imitation Learning in Contact-Rich Manipulation** | Masaki Murooka et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.00957) · [Page](https://mmurooka.github.io/tfm4il-project-page/) |
 | 2026-10-29 | 🖐 **Tactus: Tactile & Pose Sensing Glove for Natural Dexterity Data Collection** | Li Guan et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.39076) |
@@ -619,10 +619,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-02 |  **PanoTac: A Dense Three-Axis Tactile Sensor for Robust Touch-Centric Manipulation** | Binglin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03520) · [Page](https://panotac.github.io) |
-| 2026-11-02 | 🖐 **Exploring Proximity and Tactile Sensing for Robotic Manipulation** | Eric T. Chang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.03489) |
-| 2026-11-02 |  **SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping** | Haoyuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02794) |
 | 2026-11-02 |  **Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-** | Takaya Tamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02525) |
+| 2026-11-02 |  **SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping** | Haoyuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02794) |
+| 2026-11-02 | 🖐 **Exploring Proximity and Tactile Sensing for Robotic Manipulation** | Eric T. Chang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.03489) |
+| 2026-11-02 |  **PanoTac: A Dense Three-Axis Tactile Sensor for Robust Touch-Centric Manipulation** | Binglin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03520) · [Page](https://panotac.github.io) |
 | 2026-11-01 |  **MagPillar: A Soft Magnetopillar Array Tactile Sensor for Robotic Surface Perception** | Haotian Guo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01609) |
 | 2026-10-31 |  **Precision Through Play: Enhancing Fundamental Laparoscopic Skill Acquisition Via Gamified XR and Pseudo-Haptics** | Bita koohestani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01229) |
 | 2026-10-30 |  **TRACE: Target-State Risk-Aligned Conditional Execution for Embodied Tracking** | Mingyang Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.41275) |
