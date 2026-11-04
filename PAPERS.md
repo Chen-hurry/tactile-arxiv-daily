@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-04 07:55 ｜ 共 1701 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-04 20:28 ｜ 共 1701 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -233,8 +233,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-03 |  **Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation** | Jimmy Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04492) |
 | 2026-11-03 |  **ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control** | Mingyu Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04424) · [Page](https://minusmodulo.github.io/reflexarc-website/) |
+| 2026-11-03 |  **Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation** | Jimmy Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04492) |
 | 2026-11-02 |  **Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction** | Kaihong Ouyang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.02677) |
 | 2026-11-02 |  **ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation** | Peiyuan Tang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03294) · [Page](https://tpy001.github.io/ForceLDM/) |
 | 2026-11-01 | 🖐 **$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering** | Yiming Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01483) · [Page](https://yiming-cc.github.io/tf2-steering/) |
