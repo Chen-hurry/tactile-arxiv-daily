@@ -2,16 +2,16 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-03 20:11 ｜ 共 1698 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-04 07:55 ｜ 共 1701 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
 ## 目录
 
-- [Sim（触觉仿真环境）](#sim) — 72 篇
+- [Sim（触觉仿真环境）](#sim) — 73 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 127 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 380 篇
-- [Other（其他触觉相关）](#other) — 1162 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 382 篇
+- [Other（其他触觉相关）](#other) — 1163 篇
 
 ## Sim
 
@@ -19,6 +19,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-03 |  **Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation** | Jimmy Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04492) |
 | 2026-10-27 | 🖐 **CARD: Contact-Anchored Retargeting for Dexterous Manipulation** | Cunxi Dai et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2610.36539) · [Page](https://card-retargeting.github.io/) |
 | 2026-10-27 |  **ActiveAlign: Aligning Egocentric Manipulation via Active Perception** | Ri-Zhao Qiu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.36859) |
 | 2026-10-27 | 🖐 **DexSuite: An All-in-One Framework for Dexterous Manipulation Across Arms, Hands, and Tasks** | Anas Houssaini et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.37799) · [Page](https://dexsuiteorg.github.io) |
@@ -232,6 +233,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-03 |  **Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation** | Jimmy Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04492) |
+| 2026-11-03 |  **ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control** | Mingyu Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04424) · [Page](https://minusmodulo.github.io/reflexarc-website/) |
 | 2026-11-02 |  **Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction** | Kaihong Ouyang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.02677) |
 | 2026-11-02 |  **ForceLDM: A Force-aware Latent Dynamics Model for Contact-Rich Manipulation** | Peiyuan Tang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.03294) · [Page](https://tpy001.github.io/ForceLDM/) |
 | 2026-11-01 | 🖐 **$TF^2$-Steering: Action Refinement with Tactile Forecasts and Feedback via Velocity-Field Steering** | Yiming Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.01483) · [Page](https://yiming-cc.github.io/tf2-steering/) |
@@ -619,6 +622,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-03 | 🖐 **PACT: Pose-Robust Actuation Co-Design for Tendon-Driven Robotic Hands** | Prashant Kumar et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.05302) |
 | 2026-11-02 |  **Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-** | Takaya Tamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02525) |
 | 2026-11-02 |  **SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping** | Haoyuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02794) |
 | 2026-11-02 | 🖐 **Exploring Proximity and Tactile Sensing for Robotic Manipulation** | Eric T. Chang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.03489) |

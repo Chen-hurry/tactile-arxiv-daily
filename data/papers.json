@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-03 20:11",
+ "last_update": "2026-11-04 07:55",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -56140,8 +56140,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-06",
-   "version": "v3"
+   "updated": "2026-11-03",
+   "version": "v4"
   },
   "2608.21355": {
    "abstract": "Recent vision-based action models have demonstrated strong capabilities in complex manipulation, but they rarely leverage explicit object physical properties to adapt their policies. We introduce ViTacPhys, a visual-tactile framework and data acquisition system that estimates object mass and friction-coefficient classes, together with continuous stiffness, from human manipulation demonstrations. Trained on data from 60 rigid and deformable objects, ViTacPhys combines temporal visual-tactile modeling, cross-attention multimodal fusion, and a semantic prior derived from a vision-language model. On seen objects, it achieves 97.2% mass classification accuracy, 98.8% friction-coefficient classification accuracy, and a stiffness mean absolute percentage error (MAPE) of 5.51%. On held-out objects from known categories, it achieves 87.5% mass accuracy, 97.5% friction-coefficient accuracy, and a stiffness MAPE of 9.08%. We transfer ViTacPhys from the human domain to the robot domain using limited robot teleoperation data, robot-style video augmentation, and human demonstrations with matched actions, and deploy it as an online module for adaptive grasping. The resulting physical-property-conditioned policy achieves total grasping success rates of 95.0% on in-distribution objects and 83.4% on out-of-distribution objects. For out-of-distribution objects successfully grasped by both methods, its force profiles are more consistent with human teleoperation than those produced by ACT. These results demonstrate the feasibility of explicitly estimating and conditioning on object physical properties for real-world adaptive grasping.",
@@ -60378,8 +60378,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-09-21",
-   "version": "v1"
+   "updated": "2026-11-03",
+   "version": "v2"
   },
   "2609.24133": {
    "abstract": "Recent advances in humanoid robotics and embodied intelligence have enabled robots to perform increasingly complex manipulation tasks. However, musical instrument performance remains a formidable benchmark, demanding not only collision-free trajectory execution but also precise contact timing, asymmetric bimanual coordination, and target acoustic outcomes on physical instruments. The guqin, a seven-string fretless zither, presents unique manipulation challenges due to its millimetric string spacing, transient right-hand plucking, and sustained left-hand harmonic contacts. In this work, we present a physical heterogeneous dual-arm robotic system for phrase-level autonomous guqin performance. We formulate guqin playing as a hybrid discrete--continuous execution problem and develop a hierarchical planning framework that coordinates working finger assignment, configuration continuity, obstacle avoidance, and tight bimanual contact schedules across consecutive musical events. The system integrates vision-guided instrument localization, tactile-based harmonic contact monitoring, and auditory feedback-informed plucking parameter calibration. Real-world experiments on a 25-event phrase demonstrate that the system reliably executes coordinated open-string and seventh-hui harmonic sequences on a physical guqin, achieving 93.6% and 96.8% event correctness across repeated trials.",
@@ -65029,8 +65029,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-09",
-   "version": "v2"
+   "updated": "2026-11-03",
+   "version": "v3"
   },
   "2610.09696": {
    "abstract": "Robot manipulation data collection has been shifting from teleoperation toward robot-free demonstrations, through interfaces such as the Universal Manipulation Interface (UMI) or directly from human hands. Vision-Language-Action (VLA) policies trained on such data inherit the demonstrator's timing. Yet human timing does not directly transfer to robots: compliant hands tolerate fast contact, whereas robots may overshoot due to actuator and tracking limitations; conversely, robots can move faster in free space. This motivates a unified approach that reconciles execution speed with contact safety. We present RoboPace, an online retiming layer that preserves the policy's geometric path while adapting its timing, respecting the target robot's kinematic and dynamic constraints. It adapts execution speed based on predicted contact, jointly accounting for contact-dependent speed limits and the robot's motion constraints. The method requires no policy retraining and operates in real time. Across three contact-rich tasks on a dual-arm robot, faster uniform execution and physical-limit-only retiming largely fail. RoboPace instead achieves higher overall success than slow uniform execution while completing four of five commands in approximately half the time, retaining the reliability of slow execution without its time cost.",
@@ -70346,6 +70346,7 @@
     "Yu Feng",
     "Hao Wu",
     "Jiazhi Tang",
+    "Ningbin Zhang",
     "Jianshu Zhou"
    ],
    "code_url": null,
@@ -70370,8 +70371,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-01",
-   "version": "v1"
+   "updated": "2026-11-03",
+   "version": "v2"
   },
   "2611.02525": {
    "abstract": "Touching a virtual agent involves more than detecting a finger on a display: the contact surface can deform and resist the user's push, and the agent can respond to that action. We describe the Desktop Amid Touch (DAT) screen, which combines spatial projection onto a semi-transparent, deformable mesh with touch sensing and motorized control of resistance to indentation. An initial prototype detected a single touch and estimated its position and depth from tension changes around a flexible projection screen. A subsequent prototype added motorized tension control to vary the screen's resistance to indentation. We describe the tension-controlled DAT implementation and its demonstrations, distinguishing what has been observed from what remains an open design question. These capabilities raise a design question: should touchable virtual agents respond as though they had preferences or boundaries, and under what conditions should such behavior be implemented on systems like DAT. The present paper describes a system and frames this question; it does not establish how users interpret an agent's refusal or consent.",
@@ -70631,6 +70632,131 @@
     "Other"
    ],
    "updated": "2026-11-02",
+   "version": "v1"
+  },
+  "2611.04424": {
+   "abstract": "Humanoid robots operating in cluttered environments must react to unexpected contacts before the first impact peak, which arrives within tens of milliseconds. Learned whole-body policies running at 50 Hz introduce a policy-cycle delay and may suppress a protective withdrawal as a tracking error. To address these challenges, we propose ARC (Ascending Reflex Control), a bottom-up framework that integrates instantaneous tactile reflexes with learned whole-body control. ARC consists of two components: an instantaneous reflex pathway and bottom-up reflex integration. The reflex pathway detects hazardous contacts from full-body tactile sensing, solves a whole-body withdrawal pose, and delivers it directly to the motors within 10 ms. Bottom-up reflex integration combines reflex-in-the-loop policy learning, reflex-transparent policy alignment, and reflex-informed policy adaptation to sustain the withdrawal, maintain balance, and complete longer-horizon recovery. We deploy ARC on a Unitree G1 and evaluate three categories of hazardous contact. Compared with an otherwise identical reflex delayed by 20 ms, ARC reduces the first force peak by 34.1% and reduces the contact impulse from 0.2632 N s to 0.1225 N s (a 2.15x ratio). We further demonstrate protected motion tracking, teleoperation, and vision-free obstacle traversal guided by foot tactile sensing. Project page: https://minusmodulo.github.io/reflexarc-website/",
+   "added_at": "2026-11-04 07:55",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Mingyu Wang",
+    "Si Li",
+    "Ziqing Chen",
+    "He Wang",
+    "Li Yi"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 6 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.04424",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://minusmodulo.github.io/reflexarc-website/",
+   "published": "2026-11-03",
+   "scores": {
+    "VTA": 8.0
+   },
+   "seed": false,
+   "title": "ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-03",
+   "version": "v1"
+  },
+  "2611.04492": {
+   "abstract": "Predicting how the world evolves in response to robot actions is central to policy learning, evaluation, and planning. However, many action-conditioned world models predict future observations in 2D image or video space without explicitly modeling the underlying 3D scene, making spatial consistency across viewpoints and over long-horizon interactions challenging. We introduce 3D World Simulator, an action-conditioned multimodal world modeling framework that jointly predicts appearance, geometry, and tactile observations from a unified 3D representation. Our approach combines a hybrid particle-voxel autoencoder that compresses point clouds into compact 3D voxel latents with an action-conditioned latent dynamics model that predicts their evolution. The shared 3D representation supports geometrically consistent rendering from arbitrary viewpoints and flexible integration of spatially aligned tactile signals. Our experiments demonstrate interactive, long-horizon, multimodal prediction at 50 Hz. We then show how our model enables scalable data generation for policy training and evaluation using tactile and multi-view visual observations, including wrist-mounted and novel camera views. Furthermore, we scale our method to large datasets containing diverse objects and demonstrate model-based planning with unseen objects and robot configurations. Together, these results highlight the potential of hybrid particle-voxel dynamics as a foundation for multimodal 3D world simulation.",
+   "added_at": "2026-11-04 07:55",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "authors": [
+    "Jimmy Wang",
+    "Yifan Chou",
+    "Kaifeng Zhang",
+    "Yixuan Wang",
+    "Binghao Huang",
+    "Tao Yu",
+    "Saleh Nabi",
+    "Yunzhu Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.04492",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-03",
+   "scores": {
+    "Sim": 6.2,
+    "VTA": 5.0
+   },
+   "seed": false,
+   "title": "Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation",
+   "topics": [
+    "Sim",
+    "VTA"
+   ],
+   "updated": "2026-11-03",
+   "version": "v1"
+  },
+  "2611.05302": {
+   "abstract": "Humanoid robotic hands must provide sufficient force, speed, and backdrivability within a human-scale envelope. Tendon-driven transmissions address this challenge by relocating actuators to the palm and forearm, but routing paths, moment arms, and capstan dimensions jointly determine both force capability and joint speed, so selecting them sequentially satisfies one requirement at the expense of the other. This paper presents a pose-robust actuation co-design for tendon-driven robot hands (PACT) framework that optimizes tendon routing, moment arms, and capstan dimensions under pose-dependent force requirements and drivetrain-bandwidth constraints. A feasible-force formulation enforces actuator bounds and equilibrium at all joints, while a max-min objective maximizes task-force coverage at the weakest pose. Applied to a four-degree-of-freedom finger, the framework produces an asymmetric N + 1 tendon topology using quasi-direct-drive actuators. Across eight poses, the design achieves task-force coverage of 0.88-1.00 and a predicted 5 Hz minimum isolated-joint flexion/extension bandwidth within a 70th-percentile human-size envelope. Prototype measurements deviate from predictions by up to 24.5%, primarily due to unmodeled transmission losses. These results indicate that co-designing routing with the drivetrain can meet pose-dependent force requirements without relaxing the bandwidth constraint, paving the way for human-sized robotic hands with human-level performance.",
+   "added_at": "2026-11-04 07:55",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Prashant Kumar",
+    "Rachael Granberry",
+    "Taylor Niehues",
+    "Andrew A. Stanley",
+    "Gabe Pirie"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.05302",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-03",
+   "scores": {},
+   "seed": false,
+   "title": "PACT: Pose-Robust Actuation Co-Design for Tendon-Driven Robotic Hands",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-03",
    "version": "v1"
   }
  }
