@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-04 20:28 ｜ 共 1701 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-05 08:23 ｜ 共 1705 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 73 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 127 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 382 篇
-- [Other（其他触觉相关）](#other) — 1163 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 383 篇
+- [Other（其他触觉相关）](#other) — 1166 篇
 
 ## Sim
 
@@ -233,6 +233,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-04 |  **Which Physical Tactile Cues Matter for Contact-Rich Imitation Learning? A Controlled Real-Robot Study** | Xuhao Qin et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.06673) |
 | 2026-11-03 |  **ReflexArc: Bottom-Up Integration of Instantaneous Tactile Reflexes into Whole-Body Humanoid Control** | Mingyu Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04424) · [Page](https://minusmodulo.github.io/reflexarc-website/) |
 | 2026-11-03 |  **Hybrid Particle-Voxel Dynamics for Multimodal 3D World Simulation** | Jimmy Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.04492) |
 | 2026-11-02 |  **Visuo-tactile Diffusion Policy for Robotic Manipulation with Auxiliary Tactile Dynamics Prediction** | Kaihong Ouyang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.02677) |
@@ -622,7 +623,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-04 | 🖐 **Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation** | Ji Pei | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.06724) |
+| 2026-11-04 |  **LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction** | Hao Wu et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.05936) |
 | 2026-11-03 | 🖐 **PACT: Pose-Robust Actuation Co-Design for Tendon-Driven Robotic Hands** | Prashant Kumar et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.05302) |
+| 2026-11-03 | 🖐 **GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting** | Yang Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.05754) · [Page](https://computationalrobotics.seas.harvard.edu/GRASP/) |
 | 2026-11-02 |  **Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-** | Takaya Tamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02525) |
 | 2026-11-02 |  **SomaAlign: Reliability-Aware Multimodal Representation Learning for Soft Robotic Grasping** | Haoyuan Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02794) |
 | 2026-11-02 | 🖐 **Exploring Proximity and Tactile Sensing for Robotic Manipulation** | Eric T. Chang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.03489) |
@@ -997,7 +1001,7 @@
 | 2026-06-11 |  **$μ_0$: A Scalable 3D Interaction-Trace World Model** | Seungjae Lee et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.13769) · [Page](https://mu0-wm.github.io/) |
 | 2026-06-11 |  **ContactWorld: What Representations Matter for Vision-Tactile Latent World Models in Contact-Rich Manipulation** | Zhiyuan Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.13877) · [Page](https://contact-world.github.io) |
 | 2026-06-10 |  **DAM-VLA: Decoupled Asynchronous Multimodal Vision Language Action model** | Pankhuri Vanjani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.12105) · [Page](https://intuitive-robots.github.io/DAM-VLA/) |
-| 2026-06-10 | 🖐 **InDex: Empowering VLA Models with Intent-Conditioned Arm-Hand Coordination for Dexterous Manipulation** | Chuanke Pang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.12109) |
+| 2026-06-10 | 🖐 **Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning** | Chuanke Pang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.12109) |
 | 2026-06-10 |  **World Pilot: Steering Vision-Language-Action Models with World-Action Priors** | Zefu Lin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.12403) · [Page](https://world-pilot.github.io/) |
 | 2026-06-10 | 🖐 **EquiDexFlow: Contact-Grounded SE(3)-Equivariant Dexterous Grasp Generative Flows** | Clinton Enwerem et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2606.12728) · [Page](https://equidexflow.github.io) |
 | 2026-06-09 | 🖐 **HiPi: Reproducible High-Fidelity Piezoresistive Sensors for Robotic Manipulation** | Changyi Lin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2606.11372) |

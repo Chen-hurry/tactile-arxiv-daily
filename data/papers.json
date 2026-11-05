@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-04 20:28",
+ "last_update": "2026-11-05 08:23",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -46669,7 +46669,7 @@
    "version": "v1"
   },
   "2606.12109": {
-   "abstract": "Pre-trained Vision-Language-Action (VLA) models provide useful semantic and spatial priors, yet their parallel-gripper action interfaces do not specify how those priors should be realized by a dexterous hand. Directly appending finger joints conflates two decisions with different structure: when contact should be established and how a morphology-specific hand trajectory should establish it. We introduce InDex, an intent-conditioned adaptation framework that separates these decisions without discarding full hand supervision. InDex derives a normalized grasp intent from retargeted demonstrations. A first stage predicts synchronized end-effector--intent chunks; conditioned on these predictions, VLA context, and proprioception, a diffusion decoder generates multi-joint hand actions. The scalar intent is therefore a temporal coordination interface rather than a compressed hand pose. Across four simulated tasks, three VLA backbones, and a physical arm--hand platform, InDex preserves the VLA's reaching competence while markedly improving conversion from approach to stable grasp and task completion. Ablations isolate complementary roles: intent aligns the contact transition, whereas diffusion represents the multiple hand trajectories compatible with the same task-space plan. These results identify post-reach arm--hand coordination, rather than object localization alone, as the principal bottleneck in adapting parallel-gripper VLAs to dexterous manipulation.",
+   "abstract": "Pretrained vision-language-action (VLA) models offer semantic and spatial priors for robot manipulation, but their parallel-gripper interfaces leave multi-finger contact coordination implicit. Adapting these models requires both timely grasp transitions and embodiment-specific hand trajectories. We introduce InDex, an intent-conditioned framework that connects these two requirements. A normalized aperture signal, derived from retargeted demonstrations, supervises a scalar grasp intent while preserving full hand-action supervision. Stage 1 learns synchronized end-effector-intent chunks; Stage 2 conditions a diffusion hand decoder on these predictions, visual-language context, and proprioception. Sequential optimization establishes the upstream interface before learning dexterous control with low-rate co-adaptation. Across four simulated tasks, InDex with $π_{0.5}$ achieves 85.8% mean task success, improving the native policy by 35.5 percentage points, and reaches 69.0% on held-out objects with similar geometry without fine-tuning or recalibration. Improvements also hold across three VLA backbones and separately trained real-world policies, where mean success increases from 71.0% to 83.0%. Component ablations and timing interventions support the value of explicit grasp-intent conditioning and expressive hand generation. These results identify arm-hand coordination as an actionable bottleneck in adapting parallel-gripper priors to dexterous manipulation.",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO",
@@ -46678,6 +46678,7 @@
    "authors": [
     "Chuanke Pang",
     "Junyi Huang",
+    "Jianye Fang",
     "Zhijun Zhao",
     "Yaobing Wang",
     "Kun Xu",
@@ -46701,12 +46702,12 @@
    "published": "2026-06-10",
    "scores": {},
    "seed": false,
-   "title": "InDex: Empowering VLA Models with Intent-Conditioned Arm-Hand Coordination for Dexterous Manipulation",
+   "title": "Bridging the Morphology Gap: Adapting VLA Models to Dexterous Manipulation via Intent-Conditioned Fine-Tuning",
    "topics": [
     "Other"
    ],
-   "updated": "2026-07-28",
-   "version": "v2"
+   "updated": "2026-11-04",
+   "version": "v3"
   },
   "2606.12403": {
    "abstract": "Vision-Language-Action (VLA) models inherit semantic grounding from large-scale pretraining and perform competently across in-distribution manipulation tasks. This grounding, however, is built on static image-text pairs, whereas manipulation is a continuous, contact-rich process whose dynamics this pretraining cannot capture. We present World Pilot, a VLA framework that augments the policy with priors from a World-Action Model (WAM), routed into the decision chain through two complementary pathways. Latent Steering conditions the perception layer on a scene-evolution latent, and Action Steering supplies an anticipated trajectory as a motion prior to the action generator. Together the two priors equip the VLA with an anticipated view of the scene and a trajectory-level motion hint alongside its semantic conditioning, and the scene-evolution prior remains effective even when supplied by a video-pretrained world model that has not been action-post-trained. World Pilot attains a state-of-the-art Total success rate of 84.7% on the LIBERO-Plus zero-shot OOD benchmark and the highest success rate on every real-robot setting across four manipulation tasks, with the largest margins under shifts in viewpoint, geometry, deformable state, and pose. Project Website: https://world-pilot.github.io/",
@@ -56092,8 +56093,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-29",
-   "version": "v3"
+   "updated": "2026-11-04",
+   "version": "v4"
   },
   "2608.21290": {
    "abstract": "We propose VT-MUSE, a Multimodal Unified SEquential representation learning framework for visuotactilemanipulation. Existing approaches often encode visual and tactile observations independently before fusion, limiting their ability to capture fine-grained cross-modal dependencies. Moreover, most methods focus on observations at the current time step and overlook the temporal evolution of contact. VT-MUSE addresses both limitations through a two-stage representation learning framework. In Stage I, modality specific encoders are jointly adapted via cross-modal temporal alignment and masked-view consistency. In Stage II, a conditional variational latent model processes masked visual sequences together with full tactile histories. Auxiliary decoders reconstruct the masked recent visual observations and predict tactile depth changes, encouraging the latent representation to retain both global visual context and local contact dynamics. The learned representation is subsequently integrated into a lightweight Transformer policy through gated cross-attention. On the simulation benchmark, VT-MUSE outperforms the strongest baseline evaluated on all tasks by 11 percentage points and also achieves substantial improvements in real-world experiments.",
@@ -69786,7 +69787,7 @@
     "Sahar Aseeri",
     "Sahar Rostami",
     "Taylor Niehues",
-    "Sai Dhanooshi Marri",
+    "Sai Dhanoosh Marri",
     "Mia Huang",
     "Dingtian Zhang",
     "Ziyi Kou",
@@ -69914,8 +69915,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-10-31",
-   "version": "v2"
+   "updated": "2026-11-04",
+   "version": "v3"
   },
   "2610.39582": {
    "abstract": "Human demonstrations provide a natural and scalable source of data for learning dexterous manipulation policies. However, existing retargeting methods primarily transfer human kinematics, while the tactile information underlying physical interaction is rarely preserved across embodiments. To address this limitation, we present a hierarchical three-stage framework for kinematic-tactile aligned dexterous retargeting. We use object-centric contact wrench space as a physical representation for tactile alignment between human and robot hands. The framework first aligns hand kinematics and contact geometry, and then constructs a human wrench support profile from tactile forces and contact geometry. Robot fingertip force targets are subsequently optimized to cover the human wrench support and converted into joint position corrections, yielding directly replayable robot hand trajectories. We evaluate the framework in simulation and real robot experiments across three pouring conditions. In the real robot experiments, our method achieves a 96.7\\% replay success rate and higher wrench transfer fidelity than representative retargeting baselines. The framework enables physically grounded transfer of kinematic and tactile information from human demonstrations to robot hands, providing a path toward scalable learning of contact-rich dexterous manipulation.",
@@ -70757,6 +70758,169 @@
     "Other"
    ],
    "updated": "2026-11-03",
+   "version": "v1"
+  },
+  "2611.05754": {
+   "abstract": "We study physics-based retargeting of human demonstrations for robot learning: finding robot controls that reproduce reference motions under contact dynamics. We propose GRASP (Gradient Recovery from Archived Samples for Proposals), which combines sampling-based exploration with gradient-guided refinement without requiring a differentiable simulator. GRASP-TO extends tempered sequential Monte Carlo by fitting local quadratic cost models to archived rollouts and using their gradients to guide Markov chain Monte Carlo rejuvenation. Metropolis-Hastings correction preserves the target distribution for each fixed proposal kernel, and a population analysis connects the recovered gradients to Gaussian smoothing. GRASP-MPC scales this optimizer to long demonstrations through warm-started receding-horizon planning. Experiments on dexterous hands and humanoids show accurate retargeting with a shared tracking objective and no task-specific contact rewards, including 92.8% success on 1352 bimanual OakInk2 demonstrations. The refined references improve PPO tracking in pen spinning and humanoid-object interaction. We also demonstrate dexterous manipulation and whole-body humanoid motion on real hardware.",
+   "added_at": "2026-11-05 08:23",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yang Liu",
+    "Tong Wang",
+    "Yiming Bao",
+    "Heng Yang"
+   ],
+   "code_url": null,
+   "comment": "26 pages, including references and appendices. Project website: https://computationalrobotics.seas.harvard.edu/GRASP/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.05754",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://computationalrobotics.seas.harvard.edu/GRASP/",
+   "published": "2026-11-03",
+   "scores": {},
+   "seed": false,
+   "title": "GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-03",
+   "version": "v1"
+  },
+  "2611.05936": {
+   "abstract": "Integrating six-axis tactile feedback into robotic interfaces requires compact sensors with accurate load measurement and rapid online reconstruction. This paper presents LumiTac, a low-profile, camera-free optoelectronic tactile sensor combining spatially distributed illumination with spectral encoding. Five photoemitters and five RGBW photoreceivers are mounted on opposing circuit boards coupled through translucent silicone. Load-induced interlayer motion modulates the internal light field under compression, shear, bending, and torsion. The sensing head measures 12 mm in diameter and 4.75 mm in thickness, weighs less than 2 g, and has a component cost of approximately USD 7. A compact multilayer perceptron reconstructs three force and three moment components from 20 optical channels. Independent testing yielded coefficients of determination (R-squared) of 0.9657-0.9941, with mean absolute errors of 0.054-0.190 N for forces and 0.304-1.419 mN m for moments. Online prediction achieved an average update rate of 303.57 Hz and a median software processing latency of 0.722 ms. Experiments involving combined loading, light weights, and rapid tapping evaluated load tracking, sensitivity to small forces, and transient response, respectively. Robotic demonstrations further validated its applicability to tactile-guided manipulation and physical human-robot interaction. This study paves the way for compact, high-rate optical tactile sensing in robotic manipulation and human-robot interaction.",
+   "added_at": "2026-11-05 08:23",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Hao Wu",
+    "Haotian Guo",
+    "Yu Feng",
+    "Yutong Wang",
+    "Jianshu Zhou"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.05936",
+   "modality": "mixed",
+   "modality_keywords": {
+    "numeric": [
+     "six-axis"
+    ],
+    "vision": [
+     "optical tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-04",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-04",
+   "version": "v1"
+  },
+  "2611.06673": {
+   "abstract": "Vision-based tactile sensors capture multiple aspects of physical interaction within a single image stream, including contact appearance, geometry, indentation depth, and tangential deformation. However, existing visuo-tactile policies often directly process tactile observations as images, making it difficult to determine which physical cues contribute to policy learning. This paper presents a controlled real-robot study that compares physically interpretable tactile signals using the LeRobot platform, enhanced with our visuo-tactile perception system. From the same tactile stream, we derive tactile RGB images, normal/depth maps, and marker-flow fields, representing contact appearance, geometry, and tangential deformation, respectively. Using identical task demonstrations and the same policy backbone, we evaluate the individual and combined contributions of these tactile cues. We further compare tactile encoders and visuo-tactile fusion strategies. Evaluation across 720 real-robot trials yields four key findings: (1) tactile perception substantially improves the overall success rate from 57.8% to 78.9%, although its contribution varies across task stages; (2) marker flow is the most effective individual cue, achieving a success rate of 74.4% and playing a particularly important role in regulating established contact; (3) cue-factorized encoding consistently improves performance, highlighting that different physical cues require tailored processing techniques; and (4) although the effectiveness of tactile fusion is task-dependent, cross-attention offers a lightweight solution with performance comparable to that of pretrained tactile encoders.",
+   "added_at": "2026-11-05 08:23",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Xuhao Qin",
+    "Xiyan Huang",
+    "Haoyu Dong",
+    "Xi Zhang",
+    "Chenxi Xiao"
+   ],
+   "code_url": null,
+   "comment": "6 pages, 5 figures, 2 tables. Accepted to IEEE ROBIO 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.06673",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "vision-based tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-04",
+   "scores": {
+    "VTA": 16.0
+   },
+   "seed": false,
+   "title": "Which Physical Tactile Cues Matter for Contact-Rich Imitation Learning? A Controlled Real-Robot Study",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-04",
+   "version": "v1"
+  },
+  "2611.06724": {
+   "abstract": "Dexterous robotic hands are increasingly coupled to large-scale human data and foundation models, yet progress in hardware, representation learning and evaluation is often assessed separately. This survey reviews work from January 2024 to early November 2026, with earlier studies included to establish technical lineages. We organize the literature into five interdependent layers: hardware; data collection and curation; cross-embodiment transfer; learning and foundation models; and evaluation and applications. Human hand-object understanding and tactile sensing provide two cross-cutting perspectives. A system-level architecture, comparative tables and five case analyses connect design choices across these layers. We distinguish within-study experimental comparisons from heterogeneous corpus statistics, vendor specifications and company-reported results. Three conclusions emerge. First, the value of human data depends on kinematic, visual and contact alignment, not recording volume alone. Second, shared action representations and foundation policies do not remove embodiment-specific constraints on force, latency and contact. Third, task completion is insufficient to establish physical correctness or deployment readiness. Evidence remains limited for zero-shot transfer of contact-rich skills between morphologically different hands, long-duration reliability, and cross-sensor tactile generalization. We identify eleven open problems and propose reporting interfaces and controlled comparisons that can make full-stack progress more measurable. The review is a structured narrative synthesis rather than a pooled performance ranking or an exhaustive systematic review.",
+   "added_at": "2026-11-05 08:23",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+   ],
+   "authors": [
+    "Ji Pei"
+   ],
+   "code_url": null,
+   "comment": "45 pages, 8 figures, 21 tables. Structured narrative review of hardware, data, cross-embodiment transfer, foundation models, tactile sensing, and evaluation for dexterous robotic hands",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.06724",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-04",
+   "scores": {
+    "VTA": 2.5,
+    "VTLA": 3.0
+   },
+   "seed": false,
+   "title": "Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-04",
    "version": "v1"
   }
  }
