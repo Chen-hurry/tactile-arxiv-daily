@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-05 08:23 ｜ 共 1705 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-05 20:45 ｜ 共 1705 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -623,8 +623,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-04 | 🖐 **Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation** | Ji Pei | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.06724) |
 | 2026-11-04 |  **LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction** | Hao Wu et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.05936) |
+| 2026-11-04 | 🖐 **Dexterous Robotic Hands in the Foundation-Model Era: A Full-Stack Survey of Hardware, Data, Cross-Embodiment Transfer, Learning, and Evaluation** | Ji Pei | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.06724) |
 | 2026-11-03 | 🖐 **PACT: Pose-Robust Actuation Co-Design for Tendon-Driven Robotic Hands** | Prashant Kumar et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.05302) |
 | 2026-11-03 | 🖐 **GRASP: Gradient-Guided Sampling for Contact-Rich Physics-Based Motion Retargeting** | Yang Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.05754) · [Page](https://computationalrobotics.seas.harvard.edu/GRASP/) |
 | 2026-11-02 |  **Touching Projected Agents through the DAT Screen -System Design and Questions of Interaction Boundaries-** | Takaya Tamamoto et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.02525) |
