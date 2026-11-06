@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-05 20:45",
+ "last_update": "2026-11-06 08:26",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -40167,7 +40167,7 @@
    "version": "v2"
   },
   "2603.23481": {
-   "abstract": "Video-Action Models (VAMs) have emerged as a promising framework for embodied intelligence, learning implicit world dynamics from raw video streams to produce temporally consistent action predictions. Although such models demonstrate strong performance on long-horizon tasks through visual reasoning, they remain limited in contact-rich scenarios where critical interaction states are only partially observable from vision alone. In particular, fine-grained force modulation and contact transitions are not reliably encoded in visual tokens, leading to unstable or imprecise behaviors. To bridge this gap, we introduce the Video-Tactile Action Model (VTAM), a multimodal world modeling framework that incorporates tactile perception as a complementary grounding signal. VTAM augments a pretrained video transformer with tactile streams via a lightweight modality transfer finetuning, enabling efficient cross-modal representation learning without tactile-language paired data or independent tactile pretraining. To stabilize multimodal fusion, we introduce a tactile regularization loss that enforces balanced cross-modal attention, preventing visual latent dominance in the action model. VTAM demonstrates superior performance in contact-rich manipulation, maintaining a robust success rate of 90 percent on average. In challenging scenarios such as potato chip pick-and-place requiring high-fidelity force awareness, VTAM outperforms the pi 0.5 baseline by 80 percent. Our findings demonstrate that integrating tactile feedback is essential for correcting visual estimation errors in world action models, providing a scalable approach to physically grounded embodied foundation models.",
+   "abstract": "Tactile vision-language-action models (VLAs) and tactile world-action models (WAMs) are a promising new paradigm for contact-rich manipulation, but existing models either underutilize touch, rely on large-scale tactile pretraining, or incur high inference latency due to iterative video generation. We present VTAM, an efficient visuo-tactile world-action model for contact-rich manipulation that requires no tactile or action pretraining. RGB and tactile observations share a frozen video VAE and the pretrained video transformer weights. VTAM first adapts the video backbone to jointly predict future visual and tactile latents, then fine-tunes it end-to-end with a randomly initialized action expert that predicts actions, proprioceptive states, and a light flow-force proxy computed from tactile optical flow. Trained only on task demonstrations, VTAM outperforms all baselines on four real-robot tasks across two platforms with different tactile sensors, outperforms all baselines without tactile pretraining in average success on eight UniVTAC simulation tasks, and is comparable to tactile VLAs and WAMs pretrained on over 30K hours of largely visuo-tactile robot data (83.4% vs. 84.5% for N0-TWAM). Without full video denoising at inference, VTAM is approximately 6x and 16x faster than N0-TWAM and LingBot-VA without compilation, with compiled latency comparable to Fast-WAM. Ablations show that feeding frozen-VAE tactile features directly to the action expert, bypassing tactile world modeling, fails on every tested task, that Stage I visuo-tactile world-model fine-tuning improves UniVTAC success on most tasks, and that flow-force proxy keeps the policy from fully ignoring touch. The tactile encoder transfers zero-shot across GelSight Mini and Xense Photon sensors.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO",
@@ -40183,6 +40183,8 @@
     "Yuchen Mo",
     "Jiashi Yin",
     "Xinzhuo Li",
+    "Yue Luo",
+    "Jialin Li",
     "Xiangyu Zeng",
     "Chuan Wen",
     "Cewu Lu",
@@ -40190,14 +40192,16 @@
     "Ismini Lourentzou"
    ],
    "code_url": null,
-   "comment": "https://plan-lab.github.io/projects/vtam/",
+   "comment": "12 pages. Project page: https://plan-lab.github.io/projects/vtam/",
    "hand": false,
    "hidden": false,
    "id": "2603.23481",
-   "modality": "unknown",
+   "modality": "vision",
    "modality_keywords": {
     "numeric": [],
-    "vision": []
+    "vision": [
+     "gelsight"
+    ]
    },
    "note": "",
    "paxini": false,
@@ -40206,15 +40210,15 @@
    "project_url": "https://plan-lab.github.io/projects/vtam/",
    "published": "2026-03-24",
    "scores": {
-    "VTLA": 12.8
+    "VTLA": 5.5
    },
    "seed": false,
-   "title": "VTAM: Video-Tactile-Action Models for Complex Physical Interaction Beyond VLAs",
+   "title": "VTAM: Efficient Visuo-Tactile World-Action Models for Contact-Rich Manipulation without Tactile Pretraining",
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-03-24",
-   "version": "v1"
+   "updated": "2026-11-05",
+   "version": "v2"
   },
   "2603.23725": {
    "abstract": "We introduce a low-cost method for mounting sensors onto robot links for large-area sensing coverage that does not require the sensor's positions or orientations to be calibrated before use. Using computer aided design (CAD), a robot skin covering, or skin unit, can be procedurally generated to fit around a nondevelopable surface, a 3D surface that cannot be flattened into a 2D plane without distortion, of a robot. The skin unit embeds mounts for printed circuit boards of any size to keep sensors in fixed and known locations. We demonstrate our method by constructing point cloud images of obstacles within the proximity of a Franka Research 3 robot's operational environment using an array of time of flight (ToF) imagers mounted on a printed skin unit and attached to the robot arm.",
@@ -51113,7 +51117,7 @@
    "version": "v3"
   },
   "2607.08341": {
-   "abstract": "Teleoperation is a key interface for controlling dexterous robotic hands and collecting demonstrations for imitation learning. Its effectiveness largely depends on kinematic retargeting, which maps operator hand motions to feasible and intuitive robot hand motions. Existing methods often require hand-crafted objectives, precise calibration, or global shape matching between human and robot hand spaces, making them sensitive to hand-specific tuning and less reliable across different dexterous hands. We propose AnyDexRT, a calibration-free retargeting method for intuitive dexterous teleoperation across human-like dexterous hands. AnyDexRT combines self-supervised fingertip correspondence learning with few-shot human guidance to anchor the mapping in task-relevant regions, and further refines pinch-related poses using a contact classifier. Experiments on diverse dexterous hands and real-world teleoperation tasks show that AnyDexRT improves retargeting quality, reduces manual tuning, and provides more intuitive and efficient control than prior retargeting methods. Project website: https://chenxi-wang.github.io/projects/anydexrt",
+   "abstract": "Teleoperation is a key interface for controlling dexterous robotic hands and collecting demonstrations for imitation learning. Its effectiveness largely depends on kinematic retargeting, which maps operator hand motions to feasible and intuitive robot hand motions. Existing methods often require hand-crafted objectives, precise calibration, or global shape matching between human and robot hand spaces, making them sensitive to hand-specific tuning and less reliable across different dexterous hands. We propose AnyDexRT, a calibration-efficient retargeting method for intuitive dexterous teleoperation across human-like dexterous hands. AnyDexRT combines self-supervised fingertip correspondence learning with few-shot human guidance to anchor the mapping in task-relevant regions, and further refines pinch-related poses using a contact classifier. Experiments on diverse dexterous hands and real-world teleoperation tasks show that AnyDexRT improves retargeting quality, reduces manual tuning, and provides more intuitive and efficient control than prior retargeting methods. Project website: https://chenxi-wang.github.io/projects/anydexrt",
    "added_at": "2026-09-15 17:42",
    "arxiv_categories": [
     "cs.RO"
@@ -51128,7 +51132,7 @@
     "Cewu Lu"
    ],
    "code_url": null,
-   "comment": "",
+   "comment": "Correct parameter; simplify anchor collection. See Appendix E for details",
    "hand": true,
    "hidden": false,
    "id": "2607.08341",
@@ -51145,12 +51149,12 @@
    "published": "2026-07-09",
    "scores": {},
    "seed": false,
-   "title": "AnyDexRT: Calibration-Free Dexterous Hand Retargeting with Few-Shot Human Guidance",
+   "title": "AnyDexRT: Calibration-Efficient Dexterous Hand Retargeting with Few-Shot Human Guidance",
    "topics": [
     "Other"
    ],
-   "updated": "2026-07-09",
-   "version": "v1"
+   "updated": "2026-11-05",
+   "version": "v2"
   },
   "2607.08448": {
    "abstract": "Language-conditioned manipulation requires both precise contact-rich control and robust reasoning over language, scenes, and long horizons. End-to-end Vision-Language-Action (VLA) models provide strong local visuomotor skills, but they are trained on in-distribution task trajectories and often fail under deployment perturbations such as semantic retargeting, goal re-binding, spatial-layout shifts, and unstable local contacts. LLM coding agents provide complementary semantic and compositional reasoning, but purely analytic primitives struggle with irregular grasping, constrained placement, and articulated-object interaction. We present Harness VLA, a memory-augmented agentic framework that exposes a frozen VLA as a retryable contact-rich primitive and composes it with a small fixed library of analytic primitives for grounding, staging, transport, navigation, and release. Rather than expanding the skill library, the harness learns the operating range of these fixed primitives from task-specific execution traces, global success rules, and failure models. By lifting semantic re-grounding, non-contact execution, and VLA re-staging to the planner while reserving the frozen VLA for local contact-rich phases, Harness VLA extends pretrained VLAs beyond their original trajectory distribution without finetuning. Across perturbed tabletop, household kitchen, and clean-to-randomized bimanual manipulation, Harness VLA improves over the strongest relevant baselines by 38.6 and 25.4 percentage points on LIBERO-Pro and RoboCasa365, respectively, and reaches 58.4% on RoboTwin C2R. Real-world demonstrations on dual-Franka robots further show target redirection, grasp recovery, and new task compositions with the same frozen VLA. Code is available at https://github.com/RLinf/RPent.",
@@ -69014,7 +69018,7 @@
    "version": "v1"
   },
   "2610.31661": {
-   "abstract": "We present OpenTac, a novel sensor and a full-stack ecosystem for tactile skins that are highly customizable, scalable, and readily deployed in downstream robot control and learning applications. Our core contribution is twofold. First, we develop a scalable resistive tactile skin with a structured deformable overlay that converts tangential loading into spatially varying pressure. Differential responses across neighboring \"taxels\" support decoding of local shear vectors, and the common-mode response encodes normal force. Second, we provide a highly customizable sensor design tool that is able to automatically generate fabrication files for these tactile skins from 2D outlines and developable 3D surfaces, including from abstract descriptions such as text (e.g., \"design a sensor for a size 9 shoe insole\"). We develop an ecosystem around the OpenTac sensor, including the CAD design tool, a sensor simulator, cross-sensor transfer, and fast/adaptive data acquisition. We demonstrate the broad applicability of the OpenTac-CAD sensor design tool by designing and fabricating more than 30 sensors across a variety of robot embodiments. We characterize the three-dimensional tactile fields produced by OpenTac with a commercial, high-precision force/torque sensor. We demonstrate the broad applicability of 3D tactile sensing across contact-rich feedback control and manipulation policy learning on four real-world robot embodiments. Additionally, adaptive acquisition enables kilohertz-rate partial readouts, exceeding full-array raster scanning on the same sensor by 19.2X at 16 sampled taxels per update for a 1024-taxel skin. We provide all hardware, software, and result videos are at opentac.github.io",
+   "abstract": "We present OpenTac, a novel sensor and a full-stack ecosystem for tactile skins that are highly customizable, scalable, and readily deployed in downstream robot control and learning applications. Our core contribution is twofold. First, we develop a scalable resistive tactile skin with a structured deformable overlay that converts tangential loading into spatially varying pressure. Differential responses across neighboring \"taxels\" support decoding of local shear vectors, and the common-mode response encodes normal force. Second, we provide a highly customizable sensor design tool that is able to automatically generate fabrication files for these tactile skins from 2D outlines and developable 3D surfaces, including from abstract descriptions such as text. We develop an ecosystem around the OpenTac sensor, including the CAD design tool, a sensor simulator, cross-sensor transfer, and fast/adaptive data acquisition. We demonstrate the broad applicability of the OpenTac-CAD sensor design tool by designing and fabricating more than 30 sensors across a variety of robot embodiments. We characterize the three-dimensional tactile fields produced by OpenTac with a commercial, high-precision force/torque sensor. We demonstrate the broad applicability of 3D tactile sensing across contact-rich feedback control and manipulation policy learning on four real-world robot embodiments. Additionally, adaptive acquisition enables kilohertz-rate partial readouts, and our readout circuitry enables high dynamic range (HDR) acquisition, measuring, for example, a 3.7 kg weight stack and a 20 g weight on the same sensor in the same frame. We provide all hardware, software, and result videos at opentac.github.io",
    "added_at": "2026-10-23 06:25",
    "arxiv_categories": [
     "cs.RO",
@@ -69039,7 +69043,7 @@
     "Nitish V. Thakor"
    ],
    "code_url": null,
-   "comment": "14 pages, 14 figures. Project website, open-source hardware and software, and demonstration videos: https://opentac.github.io",
+   "comment": "15 pages, 15 figures. Project website, open-source hardware and software, and demonstration videos: https://opentac.github.io",
    "hand": false,
    "hidden": false,
    "id": "2610.31661",
@@ -69047,7 +69051,6 @@
    "modality_keywords": {
     "numeric": [
      "force/torque",
-     "taxel",
      "taxels"
     ],
     "vision": []
@@ -69067,8 +69070,8 @@
    "topics": [
     "Sim"
    ],
-   "updated": "2026-10-22",
-   "version": "v1"
+   "updated": "2026-11-05",
+   "version": "v2"
   },
   "2610.32312": {
    "abstract": "Generalist robot manipulation requires a single vision-language-action (VLA) policy to execute diverse skills across scenes and instructions. However, current multi-skill VLA policies often leave two aspects of an instruction insufficiently modeled: which primitive skill to execute and where/how to contact and move objects. We propose MAST-VLA (Multi-skill Adaptation with Skill-conditioned experts and Trajectory-affordance priors), a dual-conditioning framework for robot manipulation. MAST-VLA introduces skill-conditioned LoRA Mixture-of-Experts (LoRA-MoE) adapters in the LLM backbone, where skill-query tokens and routing biases guide low-rank expert specialization, and converts a predicted affordance heatmap into a patch-level trajectory-affordance spatial prior for the action head. On the CALVIN ABC$\\rightarrow$D long-horizon multi-skill cross-scene generalization setting, MAST-VLA achieves state-of-the-art performance, reaching an Avg. Len of 4.65 over five-subtask evaluation sequences. Real-robot multi-skill sequence experiments further validate its deployability under real perception and control noise.",
@@ -70921,6 +70924,132 @@
     "Other"
    ],
    "updated": "2026-11-04",
+   "version": "v1"
+  },
+  "2611.07779": {
+   "abstract": "Tactile sensing provides information about object properties that can improve robotic grasping and manipulation. However, accurate object recognition during the early stages of grasping remains challenging, particularly under strict real-time constraints. This study presents a flexible, distributed piezoelectric tactile sensing system for early-stage object recognition. The system was experimentally evaluated using six everyday objects and three recognition approaches: feature-based classification using support vector machines (SVMs), raw-signal classification using 1D convolutional neural networks (1D-CNNs) and convolutional recurrent neural networks (C-RNNs), and spatiotemporal heatmap classification using a 2D-CNN. The effects of sensor count and temporal window size on recognition accuracy and real-time feasibility were systematically investigated. Increasing the number of sensing elements improved recognition performance across all approaches. The best-performing method, based on spatiotemporal heatmaps and a 2D-CNN, achieved F1-scores of 0.9796, 0.9846, and 0.9903 using 16, 24, and 32 sensors, respectively. The optimal configuration, comprising 32 sensors and a 100-ms temporal window (50 samples), was deployed on an embedded edge platform, achieving an end-to-end recognition latency of approximately 101 ms from contact onset and an energy consumption of 63.8 microjoules per inference. These results demonstrate the potential of distributed piezoelectric tactile sensing for accurate, energy-efficient, and real-time object recognition during robotic grasping.",
+   "added_at": "2026-11-06 08:26",
+   "arxiv_categories": [
+    "cs.RO",
+    "eess.SP"
+   ],
+   "authors": [
+    "Razan Khalifeh",
+    "Mohamad Yaacoub",
+    "Christian Gianoglio",
+    "Moustafa Saleh",
+    "Maurizio Valle",
+    "Yahya Abbass"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.07779",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "piezoelectric"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-05",
+   "scores": {},
+   "seed": false,
+   "title": "Flexible Piezoelectric Tactile Sensing System for Intelligent Object Recognition",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-05",
+   "version": "v1"
+  },
+  "2611.07881": {
+   "abstract": "Robotic simulators that represent shear within tactile sensing are becoming increasingly important for contact-rich manipulation. However, simulating contact shear with high-fidelity deformable or soft-body simulation is computationally demanding, limiting scalability to large-scale reinforcement learning. Here we introduce \\textit{TactileLab}, a scalable multimodal tactile simulation framework built on IsaacLab, with a particular focus on a new optical-flow-based tactile representation termed \\textit{simulated tactile flow}. Instead of relying on soft-body physics to model shear deformation, TactileLab uses rigid-body simulation to efficiently estimate dense tangential motion at the contact interface, producing tactile flow fields that encode shear-relevant contact dynamics. This flow field complements geometric features from a contact depth field. We further introduce a novel policy architecture for jointly processing long-horizon proprioceptive signals and rich tactile observations. Across multiple contact-rich tasks, policies trained using simulated tactile flow learn efficiently at scale and exhibit emergent contact-aware behaviours. To facilitate sim-to-real policy deployment, we then propose a novel real-to-sim tactile translation method that maps real tactile image streams to simulated tactile flow and depth fields, together with a new tactile data collection method, and validate it across diverse tactile sensor designs. Using this pipeline, we demonstrate real-world deployment on tasks encompassing dual-arm and dexterous in-hand manipulation. Overall, TactileLab provides an end-to-end sim-to-real framework for scalable tactile policy learning, enabling diverse shear-sensitive manipulation across heterogeneous tactile robotic systems.",
+   "added_at": "2026-11-06 08:26",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yijiong Lin",
+    "Wenhao He",
+    "Toby Jack",
+    "Max Yang",
+    "Haoran Li",
+    "Nathan F. Lepora"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.07881",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "tactile image"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-05",
+   "scores": {
+    "Sim": 32.0,
+    "VTA": 36.8
+   },
+   "seed": false,
+   "title": "TactileLab: Sim-to-Real Dexterous Robot Manipulation with Efficient Shear-Sensitive Tactile Simulation",
+   "topics": [
+    "VTA",
+    "Sim"
+   ],
+   "updated": "2026-11-05",
+   "version": "v1"
+  },
+  "2611.08458": {
+   "abstract": "Learning dexterous manipulation from limited visual demonstrations is challenging because policies must acquire both perceptual grounding and precise control, while reinforcement learning (RL) in simulation can acquire rich control behaviors from large-scale interaction with privileged information. We introduce \\textbf{Latent RL Prior}, a two-stage framework that reuses this control knowledge for data-efficient visual policy learning. During privileged pretraining, we distill large-scale RL rollouts into a flow-matching action decoder conditioned on proprioception and latent task context. During visual adaptation, we freeze the decoder and learn a visual interface that maps images to its latent context using action supervision alone, without privileged labels or latent targets. The same decoder can further be shared across arms by learning coordinated visual contexts for bimanual manipulation. Across three simulated tasks, our method outperforms full-parameter fine-tuning of $π_{0.5}$ and GR00T N1.7 in the low-data regime; on door lifting and bimanual assembly, it surpasses full-data baselines using $10\\times$ and $5\\times$ fewer demonstrations, respectively. Further analysis shows that direct visual-to-latent conditioning improves adaptation performance and training stability over routing visual predictions through the pretrained state encoder. Robustness to unseen mass variation and greater linear accessibility of contact-force information in decoder representations further provide evidence of retained RL-acquired control knowledge. Project website: https://yixiaowang7.github.io/latent-rl-prior-page/.",
+   "added_at": "2026-11-06 08:26",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yixiao Wang",
+    "Peiyi Chen",
+    "Mustafa Mukadam",
+    "Shreekant Gayaka",
+    "Masayoshi Tomizuka",
+    "Son Tran"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.08458",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://yixiaowang7.github.io/latent-rl-prior-page/",
+   "published": "2026-11-05",
+   "scores": {},
+   "seed": false,
+   "title": "Latent RL Priors for Data-Efficient Dexterous Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-05",
    "version": "v1"
   }
  }
