@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-08 18:25",
+ "last_update": "2026-11-09 08:35",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -41153,6 +41153,50 @@
    "updated": "2026-09-08",
    "version": "v2"
   },
+  "2604.08410": {
+   "abstract": "In industrial assembly, equipment maintenance, and everyday tool-use scenarios, robots need not only to grasp objects stably but also to establish task-appropriate contact configurations according to task intentions and tool functionality. However, existing methods lack explicit mappings from open-vocabulary instructions to 3D functional contact structures and dexterous grasp configurations, limiting robots' adaptability to diverse tools and functional tasks. To address this limitation, we propose BLaFA (Bridging Language to 3D Functional Affordances for Dexterous Robotic Grasping), a structured framework for language-driven functional dexterous grasping. First, a Knowledge-guided Language Parsing (KLP) module leverages structured knowledge to transform natural-language instructions into semantic sextuples of manipulation constraints. Second, a 3D Gaussian Splatting based hierarchical semantic representation and a Triangular Functional Point Localization (TriLocation) module are developed to localize 3D functional contact keypoints under task-tool topology constraints. Finally, a 3D Keypoint Grasp Matrix Transformation (KGT3D+) module maps the localized keypoints and semantic constraints to executable wrist poses and finger-level joint and force commands. Evaluations on 100 open-vocabulary language instructions, 14 task-tool combinations covering four functional intents, and real-world robotic experiments in representative scenes demonstrate that BLaFA can effectively translate natural-language instructions into task-aligned 3D functional contact structures and corresponding dexterous grasps, thereby enabling language-driven robotic tool use across diverse tasks. The source code will be made publicly available. Code will be publicly available at https://github.com/PopeyePxx/BLaFA.",
+   "added_at": "2026-11-09 08:35",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.RO"
+   ],
+   "authors": [
+    "Fan Yang",
+    "Wenrui Chen",
+    "Guorun Yan",
+    "Ruize Liao",
+    "Wanjun Jia",
+    "Dongsheng Luo",
+    "Jiacheng Lin",
+    "Kailun Yang",
+    "Zhiyong Li",
+    "Yaonan Wang"
+   ],
+   "code_url": "https://github.com/PopeyePxx/BLaFA",
+   "comment": "Code will be publicly available at https://github.com/PopeyePxx/BLaFA",
+   "hand": true,
+   "hidden": false,
+   "id": "2604.08410",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-04-09",
+   "scores": {},
+   "seed": false,
+   "title": "BLaFA: Bridging Language to 3D Functional Affordances for Dexterous Robotic Grasping in Tool Use",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-06",
+   "version": "v3"
+  },
   "2604.08528": {
    "abstract": "Reliable in-hand manipulation requires accurate real-time estimation of slip between a gripper and a grasped object. Existing tactile sensing approaches based on vision, capacitance, or force-torque measurements face fundamental trade-offs in form factor, durability, and their ability to jointly estimate slip direction and magnitude. We present A-SLIP, a multi-channel acoustic sensing system integrated into a parallel-jaw gripper for estimating continuous slip in the grasp plane. The A-SLIP sensor consists of piezoelectric microphones positioned behind a textured silicone contact pad to capture structured contact-induced vibrations. The A-SLIP model processes synchronized multi-channel audio as log-mel spectrograms using a lightweight convolutional network, jointly predicting the presence, direction, and magnitude of slip. Across experiments with robot- and externally induced slip conditions, the fine-tuned four-microphone configuration achieves a mean absolute directional error of 14.1 degrees, outperforms baselines by up to 12 percent in detection accuracy, and reduces directional error by 32 percent. Compared with single-microphone configurations, the multi-channel design reduces directional error by 64 percent and magnitude error by 68 percent, underscoring the importance of spatial acoustic sensing in resolving slip direction ambiguity. We further evaluate A-SLIP in closed-loop reactive control and find that it enables reliable, low-cost, real-time estimation of in-hand slip. Project videos and additional details are available at https://a-slip.github.io.",
    "added_at": "2026-09-15 04:03",
@@ -48485,7 +48529,7 @@
    "version": "v2"
   },
   "2606.23431": {
-   "abstract": "Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Traditional teleoperation systems often fail in contact-rich tasks because embodiment gaps hinder accurate kinematic mapping, while tactile and force feedback remain absent. Consequently, data collection efficiency for high-precision tasks remains prohibitively low. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoperation pipelines. Instantiated within our bimanual dexterous framework, DexTeleop-0, this strategy introduces a real-time optimization loop that bridges the embodiment gap by translating coarse human tracking intents into precise, force-compliant robotic commands with tactile sensing. By estimating accurate contact points and leveraging a tactile-enabled fingertip force-sensing profile, the system dynamically computes localized corrections using the operational space Jacobian with respect to joint angle updates. We rigorously evaluate this tactile-driven adaptation strategy across both simulated environments and real-world hardware. Compared with representative baselines, the proposed method consistently achieves higher task success rates and improved execution efficiency in robust grasping, disturbance-resilient manipulation, and complex dexterous tasks.",
+   "abstract": "Fine-grained, bimanual dexterous manipulation remains a foundational challenge in robotics. Embodiment gaps hinder accurate kinematic mapping, and visual tracking alone does not regulate contact forces. To address these limitations, we propose a tactile-driven adaptation strategy designed to enable fine-grained manipulation on top of teleoperation pipelines. Instantiated within our bimanual dexterous framework, DexTeleop-0, this strategy introduces a real-time optimization loop that adds robot-side contact corrections to human tracking commands using fingertip feedback. By estimating contact positions and forces, the system dynamically computes localized corrections using a contact-stiffness approximation and the kinematic Jacobian, with per-contact vector force tracking, soft predicted-contact-moment regularization, and bounded hand-joint residuals. We evaluate this tactile-driven adaptation strategy across both simulated environments and real-world hardware. Controlled simulation replay yields final-stage success rates of 91% for Ball Assembly and 62% for Stir in Cup, versus 88% and 49% for force tracking alone. Fixed-input replay on two hand types, seven-operator teleoperation, and external-force traces further assess contact assistance. The open-sourced project page can be found at https://henryhcliu.github.io/dexteleop-0.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -48495,25 +48539,25 @@
     "Yuyao Jiang",
     "Hyunsun Park",
     "Yuanjiang Xue",
+    "Mingze Sun",
+    "Ziwei Liu",
     "Ziwei Wang"
    ],
    "code_url": null,
-   "comment": "15 pages, 6 figures, 5 tables",
+   "comment": "16 pages, 9 figures, 6 tables",
    "hand": true,
    "hidden": false,
    "id": "2606.23431",
-   "modality": "numeric",
+   "modality": "unknown",
    "modality_keywords": {
-    "numeric": [
-     "fingertip force"
-    ],
+    "numeric": [],
     "vision": []
    },
    "note": "",
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": null,
+   "project_url": "https://henryhcliu.github.io/dexteleop-0",
    "published": "2026-06-22",
    "scores": {
     "VTA": 2.5
@@ -48523,8 +48567,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-06-22",
-   "version": "v1"
+   "updated": "2026-11-05",
+   "version": "v2"
   },
   "2606.23531": {
    "abstract": "Endoscopic retrograde cholangiopancreatography (ERCP) demands precise endoscopic navigation and stable biliary cannulation within a narrow monocular field characterized by specular reflections, partial occlusions, and frequent tissue contact. Although recent robotic systems and vision-based assistance techniques improve operator ergonomics and provide perceptual cues, their performance degrades under pronounced anatomical variability and safety-critical visual artifacts, which hinders reliable autonomy in cannulation-grade procedures. Here, we present BiliVLA, a scene-aware Vision-Language-Action (VLA) framework that formulates biliary endoscopic navigation as an instruction-conditioned visuomotor learning problem. Given an endoscopic observation and a stage-specific language instruction, BiliVLA jointly predicts the target category, a grounded bounding box, and a discrete three-degree-of-freedom (3-DoF) motor command for a continuum endoscope. The proposed framework incorporates scene-aware supervision to improve semantic target consistency and safety-aware recovery supervision to induce conservative retreat behaviors under luminal wall contact. A key component of BiliVLA is a two-stage training paradigm that combines grounding-enhanced supervised fine-tuning (SFT) with Group Relative Policy Optimization (GRPO), thereby improving action reliability and decision consistency during closed-loop navigation. Across three ERCP subtasks, BiliVLA achieves the best overall performance in physical phantom experiments, with a total mIoU of 0.9625, an overall action precision of 91.96\\%, and an overall success rate (SR) of 84.85\\%. These results indicate that integrating semantic grounding, scene-aware learning, and reward-guided optimization strengthens perception--action alignment and enables more robust autonomous biliary endoscopic navigation.",
@@ -48728,8 +48772,8 @@
    "topics": [
     "VTA"
    ],
-   "updated": "2026-06-23",
-   "version": "v1"
+   "updated": "2026-11-06",
+   "version": "v2"
   },
   "2606.24712": {
    "abstract": "Humans effortlessly locate and identify objects by touch alone, even without vision. In contrast, robotic systems rely heavily on vision and struggle with autonomous tactile exploration and object identification. We present TACTFUL, a vision-free tactile exploration framework that enables a multi-fingered robot to autonomously explore confined workspaces, discover objects through contact, and identify them via tactile reconstruction. Trained entirely on real hardware without simulation, our system learns a single policy that balances global workspace exploration with local surface refinement through a dynamic reward schedule. Our results demonstrate that tactile sensing, when paired with structured learning, can serve as an effective primary modality for object-level reasoning, achieving 77% success with 0.015 m average reconstruction error and outperforming baseline approaches on real-world objects.",
@@ -60099,7 +60143,7 @@
    "version": "v1"
   },
   "2609.23614": {
-   "abstract": "Contact-rich manipulation, requiring robots to regulate not only motion but also how they yield to external forces, has emerged as the next frontier for Vision-Language-Action (VLA) models. However, existing VLAs output purely kinematic commands, degrading performance on real-world contact-rich tasks. In this paper, we introduce CompVLA, a unified VLA framework that jointly predicts motion and stiffness matrix from RGB and language inputs. Our approach augments the conventional architecture with a dedicated Compliance Expert, which outputs time-varying stiffness and virtual displacement profiles executed via geometric impedance control. We demonstrate that CompVLA achieves the highest average success rate across diverse contact-rich tasks, outperforming both vanilla and compliance-aware VLA baselines, with ablations confirming each component is essential.",
+   "abstract": "Contact-rich manipulation, requiring robots to regulate not only motion but also how they yield to external forces, has emerged as the next frontier for Vision-Language-Action (VLA) models. However, existing VLAs output purely kinematic commands, degrading performance on real-world contact-rich tasks. In this paper, we introduce CompVLA, a unified VLA framework that jointly predicts motion and a stiffness matrix from RGB and language inputs. Our approach augments the conventional architecture with a dedicated Compliance Expert, which outputs time-varying stiffness and virtual displacement profiles executed via geometric impedance control. We demonstrate that CompVLA achieves the highest average success rate across diverse contact-rich tasks, outperforming both vanilla and compliance-aware VLA baselines, with ablations confirming each component is essential.",
    "added_at": "2026-09-22 06:42",
    "arxiv_categories": [
     "cs.RO"
@@ -60136,8 +60180,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-09-20",
-   "version": "v1"
+   "updated": "2026-11-06",
+   "version": "v2"
   },
   "2609.23800": {
    "abstract": "High-precision connector insertion remains challenging for robotic systems due to tight mechanical tolerances, partial observability during contact, and multimodal uncertainty arising from occlusion and contact ambiguity. Successful insertion requires closed-loop contact guidance that continuously integrates global alignment cues with local contact feedback to produce stable corrective actions under interaction. In this work, we present ContactDP (Contact-Guided Diffusion Policy for Tight Insertion Tasks), a multimodal diffusion-policy framework for contact-rich insertion. ContactDP jointly integrates wrist RGB observations, fingertip tactile sensing, and wrist-mounted force-torque measurements to infer contact state and generate temporally consistent corrective motions during insertion. To ensure stable execution under contact, the learned policy operates together with a hybrid position-force controller that provides compliant low-level interaction. We evaluate our approach on a suite of industrial-grade connector insertion tasks with varying connector geometries, grasp conditions, and initial misalignment. Across all tasks, ContactDP significantly outperforms vision-only diffusion policies for performance, reliability and generalization.",
@@ -71050,6 +71094,170 @@
     "Other"
    ],
    "updated": "2026-11-05",
+   "version": "v1"
+  },
+  "2611.08939": {
+   "abstract": "We present RevoSim, a scalable and high-fidelity multimodal tactile simulator for the BrainCo Revo3 hand that jointly models 285 piezoresistive taxels and five visuotactile fingertips. RevoSim efficiently generates synchronized pressure, depth, RGB, and marker-displacement observations; on a single RTX 5090, its depth-conditioned marker-displacement configuration supports up to 4,096 parallel environments. We train in-hand manipulation and grasping policies entirely in simulation, establishing a foundation for future sim-to-real transfer. Project page: https://braincotech.github.io/RevoSim-web/.",
+   "added_at": "2026-11-09 08:35",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ke Zhang",
+    "Lixin Xu",
+    "Ziyi Wang",
+    "Xiyue Dong",
+    "Jie Tan",
+    "Lianghu Shao",
+    "Xianpeng Wang",
+    "Chuanyu Li",
+    "Renjing Xu"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.08939",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "piezoresistive",
+     "taxels"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://braincotech.github.io/RevoSim-web/",
+   "published": "2026-11-06",
+   "scores": {
+    "Sim": 23.2,
+    "VTA": 15.0
+   },
+   "seed": false,
+   "title": "RevoSim: Scalable Multimodal Tactile Simulation for Dexterous Manipulation",
+   "topics": [
+    "Sim",
+    "VTA"
+   ],
+   "updated": "2026-11-06",
+   "version": "v1"
+  },
+  "2611.09059": {
+   "abstract": "Cross-point resistive arrays are attractive for high-density tactile sensing because they reduce wiring complexity. However, conventional frequency-based readout methods can become inaccurate in robotic sensing environments, where long interconnects and measurement and environmental noise degrade the observed signals. We propose a time-domain optimization method for robust readout of cross-point resistive arrays. The method determines resistance values by fitting a time-domain observation model to the measured waveform over the interval, rather than relying solely on spectral amplitudes. By exploiting the full waveform, the proposed method improves robustness under noisy observation conditions. In simulations of a 16 x 16 array, the proposed method reduced the mean readout error by 20% compared with the baseline method. Furthermore, validation over 1,000 trials showed that the proposed method achieves more robust estimation than the conventional method, reducing the mean error and standard deviation by 24.6% and 77.6%, respectively. The improvement was also confirmed in cross-point array simulations with resistance distributions emulating tactile sensor responses.",
+   "added_at": "2026-11-09 08:35",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Taro Tako",
+    "Hiroshi Kaminaga",
+    "Taisuke Kobayashi"
+   ],
+   "code_url": null,
+   "comment": "4 pages, 1 figure, IEEE Sensors 2026 accepted",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.09059",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-06",
+   "scores": {},
+   "seed": false,
+   "title": "Robust Readout of Cross-Point Resistive Arrays via Time-Domain Optimization",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-06",
+   "version": "v1"
+  },
+  "2611.09129": {
+   "abstract": "Egocentric video captures human-object interaction at scale but rarely includes tactile labels for hidden contact and pressure. We introduce TouchAnnotator, an ego-only bimanual tactile annotator trained with multi-source tactile supervision and privileged-view distillation. A canonical hand field unifies glove pressure, geometry-derived human contact, and robot fingertip deformation from six datasets and three embodiments, while source-aware masks preserve valid targets. During training, an EMA teacher observes synchronized ego and wrist views and distills hand-local representations and tactile predictions into a student that uses only ego video and estimated pose at inference. Compact past-clip memory supplies temporal context. We evaluate on EgoTouch, zero-shot FPHA transfer, and 860 synchronized glove recordings. The model transfers to bare-hand contact and produces qualitatively coherent tactile responses across bare-hand, gloved-hand, and robot embodiments. On measured recordings, it improves temporal accuracy by 5.38 points and Volumetric IoU by 5.02 points under a shared protocol. These results show that heterogeneous human--robot supervision and privileged training views can turn egocentric video into dense tactile annotations.",
+   "added_at": "2026-11-09 08:35",
+   "arxiv_categories": [
+    "cs.CV"
+   ],
+   "authors": [
+    "Ao Li",
+    "Zhihao Yuan",
+    "Chubin Zhang",
+    "Kunrui Huang",
+    "Sheng Xu",
+    "Zengjue Chen",
+    "Junjie Wang",
+    "Jiawei Li",
+    "Yansong Tang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.09129",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-11-06",
+   "scores": {},
+   "seed": false,
+   "title": "TouchAnnotator: Multi-Source Tactile Supervision with Privileged-View Distillation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-06",
+   "version": "v1"
+  },
+  "2611.09293": {
+   "abstract": "Recently, world-action models (WAMs) have emerged as a powerful framework for robot manipulation. By jointly modeling action generation and future observation prediction, WAMs can act and anticipate the outcomes of the actions. However, existing WAMs typically rely on frozen pretrained encoders trained with reconstruction, which may not produce representations well suited for robot control. In this paper, we tackle the problem of learning physicallygrounded, control-relevant representations for WAMs. We propose MDF++, a visuo-tactile world-action model that learns latent representations of multisensory observations end-to-end with a diffusion backbone. While naive joint training can lead to feature collapse, MDF++ introduces a multi-task learning strategy that leverages cross-modal correlations to learn task-relevant representations. We evaluate MDF++ on a suite of contact-rich manipulation tasks, including realworld bolt screwing and nut mating, and show that it outperforms WAMs built on frozen pretrained representations by up to 50%. Additional videos are available on our website: jointmdf.github.io.",
+   "added_at": "2026-11-09 08:35",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Zixuan Huang",
+    "Jinhao Yu",
+    "Zachary Charlick",
+    "Dmitry Berenson"
+   ],
+   "code_url": null,
+   "comment": "Corl 2026",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.09293",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-06",
+   "scores": {},
+   "seed": false,
+   "title": "MDF++: Visuo-Tactile World Action Model with End-to-end Representation Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-06",
    "version": "v1"
   }
  }
