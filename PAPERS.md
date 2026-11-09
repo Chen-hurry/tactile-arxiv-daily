@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-09 08:35 ｜ 共 1713 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-09 23:03 ｜ 共 1713 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -627,9 +627,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-06 |  **MDF++: Visuo-Tactile World Action Model with End-to-end Representation Learning** | Zixuan Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.09293) |
-| 2026-11-06 |  **TouchAnnotator: Multi-Source Tactile Supervision with Privileged-View Distillation** | Ao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.09129) |
 | 2026-11-06 |  **Robust Readout of Cross-Point Resistive Arrays via Time-Domain Optimization** | Taro Tako et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.09059) |
+| 2026-11-06 |  **TouchAnnotator: Multi-Source Tactile Supervision with Privileged-View Distillation** | Ao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.09129) |
+| 2026-11-06 |  **MDF++: Visuo-Tactile World Action Model with End-to-end Representation Learning** | Zixuan Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.09293) |
 | 2026-11-05 |  **Flexible Piezoelectric Tactile Sensing System for Intelligent Object Recognition** | Razan Khalifeh et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.07779) |
 | 2026-11-05 | 🖐 **Latent RL Priors for Data-Efficient Dexterous Manipulation** | Yixiao Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.08458) · [Page](https://yixiaowang7.github.io/latent-rl-prior-page/) |
 | 2026-11-04 |  **LumiTac: Compact, High-Rate Six-Axis Optical Tactile Sensing for Human-Robot Interaction** | Hao Wu et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.05936) |
