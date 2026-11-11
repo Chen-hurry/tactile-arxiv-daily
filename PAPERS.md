@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-10 20:30 ｜ 共 1728 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-11 08:14 ｜ 共 1729 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -11,7 +11,7 @@
 - [Sim（触觉仿真环境）](#sim) — 75 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 128 篇
 - [VTA（视觉-触觉-动作策略）](#vta) — 389 篇
-- [Other（其他触觉相关）](#other) — 1182 篇
+- [Other（其他触觉相关）](#other) — 1183 篇
 
 ## Sim
 
@@ -632,6 +632,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-10 | 🖐 **DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning** | Huaijin Pi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.14092) · [Page](https://robbyant-research.github.io/DexSeed/) |
 | 2026-11-09 | 🖐 **Design of a hybrid tendon-linkage finger with coupled and adaptive motion** | Hyojae Kang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.11885) |
 | 2026-11-09 |  **Distilling Instructions into Weights: Closed-Form Edits Fix a Robot Policy's Misreading** | Ali-Adeeb Abbas et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.11894) · [Code](https://github.com/adeeb10abbas/weightsmith) · [Page](https://ali-adeeb.com/weightsmith/) |
 | 2026-11-09 | 🖐 **Grasp-Taxonomy Conditioning as a Mode Switch for Dexterous Grasping of Climbing Holds** | Rumi Loghmani et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.12017) |

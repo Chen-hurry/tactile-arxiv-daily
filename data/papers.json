@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-10 20:30",
+ "last_update": "2026-11-11 08:14",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -50119,8 +50119,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-08-14",
-   "version": "v2"
+   "updated": "2026-11-10",
+   "version": "v3"
   },
   "2607.00678": {
    "abstract": "Mobile manipulation is a key capability for general-purpose robots, yet remains challenging for current embodied learning methods. VLA policies are typically reactive and lack explicit world modeling, while existing World Action Models (WAMs) are still poorly aligned with the structure of mobile manipulation: they operate on coarse video chunks, model entangled navigation-manipulation actions, and train inverse dynamics under supervision that does not match autoregressive inference. As a result, they often miss fine-grained contact dynamics, suffer from action-distribution conflicts, and accumulate errors over long-horizon rollouts. We propose ABot-M0.5, a new WAM built on the insight that mobile manipulation requires alignment at three levels: temporal granularity, action space, and train-test consistency. To align temporal granularity, we introduce intermediate latent actions that capture local visual state transitions and serve as an bridging action space between video latents and embodiment-specific controls. To align action space, we design a dual-level Mixture-of-Transformers architecture that disentangles both modality representations and heterogeneous action subspaces such as base movement and arm manipulation. To align inference conditions, we propose the dream-forcing training strategy that progressively trains inverse dynamics on model-predicted videos, improving train-test alignment and robustness during autoregressive prediction. Experiments on challenging mobile and fine-grained manipulation benchmarks demonstrate that ABot-M0.5 achieves state-of-the-art performance in both long-horizon task success and finegrained control accuracy. These results highlight the critical importance of granularity-aligned, action-disentangled, and inference-consistent world-action modeling.",
@@ -71897,6 +71897,50 @@
     "VTLA"
    ],
    "updated": "2026-11-09",
+   "version": "v1"
+  },
+  "2611.14092": {
+   "abstract": "We study how to generate diverse, physically executable robot demonstrations for dexterous vision-language-action (VLA) learning. Existing demonstration-generation methods typically rely on costly teleoperated examples. Meanwhile, human hand--object datasets provide a reusable source, but existing transfer methods mainly reproduce given interactions. Turning these interactions into VLA training data further requires coverage of different objects and manipulation locations, together with executable arm and finger actions, and visual observations. To achieve this, we present DexSeed, a framework for low-cost generation of dexterous robot data from human hand--object interactions. Our key idea is to expand human sequences while preserving their grasps and realizing the resulting motions under arm-tracking dynamics in physics simulation. Specifically, we organize source sequences by grasp mode with shared language descriptions. InteractionMesh-based retargeting and arm trajectory augmentation adapt these sequences to the robot hand, different object geometries, and pick-and-place locations while preserving local hand--object relationships. An RL finger-control policy produces executable rollouts, while the arm tracks precomputed trajectories. Rendered observations and recorded actions from successful rollouts are paired with grasp descriptions to fine-tune a VLA. Experiments show improved contact fidelity in retargeting and more reliable whole-arm execution than the evaluated baselines. Simulation evaluation and real-world deployment further demonstrate that a VLA fine-tuned solely on the generated demonstrations can execute language-specified grasps. Project page: https://robbyant-research.github.io/DexSeed/.",
+   "added_at": "2026-11-11 08:14",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Huaijin Pi",
+    "Zehong Shen",
+    "Yong Wang",
+    "Kechun Xu",
+    "Changpeng Wang",
+    "Dingkun Wei",
+    "Xueyang Wang",
+    "Wenjia Wang",
+    "Xing Zhu",
+    "Yujun Shen",
+    "Taku Komura"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://robbyant-research.github.io/DexSeed/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.14092",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://robbyant-research.github.io/DexSeed/",
+   "published": "2026-11-10",
+   "scores": {},
+   "seed": false,
+   "title": "DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-10",
    "version": "v1"
   }
  }
