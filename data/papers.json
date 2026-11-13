@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-12 20:58",
+ "last_update": "2026-11-13 08:40",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -41167,6 +41167,7 @@
     "Ruize Liao",
     "Wanjun Jia",
     "Dongsheng Luo",
+    "Jianwen Hu",
     "Jiacheng Lin",
     "Kailun Yang",
     "Zhiyong Li",
@@ -41194,8 +41195,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-06",
-   "version": "v3"
+   "updated": "2026-11-11",
+   "version": "v4"
   },
   "2604.08528": {
    "abstract": "Reliable in-hand manipulation requires accurate real-time estimation of slip between a gripper and a grasped object. Existing tactile sensing approaches based on vision, capacitance, or force-torque measurements face fundamental trade-offs in form factor, durability, and their ability to jointly estimate slip direction and magnitude. We present A-SLIP, a multi-channel acoustic sensing system integrated into a parallel-jaw gripper for estimating continuous slip in the grasp plane. The A-SLIP sensor consists of piezoelectric microphones positioned behind a textured silicone contact pad to capture structured contact-induced vibrations. The A-SLIP model processes synchronized multi-channel audio as log-mel spectrograms using a lightweight convolutional network, jointly predicting the presence, direction, and magnitude of slip. Across experiments with robot- and externally induced slip conditions, the fine-tuned four-microphone configuration achieves a mean absolute directional error of 14.1 degrees, outperforms baselines by up to 12 percent in detection accuracy, and reduces directional error by 32 percent. Compared with single-microphone configurations, the multi-channel design reduces directional error by 64 percent and magnitude error by 68 percent, underscoring the importance of spatial acoustic sensing in resolving slip direction ambiguity. We further evaluate A-SLIP in closed-loop reactive control and find that it enables reliable, low-cost, real-time estimation of in-hand slip. Project videos and additional details are available at https://a-slip.github.io.",
@@ -63965,8 +63966,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-10-03",
-   "version": "v1"
+   "updated": "2026-11-11",
+   "version": "v2"
   },
   "2610.04607": {
    "abstract": "Robots need to anticipate how their actions will change the world, since manipulation success hinges on the resulting contacts and object motions. However, existing Vision-Language-Action (VLA) policies that predict future observations from shared features leave the forecast decoupled from the actions the policy will actually execute, and impose no physical constraints on how the scene may evolve. We introduce ForeAct3D, a framework for policy-grounded future world modeling within VLA policies. Learnable geometric queries decode depth, semantic segmentation, and camera pose from the policy representation into current and future semantic 3D scene states, and the future queries are conditioned on the policy-generated action chunk to ground the forecast in the planned interaction. A physical-consistency closure relates the two states through background staticity and instance-level rigidity, and anchors the wrist-camera pose to end-effector kinematics. These objectives shape the shared representation used for action generation during training, and no future prediction is required at inference. Without robot pretraining, ForeAct3D achieves 98.3% average success on LIBERO and an average task length of 3.73 on CALVIN, outperforming its base policy on every suite. Ablations show that semantic 3D supervision, physical consistency, and action conditioning each improve manipulation performance, and that action conditioning substantially improves future object localization. Real-world experiments on spatial placement, object insertion, and sequential manipulation further raise average success from 6.7% to 37.8% over the base policy. The project page and code are available at https://github.com/anthonytao80-crypto/ForeAct3D.",
@@ -71941,6 +71942,155 @@
     "Other"
    ],
    "updated": "2026-11-10",
+   "version": "v1"
+  },
+  "2611.15834": {
+   "abstract": "Generated touch could extend robot learning beyond recorded contacts. A tactile generator needs a latent space, and we choose one by testing whether a material classifier trained on real GelSight presses still works on encode-decode reconstructions from pretrained image models. On ObjectFolder Real, the classifier loses 6.5 to 9.7 points on reconstructions from three 16x discrete tokenizers and 0.3 points on those from the Stable Diffusion VAE (SD-VAE). The 16x tokenizers again lose far more on Touch and Go and on DIGIT object recognition (YCB-Slide). Retraining the classifier on reconstructions, with no new labels, narrows the discrete gap. SD-VAE reconstructions also keep object identity, with 76.7% object-matching accuracy against 78.9% for real touch and 67.0% for MAGVIT-v2. We therefore select SD-VAE latents and show a photo-to-touch generator trained in them. Code will be released upon acceptance.",
+   "added_at": "2026-11-13 08:40",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.RO"
+   ],
+   "authors": [
+    "Wanghao Ye",
+    "Aarosh Das",
+    "Sihan Chen",
+    "Yiting Wang",
+    "Bowei Tian",
+    "Guoheng Sun",
+    "Shwai He",
+    "Zheyu Shen",
+    "Ziyao Wang",
+    "Yexiao He",
+    "Zhaoyi Liu",
+    "Meng Liu",
+    "Yuning Zhang",
+    "Meng Feng",
+    "Ziyi Wang",
+    "Yilong Dai",
+    "Yifei Dong",
+    "Siyuan Peng",
+    "Zhenle Duan",
+    "Joshua Liu",
+    "Lang Xiong",
+    "Daeun Jung",
+    "Aditya Sarkar",
+    "Parastoo Pilevar",
+    "Xiaochuan Gong",
+    "Yancheng Zhu",
+    "Yingying Fan",
+    "Qiong Wang",
+    "Ang Li"
+   ],
+   "code_url": null,
+   "comment": "13 pages, 8 figures, 10 tables",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.15834",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "digit",
+     "gelsight"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-11-11",
+   "scores": {},
+   "seed": false,
+   "title": "Where to Generate Touch: Do Image Latents Preserve Material Recognition?",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-11",
+   "version": "v1"
+  },
+  "2611.15937": {
+   "abstract": "Vision-Language-Action (VLA) models have demonstrated strong performance in robotic manipulation, yet most rely primarily on 2D visual observations and language instructions, leaving scene geometry and obstacle relationships to be inferred implicitly. This limitation is particularly problematic in cluttered environments, where small spatial errors can lead to unintended contacts or collisions. We propose MOSAIC, a modular spatial- and obstacle-aware framework that can be integrated with pretrained VLA policies to improve object-level scene understanding and action generation. Our method augments the VLA backbone with an auxiliary semantic grounding task that predicts role-specific masks for the target object, destination region, and surrounding obstacles. We further combine the target and destination masks with depth estimated from 3D scene reconstruction to construct role-specific geometric tokens that are injected directly into the action expert. In addition, we propose obstacle-aware attention supervision that emphasizes obstacles near the robot body during task execution. The resulting attention features are subsequently injected into later action-expert layers to further guide action generation. Together, these components provide explicit semantic, geometric, and obstacle-aware cues while preserving the underlying pretrained VLA architecture. We evaluate our framework on pretrained VLA model using the RoboPRO benchmark, including visual perturbation tests, and further validate it on real-world manipulation tasks. MOSAIC improves the success rate by 5.1% in cluttered scenes, and by 9.7% under visual perturbations, with gains of up to 25.0% in the most challenging environment. We will release our code and dataset upon acceptance at the following Github page: https://mmahdavian.github.io/MOSAIC/",
+   "added_at": "2026-11-13 08:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Richard Shi",
+    "Mohammad Mahdavian",
+    "Mehrdad Momeni Zadeh",
+    "Mohammed Elmahgiubi",
+    "Amir Rasouli"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.15937",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://mmahdavian.github.io/MOSAIC/",
+   "published": "2026-11-11",
+   "scores": {},
+   "seed": false,
+   "title": "MOSAIC: Modular Obstacle and Spatial-Aware Framework for Manipulation In Cluttered Scenes",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-11",
+   "version": "v1"
+  },
+  "2611.15981": {
+   "abstract": "Many manipulation tasks require separating adhered, embedded, contaminated, or mechanically constrained targets. We study this setting as removal manipulation, where progress depends on evolving contact states that are only partially observable from vision and kinematics. We introduce DexRemo, a three-finger robotic hand with high-force actuation, modular fingertips, and three-axis fingertip force sensing, together with a nine-scenario real-robot task suite spanning adhesive detachment, surface cleaning and self-cleaning, and occluded retrieval. To make multi-finger force observations easier to fuse, we express fingertip forces in a shared wrist-centered frame, giving force components consistent geometric meaning across fingers and time. Using an Action Chunking Transformer backbone, policies fuse multi-view vision, proprioception, fingertip pose, and force observations to predict closed-loop action chunks from demonstrations. Evaluation uses six core benchmark tasks for controlled fingertip-input and force-frame ablations, plus three extension scenarios for additional held-out coverage. Across these evaluations, the learned policies achieve consistent removal performance, and ablations show that wrist-frame forces, especially with fingertip pose, improve stability and generalization over local-frame force inputs and no-force baselines. Project website: https://dexremo.github.io",
+   "added_at": "2026-11-13 08:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "Liman Wang",
+    "Hanyang Zhong",
+    "Sun Zhaole",
+    "Wenting Cao",
+    "Babar Jamil",
+    "Andy Tyrrell",
+    "Shan Luo",
+    "Jihong Zhu"
+   ],
+   "code_url": null,
+   "comment": "Accepted for publication in IEEE Transactions on Robotics (T-RO), 2026. Project website: https://dexremo.github.io",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.15981",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "fingertip force"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://dexremo.github.io",
+   "published": "2026-11-11",
+   "scores": {},
+   "seed": false,
+   "title": "DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-11",
    "version": "v1"
   }
  }
