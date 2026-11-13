@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-13 08:40 ｜ 共 1732 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-13 20:34 ｜ 共 1732 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -633,8 +633,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-11-11 |  **Where to Generate Touch: Do Image Latents Preserve Material Recognition?** | Wanghao Ye et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.15834) |
-| 2026-11-11 | 🖐 **DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation** | Liman Wang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.15981) · [Page](https://dexremo.github.io) |
 | 2026-11-11 |  **MOSAIC: Modular Obstacle and Spatial-Aware Framework for Manipulation In Cluttered Scenes** | Richard Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.15937) · [Page](https://mmahdavian.github.io/MOSAIC/) |
+| 2026-11-11 | 🖐 **DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation** | Liman Wang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.15981) · [Page](https://dexremo.github.io) |
 | 2026-11-10 | 🖐 **DexSeed: Expanding Human Hand-Object Interactions into Robot Demonstrations for Dexterous Policy Learning** | Huaijin Pi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.14092) · [Page](https://robbyant-research.github.io/DexSeed/) |
 | 2026-11-09 | 🖐 **Design of a hybrid tendon-linkage finger with coupled and adaptive motion** | Hyojae Kang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.11885) |
 | 2026-11-09 |  **Distilling Instructions into Weights: Closed-Form Edits Fix a Robot Policy's Misreading** | Ali-Adeeb Abbas et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.11894) · [Code](https://github.com/adeeb10abbas/weightsmith) · [Page](https://ali-adeeb.com/weightsmith/) |
