@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-15 19:25 ｜ 共 1732 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-16 08:30 ｜ 共 1734 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 75 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 128 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 389 篇
-- [Other（其他触觉相关）](#other) — 1186 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 390 篇
+- [Other（其他触觉相关）](#other) — 1187 篇
 
 ## Sim
 
@@ -236,6 +236,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-13 | 🖐 **TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real** | Huiwen Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.17619) |
 | 2026-11-09 |  **HolidayFactory 1.0: Simulating, Generating, and Evaluating Industrial Robot Tasks** | Holiday Robotics et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.11789) |
 | 2026-11-09 | 🖐 **PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation** | Ruilin Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.12383) · [Page](https://bey0ndt1me.github.io/PCTac-page/) |
 | 2026-11-07 |  **Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation** | Aijia Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.10490) |
@@ -333,7 +334,7 @@
 | 2026-08-21 |  **ViTacPhys: Physical Property-Aware Grasping from Human Visual-Tactile Demonstrations** | Yiwen Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.21355) · [Page](https://vitacphys.github.io/ViTacPhys/) |
 | 2026-08-19 |  **SoftVTBench: A Deformation-Aware Visuo-Tactile Dataset and Benchmark for Deformable-Object Manipulation** | Bowen Jing et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.18701) |
 | 2026-08-19 | 🖐 **ADEPT: Accelerating Dexterity via Pre-Training and Post-Training using Reinforcement Learning** | Jayjun Lee et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.19182) · [Page](https://adept-dexterity.github.io/) |
-| 2026-08-19 |  **The Missing Touch: Spatially Distributed Tactile Feedback Brings Teleoperation Closer to Human Dexterity** | Rohan Kota et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.19372) |
+| 2026-08-19 | 🖐 **The Missing Touch: Sensing and Displaying Localized Contact Geometry Brings Teleoperation Closer to Human Dexterity** | Rohan Kota et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.19372) |
 | 2026-08-17 | 🖐 **ViHaTeleop: A Low-Cost, Lightweight Visual-Haptic Teleoperation System for Dexterous Manipulation Learning** | Fucai Zhu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.16572) |
 | 2026-08-16 |  **Vision-Based Tactile Intelligence for Robotics: Sensing, Learning, and Embodied Manipulation** | Peng Zhou et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2608.15490) |
 | 2026-08-16 |  **Tac4Loco: Learning Spatiotemporal Plantar Pressure Representations for Humanoid Locomotion** | Ziyun Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2608.15766) |
@@ -632,6 +633,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-13 | 🖐 **VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image** | Binhong Ye et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.17755) |
 | 2026-11-11 |  **Where to Generate Touch: Do Image Latents Preserve Material Recognition?** | Wanghao Ye et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.15834) |
 | 2026-11-11 |  **MOSAIC: Modular Obstacle and Spatial-Aware Framework for Manipulation In Cluttered Scenes** | Richard Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.15937) · [Page](https://mmahdavian.github.io/MOSAIC/) |
 | 2026-11-11 | 🖐 **DexRemo: A Force-Sensing Hand Platform and Task Suite for Contact-Rich Removal Manipulation** | Liman Wang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.15981) · [Page](https://dexremo.github.io) |
@@ -678,7 +680,7 @@
 | 2026-10-24 | 🖐 **AdaDexTrack: Dynamic Modulation for Adaptive and Generalizable Dexterous Manipulation Tracking** | Jianibieke Adalibieke et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.33852) · [Page](https://janebek.github.io/AdaDexTrack/) |
 | 2026-10-23 |  **MAST-VLA: Skill-Conditioned Adaptation with Trajectory-Affordance Priors for Multi-Skill Robot Manipulation** | Jiachi Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.32312) |
 | 2026-10-23 | 🖐 **ORBIT: A Modular Multi-finger Robotic Hand Platform with Rotational Finger Reconfiguration** | Benito Ribadeneira et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.33241) |
-| 2026-10-22 | 🖐 **IORA: Irregular Object Immobilization under Restricted Actuation** | Sang-Hun Han et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.30969) |
+| 2026-10-22 | 🖐 **IORA: Irregular Object Immobilization under Restricted Actuation** | Sang-Hun Han et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.30969) · [Page](https://sanghunhan92.github.io/conference/IORA/) |
 | 2026-10-22 |  **GelSlim 5.0: Unifying Vision and Touch with a Single Fingertip Camera** | Xiangdong Wang et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2610.31334) |
 | 2026-10-21 | 🖐 **DONIC: Generalist Dexterous Bimanual Tracking Control from Human Demonstrations** | Mingze Sun et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.29997) |
 | 2026-10-21 | 🖐 **Tactile-Based Robotic Manipulation: From Mechanics-Driven to Data-Driven Perspectives** | Jingyi Xiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.30438) · [Page](https://www.annualreviews.org) |
