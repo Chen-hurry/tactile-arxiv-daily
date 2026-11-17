@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-17 09:41 ｜ 共 1740 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-17 21:50 ｜ 共 1740 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -635,9 +635,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-16 |  **WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation** | Haotian He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21057) · [Page](https://wrist-informed-tactile-representations.github.io/) |
-| 2026-11-16 |  **TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence** | Yongji Fu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20939) |
 | 2026-11-16 |  **Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications** | Hao Wu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20770) |
+| 2026-11-16 |  **TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence** | Yongji Fu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20939) |
+| 2026-11-16 |  **WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation** | Haotian He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21057) · [Page](https://wrist-informed-tactile-representations.github.io/) |
 | 2026-11-16 |  **ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters** | Ruixi Yu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21607) |
 | 2026-11-13 | 🖐 **VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image** | Binhong Ye et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.17755) |
 | 2026-11-11 |  **Where to Generate Touch: Do Image Latents Preserve Material Recognition?** | Wanghao Ye et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.15834) |
