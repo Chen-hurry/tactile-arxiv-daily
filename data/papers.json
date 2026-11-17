@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-16 22:57",
+ "last_update": "2026-11-17 09:41",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -72179,6 +72179,272 @@
     "Other"
    ],
    "updated": "2026-11-13",
+   "version": "v1"
+  },
+  "2611.18976": {
+   "abstract": "Recent humanoid loco-manipulation in articulated environments has largely focused on geometry-dominant interactions, where success is primarily determined by geometric alignment and motion execution. In contrast, forceful multi-finger manipulation requires the robot to adapt to real-world uncertainties in contact and interaction dynamics. We present Tactile-Driven Motor Adaptation (TMA) and an integrated whole-body system for zero-shot sim-to-real forceful humanoid manipulation, and study round-doorknob opening as a challenging benchmark requiring stable multi-finger frictional grasping, sufficient torque generation without slip, force-regulated pushing, and whole-body stability. TMA structures policy learning around interactions observable through tactile feedback, uses cone geometry as an inductive bias for multi-finger contact representation, and adapts motor behavior online from tactile history. An upper-body manipulation policy is trained alongside a pretrained general locomotion controller to coordinate dexterous interaction and whole-body stabilization. Trained entirely in simulation, TMA transfers zero-shot to a Unitree G1 humanoid with BrainCo Revo2 multi-fingered hands and substantially outperforms standard Rapid Motor Adaptation (RMA) and reactive tactile policy baselines across four commercial round doorknobs in the real world.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yiting Chen",
+    "Kelin Yu",
+    "Sarthak Kaingade",
+    "Bryan Trinh",
+    "Kaiyu Hang",
+    "Roberto Martin-martin",
+    "Nima Fazeli",
+    "X. Alice Wu"
+   ],
+   "code_url": null,
+   "comment": "Project page: humanoid-tma.github.io",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.18976",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-13",
+   "scores": {
+    "VTA": 30.0
+   },
+   "seed": false,
+   "title": "TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-13",
+   "version": "v1"
+  },
+  "2611.20718": {
+   "abstract": "Tactile sensing is essential for contact-rich manipulation, yet heterogeneous sensing mechanisms and observation formats hinder cross-hardware transfer. Since physical contact is governed by Newtonian mechanics, we ground tactile representations in six-dimensional wrenches, establishing a common physical reference across sensing mechanisms. Specifically, we pair tactile observations from all sensors with wrench measurements, enabling shared physical supervision without requiring direct tactile-to-tactile pairing between sensors. To support learning at scale, we develop a dedicated acquisition platform and collect over 100 million paired tactile observations and wrench measurements from 24 sensors spanning four families of sensing principles. Building on this dataset, our framework combines sensor-specific input adaptation with a shared tactile encoder. By learning to reconstruct wrenches, the encoder maps observations from different sensors into a shared, continuous feature space grounded in contact physics. To leverage these representations for manipulation, we introduce TaF-Policy, which integrates tactile features with visual observations and robot states to generate action chunks. We evaluate the learned representations through wrench estimation, cross-sensor retrieval, few-shot adaptation to unseen sensors, and robotic manipulation. On the core benchmark, our method reduces single-frame force RMSE by 17.1% and improves cross-sensor retrieval R@1 by 13.11 percentage points over the strongest baseline. In manipulation experiments, TaF-Policy achieves average success rates of 51.33% across three simulated tasks and 46.25% across four real-world tasks, compared with 47.33% and 23.75%, respectively, for the strongest baselines evaluated on the same task sets. Project page: https://mrjiangjm.github.io/TaF-Foundation/.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jiaming Jiang",
+    "Yuzhe Huang",
+    "Baokun Yang",
+    "Hao Liang",
+    "Li Gao",
+    "Haoran Guo",
+    "Pei Lin",
+    "Shengcheng Luo",
+    "Chenxi Xiao",
+    "Wanlin Li",
+    "Ziyuan Jiao"
+   ],
+   "code_url": null,
+   "comment": "17 pages, 6 figures, including supplementary material",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.20718",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://mrjiangjm.github.io/TaF-Foundation/",
+   "published": "2026-11-16",
+   "scores": {
+    "VTA": 5.5
+   },
+   "seed": false,
+   "title": "TaF-Foundation: Wrench-Grounded Cross-Sensor Tactile Representations",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-16",
+   "version": "v1"
+  },
+  "2611.20770": {
+   "abstract": "Non-imaging optical tactile sensors encode contact through changes in optical intensity, wavelength, spectra, or photon counts, offering diverse architectures for robotic touch. Their usefulness depends on whether contact variables can be reliably distinguished from coupled mechanical and environmental effects, and whether the resulting information can be delivered in time to guide action. This review develops a unified framework linking mechanical load transmission, optical encoding, readout, and tactile inference to robotic task requirements. It examines reflective and waveguide-based devices, micro/nanofibers, fiber gratings, interferometric and resonant structures, and mechanoluminescent composites. Three considerations emerge across these approaches. First, high optical sensitivity supports accurate tactile estimation only when target variables remain identifiable under the relevant contact and calibration conditions. Second, spatial coverage and feedback timing must be assessed at the system level, accounting for multiplexing, acquisition, demodulation, and inference. Third, device characterization, offline recognition, and closed-loop robotic performance provide distinct levels of evidence and require different evaluation criteria. Representative studies illustrate how these considerations shape force estimation, contact localization, slip correction and distributed interaction. This review concludes with priorities for calibration transfer, reliable interfaces, scalable readout, and task-based validation, providing a basis for selecting and developing non-imaging optical tactile architectures for robotics.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Hao Wu",
+    "Yu Feng",
+    "Haotian Guo",
+    "Huichan Zhao",
+    "Changsheng Wu",
+    "Jianshu Zhou"
+   ],
+   "code_url": null,
+   "comment": "35 pages, 9 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.20770",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "optical tactile"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-16",
+   "scores": {},
+   "seed": false,
+   "title": "Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-16",
+   "version": "v1"
+  },
+  "2611.20939": {
+   "abstract": "Optical tactile sensors record tactile videos that capture local deformation and its temporal evolution during contact, supporting robot manipulation, force estimation, and tactile representation learning. Differences in imaging geometry, background appearance, illumination, resolution, and deformation response lead to sensor-dependent observations of the same contact across GelSight, DIGIT, GelSlim, TacTip, and other optical tactile sensors. This variability limits representation transfer and the joint use of multi-sensor data. We introduce TacBridge, a framework for learning unified representations from multi-sensor tactile videos through cross-sensor correspondence. Specifically, multi-sensor masked tactile-video pre-training learns spatiotemporal representations across sensors. We then train the same masked model jointly on same-sensor and cross-sensor reconstruction, using paired source and target videos of matched contact events. Experiments on cross-sensor translation and downstream perception demonstrate the cross-sensor generalization and task transferability of the learned tactile representations.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yongji Fu",
+    "Yijiong Lin",
+    "Yi Zhou",
+    "Yi Qi",
+    "Guanqun Cao"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.20939",
+   "modality": "vision",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": [
+     "digit",
+     "gelsight",
+     "gelslim",
+     "optical tactile",
+     "tactip"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-16",
+   "scores": {},
+   "seed": false,
+   "title": "TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-16",
+   "version": "v1"
+  },
+  "2611.21057": {
+   "abstract": "Similar tactile contacts can call for different corrections depending on the configuration of the hand, object and target. Rather than supplying touch and wrist vision separately, fusing them before policy injection better grounds tactile features in visual context, yielding more accurate contact representations. We introduce Wrist-Informed Tactile Representations (WiTac), a pretrained encoder that learns such representations before action generation. Pretrained on nearly 300 hours of SharpaDex data, WiTac deeply fuses tactile signals with hand motion and wrist views into a comprehensive contact representation. Conditioning downstream VLA policies (GR00T N1.7 and $π_{0.5}$) on WiTac substantially improves task success over vision-only base policies across four contact-rich manipulation tasks (+28.8% and +15.0% on average), and further outperforms a wrist-free tactile encoder by 18.8% and 7.5%, respectively. Offline analyses further show that incorporating wrist vision yields more accurate contact descriptors, stronger joint task-contact discrimination, greater feature stability under tactile noise, and clearer action-direction readout from similar contacts.Project page: https://wrist-informed-tactile-representations.github.io/.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Haotian He",
+    "Yiyang Chen",
+    "Congsheng Xu",
+    "Wenchao Yue",
+    "Mingze Ye",
+    "Shuai Chen",
+    "Yi Yang",
+    "Yaping Li",
+    "Haonan Wang",
+    "Weinan E",
+    "Wenzhao Lian",
+    "Zhijie Deng"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.21057",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://wrist-informed-tactile-representations.github.io/",
+   "published": "2026-11-16",
+   "scores": {
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-16",
+   "version": "v1"
+  },
+  "2611.21607": {
+   "abstract": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies.",
+   "added_at": "2026-11-17 09:41",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruixi Yu",
+    "Dairu Liu",
+    "Xuchuan Chen",
+    "Zekun Qi",
+    "Zekai Li",
+    "Zhuo Cao",
+    "Luyang Niu",
+    "Yingsheng Zhang",
+    "Sikai Liang",
+    "Ke Fan",
+    "He Wang",
+    "Li Yi"
+   ],
+   "code_url": null,
+   "comment": "Tech Report",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.21607",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-16",
+   "scores": {},
+   "seed": false,
+   "title": "ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-16",
    "version": "v1"
   }
  }

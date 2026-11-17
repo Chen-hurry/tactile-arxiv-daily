@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-16 22:57 ｜ 共 1734 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-17 09:41 ｜ 共 1740 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 75 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 128 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 390 篇
-- [Other（其他触觉相关）](#other) — 1187 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 392 篇
+- [Other（其他触觉相关）](#other) — 1191 篇
 
 ## Sim
 
@@ -236,7 +236,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-16 |  **TaF-Foundation: Wrench-Grounded Cross-Sensor Tactile Representations** | Jiaming Jiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.20718) · [Page](https://mrjiangjm.github.io/TaF-Foundation/) |
 | 2026-11-13 | 🖐 **TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real** | Huiwen Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.17619) |
+| 2026-11-13 | 🖐 **TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation** | Yiting Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.18976) |
 | 2026-11-09 |  **HolidayFactory 1.0: Simulating, Generating, and Evaluating Industrial Robot Tasks** | Holiday Robotics et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.11789) |
 | 2026-11-09 | 🖐 **PCTac: Mechanochromic Photonic-Crystal Tactile Sensor for Dexterous Manipulation** | Ruilin Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.12383) · [Page](https://bey0ndt1me.github.io/PCTac-page/) |
 | 2026-11-07 |  **Tactile Sensors Are an Effective Substitute for Wrist Cameras in Contact-Rich or Occluded Manipulation** | Aijia Yang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.10490) |
@@ -633,6 +635,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-16 |  **WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation** | Haotian He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21057) · [Page](https://wrist-informed-tactile-representations.github.io/) |
+| 2026-11-16 |  **TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence** | Yongji Fu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20939) |
+| 2026-11-16 |  **Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications** | Hao Wu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20770) |
+| 2026-11-16 |  **ScaleVLA: Scaling Vision-Language-Action Models to 552 Billion Parameters** | Ruixi Yu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21607) |
 | 2026-11-13 | 🖐 **VACO: Vertex-Aligned Decoding for Dense Hand Contact Estimation from a Single Image** | Binhong Ye et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.17755) |
 | 2026-11-11 |  **Where to Generate Touch: Do Image Latents Preserve Material Recognition?** | Wanghao Ye et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.15834) |
 | 2026-11-11 |  **MOSAIC: Modular Obstacle and Spatial-Aware Framework for Manipulation In Cluttered Scenes** | Richard Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.15937) · [Page](https://mmahdavian.github.io/MOSAIC/) |
