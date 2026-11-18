@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-18 08:59 ｜ 共 1743 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-18 21:29 ｜ 共 1743 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -636,8 +636,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-17 |  **Physics-Informed Tactile-based Shape Estimation of Deformable Linear Objects** | Rotem Atari et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.22990) |
 | 2026-11-17 |  **Haptic Probing for Subsurface-Aware Force Distribution on Layered Soft Tissue** | Lei Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22195) |
+| 2026-11-17 |  **Physics-Informed Tactile-based Shape Estimation of Deformable Linear Objects** | Rotem Atari et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.22990) |
 | 2026-11-16 |  **Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications** | Hao Wu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20770) |
 | 2026-11-16 |  **TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence** | Yongji Fu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20939) |
 | 2026-11-16 |  **WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation** | Haotian He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21057) · [Page](https://wrist-informed-tactile-representations.github.io/) |
