@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-17 21:50 ｜ 共 1740 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-18 08:59 ｜ 共 1743 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -10,8 +10,8 @@
 
 - [Sim（触觉仿真环境）](#sim) — 75 篇
 - [VTLA（视觉-触觉-语言-动作模型）](#vtla) — 128 篇
-- [VTA（视觉-触觉-动作策略）](#vta) — 392 篇
-- [Other（其他触觉相关）](#other) — 1191 篇
+- [VTA（视觉-触觉-动作策略）](#vta) — 393 篇
+- [Other（其他触觉相关）](#other) — 1193 篇
 
 ## Sim
 
@@ -236,6 +236,7 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-17 |  **Perception into Imagination: Executable Memory for World Models** | Xianyao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22294) |
 | 2026-11-16 |  **TaF-Foundation: Wrench-Grounded Cross-Sensor Tactile Representations** | Jiaming Jiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.20718) · [Page](https://mrjiangjm.github.io/TaF-Foundation/) |
 | 2026-11-13 | 🖐 **TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real** | Huiwen Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.17619) |
 | 2026-11-13 | 🖐 **TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation** | Yiting Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.18976) |
@@ -635,6 +636,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-17 |  **Physics-Informed Tactile-based Shape Estimation of Deformable Linear Objects** | Rotem Atari et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.22990) |
+| 2026-11-17 |  **Haptic Probing for Subsurface-Aware Force Distribution on Layered Soft Tissue** | Lei Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22195) |
 | 2026-11-16 |  **Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications** | Hao Wu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20770) |
 | 2026-11-16 |  **TacBridge: Learning Unified Tactile Representations through Cross-Sensor Correspondence** | Yongji Fu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20939) |
 | 2026-11-16 |  **WiTac: Wrist-Informed Tactile Representations for Contact-Rich Manipulation** | Haotian He et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.21057) · [Page](https://wrist-informed-tactile-representations.github.io/) |

@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-17 21:50",
+ "last_update": "2026-11-18 08:59",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -53080,7 +53080,7 @@
    "version": "v3"
   },
   "2607.24744": {
-   "abstract": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid\" spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the tension between scalability and robot alignment, and further characterize each source in terms of data quality, diversity, reusability, and physical fidelity. We then analyze recent embodied foundation models through the lens of their data recipes, examining how different sources are selected, aligned, and mixed during pretraining. For embodied brain models, vision-language-action models, and world-action models alike, we relate data composition to capabilities in perception, reasoning, planning, action generation, and world prediction. We close by discussing six open challenges: building large-scale tactile datasets, collecting failure and recovery data, developing scalable data-collection pipelines, aligning actions across embodiments, leveraging egocentric data for dexterous manipulation, and designing principled data recipes for robot learning. We hope this work paves the foundation for the design of next-generation embodied systems.",
+   "abstract": "Multimodal foundation models learned to see and to speak by consuming the whole internet. Embodied agents admit no such shortcut, since they require data that couple observations with physical states and actions. These signals can be provided, to varying degrees, by multiple data sources. In this work, we organize the embodied data ecosystem as a \"pyramid'' spanning five complementary sources: real-robot data, UMI-style data, egocentric and exocentric data, simulation data, and general vision-language data. We organize the pyramid around the tension between scalability and robot alignment, and further characterize each source in terms of data quality, diversity, reusability, and physical fidelity. We then analyze recent embodied foundation models through the lens of data recipes, examining how different sources are selected, aligned, and mixed during pretraining. For embodied brain models, vision-language-action models, and world-action models alike, we relate data composition to capabilities in perception, reasoning, planning, action generation, and world prediction. To facilitate community use, we additionally consolidate over 10,000 hours of trajectories from widely used robot datasets into a unified LeRobot format, with transparent frame-level quality annotations for filtering. We close by discussing six open challenges: building large-scale tactile datasets, collecting failure and recovery data, developing scalable data-collection pipelines, aligning actions across embodiments, leveraging egocentric data for dexterous manipulation, and designing principled data recipes for robot learning. We hope this work lays the foundation for the design of next-generation embodied systems.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO",
@@ -53141,8 +53141,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-08-08",
-   "version": "v2"
+   "updated": "2026-11-17",
+   "version": "v3"
   },
   "2607.25397": {
    "abstract": "Successfully automating dexterous, long-horizon bimanual manipulation requires frameworks capable of both high-level reasoning and fine-grained execution. Traditional task and motion planning (TAMP), while excellent at symbolic planning, is often brittle in contact-rich operations. Simultaneously, imitation learning (IL), while effective in manipulation tasks with visual feedback, is limited by its low capability in spatial generalization and multi-stage operation. To reconcile their complementary strengths and limitations, we propose DR-LfD (Decomposed and Reorganized Skills Learned from Demonstrations), a framework that integrates visuomotor policies into a TAMP-gated decision-making system. Based on contact relationships, DR-LfD decomposes human demonstrations into atomic skills, which are reproduced as visuomotor policies or object-centric primitives. The initiation, termination, and constraints of the visuomotor policies are carefully modeled and implemented in a TAMP-compatible form, enabling reorganization of skills learned from different sources. DR-LfD transforms the learning problem from one requiring exponential demonstration data over possible skill sequences to one whose demonstration burden scales with the number of distinct skill types, with limited data for each skill. Real-world and simulation benchmarks demonstrate data-efficient skill composition under unseen setups and physical constraints. On two DexMimicGen tasks, DR-LfD with 100 demonstrations outperforms diffusion-based imitation policies with 1000.",
@@ -70091,8 +70091,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-10-29",
-   "version": "v1"
+   "updated": "2026-11-17",
+   "version": "v2"
   },
   "2610.40646": {
    "abstract": "Robot manipulation in everyday environments inherently involves substantial tool usage. Seemingly simple household tasks, such as cooking pan-fried tofu, require forceful cutting, delicate brushing, and precise placement using different tools under contact-rich interaction. Thus, the ability to autonomously swap and use task-appropriate tools is important for tool-centric manipulation. We introduce SwapBot, a modular, tool-centric end effector system featuring low-cost adapters that quickly convert common household tools into robot end effectors. Rather than pursuing a single universal gripper, SwapBot adopts a unified design principle that combines a fixed robot-side coupling interface with low-cost, tool-side adapters, enabling compatibility with diverse tools, including articulated ones, and multiple robot platforms. Each adapter integrates compact tactile sensors, supports fast autonomous swapping, and interfaces with an intuitive teleoperation system for efficient demonstration collection. User studies show that, during teleoperation, SwapBot reduces task completion time and operator workload. Using collected demonstrations on the robot, we train imitation learning policies to successfully perform tool-centric tasks like cooking tofu, stirring salad, flipping meat. Our ablation study shows that using tactile-augmented demonstrations improves policy performance across contact-rich skills, increasing success rates by 15 to 25 percentage points over RGB-only policies. These results highlight modular, tactile-equipped tools as a practical and extensible pathway toward robust and capable robot manipulation. Project website https://personalrobotics.github.io/SwapBot.",
@@ -72356,7 +72356,7 @@
    "version": "v1"
   },
   "2611.21057": {
-   "abstract": "Similar tactile contacts can call for different corrections depending on the configuration of the hand, object and target. Rather than supplying touch and wrist vision separately, fusing them before policy injection better grounds tactile features in visual context, yielding more accurate contact representations. We introduce Wrist-Informed Tactile Representations (WiTac), a pretrained encoder that learns such representations before action generation. Pretrained on nearly 300 hours of SharpaDex data, WiTac deeply fuses tactile signals with hand motion and wrist views into a comprehensive contact representation. Conditioning downstream VLA policies (GR00T N1.7 and $π_{0.5}$) on WiTac substantially improves task success over vision-only base policies across four contact-rich manipulation tasks (+28.8% and +15.0% on average), and further outperforms a wrist-free tactile encoder by 18.8% and 7.5%, respectively. Offline analyses further show that incorporating wrist vision yields more accurate contact descriptors, stronger joint task-contact discrimination, greater feature stability under tactile noise, and clearer action-direction readout from similar contacts.Project page: https://wrist-informed-tactile-representations.github.io/.",
+   "abstract": "Similar tactile contacts can call for different corrections depending on the configuration of the hand, object and target. Rather than supplying touch and wrist vision separately, fusing them before policy injection better grounds tactile features in visual context, yielding more accurate contact representations. We introduce Wrist-Informed Tactile Representations (WiTac), a pretrained encoder that learns such representations before action generation. Pretrained on nearly 300 hours of SharpaDex data, WiTac deeply fuses tactile signals with hand motion and wrist views into a comprehensive contact representation. Conditioning downstream VLA policies (GR00T N1.7 and $π_{0.5}$) on WiTac substantially improves task success over vision-only base policies across four contact-rich manipulation tasks (+28.8% and +15.0% on average), and further outperforms a wrist-free tactile encoder by 18.8% and 7.5%, respectively. Offline analyses further show that incorporating wrist vision yields more accurate contact descriptors, stronger joint task-contact discrimination, greater feature stability under tactile noise, and clearer action-direction readout from similar contacts. Project page: https://wrist-informed-tactile-representations.github.io/.",
    "added_at": "2026-11-17 09:41",
    "arxiv_categories": [
     "cs.RO"
@@ -72399,8 +72399,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-16",
-   "version": "v1"
+   "updated": "2026-11-17",
+   "version": "v2"
   },
   "2611.21607": {
    "abstract": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies.",
@@ -72445,6 +72445,131 @@
     "Other"
    ],
    "updated": "2026-11-16",
+   "version": "v1"
+  },
+  "2611.22195": {
+   "abstract": "Force-regulated contact with layered soft tissue fails most often where the subsurface composition changes: controllers infer the substrate from the loading signal alone, so the estimate guiding them lags the change---more acutely, we argue, over compliant than over bone-backed tissue. We remove that lag with a separate haptic channel. Under a light preload, a brief low-amplitude excitation lets the local dynamic admittance discriminate muscle from bone-backed tissue relative to a per-subject baseline, before task force is applied---active haptic sensing used to commit a control decision rather than to characterise tissue. A force- and tactile-driven distribution law then consumes that regime throughout execution: an instantaneous allocation equalises pressure across the engaged fingertips, while the regime sets the admissible pressure and hence the area the hand must recruit to deliver the target force---making patch area a controlled variable rather than a by-product. Probing, switches and recruitment are priced in a partitioned passivity budget, so safety monitoring cannot suppress the probe and a refused recruitment forfeits force tracking rather than the pressure bound. We report force tracking and pressure uniformity over curved, migrating contact on three human subjects, with regime labels from anatomical landmarks.",
+   "added_at": "2026-11-18 08:59",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Lei Shi",
+    "Xiaoyu Wang",
+    "Cheng Zhou",
+    "Yongjian Liu",
+    "Jing Wang",
+    "Dongsheng Zhang",
+    "Yonghui Zhu",
+    "Xiong Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.22195",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-17",
+   "scores": {},
+   "seed": false,
+   "title": "Haptic Probing for Subsurface-Aware Force Distribution on Layered Soft Tissue",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-17",
+   "version": "v1"
+  },
+  "2611.22294": {
+   "abstract": "Physical agents must use what they previously saw or touched after visibility or contact is lost. Their actions change the implications of these remembered facts. We introduce executable perceptual memory (EPM), a world-model framework that advances explicit perceptual state alongside neural latent dynamics during imagination. Its evolving read-out informs reward prediction, value estimation and policy learning. We align reward inputs with the transitions that produced them and supervise the reward head on open-loop rollouts of recorded actions. On Memory Maze $13\\times13$, EPM reaches 30.37 return at 1M interactions, compared with 23.37 when the same evolving read-out informs only policy and value on a common perceptual front end: a gain of 7.00 [3.80, 10.21]. The complete method also improves control on $9\\times9$ and in MiniWorld. Probes of remembered, out-of-view arrivals show stronger reward anticipation in both visual implementations. Concentration, tactile recovery and real tactile frames demonstrate complementary roles of remembered facts in imagined-policy training, motion-dependent decisions and sensory-content retention. EPM connects persistent perception to the predicted consequences and learning signals of a world model for Physical AI.",
+   "added_at": "2026-11-18 08:59",
+   "arxiv_categories": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV",
+    "cs.RO"
+   ],
+   "authors": [
+    "Xianyao Li",
+    "Ruitong Tian",
+    "Rui Min",
+    "Fang Xu",
+    "Jing Du"
+   ],
+   "code_url": null,
+   "comment": "18 pages, 6 figures, 15 tables",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.22294",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.LG",
+   "project_url": null,
+   "published": "2026-11-17",
+   "scores": {
+    "VTA": 5.5
+   },
+   "seed": false,
+   "title": "Perception into Imagination: Executable Memory for World Models",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-17",
+   "version": "v1"
+  },
+  "2611.22990": {
+   "abstract": "Accurate shape estimation of Deformable Linear Objects (DLOs) is a fundamental challenge in robotic manipulation, often hindered by visual occlusions and the high-dimensional configuration space of flexible materials. While Force/Torque (F/T) and vision-centric methods have been proposed, they frequently struggle with grasp-site ambiguities and environmental interference. In this letter, we investigate the hypothesis that global shape estimation can be achieved through tactile sensing and proprioception, without any visual perception. We contend that dense, high-resolution tactile imprints capture critical boundary conditions and contact gradients that are sufficient to resolve the high-dimensional configuration of the DLO. To prove this, we introduce a Physics-Informed Vision Transformer (ViT) framework that maps tactile images to a 3D vertex chain. By leveraging self-attention mechanisms and a physics-weighted loss function, our model enforces structural priors to ensure that the predicted geometry adheres to the object's physical manifold. Experimental results demonstrate that our tactile-based approach achieves superior reconstruction accuracy across Euclidean and Chamfer metrics. Furthermore, we demonstrate the efficiency of this modality, achieving model transfer to novel DLO materials and geometries. Our findings suggest that tactile feedback provides a robust and computationally efficient alternative for DLO state estimation in visually degraded or occluded environments.",
+   "added_at": "2026-11-18 08:59",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Rotem Atari",
+    "Stav Ashur",
+    "Avishai Sintov"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.22990",
+   "modality": "mixed",
+   "modality_keywords": {
+    "numeric": [
+     "f/t",
+     "force/torque"
+    ],
+    "vision": [
+     "tactile images"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-17",
+   "scores": {},
+   "seed": false,
+   "title": "Physics-Informed Tactile-based Shape Estimation of Deformable Linear Objects",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-17",
    "version": "v1"
   }
  }
