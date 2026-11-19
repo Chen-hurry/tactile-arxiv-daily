@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-19 09:22 ｜ 共 1752 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-19 21:41 ｜ 共 1752 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -101,8 +101,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-18 |  **CoRA-VTLA: Contact-Guided Attention and Queryable Response Memory for Tactile Post-Training** | Chengye Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23963) · [Page](https://cora-vtla.github.io/) |
 | 2026-11-18 | 🖐 **3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation** | Xin Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23961) |
+| 2026-11-18 |  **CoRA-VTLA: Contact-Guided Attention and Queryable Response Memory for Tactile Post-Training** | Chengye Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23963) · [Page](https://cora-vtla.github.io/) |
 | 2026-11-09 | 🖐 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation** | Bing Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.12806) |
 | 2026-10-29 | 🖐 **TouchBridge: Tactile-Conditioned Human-to-Robot Transfer for Dexterous Manipulation** | Haozhe Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.40349) |
 | 2026-10-24 |  **Open-World Law-to-Action: Vision-Language Priors and Touch for Parts with Hidden Physics** | Mohamed A. Mabrok | ❔ 未知 | [arXiv](https://arxiv.org/abs/2610.33705) |
@@ -241,8 +241,8 @@
 |:---|:---|:---|:---|:---|
 | 2026-11-18 | 🖐 **TacPilot: Does Touch Need to Be Everywhere?** | Yunzhen Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23804) |
 | 2026-11-17 |  **Perception into Imagination: Executable Memory for World Models** | Xianyao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22294) |
-| 2026-11-17 |  **SPICE: Stochastic Policy for Interaction in Cluttered Environments** | Nidhi Parayil et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23585) |
 | 2026-11-17 |  **LuxTac: A Flexible, Scalable, and Open-Source Optical Taxel Array with Distributed Three-Axis Force Sensing for Tactile Robot Learning** | Md Rakibul Islam Prince et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23575) · [Page](https://luxtac.github.io) |
+| 2026-11-17 |  **SPICE: Stochastic Policy for Interaction in Cluttered Environments** | Nidhi Parayil et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23585) |
 | 2026-11-16 |  **TaF-Foundation: Wrench-Grounded Cross-Sensor Tactile Representations** | Jiaming Jiang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.20718) · [Page](https://mrjiangjm.github.io/TaF-Foundation/) |
 | 2026-11-13 | 🖐 **TouchTwin: Scaling Human Touch Data via Real-to-Sim-to-Real** | Huiwen Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.17619) |
 | 2026-11-13 | 🖐 **TMA: Sim-to-Real Forceful Humanoid Manipulation via Tactile-Driven Motor Adaptation** | Yiting Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.18976) |
@@ -642,10 +642,10 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-18 | 🖐 **TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors** | Yoobin Shin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.24207) |
 | 2026-11-18 |  **HOForce: Motion and Force Reconstruction of Hand-Object Interaction Using a Single-View RGB-D Video** | Jiahui Wang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23871) · [Code](https://huggingface.co/spaces/fnoi16wjhui/HOForce) |
-| 2026-11-18 | 🖐 **Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot** | Xinke Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.24138) |
 | 2026-11-18 |  **GTI: Grounding Task Intent Throughout Long-Horizon VLA Manipulation** | Tianqi Gong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23926) |
+| 2026-11-18 | 🖐 **Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot** | Xinke Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.24138) |
+| 2026-11-18 | 🖐 **TapTacTouch: Shape Completion from Sparse Tactile Contacts with Geometric Priors** | Yoobin Shin et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.24207) |
 | 2026-11-17 |  **Haptic Probing for Subsurface-Aware Force Distribution on Layered Soft Tissue** | Lei Shi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22195) |
 | 2026-11-17 |  **Physics-Informed Tactile-based Shape Estimation of Deformable Linear Objects** | Rotem Atari et al. | 🔀 混合 | [arXiv](https://arxiv.org/abs/2611.22990) |
 | 2026-11-16 |  **Non-Imaging Optical Tactile Sensors for Robotics: Transduction Principles, System Integration, and Robotic Applications** | Hao Wu et al. | 📷 视觉型 | [arXiv](https://arxiv.org/abs/2611.20770) |
