@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-20 09:04 ｜ 共 1758 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-20 21:23 ｜ 共 1758 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -101,8 +101,8 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-19 |  **TacInno: Teaching Vision-Language-Action Models the Contact Dynamics Beyond Vision and Action** | Weile Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26405) · [Page](https://tacinno.github.io) |
 | 2026-11-19 | 🖐 **TipDex-VTLA: Learning When to Refine Actions with Touch for Dexterous Manipulation** | Xudi Ge et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.25683) |
+| 2026-11-19 |  **TacInno: Teaching Vision-Language-Action Models the Contact Dynamics Beyond Vision and Action** | Weile Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26405) · [Page](https://tacinno.github.io) |
 | 2026-11-18 | 🖐 **3DTouch: A Tactile-aware VLA Model with 3D Geometric Relations for Dexterous Manipulation** | Xin Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23961) |
 | 2026-11-18 |  **CoRA-VTLA: Contact-Guided Attention and Queryable Response Memory for Tactile Post-Training** | Chengye Song et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23963) · [Page](https://cora-vtla.github.io/) |
 | 2026-11-09 | 🖐 **Learning Heterogeneous Tactile Representation for General Dexterous Manipulation** | Bing Han et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.12806) |
@@ -644,9 +644,9 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
+| 2026-11-19 |  **Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation** | Yuzhi Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26444) |
 | 2026-11-19 |  **PhyDEX: A Benchmark for Physical Reasoning in Vision-Language-Action Models via Dynamic Extrinsic Dexterity** | Hao Vo et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26565) |
 | 2026-11-19 |  **PGX: Physically Grounded Execution for Long-Horizon Humanoid Loco-Manipulation** | Kai Lu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26596) · [Page](https://kl-research.github.io/pgx) |
-| 2026-11-19 |  **Mind2Act World: A Diagnostic Benchmark for Embodied Mind, Physical Action, and Mind-Action Composition in Robotic Manipulation** | Yuzhi Huang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.26444) |
 | 2026-11-18 |  **HOForce: Motion and Force Reconstruction of Hand-Object Interaction Using a Single-View RGB-D Video** | Jiahui Wang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23871) · [Code](https://huggingface.co/spaces/fnoi16wjhui/HOForce) |
 | 2026-11-18 |  **GTI: Grounding Task Intent Throughout Long-Horizon VLA Manipulation** | Tianqi Gong et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.23926) |
 | 2026-11-18 | 🖐 **Ego2X: Contact-aware Transfer from Egocentric Human Data to Any Robot** | Xinke Lyu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.24138) |
