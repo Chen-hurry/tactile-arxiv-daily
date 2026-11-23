@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-22 20:25",
+ "last_update": "2026-11-23 09:40",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -72370,7 +72370,7 @@
     "Yiyang Chen",
     "Congsheng Xu",
     "Wenchao Yue",
-    "Mingze Ye",
+    "Mingzhe Ye",
     "Shuai Chen",
     "Yi Yang",
     "Yaping Li",
@@ -72403,8 +72403,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-17",
-   "version": "v2"
+   "updated": "2026-11-20",
+   "version": "v3"
   },
   "2611.21607": {
    "abstract": "Frontier Vision-Language Models (VLMs) such as GPT-6 Astra have demonstrated remarkable capabilities in robot control, suggesting that broad pretraining provides knowledge valuable for physical action. Yet most Vision-Language-Action (VLA) policies still rely on much smaller VLM backbones, leaving this potential largely untapped. We ask whether frontier-scale representations can provide a stronger foundation for robot learning. We introduce ScaleVLA, which connects a 552B DeepSeek-V4.1-Flash backbone to a trainable action DiT, and systematically compare VLMs from 2B to 552B under a shared training setup. We evaluate three fundamental capabilities of robot foundation models. In sample efficiency, just 10 demonstrations outperform a 2B backbone trained with 50 (87.8% vs. 85.6%). In generalization, LIBERO-PRO success reaches 45.1%, compared with at most 31.3% for smaller backbones. In precise manipulation, real-world charger insertion improves from 4/10 to 9/10 successes, with gains concentrated in contact-sensitive alignment. Despite its scale, ScaleVLA achieves 216 ms median latency per action chunk. Our findings suggest that frontier VLMs can serve not only as reasoning agents, but also as powerful representational foundations for efficient and generalizable robot policies.",
@@ -73253,6 +73253,384 @@
     "Other"
    ],
    "updated": "2026-11-19",
+   "version": "v1"
+  },
+  "2611.26744": {
+   "abstract": "Vision-Language-Action (VLA) policies are widely credited with force control, operating on the unverified assumption that proxy loss minimization implies physical force grounding. In this work, we demonstrate that this assumption breaks down at three core deployment levels: frozen visual backbones discard contact geometry, downstream losses mask token-level gradient alignment, and discrete indicators trigger optimization collapse. To address these disconnections, we present FORTH, a forward-only measurement harness and execution framework that explicitly pairs the optimization objective at each level with its physical control observable. FORTH incorporates three grounded pillars: a layer-local, forward-only tactile encoder that preserves spatial contact geometry without backpropagation, a token-parallel zeroth-order adapter enabling activation-space updates, and SlipGuard, a continuous tactile verification gate that fires on incipient slip. On an elasto-plastic structural shell, FORTH's closed-loop gate peaks at 29 times lower grip force than a monotone reflex ramp, preventing structural crush where the baseline leaves permanent deformation. Furthermore, FORTH matches state-of-the-art execution performance with a 97.6% average success rate across three evaluated LIBERO suites, while reducing peak activation memory by 7.12 times compared to a backpropagated step on the same backbone. Enhanced perception enables deeper physical intelligence.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "eess.SY"
+   ],
+   "authors": [
+    "Junde Li",
+    "Wei-Han Yu",
+    "Xiangyi Chu",
+    "Yaoxin Li",
+    "Jiawei Xu",
+    "Ka-Fai Un",
+    "Pui-In Mak"
+   ],
+   "code_url": "https://github.com/Jordanlllll/FORTH",
+   "comment": "The code and models are open-sourced at https://github.com/Jordanlllll/FORTH",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.26744",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-19",
+   "scores": {
+    "VTLA": 9.5
+   },
+   "seed": false,
+   "title": "FORTH: Grounding Tactile VLA Execution via Forward-Only Proxy-Control Pairing",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-11-19",
+   "version": "v1"
+  },
+  "2611.26764": {
+   "abstract": "Egocentric videos offer a scalable source of human demonstrations for robot learning. However, recovering metric object geometry and motion from monocular video is hindered by scale-depth ambiguity and hand-induced occlusion, while image-derived contact and shape priors alone cannot uniquely determine metric scale. We introduce TacHOI, a training-free framework that integrates tactile contact with monocular vision for joint hand-object reconstruction and tracking, without requiring object templates or depth sensors. Starting from pretrained visual estimates, TacHOI uses tactile contact to constrain object depth relative to the estimated hand, while spatially separated contacts on a metrically calibrated hand provide a physical ruler for object extent. It incorporates these constraints into a joint optimization of hand poses, object trajectories, and anisotropic object scale alongside visual alignment. Across 100 ARCTIC and HO3D sequences with synthesized tactile observations, TacHOI achieves the lowest median ADD-S* among the evaluated baselines, reducing error from 15.6 to 3.6 cm on ARCTIC and achieving 2.8 cm on HO3D. Additional experiments on OpenTouch demonstrate its applicability to measured tactile observations.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Jackson Codd",
+    "Haoyu Li",
+    "Xianyi Cheng"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.26764",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-19",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "TacHOI: Contact-Aware Object Reconstruction and Tracking for Egocentric Videos",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-19",
+   "version": "v1"
+  },
+  "2611.26883": {
+   "abstract": "Vision-language models (VLMs) are increasingly used for embodied perception and reasoning, yet their physical understanding is largely evaluated on questions answerable from images. Many properties critical to manipulation, such as an opaque bottle's fill level or an object's compliance, may only be revealed through touch. We introduce TouchBench, an egocentric vision-language-tactile benchmark that distinguishes visually answerable questions (Tier A) from those involving properties hidden from the camera (Tier B). It pairs head-mounted video with synchronized 137-channel whole-hand tactile sensing, comprising 900 clips from five participants across 11 tasks, with 900 absolute and 4,102 relative questions. Four state-of-the-art VLMs average 66.4% accuracy on Tier A relative questions but only 49.8% on Tier B, near chance (50%). To bridge this gap, we propose Tactile-as-Prompt (TaP), which presents 34 interpretable tactile statistics as text, enabling VLMs to reason with touch without a learned tactile encoder. TaP raises zero-shot Tier B relative accuracy to 62.9% and reaches 73.1% after leave-one-user-out fine-tuning, outperforming video alone (67.4%) and a learned tactile-token encoder (67.3%). The gains extend to unseen objects and users. On a separate 20-hour in-the-wild corpus, tactile text improves fine-tuned contact-question accuracy from 67.1% to 75.5%. These results highlight the limits of vision-only physical reasoning and establish language as an effective interface for tactile perception.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.CV"
+   ],
+   "authors": [
+    "Ziyao Zeng",
+    "Ziyi Kou",
+    "Chuan Qin",
+    "Mia Huang",
+    "Roger Boldu",
+    "Zhiwen Fan",
+    "Daniel Rakita",
+    "Eric Whitmire",
+    "Li Guan"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.26883",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-11-19",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "TouchBench: Can Vision-Language Models Feel Invisible Physical Properties?",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-11-19",
+   "version": "v1"
+  },
+  "2611.26992": {
+   "abstract": "Robots need contact forces to handle delicate objects, but tactile sensors are fragile and hard to integrate, whereas depth sensors, such as RGB-D cameras, are widely available. A virtual touch sensor that keeps the sensing surface of a tactile sensor but replaces its electronics with a touch signal predicted from the target object's geometry, as measured by a depth sensor, could close this gap, yet it is unclear what such a virtual sensor computes and when its output can be trusted. We give a formal answer. We define the Geometric Force as the force on each taxel of a virtual touch sensor, computed in three steps: rendering the surface to be touched as seen from the virtual sensor, predicting the touch signal with a touch map, learned or simulated, and estimating the force from that signal. We prove three properties of the Geometric Force. First, its force vectors only rotate under a change of coordinate frame. Second, it vanishes when the rendered surface does not touch the virtual sensor. Third, it is stable: its error grows at most linearly with the errors of the three steps for Lipschitz maps. The rendering error, in turn, depends on how well the surface is sampled or reconstructed and how accurately the sensor is placed. We then show a fundamental limit: geometry does not reveal the object's stiffness, so no touch map can predict touch exactly for objects of the same shape and different stiffness. Under an elastic contact model, all object-specific knowledge resides in the touch map. From these results, we derive requirements on the depth sensor and the objects, design rules, and the conditions under which such a virtual sensor fails.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Abdullah Ayad"
+   ],
+   "code_url": null,
+   "comment": "17 pages, 14 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.26992",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "taxel"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-20",
+   "scores": {},
+   "seed": false,
+   "title": "Geo-Force: A Theory of Force Sensing from Object Geometry",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-20",
+   "version": "v1"
+  },
+  "2611.27011": {
+   "abstract": "Vision-language-action (VLA) models have demonstrated strong performance in grasp-based manipulation, yet reliable recovery from local grasping failures remains challenging. Specifically, in pick-and-place tasks, policies may continue transport after a failed grasp instead of retrying, potentially reflecting overreliance on proprioceptive cues for stage progression and limited retry supervision. Existing recovery approaches typically rely on deployment-time guidance or demonstration augmentation. We introduce Force-guided Recovery (FoRe), a framework for autonomous recovery from local grasping failures. Using force feedback, FoRe partitions demonstrations into approach-grasp and transport-placement stages to train separate policies. To supplement limited retry supervision, FoRe then initializes a dedicated retry policy from the approach-grasp policy and refines it through local reinforcement learning (RL) from post-failure states. To avoid inappropriate stage progression, a controller combines force feedback with grasp-command status at inference to coordinate the stage policies, detect grasp failures, and invoke the retry policy. We also construct LIBERO-SUCTION, a force-augmented suction manipulation benchmark adapted from LIBERO, with complete demonstration trajectories for policy training. FoRe consistently improves task success rates for VLA-Adapter and $π_{0.5}$ on LIBERO-SUCTION, LIBERO, and real-world tasks. On LIBERO-SUCTION, average absolute gains are 18.4% and 6.5%, respectively. The corresponding real-world absolute gains are 25.0% and 21.7%. FoRe also remains effective with only one demonstration per task on both simulation benchmarks.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI"
+   ],
+   "authors": [
+    "Shuai Peng",
+    "Yongkai Liao",
+    "Yuxin Cheng",
+    "Haoyuan Wang",
+    "Jian Huang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.27011",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-20",
+   "scores": {
+    "VTLA": 10.0
+   },
+   "seed": false,
+   "title": "FoRe: A Force-Guided Framework for Autonomous Grasp Recovery in Vision-Language-Action Models",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-11-20",
+   "version": "v1"
+  },
+  "2611.27182": {
+   "abstract": "Agent harnesses are turn-based: the agent acts, waits for the result, then reasons. When the action invokes a pretrained robot policy, such as a vision-language-action (VLA) or world action model (WAM), the policy may react continuously to observations, but the agent cannot revisit its decision until the call returns. Meanwhile, a person may step into the robot's path or move the object it is about to grasp. Invoking the agent more often narrows this blind interval, but a reasoning model takes seconds per decision and most control steps need no new one. We propose TRIP, a training-free, event-driven harness in which the agent programs its own interrupts. With each call, the agent writes a tripwire: a lightweight, stateful Python program that runs alongside the policy, can query a compact VLM (for example, to locate a person and measure their distance), and decides whether the call continues or control returns to the agent. When it fires, the harness halts the policy and returns control with the reason; the agent then reassesses, adapts, and continues under a rewritten tripwire. We evaluate TRIP with three VLAs and one WAM on RoboHD, a benchmark of 168 RoboCasa365 scenes in which a simulated person disturbs the robot and any human-robot contact counts as failure. Compared with a turn-based harness using the same agent and tools, TRIP halves the rate of human contact with the strongest policy, raising safety from 61.3% to 81.3%, without sacrificing task success (38.7% vs. 31.0%). Real-robot experiments show that TRIP completes two manipulation tasks under human interference where the turn-based harness and the policy alone largely fail.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Sunli Chen",
+    "Yun Zong",
+    "Qinhong Zhou",
+    "Xiaowen Qiu",
+    "Jiaben Chen",
+    "Zeyuan Yang",
+    "Chuang Gan"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.27182",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-20",
+   "scores": {},
+   "seed": false,
+   "title": "Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-20",
+   "version": "v1"
+  },
+  "2611.27338": {
+   "abstract": "Given a pretrained general latent-conditioned whole-body humanoid controller, say a behavioral foundation model (BFM), how can we elicit complex and contact-rich out-of-distribution behaviors? Raw joint-action exploration enables direct, task-specific adjustments but can disrupt coordination learned by the pretrained controller, whereas latent exploration retains that coordination but is difficult to steer toward desired physical effects. To combine the complementary strengths of these exploration spaces, we propose Latent Jacobian Steer (LJS), which couples sampling in direct joint-action space with the semantics of the learned frozen controller's input latent space. For a task specified through desired physical effects, we sample task-relevant joint-action perturbations and map them through a damped local inverse of the policy Jacobian to obtain candidate latent ($z$) commands. These commands are executed through the frozen pretrained policy, while exploration is directed toward the physical outcomes required by the new task. Candidate outcomes are evaluated in simulation and composed into latent-command sequences that accomplish the task. Ablations show that neither action-space nor latent-space exploration alone provides the same capability as their coupling. Across diverse out-of-distribution tasks, simulation-based searching using this method produces contact-rich behaviors, including hurdling, manipulating articulated objects, and opening doors through non-prehensile contact. Over ten seeds, LJS completes more of each humanoid task than when searching in either space alone. Beyond humanoids, it also steers a goal-conditioned dexterous hand policy through four assembly tasks better than searching in goal space directly.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.LG"
+   ],
+   "authors": [
+    "S K Swaminathan",
+    "Shivam Sood",
+    "Shreyansh Kansal",
+    "Chengyang He",
+    "Guillaume Adrien Sartoretti"
+   ],
+   "code_url": null,
+   "comment": "36 pages. Project page: https://latent-jacobian-steer.github.io/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.27338",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://latent-jacobian-steer.github.io/",
+   "published": "2026-11-20",
+   "scores": {},
+   "seed": false,
+   "title": "Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-20",
+   "version": "v1"
+  },
+  "2611.27467": {
+   "abstract": "Computer-use agents now solve most desktop tasks through direct software input, but a robot using the same computer must turn GUI knowledge into physical contact with a keyboard and mouse. We introduce ROSWorld, a benchmark that couples a physically simulated robot workstation to a live OSWorld desktop, so that a robot and a desktop agent pursue the same goals under the same official evaluators. The evaluated model receives observations only from the workstation camera views and operates the peripherals through either a single-arm rigid probe or dual-arm dexterous hands. Across five frontier models and 40 tasks in ten applications, models that complete 31-39 tasks on the desktop complete at most 23 with the probe and 28 with the hands. Paired trajectory analysis shows that models adapt their interaction strategies toward keyboard input, yet physical execution frequently fails through missed presses, incorrect targets, and unintended contacts. ROSWorld makes the gap between knowing what to do on a computer and physically doing it measurable.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+   ],
+   "authors": [
+    "Caoyuan Ma",
+    "Wendi Liu",
+    "Zhimin Zhang",
+    "Muyao Niu",
+    "Yujie Lu",
+    "Zengxi Zhang",
+    "Ji Zhao",
+    "Shuai Dong",
+    "Wenpu Liu",
+    "Ziyue Wang",
+    "Wenzheng Chang",
+    "Taiqiang Wu",
+    "Weichu Xie",
+    "Yuqi Xu",
+    "Haiyuan Wan",
+    "Xuehui Wang",
+    "Jiaqi Wang",
+    "Wenqi Shao",
+    "Yinqiang Zheng"
+   ],
+   "code_url": null,
+   "comment": "13 pages, 9 figures, 4 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.27467",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-20",
+   "scores": {},
+   "seed": false,
+   "title": "ROSWORLD: When Digital Task Competence Meets Physical Execution",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-20",
+   "version": "v1"
+  },
+  "2611.27967": {
+   "abstract": "Dexterous hand design demands repeated expert work across geometry, robot-description code, collision debugging, grasp initialization, and policy training. We present Task2Hand, a Skill: a specification package that turns a functional manipulation brief into a parameterized hand model and routes every candidate through cost-ordered contact, dynamics, and learning gates. Each gate returns a status and an evidence record; on failure, the Skill records the earliest blocker, revises one bounded parameter group, and reruns the cheaper gates. The agent generates, validates, and trains autonomously within declared bounds, and escalates trade-offs, plateaus, and conflicting evidence to a human who sets the next design direction. An evidence-driven design trajectory for bidirectional in-hand manipulation yielded SAGE Hand (Skill-Aware Generative Embodiment): four fingers, 16 actuated DoF, an integrated guiding palm, compact roots, cylindrical tips, and a collision-cleared opposable thumb. Under a matched training protocol, SAGE Hand reaches 45.6% task success on a hexagonal prism against 37.3% for the LEAP hand, and 70.8% on a bicolor cylinder against 51.6%. Dense simulated tactile input more than halves the cylinder drop rate. In a controlled iteration study, the Skill path preserves capture at 164/165 trials while the path without the Skill degrades to 14/165, confirming that the gates act as a regression guard during refinement. Accepted candidates pack with URDF/MJCF, metrics, checkpoints, and a provenance manifest.",
+   "added_at": "2026-11-23 09:40",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Haoyang Wang",
+    "Weibo Gao",
+    "Zhengxiong Li",
+    "Lingfeng Tao"
+   ],
+   "code_url": null,
+   "comment": "9 pages, 7 figures, 3 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.27967",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-20",
+   "scores": {
+    "Sim": 2.5,
+    "VTA": 8.8
+   },
+   "seed": false,
+   "title": "Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-20",
    "version": "v1"
   }
  }
