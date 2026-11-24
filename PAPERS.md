@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-24 11:32 ｜ 共 1783 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-24 23:10 ｜ 共 1783 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -102,9 +102,9 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-11-23 |  **FATCAT: Fault Injection Attacks Targeting Chip-level Alignment** | Peter Horvath et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31129) |
-| 2026-11-22 |  **Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation** | Shilin Shan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29377) |
-| 2026-11-22 |  **A2I-VLA: A Two-Stage Vision-Language-Action model with Semantic-Physical Alignment and Integration** | Kun Dai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29279) |
 | 2026-11-22 |  **Tacinf: A Unified Tactile Infrastructure for Robot Manipulation** | Qiwei Wu et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.29240) |
+| 2026-11-22 |  **A2I-VLA: A Two-Stage Vision-Language-Action model with Semantic-Physical Alignment and Integration** | Kun Dai et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29279) |
+| 2026-11-22 |  **Contact Harness: Enabling VLM Agents to Perform Contact-Rich Manipulation** | Shilin Shan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29377) |
 | 2026-11-21 |  **VTLA-RL: Learning Visuotactile Policies for Load-Adaptive Grasping** | Qiwei Wu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28752) |
 | 2026-11-20 |  **FoRe: A Force-Guided Framework for Autonomous Grasp Recovery in Vision-Language-Action Models** | Shuai Peng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.27011) |
 | 2026-11-19 | 🖐 **TipDex-VTLA: Learning to Refine Actions with Visual Reliability and Tactile Feedback for Dexterous Manipulation** | Xudi Ge et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.25683) |
@@ -250,8 +250,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-11-23 |  **VeriTouch: Verified Visuo-Tactile World Models that Improve Robot Policy Learning** | Shuxun Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30572) |
-| 2026-11-21 |  **Distilling Touch into Vision-Only Policies for Contact-Rich Manipulation** | Chen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28697) · [Page](https://pier-lab.github.io/tacittouch/) |
 | 2026-11-21 | 🖐 **Doing More with Less: Complex Manipulation with a Contact-Adaptive Robotic Hand** | Hyung Gon Shin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28675) |
+| 2026-11-21 |  **Distilling Touch into Vision-Only Policies for Contact-Rich Manipulation** | Chen Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28697) · [Page](https://pier-lab.github.io/tacittouch/) |
 | 2026-11-20 | 🖐 **Task2Hand: A Contact-Grounded Skill for Parametric Dexterous-Hand Morphology Design** | Haoyang Wang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.27967) |
 | 2026-11-18 | 🖐 **TacPilot: Does Touch Need to Be Everywhere?** | Yunzhen Zhang et al. | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.23804) |
 | 2026-11-17 |  **Perception into Imagination: Executable Memory for World Models** | Xianyao Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.22294) |
@@ -657,13 +657,13 @@
 
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
-| 2026-11-23 | 🖐 **DexDuet: Learning Contact-Preserving Bimanual Dexterity from Human Demonstrations** | Haoran Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30495) · [Page](https://rcl-robotics.github.io/Dexduet.io/) |
 | 2026-11-23 | 🖐 **Skill-Adaptive Noise Scheduling for Diffusion Policies** | Woo Kyung Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30264) |
-| 2026-11-23 |  **SWEEP-Bench: Do Embodied Policies Act on the Speed They See?** | Hiroaki Honda et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30637) · [Page](https://damin3927.github.io/SWEEP-Bench) |
+| 2026-11-23 | 🖐 **DexDuet: Learning Contact-Preserving Bimanual Dexterity from Human Demonstrations** | Haoran Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30495) · [Page](https://rcl-robotics.github.io/Dexduet.io/) |
 | 2026-11-23 |  **Body and Soul: Decoupling Robotic Brain and Policy with RoboHarness-Zero** | Yihao Shen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30550) |
+| 2026-11-23 |  **SWEEP-Bench: Do Embodied Policies Act on the Speed They See?** | Hiroaki Honda et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30637) · [Page](https://damin3927.github.io/SWEEP-Bench) |
 | 2026-11-22 | 🖐 **FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping** | Yanhan Lin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29195) |
-| 2026-11-21 |  **T-Tac: A Soft and Thin Active Thermal Tactile Sensor for Robotic In-Grasp Material Identification** | Jiankun Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28939) |
 | 2026-11-21 |  **PhysPPF: Learning Robotic Manipulation with Past, Present, and Future Physical Representations** | Junjie Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28551) |
+| 2026-11-21 |  **T-Tac: A Soft and Thin Active Thermal Tactile Sensor for Robotic In-Grasp Material Identification** | Jiankun Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28939) |
 | 2026-11-20 |  **Geo-Force: A Theory of Force Sensing from Object Geometry** | Abdullah Ayad | 🔢 数值型 | [arXiv](https://arxiv.org/abs/2611.26992) |
 | 2026-11-20 |  **Tripwire: Robot Agents that Program Their Own Interrupts under Human Disturbance** | Sunli Chen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.27182) |
 | 2026-11-20 | 🖐 **Latent Jacobian Steer: Eliciting Contact-Rich Out-of-Distribution Behaviors from Pretrained Humanoid Controllers** | S K Swaminathan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.27338) · [Page](https://latent-jacobian-steer.github.io/) |
