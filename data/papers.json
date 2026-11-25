@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-24 23:10",
+ "last_update": "2026-11-25 10:20",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -37102,7 +37102,7 @@
    "version": ""
   },
   "2602.23648": {
-   "abstract": "Force/torque feedback can substantially improve Vision-Language-Action (VLA) models on contact-rich manipulation, but most existing approaches fuse all modalities at a single operating frequency. This design ignores the mismatched sampling rates of real robot sensors, forcing downsampling of the high-frequency contact cues needed for reactive correction. Combined with common VLM-action-expert (AE) pipelines that execute action chunks largely open loop between expensive VLM updates, unified-frequency fusion often yields delayed responses to impacts, stick-slip, and force spikes. We propose FAVLA, a force-adaptive fast-slow VLA that decouples slow perception planning from fast contact-aware control. FAVLA runs a slow VLM at a fixed low frequency to encode modalities to produce latent representations and to predict near-future force variation. A fast AE then executes at a variable high frequency, conditioning on the latest force sequence data to generate reactive actions. We further introduce a force adapter that injects high-frequency force features into multiple AE layers, and adaptively schedules the AE's execution frequency based on the VLM's predicted force variation. Extensive experiments on contact-rich tasks demonstrate that FAVLA significantly outperforms baselines, achieving superior reactivity and success rates, especially with a smaller contact force during manipulation.",
+   "abstract": "Vision-Language-Action (VLA) models have shown strong potential for general robotic manipulation, but contact-rich tasks still require timely action refinement using force/torque feedback. Existing force-aware VLA models usually align all modalities to a single low operating frequency, which discards high-frequency contact cues that are important for reactive action correction. Additionally, they use static fusion, which cannot adaptively balance visual context and force feedback across manipulation processes. To mitigate these issues, we propose FAVLA, a force-adaptive multi-rate VLA model that explicitly separates low-frequency semantic reasoning from high-frequency force-conditioned action refinement. Specifically, FAVLA uses a low-rate VLM to encode visual-language-force context and predict near-future force statistics, while a high-rate action expert refines action chunks using the latest force observations. To decide when to update actions, we introduce a Force-Adaptive Multi-rate Inference (FAMI) mechanism, which schedules the action expert's inference rate from predicted future force variance, keeping low-rate reasoning in stable phases and increasing update frequency near contact transitions. To decide how to use force, we design a Force-Guided Dynamic Fusion (FGDF) module, which injects high-frequency force features into the action expert and dynamically balances visual-semantic and force cues across manipulation stages. Extensive real-robot experiments on high-precision and contact-rich tasks show that FAVLA outperforms force-aware VLA baselines, achieving an average success rate of 88.8% and lower peak contact forces. Zero-shot evaluations further demonstrate FAVLA's robustness to visual distribution shifts. Our project homepage is available at this website.",
    "added_at": "2026-09-15 04:03",
    "arxiv_categories": [
     "cs.RO"
@@ -37111,16 +37111,18 @@
     "Yao Li",
     "Peiyuan Tang",
     "Wuyang Zhang",
+    "Haojie Ren",
     "Chengyang Zhu",
     "Yifan Duan",
     "Weikai Shi",
     "Xiaodong Zhang",
+    "Yuming Dong",
     "Zijiang Yang",
     "Jianmin Ji",
     "Yanyong Zhang"
    ],
    "code_url": null,
-   "comment": "",
+   "comment": "NeurIPS 2026",
    "hand": false,
    "hidden": false,
    "id": "2602.23648",
@@ -37138,15 +37140,15 @@
    "project_url": null,
    "published": "2026-02-27",
    "scores": {
-    "VTLA": 12.0
+    "VTLA": 16.5
    },
    "seed": false,
-   "title": "FAVLA: A Force-Adaptive Fast-Slow VLA model for Contact-Rich Robotic Manipulation",
+   "title": "FAVLA: A Force-Adaptive Multi-Rate VLA Model for Contact-Rich Robotic Manipulation",
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-02-27",
-   "version": "v1"
+   "updated": "2026-11-24",
+   "version": "v2"
   },
   "2602.23654": {
    "abstract": "High-speed event-driven tactile sensors are essential for achieving human-like dynamic manipulation, yet their integration is often limited by the bulkiness of standard event cameras. This paper presents SpikingTac, a miniaturized, highly integrated neuromorphic tactile sensor featuring a custom standalone event camera module, achieved with a total material cost of less than \\$150. We construct a global dynamic state map coupled with an unsupervised denoising network to enable precise tracking at a 1000~Hz perception rate and 350~Hz tracking frequency. Addressing the viscoelastic hysteresis of silicone elastomers, we propose a hysteresis-aware incremental update law with a spatial gain damping mechanism. Experimental results demonstrate exceptional zero-point stability, achieving a 100\\% return-to-origin success rate with a minimal mean bias of 0.8039 pixels, even under extreme torsional deformations. In dynamic tasks, SpikingTac limits the obstacle-avoidance overshoot to 6.2~mm, representing a 5-fold performance improvement over conventional frame-based sensors. Furthermore, the sensor achieves sub-millimeter geometric accuracy, with Root Mean Square Error (RMSE) of 0.0952~mm in localization and 0.0452~mm in radius measurement.",
@@ -65101,7 +65103,7 @@
     "Kei Ota"
    ],
    "code_url": null,
-   "comment": "Project: https://robopace.airoa.io/",
+   "comment": "Project: https://research.airoa.io/publications/robopace/",
    "hand": false,
    "hidden": false,
    "id": "2610.09696",
@@ -65114,7 +65116,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": "https://robopace.airoa.io/",
+   "project_url": "https://research.airoa.io/publications/robopace/",
    "published": "2026-10-07",
    "scores": {},
    "seed": false,
@@ -65122,8 +65124,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-07",
-   "version": "v1"
+   "updated": "2026-11-24",
+   "version": "v2"
   },
   "2610.09718": {
    "abstract": "Vision-Language-Action (VLA) models acquire broad manipulation capabilities via large-scale pretraining, yet eliciting them through language requires fine-grained alignment between instructions and physical interactions. Existing robot demonstrations typically provide only coarse task descriptions, omitting how actions are executed, including which gripper acts, which object is contacted, and how it is grasped and moved. We introduce YUBI-STAG, a framework for Spatio-Temporal Annotation and Grounding that automatically enriches manipulation demonstrations with interaction-rich semantics to align pretrained VLAs with fine-grained manipulation language. Combining contact-object segmentation with vision-language models, YUBI-STAG annotates object identities, attributes and states, per-gripper actions, bimanual coordination, and spatially grounded interactions. To address YUBI-STAG's reliance on localized sequences and multi-stage VLM inference, we distill it into YUBI-VLM. YUBI-VLM directly recovers action structure and annotations from raw, unsegmented video in few inference calls and operates from wrist views alone. We evaluate both frameworks on YUBI-STAG-Bench across temporal, semantic, and spatial grounding tasks. YUBI-VLM retains much of YUBI-STAG's annotation accuracy with fewer inference calls and shorter runtime while generalizing to unseen manipulations. Finally, post-training VLA policies on these annotations aligns them with fine-grained language and contact-aware structure. Bimanual experiments demonstrate improved performance and instruction following, including control over object identity, acting gripper, target location, and spatial relations absent from original labels.",
@@ -65142,7 +65144,7 @@
     "Kei Ota"
    ],
    "code_url": null,
-   "comment": "Project page: https://yubi-stag.airoa.io/",
+   "comment": "Project page: https://research.airoa.io/publications/yubi-stag/",
    "hand": false,
    "hidden": false,
    "id": "2610.09718",
@@ -65155,7 +65157,7 @@
    "paxini": false,
    "pinned": false,
    "primary_category": "cs.RO",
-   "project_url": "https://yubi-stag.airoa.io/",
+   "project_url": "https://research.airoa.io/publications/yubi-stag/",
    "published": "2026-10-07",
    "scores": {},
    "seed": false,
@@ -65163,8 +65165,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-10-07",
-   "version": "v1"
+   "updated": "2026-11-24",
+   "version": "v2"
   },
   "2610.10020": {
    "abstract": "Hybrid force/motion control requires knowledge of the interaction force and of a task frame defining the force- and motion-controlled directions. These quantities are usually obtained from force/torque sensing or model-based residuals, often assuming also a nominal environment model. This work addresses the online estimation of the contact force and a possibly time-varying task frame using only soft optical tactile sensing, under the assumption of locally planar contact with a negligible contact moment. The proposed method maps a single image of the deformed elastomer of a soft optical tactile sensor to observable contact variables: indentation depth, two surface-to-sensor tilt angles, and 3D contact force, each with a per-sample uncertainty estimate. The mapping is learned through a self-labeling acquisition procedure, in which a manipulator imposes controlled contacts while an auxiliary Force/Torque sensor is used offline to provide ground-truth labels. The tactile measurement is then fused with robot proprioceptive data in an Extended Kalman Filter, producing a continuously updated estimate of the contact task frame and of the interaction force. Control experiments with a DigiTac sensor mounted on a UR10 manipulator demonstrate closed-loop contact force regulation against a flat rigid board in linear and angular motion by a human operator, with touch as the only exteroceptive feedback.",
@@ -74322,6 +74324,411 @@
     "VTLA"
    ],
    "updated": "2026-11-23",
+   "version": "v1"
+  },
+  "2611.31488": {
+   "abstract": "Current Vision-Language-Action (VLA) end-to-end systems have driven major progress in robot learning, yet they still face persistent barriers to dependable real-world deployment. In practice, these models often exhibit brittle generalization under distribution shift (i.e., novel objects, layouts, lighting, or contact conditions), limited physical and causal reasoning, and inconsistent fine-grained motor control. Critically, many VLA pipelines offer limited ways to express and audit what a robot must not do, making it difficult to provide assurance in safety-critical settings. These limitations constrain scalability, maintainability, and trust when robots move beyond controlled demonstrations. We propose Embodied Neuro-Symbolic (NeSy) AI: a deployment-oriented paradigm that integrates learned perception, planning and control with explicit, machine-readable background knowledge and formal constraints. By combining knowledge-guided perception, constraint-aware symbolic planning, and hybrid learning, Embodied NeSy AI enables robots to reason about their environment, adapt to new tasks, and provide auditable, machine-checkable compliance with safety and operational requirements, thus supporting scalable, trustworthy robot deployment.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ruwan Wickramarachchi",
+    "Jonathan Francis",
+    "Alessandro Oltramari"
+   ],
+   "code_url": null,
+   "comment": "6 pages, 2 figures",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.31488",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-23",
+   "scores": {},
+   "seed": false,
+   "title": "Embodied Neuro-symbolic AI: Making Robot Behavior Auditable, Safe, and Scalable",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-23",
+   "version": "v1"
+  },
+  "2611.31577": {
+   "abstract": "Fabric manipulation challenges robot policies with changing geometry, self-occlusion, and contact, yet standardized evaluation remains focused on rigid objects. We introduce FabricBench, a benchmark for bimanual fabric manipulation with six tasks spanning garments, silk, and bags, 10,000 simulation-ready assets, and controlled tests of configuration and appearance generalization. Built on an open-source solver in Newton, our simulator enables stable bimanual grasping, holding, and release through contact forces, without artificial attachment. Redesigned cloth-rigid contact and bidirectional force coupling support interactions among robot arms, fabric, and free rigid objects, allowing a bag to support its contents and transmit their weight to the grippers. In a controlled grasp-hold-release evaluation, our solver succeeds in all 45 trials, compared with none for the tested baseline configurations. Evaluating six representative policies, including vision-language-action models and world action models, reveals substantial remaining challenges: the best policy achieves 77% average success, while no policy exceeds 36% on long-horizon T-shirt folding. Under the most deformed initial T-shirt configurations, success falls to 6-14% across policies, with larger drops than under the evaluated appearance shifts. Zero-shot deployment of $π_{0.5}$ on a real robot largely preserves task difficulty ordering across six tasks (Spearman $ρ=0.94$). These results establish FabricBench as a reproducible testbed for measuring fabric-manipulation capabilities and exposing limitations in configuration generalization. The project website is available at https://fabricbench.github.io/.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Wenkang Hu",
+    "Haoran Wang",
+    "Liu Liu",
+    "Wenchao Huang",
+    "Yiji Chen",
+    "Mengao Zhao",
+    "Xincheng Tang",
+    "Zhengjie Shu",
+    "Lai Jiang",
+    "Wei Li",
+    "Zhendong Wang",
+    "Zhizhong Su",
+    "Huamin Wang",
+    "Ruigang Yang"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.31577",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://fabricbench.github.io/",
+   "published": "2026-11-23",
+   "scores": {
+    "VTLA": 2.5
+   },
+   "seed": false,
+   "title": "FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable Simulator",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-23",
+   "version": "v1"
+  },
+  "2611.31782": {
+   "abstract": "Bimanual dexterous manipulation relies on multimodal inputs that capture visual context and non-visual physical interaction cues for precise and coordinated control. To address the challenge of effectively integrating these modalities for policy learning, we propose HiMoDex, a two-stage framework centered on hierarchical multimodal world-state representations. In Stage 1, we pretrain a hierarchical representation network on the collected dataset of 1.19 million synchronized multimodal time steps. The network integrates visual context with tactile, force-torque, and audio cues into unified world-state embeddings. In Stage 2, we freeze the pretrained network and use its embeddings to condition a shared world-action transformer. The transformer jointly learns action generation and action-conditioned future-state prediction. Experiments across five real-world tasks show that HiMoDex achieves an average success rate of 78.7\\%, representing an absolute improvement of 32.0\\% over the strongest evaluated baseline. Extensive ablations validate the benefits of hierarchical representation learning and two-stage training. Failure analysis helps explain performance differences across variants. Code, data, and demos will be released at https://anonymous.4open.science/w/research-website-BAB4/.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Jin Yang",
+    "Youlin Wang",
+    "Ping Wei"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.31782",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://anonymous.4open.science/w/research-website-BAB4/",
+   "published": "2026-11-24",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.32101": {
+   "abstract": "Learning dexterous manipulation from egocentric human demonstrations offers a scalable path toward robot skill acquisition. Vision alone, however, provides limited information about physical contacts and the demonstrator's force intent, leading to ambiguities in interpreting hand-object interactions. Capturing human touch via tactile sensing is therefore crucial for reliable human-to-robot dexterous skill transfer. We present Ego2Real, a framework that leverages egocentric demonstrations and tactile gloves to transfer bimanual dexterous manipulation skills to robotic hands. Ego2Real incorporates tactile supervision at two complementary stages: (1) tactile-guided hand-object interaction reconstruction, which uses measured tactile signals to refine hand poses and contact geometry; and (2) contact-informed reinforcement learning, which translates human contact patterns into robotic contact rewards. By combining refined motion references with physical contact rewards during training, Ego2Real guides anthropomorphic robotic hands to emulate demonstrated contact behaviors while adapting to their own morphology and actuation. Experiments show that incorporating tactile supervision into both reconstruction and policy learning yields higher manipulation success rates, underscoring the importance of enriching egocentric demonstrations with tactile observations to improve their quality and transferability.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Ange Bao",
+    "Haishan Zhang",
+    "Lingzi Xie",
+    "Shuang Li",
+    "Pei Zhao",
+    "Ling Shi",
+    "Bidan Huang"
+   ],
+   "code_url": null,
+   "comment": "19 pages, 9 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.32101",
+   "modality": "numeric",
+   "modality_keywords": {
+    "numeric": [
+     "tactile glove"
+    ],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-24",
+   "scores": {
+    "VTA": 12.0
+   },
+   "seed": false,
+   "title": "Ego2Real: Learning Bimanual Dexterous Manipulation from Egocentric Visuo-Tactile Demonstrations",
+   "topics": [
+    "VTA"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.32260": {
+   "abstract": "Training humanoid vision-language-action (VLA) models relies heavily on costly real-robot teleoperation. Recent efforts convert egocentric human demonstrations into humanoid training data. However, most methods still require wearable motion trackers and leave important hand-object interaction cues implicit. Many also mix in real-robot teleoperation data for VLA post-training. These dependencies limit scalable data collection, while implicit interaction cues make precise contact harder to learn. To overcome these limitations, we propose EgoLoAF, the first paradigm to derive all training data for humanoid loco-manipulation directly from egocentric demonstrations without wearable motion trackers. We post-train the VLA on the converted data alone, without real-robot teleoperation demonstrations, and use explicit hand-object interaction cues to guide action generation. Specifically, to obtain humanoid action targets, we estimate torso motion from recorded camera poses and reconstruct both hand trajectories from video. From the same recording, we use each hand's current pose relative to the object to represent hand-object affordances. During post-training, we inject these affordances into the action expert through cross-attention while keeping the vision-language backbone frozen. Additionally, we release 128,400 egocentric demonstration episodes spanning 1,000 hours and 1,284 tasks, together with converted humanoid action trajectories and rendered robot-view observations. Across four real-world tasks, EgoLoAF nearly achieves teleoperation performance (73.1 vs. 74.4 in mean Task Progress Score), while achieving a mean 4.03 times improvement in data-collection efficiency.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Yiming Zeng",
+    "Jiangyuxuan Dai",
+    "Yuheng Na",
+    "Tan Zhu Xuan",
+    "Zihan Lin",
+    "Xinfang Qi",
+    "Shijian Zhang",
+    "Chengqi Shi",
+    "Yihan Kuang",
+    "Zhide Zhong",
+    "Junjie He",
+    "Junfeng Li",
+    "Zimu Han",
+    "Naipeng Li",
+    "Haoang Li"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.32260",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-24",
+   "scores": {},
+   "seed": false,
+   "title": "EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.32476": {
+   "abstract": "Tactile sensing is essential for contact-rich robotic manipulation, but existing visuo-tactile simulators trade physical fidelity for scalability, and benchmarks largely focus on two-finger grippers. We present ViTacLab, a framework comprising ViTacSim, ViTacBench, and ViTacPolicy. ViTacSim uses a tri-modal tactile primitive: a global sparse contact-force lattice, a local dense force array, and tactile images. Anchored to PhysX contact-solver outputs, it corrects normal inconsistency through local stiffness alignment and reconstructs tangential forces under decoupled slip-stick regimes while preserving GPU parallelism. A joint projection preserves the sparse wrench and enforces local friction cones. ViTacBench spans parallel grippers, dexterous hands, and bimanual systems, with tasks ranging from vision-dominant to tactile-dominant regimes. ViTacPolicy aggregates variable numbers of heterogeneous tactile inputs using spatial-pose embeddings and a Transformer, and aligns force-array and tactile-image modalities through a two-stream VQ-VAE with a shared codebook. Controlled Hertzian-reference indentation and real-sensor sliding tests reduce normal and tangential force RMSE from 2.31 and 1.85 N to 0.42 and 0.53 N, respectively. Throughput reaches 2,482.9 tactile-pipeline FPS at 256 parallel environments. Simulation and real-world experiments show gains on several contact-rich tasks, while low absolute success on tactile-dominant tasks highlights the remaining difficulty of purely tactile control.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Linjing You",
+    "Zeming Yang",
+    "Zhenhao Shen",
+    "Shengqiang Xu",
+    "Guanda Li",
+    "Wenxuan Li",
+    "Jiyu Guo",
+    "Jasper Lu",
+    "Kyle Xu",
+    "Shawn Xie",
+    "Junjie Zhu",
+    "Siyu Wu",
+    "Jian Liu",
+    "Changhao Zhang",
+    "Rongchong Li",
+    "Zeyi Li",
+    "Hengshuang Zhao",
+    "Ruihai Wu"
+   ],
+   "code_url": null,
+   "comment": "8 pages, 5 figures, 4 tables",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.32476",
+   "modality": "mixed",
+   "modality_keywords": {
+    "numeric": [
+     "force array"
+    ],
+    "vision": [
+     "tactile images"
+    ]
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-24",
+   "scores": {
+    "Sim": 27.0
+   },
+   "seed": false,
+   "title": "ViTacLab: Physically Consistent Visuo-Tactile Simulation, Benchmarking, and Representation Learning for Robotic Manipulation",
+   "topics": [
+    "Sim"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.32582": {
+   "abstract": "Adding compliance to robot hands results in higher grasp quality and robust contact with the environment. Soft hands are inherently compliant, but are typically more complex to control and model than rigid equivalents. We extend prior work on soft-rigid hybrid robot fingers into a five-fingered dexterous gripper --- an integrated tendon-driven hand that is highly compliant and controllable. Structural compliance combined with a rigid skeleton, when realized in a five-fingered hand, allow us to use linear control to achieve soft-grasping generality. We evaluate the use of this hand in a variety of teleoperated manipulation tasks, demonstrating the effectiveness of the overall mechanical design and control strategy. Our contributions include: (1) Mechanical design of the a five-fingered Soft-Rigid Hybrid Hand, composed of 12 active degrees of freedom, demonstrating a high degree on generalization enabled by the soft-rigid architecture, with our gripper, able to complete 28 of the 33 (84.8\\%) grasp postures in the human range. (2) Precise, high bandwidth (up to 1432deg/s extension speed, compared with 700deg/s for the equivalent human joint). (3) Position and task space controllers for the soft-rigid hybrid finger and whole hand. (4) A teleoperation framework for control of this hand, as well as demonstrations of its efficacy in a variety of grasping and manipulation tasks Further tests illustrate the hand's advantages in completing non-rigid manipulation tasks, such as picking up thin deformable objects (such as a dollar bill or folding cloth) as well as in interfacing with soft or delicate targets.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Chao Liu",
+    "Wil J. Norton",
+    "Brandon Romero",
+    "Daniela Rus"
+   ],
+   "code_url": null,
+   "comment": "9 pages,10 figures",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.32582",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-24",
+   "scores": {},
+   "seed": false,
+   "title": "Design, Control, and Teleoperation of a Dexterous Robotic Hand with Soft-Rigid Hybrid Fingers",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.33010": {
+   "abstract": "Can a simple mirror expose the limitations of today's robotic manipulation policies? Inspired by the mirror self-recognition test in animal cognition, we investigate whether robot policies can reliably manipulate physical objects in scenes containing their reflections. We introduce RoboDojo-Mirror, a benchmark built on RoboDojo that preserves task objectives, success criteria, and policy checkpoints while comparing a mirror-free baseline with single-mirror, dual-mirror, and mirrored-tabletop conditions. Across five policies spanning Vision-Language-Action models, World Action Models, and agentic policies, every mirror condition reduces aggregate success rates: averaged over the three conditions, the drop ranges from 10.8 to 56.7 percentage points across policies, and it reaches 62.5 points on the mirrored tabletop. Because a mirror is also a physical obstacle, we compare it against geometrically matched non-reflective panels; 50--88\\% of mirror-specific failures occur without recorded robot--panel contact, so direct collisions alone do not explain the degradation. Trajectory and contact analyses instead reveal recurring behaviors consistent with phantom targeting of reflected objects and spatial mislocalization of real ones. Targeted diagnostics further characterize grasping near reflections, policy-dependent pushing progress, and physical-target interaction under main-camera occlusion. Real-robot experiments with $π_{0.5}$ and FastWAM also show lower overall success rates under the upright-mirror and mirrored-tabletop conditions. These findings reveal a shared vulnerability to reflective environments across diverse robot policies and motivate reflection-aware evaluation of embodied intelligence. Code is available at https://github.com/iPPLab/robodojo-mirror.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+   ],
+   "authors": [
+    "Xuanchen Liu",
+    "Hejun Zhang",
+    "Boxuan Dong",
+    "Ying Wu",
+    "Heshuai Li",
+    "Wen Gao",
+    "Yonghong Tian",
+    "Weihao Yu"
+   ],
+   "code_url": "https://github.com/iPPLab/robodojo-mirror",
+   "comment": "Code: https://github.com/iPPLab/robodojo-mirror",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.33010",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-11-24",
+   "scores": {},
+   "seed": false,
+   "title": "Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.33144": {
+   "abstract": "Learning for dexterous manipulation is limited by the scarcity of high-quality demonstrations: retargeting from human video is imprecise, teleoperation gives no force feedback to the operator, and exoskeleton-based collection is hard to scale up. We present PyRUA-Dex, a framework that enables coding agents to develop dexterous manipulation through programmatic policy, without the need of demonstrations. The programmatic policy is developed in two stages: during exploration, multiple agents explore in parallel for task skills and ways to compose them, and a distilling agent condenses the successful attempts into a task library and one program. During refinement, this program is improved through randomized layouts for enhanced robustness and execution efficiency. In simulated environments, PyRUA-Dex achieves SOTA on Bench2Dex with a score of 72.9 and reaches 81.0% success on DexJoCo under full randomization, ahead of every trained policy on both benchmarks. In real world experiments on a bimanual platform with two 22-DoF hands, PyRUA-Dex learns to play piano, write calligraphy, and other tasks efficiently: learning a new piece from sheet music takes as little as 30 minutes. These results suggest that PyRUA-Dex is an effective framework for developing dexterous manipulation policies with coding agents in the absence of high quality dexterous manipulation demonstrations.",
+   "added_at": "2026-11-25 10:20",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Feixiang Ruan",
+    "Guodong Lv",
+    "Kewei Zhang",
+    "Wenbo Huang",
+    "Yintianrun Zhang",
+    "Qiang Wang",
+    "Ruiyang Si",
+    "Shunyu Yang",
+    "Shulong Jiang",
+    "Weicheng Duan",
+    "Rui Ni",
+    "Jianxin Bi",
+    "Lekai Wang",
+    "Yuze Fan",
+    "Haobo Li",
+    "Zeliang Fu",
+    "Jiankun Zhang",
+    "Duomin Wang",
+    "Enze Xie",
+    "Daquan Zhou"
+   ],
+   "code_url": null,
+   "comment": "23 pages, 9 figures, 7 tables. Project page: https://vme0522.github.io/PyRUA-Dex/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.33144",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://vme0522.github.io/PyRUA-Dex/",
+   "published": "2026-11-24",
+   "scores": {},
+   "seed": false,
+   "title": "PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-24",
    "version": "v1"
   }
  }
