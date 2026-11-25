@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-25 10:20 ｜ 共 1792 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-25 22:38 ｜ 共 1792 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -660,16 +660,16 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-11-24 | 🖐 **Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation** | Jin Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31782) · [Page](https://anonymous.4open.science/w/research-website-BAB4/) |
-| 2026-11-24 | 🖐 **PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents** | Feixiang Ruan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.33144) · [Page](https://vme0522.github.io/PyRUA-Dex/) |
+| 2026-11-24 |  **EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances** | Yiming Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.32260) |
 | 2026-11-24 | 🖐 **Design, Control, and Teleoperation of a Dexterous Robotic Hand with Soft-Rigid Hybrid Fingers** | Chao Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.32582) |
 | 2026-11-24 |  **Embodied AI Fails the Mirror Test: How a Simple Mirror Breaks Robot Policies** | Xuanchen Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.33010) · [Code](https://github.com/iPPLab/robodojo-mirror) |
-| 2026-11-24 |  **EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances** | Yiming Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.32260) |
+| 2026-11-24 | 🖐 **PyRUA-Dex: Learning Programmatic Policies for Dexterous Bimanual Manipulation with Coding Agents** | Feixiang Ruan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.33144) · [Page](https://vme0522.github.io/PyRUA-Dex/) |
 | 2026-11-23 | 🖐 **Skill-Adaptive Noise Scheduling for Diffusion Policies** | Woo Kyung Kim et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30264) |
 | 2026-11-23 | 🖐 **DexDuet: Learning Contact-Preserving Bimanual Dexterity from Human Demonstrations** | Haoran Zhang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30495) · [Page](https://rcl-robotics.github.io/Dexduet.io/) |
 | 2026-11-23 |  **Body and Soul: Decoupling Robotic Brain and Policy with RoboHarness-Zero** | Yihao Shen et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30550) |
 | 2026-11-23 |  **SWEEP-Bench: Do Embodied Policies Act on the Speed They See?** | Hiroaki Honda et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.30637) · [Page](https://damin3927.github.io/SWEEP-Bench) |
-| 2026-11-23 |  **FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable Simulator** | Wenkang Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31577) · [Page](https://fabricbench.github.io/) |
 | 2026-11-23 |  **Embodied Neuro-symbolic AI: Making Robot Behavior Auditable, Safe, and Scalable** | Ruwan Wickramarachchi et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31488) |
+| 2026-11-23 |  **FabricBench: A Standardized Policy Benchmark for Bimanual Fabric Manipulation with a Contact-Driven Deformable Simulator** | Wenkang Hu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31577) · [Page](https://fabricbench.github.io/) |
 | 2026-11-22 | 🖐 **FunGrasp-Zero: Field-Conditioned Graph Attention Policy for Zero-Shot Cross-Embodiment Dexterous Functional Grasping** | Yanhan Lin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.29195) |
 | 2026-11-21 |  **PhysPPF: Learning Robotic Manipulation with Past, Present, and Future Physical Representations** | Junjie Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28551) |
 | 2026-11-21 |  **T-Tac: A Soft and Thin Active Thermal Tactile Sensor for Robotic In-Grasp Material Identification** | Jiankun Li et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.28939) |
