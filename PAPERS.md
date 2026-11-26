@@ -2,7 +2,7 @@
 
 > 灵巧手 × 数值型触觉（taxel / 力阵列）文献追踪
 >
-> 更新时间：2026-11-26 09:58 ｜ 共 1796 篇 ｜ 网页浏览：`docs/index.html`
+> 更新时间：2026-11-26 22:29 ｜ 共 1796 篇 ｜ 网页浏览：`docs/index.html`
 
 模态标记：🔢 数值型（taxel/力阵列） · 📷 视觉型（GelSight 等图像触觉） · 🔀 混合 · ❔ 未识别 ｜ 🖐 灵巧手 · ⭐ 人工精选 · 📌 置顶
 
@@ -661,8 +661,8 @@
 | 日期 | 标题 | 作者 | 模态 | 链接 |
 |:---|:---|:---|:---|:---|
 | 2026-11-25 |  **CoTacWAM: Joint Modeling of Vision and Touch for Robotic Manipulation** | Lei Jin et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.34117) |
-| 2026-11-25 | 🖐 **FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation** | Yujia Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.34884) · [Page](https://finedex.github.io/) |
 | 2026-11-25 |  **M$^{2}$AdaptVLA: Multimodal Memory-Augmented Vision-Language-Action Model with Predictive Test-Time Adaptation** | Liufan Tan et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.34560) · [Page](https://tlf-tlf.github.io/M2AdaptVLAPage/) |
+| 2026-11-25 | 🖐 **FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation** | Yujia Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.34884) · [Page](https://finedex.github.io/) |
 | 2026-11-24 | 🖐 **Many Senses, One World: Learning Hierarchical Multimodal World Representations for Bimanual Dexterous Manipulation** | Jin Yang et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.31782) · [Page](https://anonymous.4open.science/w/research-website-BAB4/) |
 | 2026-11-24 |  **EgoLoAF: Learning Humanoid Loco-Manipulation from Egocentric Demonstrations with Hand-Object Affordances** | Yiming Zeng et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.32260) |
 | 2026-11-24 | 🖐 **Design, Control, and Teleoperation of a Dexterous Robotic Hand with Soft-Rigid Hybrid Fingers** | Chao Liu et al. | ❔ 未知 | [arXiv](https://arxiv.org/abs/2611.32582) |
