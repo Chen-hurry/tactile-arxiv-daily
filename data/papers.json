@@ -1,5 +1,5 @@
 {
- "last_update": "2026-11-25 22:38",
+ "last_update": "2026-11-26 09:58",
  "papers": {
   "1710.05512": {
    "abstract": "A successful grasp requires careful balancing of the contact forces. Deducing whether a particular grasp will be successful from indirect measurements, such as vision, is therefore quite challenging, and direct sensing of contacts through touch sensing provides an appealing avenue toward more successful and consistent robotic grasping. However, in order to fully evaluate the value of touch sensing for grasp outcome prediction, we must understand how touch sensing can influence outcome prediction accuracy when combined with other modalities. Doing so using conventional model-based techniques is exceptionally difficult. In this work, we investigate the question of whether touch sensing aids in predicting grasp outcomes within a multimodal sensing framework that combines vision and touch. To that end, we collected more than 9,000 grasping trials using a two-finger gripper equipped with GelSight high-resolution tactile sensors on each finger, and evaluated visuo- tactile deep neural network models to directly predict grasp outcomes from either modality individually, and from both modalities together. Our experimental results indicate that incorporating tactile readings substantially improve grasping performance.",
@@ -37147,8 +37147,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-11-24",
-   "version": "v2"
+   "updated": "2026-11-25",
+   "version": "v3"
   },
   "2602.23654": {
    "abstract": "High-speed event-driven tactile sensors are essential for achieving human-like dynamic manipulation, yet their integration is often limited by the bulkiness of standard event cameras. This paper presents SpikingTac, a miniaturized, highly integrated neuromorphic tactile sensor featuring a custom standalone event camera module, achieved with a total material cost of less than \\$150. We construct a global dynamic state map coupled with an unsupervised denoising network to enable precise tracking at a 1000~Hz perception rate and 350~Hz tracking frequency. Addressing the viscoelastic hysteresis of silicone elastomers, we propose a hysteresis-aware incremental update law with a spatial gain damping mechanism. Experimental results demonstrate exceptional zero-point stability, achieving a 100\\% return-to-origin success rate with a minimal mean bias of 0.8039 pixels, even under extreme torsional deformations. In dynamic tasks, SpikingTac limits the obstacle-avoidance overshoot to 6.2~mm, representing a 5-fold performance improvement over conventional frame-based sensors. Furthermore, the sensor achieves sub-millimeter geometric accuracy, with Root Mean Square Error (RMSE) of 0.0952~mm in localization and 0.0452~mm in radius measurement.",
@@ -73117,7 +73117,7 @@
     "Zhibo Pang"
    ],
    "code_url": null,
-   "comment": "11 pages, 4 figures, 4 tables. Project page: https://tacinno.github.io",
+   "comment": "23 pages, 12 figures, 10 tables. Project page: https://tacinno.github.io",
    "hand": false,
    "hidden": false,
    "id": "2611.26405",
@@ -73140,8 +73140,8 @@
    "topics": [
     "VTLA"
    ],
-   "updated": "2026-11-21",
-   "version": "v2"
+   "updated": "2026-11-25",
+   "version": "v3"
   },
   "2611.26444": {
    "abstract": "Embodied intelligence aims to let robots perform complex physical tasks with human-like adaptability and reliability, which requires three complementary capabilities: history-based cognitive reasoning, precise and timely physical execution, and the composition of reasoning and execution through environmental feedback. Yet existing benchmarks either evaluate reasoning and execution within the same tasks or assess them separately without their composition, so they reveal little about whether a failure comes from reasoning, execution, or their composition. We introduce Mind2Act World, a diagnostic benchmark of 30 simulated manipulation tasks from five real-world application domains. Each task has three difficulty levels and two scene settings (Clean and Random), yielding 180 configurations. The tasks form three views: Mind tests decisions based on past observations, Act tests precise and timely execution, and Mind2Act combines both in closed-loop tasks where action outcomes guide later decisions. Comparing the three views shows whether a system lacks a capability or fails to compose capabilities it already has. A diagnosis harness further attributes the failed episodes of three representative systems to Mind, Act, or their composition and summarizes each system in a profile card. Our evaluation of multimodal agents, vision-language-action models (VLAs), and world-action models (WAMs) shows that competence in a single view does not carry over to Mind2Act tasks. Even the strongest agent succeeds in 52.7% of Mind and 39.0% of Act episodes but in only 12.0% of Mind2Act episodes. The strongest agent retains task state but struggles with sustained contact, whereas end-to-end policies execute practiced motions but retain little task state. These findings point to composing reasoning and execution through environmental feedback as the main open problem.",
@@ -73885,8 +73885,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-21",
-   "version": "v1"
+   "updated": "2026-11-25",
+   "version": "v2"
   },
   "2611.29195": {
    "abstract": "Dexterous functional grasping is critical for robotic tool use, yet current dexterous hands exhibit substantial morphological diversity. This hardware heterogeneity makes cross-embodiment functional grasping a fundamental but largely unexplored problem. Existing functional grasping methods use retargeted hand poses as guidance, tying task representation to a specific embodiment and failing to explicitly capture object-centric functional contact intent, limiting generalization across hands. To address this, we propose FunGrasp-Zero, a reinforcement learning framework for zero-shot cross-embodiment functional grasping. Instead of relying on embodiment-specific joint configuration, FunGrasp-Zero captures functional intent via an object-centric, cross-embodiment-consistent contact map, adapted to heterogeneous hands through morphological mapping. We construct a hand-object potential field from mapped contact regions, yielding attractive and repulsive guidance vectors. A Field-Conditioned Graph Attention Network (FC-GAT) leverages these vectors to coordinate multi-finger motion across hands, while a potential field reward guides fingers toward target regions and penalizes non-target collisions to enforce functional alignment and stability. We further establish X-FunBench for cross-embodiment functional grasping, evaluating both physical grasp success and functional intent preservation across hands. Evaluated on X-FunBench, our unified policy, co-trained on four embodiments, achieves 86% average grasp success rate across five unseen hands on novel objects. Deployed on four unseen physical hands (Leap, Inspire, Sharpa, Wuji) for novel object grasping, the policy achieves 80% average success rate without fine-tuning. To our knowledge, FunGrasp-Zero is the first RL-based framework to achieve zero-shot cross-embodiment functional grasping across unseen hands in both simulation and the real world.",
@@ -74607,7 +74607,7 @@
    "authors": [
     "Chao Liu",
     "Wil J. Norton",
-    "Brandon Romero",
+    "Branden Romero",
     "Daniela Rus"
    ],
    "code_url": null,
@@ -74632,8 +74632,8 @@
    "topics": [
     "Other"
    ],
-   "updated": "2026-11-24",
-   "version": "v1"
+   "updated": "2026-11-25",
+   "version": "v2"
   },
   "2611.33010": {
    "abstract": "Can a simple mirror expose the limitations of today's robotic manipulation policies? Inspired by the mirror self-recognition test in animal cognition, we investigate whether robot policies can reliably manipulate physical objects in scenes containing their reflections. We introduce RoboDojo-Mirror, a benchmark built on RoboDojo that preserves task objectives, success criteria, and policy checkpoints while comparing a mirror-free baseline with single-mirror, dual-mirror, and mirrored-tabletop conditions. Across five policies spanning Vision-Language-Action models, World Action Models, and agentic policies, every mirror condition reduces aggregate success rates: averaged over the three conditions, the drop ranges from 10.8 to 56.7 percentage points across policies, and it reaches 62.5 points on the mirrored tabletop. Because a mirror is also a physical obstacle, we compare it against geometrically matched non-reflective panels; 50--88\\% of mirror-specific failures occur without recorded robot--panel contact, so direct collisions alone do not explain the degradation. Trajectory and contact analyses instead reveal recurring behaviors consistent with phantom targeting of reflected objects and spatial mislocalization of real ones. Targeted diagnostics further characterize grasping near reflections, policy-dependent pushing progress, and physical-target interaction under main-camera occlusion. Real-robot experiments with $π_{0.5}$ and FastWAM also show lower overall success rates under the upright-mirror and mirrored-tabletop conditions. These findings reveal a shared vulnerability to reflective environments across diverse robot policies and motivate reflection-aware evaluation of embodied intelligence. Code is available at https://github.com/iPPLab/robodojo-mirror.",
@@ -74729,6 +74729,175 @@
     "Other"
    ],
    "updated": "2026-11-24",
+   "version": "v1"
+  },
+  "2611.34117": {
+   "abstract": "We present CoTacWAM, a world-action model that learns shared contact semantics between wrist vision and touch, achieving the best observed performance in our nominal manipulation and missing-input evaluations. The two modalities observe the same local interaction through different signals: wrist images reveal nearby geometry, while touch records physical contact. Our approach connects their common contact meaning while preserving the evidence unique to each modality, giving the policy a joint description of interaction across available input combinations. This representation supports predictive action learning alongside head-view scene context and conditions corrections after an independent detector confirms a failed attempt. Experiments across four real-world tasks demonstrate improved manipulation performance over the evaluated baselines, robustness to missing local observations, and further gains from autonomous retries.",
+   "added_at": "2026-11-26 09:58",
+   "arxiv_categories": [
+    "cs.RO"
+   ],
+   "authors": [
+    "Lei Jin",
+    "Yiding Ma",
+    "Zhuohang Li",
+    "Jiachen Liu",
+    "Zibo Zhu",
+    "Kairui Liu",
+    "Chen Gao",
+    "Wei Wu",
+    "Yong Li"
+   ],
+   "code_url": null,
+   "comment": "19 pages, including appendix",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.34117",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": null,
+   "published": "2026-11-25",
+   "scores": {
+    "VTA": 2.5
+   },
+   "seed": false,
+   "title": "CoTacWAM: Joint Modeling of Vision and Touch for Robotic Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-25",
+   "version": "v1"
+  },
+  "2611.34422": {
+   "abstract": "World models and vision-language-action policy models are increasingly proposed as foundations for robot manipulation. They predict how scenes evolve and which actions to take, yet successful manipulation depends not solely on following observable trajectories but also on the hidden variable of interaction force. Neurophysiology has shown that humans possess a visual prior for this hidden variable, motivating us to ask the question: Do the representations of visual foundation models also capture the forces involved in an interaction? We define force awareness as the ability of representations to (1) indicate when contact force is applied, (2) track how it changes during an interaction, and (3) reflect how large it is. We probe frozen image, video, world- and policy model representations with a lightweight readout trained on synchronized video and force measurements from two manipulation datasets. Our experiments show that most models capture when contact occurs but not how much force is being applied. Surprisingly, robot post-training does not improve this either, highlighting an important gap in current models capabilities.",
+   "added_at": "2026-11-26 09:58",
+   "arxiv_categories": [
+    "cs.CV",
+    "cs.RO"
+   ],
+   "authors": [
+    "Felix Tristram",
+    "Benjamin D. Killeen",
+    "Nassir Navab"
+   ],
+   "code_url": null,
+   "comment": "",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.34422",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.CV",
+   "project_url": null,
+   "published": "2026-11-25",
+   "scores": {
+    "VTLA": 5.0
+   },
+   "seed": false,
+   "title": "Can Visual World Models See Force?",
+   "topics": [
+    "VTLA"
+   ],
+   "updated": "2026-11-25",
+   "version": "v1"
+  },
+  "2611.34560": {
+   "abstract": "Effective robotic manipulation calls for multimodal memory and rapid adaptation to shifts in contact dynamics. However, many existing policies, which retain either visual or wrench history, may miss key cues from the other modality. Moreover, even with wrench memory, fixed policies can struggle when contact conditions shift at deployment. To this end, we introduce M$^{2}$AdaptVLA, a vision-language-action model that integrates visual and wrench memories with predictive test-time adaptation. For visual memory, the model uses test-time training (TTT) to encode observation history in fast weights. Each entry in the bounded TTT bank combines the corresponding frame's features with a readout from these weights, preserving cues that predate the oldest retained frame. For wrench memory, a context gate controls how much the action expert draws on wrench history as it jointly denoises future actions and wrenches. For predictive test-time adaptation, the auxiliary wrench prediction loss also provides online self-supervision. Using measured wrenches as targets, we update low-rank policy adapters by backpropagating only through the final denoising step. Real-world experiments show that the TTT bank outperforms visual memory baselines on progress tracking, scene recall, and demonstration following. On contact-sensitive tasks, the context gate yields higher success rates than direct injection or gated cross-attention. Predictive test-time adaptation improves robustness to shifts in contact dynamics. On eight tasks requiring visual and wrench memory, M$^{2}$AdaptVLA achieves a mean success rate of 82.71%, a 31.46% absolute gain over the strongest baseline. The project page is available at https://tlf-tlf.github.io/M2AdaptVLAPage/.",
+   "added_at": "2026-11-26 09:58",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Liufan Tan",
+    "Tong Wang",
+    "Yuehao Yin",
+    "Jian Chen",
+    "Yihang Yin",
+    "Ying Qu",
+    "Wenyu Li",
+    "Ruyi Gan",
+    "Hao Wang"
+   ],
+   "code_url": null,
+   "comment": "16 pages, 11 figures, 8 tables, including supplementary material",
+   "hand": false,
+   "hidden": false,
+   "id": "2611.34560",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://tlf-tlf.github.io/M2AdaptVLAPage/",
+   "published": "2026-11-25",
+   "scores": {},
+   "seed": false,
+   "title": "M$^{2}$AdaptVLA: Multimodal Memory-Augmented Vision-Language-Action Model with Predictive Test-Time Adaptation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-25",
+   "version": "v1"
+  },
+  "2611.34884": {
+   "abstract": "Dexterity is, at its core, finger-level control, yet existing dexterous manipulation and human-object interaction (HOI) generation methods rarely let one specify how an interaction is performed: five-fingered hands are often reduced to grippers, or finger usage is copied from individual human demonstrations. We present FineDex, a framework that makes finger-level intent both expressible and executable. FineDex learns coordinated human body, hand, and object motions that follow fine-grained instructions on hand selection, individual fingers, and contacts with articulated objects. To bridge generation and execution, FineDex leverages generated interactions as actionable priors for an agent that discovers physically feasible contact strategies through practice in a physics-based digital twin. By adapting at test time without per-instance retraining, FineDex generalizes across fine-grained instructions and object configurations. Experiments demonstrate state-of-the-art HOI generation quality and fine-grained controllability, substantial improvements in dexterous manipulation success, and successful deployment on a real dexterous humanoid robot.",
+   "added_at": "2026-11-26 09:58",
+   "arxiv_categories": [
+    "cs.RO",
+    "cs.CV"
+   ],
+   "authors": [
+    "Yujia Zeng",
+    "Yuxin Chen",
+    "Yuzhen Song",
+    "Runhan Huang",
+    "Chensheng Peng",
+    "Yiyang Shao",
+    "Koushil Sreenath",
+    "Masayoshi Tomizuka",
+    "Yilun Du"
+   ],
+   "code_url": null,
+   "comment": "Project page: https://finedex.github.io/",
+   "hand": true,
+   "hidden": false,
+   "id": "2611.34884",
+   "modality": "unknown",
+   "modality_keywords": {
+    "numeric": [],
+    "vision": []
+   },
+   "note": "",
+   "paxini": false,
+   "pinned": false,
+   "primary_category": "cs.RO",
+   "project_url": "https://finedex.github.io/",
+   "published": "2026-11-25",
+   "scores": {},
+   "seed": false,
+   "title": "FineDex: Bridging Fine-Grained Human-Object Interaction Generation to Dexterous Humanoid Manipulation",
+   "topics": [
+    "Other"
+   ],
+   "updated": "2026-11-25",
    "version": "v1"
   }
  }
